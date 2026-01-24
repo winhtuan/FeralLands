@@ -1,0 +1,748 @@
+fileFormatVersion: 2
+guid: a97e58aaf6c41a244a276bd89e6f3b39
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7317441893754695919
+    second: Dreamshaper_attack_0
+  - first:
+      213: 5898622694243166221
+    second: Dreamshaper_attack_1
+  - first:
+      213: -5292087537394616582
+    second: Dreamshaper_attack_2
+  - first:
+      213: 3799372471989161005
+    second: Dreamshaper_attack_3
+  - first:
+      213: -7046252612382395680
+    second: Dreamshaper_attack_4
+  - first:
+      213: -5164554024900854273
+    second: Dreamshaper_attack_5
+  - first:
+      213: -3991027783990288601
+    second: Dreamshaper_attack_6
+  - first:
+      213: -505251432235656643
+    second: Dreamshaper_attack_7
+  - first:
+      213: -8142770232455656799
+    second: Dreamshaper_attack_8
+  - first:
+      213: 563328740997468775
+    second: Dreamshaper_attack_9
+  - first:
+      213: 3485166302068617065
+    second: Dreamshaper_attack_10
+  - first:
+      213: 4626843349868554243
+    second: Dreamshaper_attack_11
+  - first:
+      213: 1579090703047607707
+    second: Dreamshaper_attack_12
+  - first:
+      213: 4418980777475419860
+    second: Dreamshaper_attack_13
+  - first:
+      213: -692316586453848040
+    second: Dreamshaper_attack_14
+  - first:
+      213: -2848843370569284964
+    second: Dreamshaper_attack_15
+  - first:
+      213: -3587490893259695103
+    second: Dreamshaper_attack_16
+  - first:
+      213: -404120012768697771
+    second: Dreamshaper_attack_17
+  - first:
+      213: 831799834066714426
+    second: Dreamshaper_attack_18
+  - first:
+      213: -3909040177830210267
+    second: Dreamshaper_attack_19
+  - first:
+      213: -7325177416707805945
+    second: Dreamshaper_attack_20
+  - first:
+      213: -9099578559000833142
+    second: Dreamshaper_attack_21
+  - first:
+      213: 2347800806240114078
+    second: Dreamshaper_attack_22
+  - first:
+      213: 7334241376740951824
+    second: Dreamshaper_attack_23
+  - first:
+      213: 8315790777870008462
+    second: Dreamshaper_attack_24
+  - first:
+      213: 4677262803005308018
+    second: Dreamshaper_attack_25
+  - first:
+      213: 187116665341140998
+    second: Dreamshaper_attack_26
+  - first:
+      213: -3100183271735024835
+    second: Dreamshaper_attack_27
+  - first:
+      213: -420681672262970296
+    second: Dreamshaper_attack_28
+  - first:
+      213: -4527455533468105224
+    second: Dreamshaper_attack_29
+  - first:
+      213: -2284913898115011139
+    second: Dreamshaper_attack_30
+  - first:
+      213: 1178784138521767697
+    second: Dreamshaper_attack_31
+  - first:
+      213: -8931079395574982182
+    second: Dreamshaper_attack_32
+  - first:
+      213: 4220620912387824224
+    second: Dreamshaper_attack_33
+  - first:
+      213: -1461612598059101618
+    second: Dreamshaper_attack_34
+  - first:
+      213: 1285883740011253914
+    second: Dreamshaper_attack_35
+  - first:
+      213: -5547744759061116311
+    second: Dreamshaper_attack_36
+  - first:
+      213: -3990083425735704996
+    second: Dreamshaper_attack_37
+  - first:
+      213: -3469861091625835101
+    second: Dreamshaper_attack_38
+  - first:
+      213: -5935713647052680256
+    second: Dreamshaper_attack_39
+  - first:
+      213: -2837988533025290756
+    second: Dreamshaper_attack_40
+  - first:
+      213: -658788630381636043
+    second: Dreamshaper_attack_41
+  - first:
+      213: 8749629953848208673
+    second: Dreamshaper_attack_42
+  - first:
+      213: 6789939571582332746
+    second: Dreamshaper_attack_43
+  - first:
+      213: -3524694451495114047
+    second: Dreamshaper_attack_44
+  - first:
+      213: -8108879561938267490
+    second: Dreamshaper_attack_45
+  - first:
+      213: -2501374757377390969
+    second: Dreamshaper_attack_46
+  - first:
+      213: -1105639263432625552
+    second: Dreamshaper_attack_47
+  - first:
+      213: 7943238062764847230
+    second: Dreamshaper_attack_48
+  - first:
+      213: 8025433188814604269
+    second: Dreamshaper_attack_49
+  - first:
+      213: -3634305192567010864
+    second: Dreamshaper_attack_50
+  - first:
+      213: 2296135624781402359
+    second: Dreamshaper_attack_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dreamshaper_attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f803afd59337a90800000000000000
+      internalID: -7317441893754695919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 480
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d08eb62961e1cd150800000000000000
+      internalID: 5898622694243166221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 480
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af672556c6abe86b0800000000000000
+      internalID: -5292087537394616582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 480
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ccf4222251ab430800000000000000
+      internalID: 3799372471989161005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e27749e49ea63e90800000000000000
+      internalID: -7046252612382395680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 360
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd78723a71d358b0800000000000000
+      internalID: -5164554024900854273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 360
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f5b8630650d98c0800000000000000
+      internalID: -3991027783990288601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_7
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 360
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a1653df7cfcf8f0800000000000000
+      internalID: -505251432235656643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa0bd6ad911ffe80800000000000000
+      internalID: -8142770232455656799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7621cea518851d700800000000000000
+      internalID: 563328740997468775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f26f9594ccd5030800000000000000
+      internalID: 3485166302068617065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 240
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3082b4c3389d53040800000000000000
+      internalID: 4626843349868554243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b954647c0ae0ae510800000000000000
+      internalID: 1579090703047607707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_13
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dea3b6ba9f535d30800000000000000
+      internalID: 4418980777475419860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810be409bb56466f0800000000000000
+      internalID: -692316586453848040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_15
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 120
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92cd7c5c00e678d0800000000000000
+      internalID: -2848843370569284964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b78af588ec0b640a8f92faa3677378
+      internalID: -3587490893259695103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e60d2c9bb7600947ad7cedf7c03035f
+      internalID: -404120012768697771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05299ca65f86774db27ce7d0d1edf3b
+      internalID: 831799834066714426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dreamshaper_attack_19
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0b50b54391c3d42b7a53491e521e03
+      internalID: -3909040177830210267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 46b6a88c7ed3f46489e4c14e7234a9bb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":5.0},"gridSpriteSize":{"x":120.0,"y":120.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Dreamshaper_attack_0: -7317441893754695919
+      Dreamshaper_attack_1: 5898622694243166221
+      Dreamshaper_attack_10: 3485166302068617065
+      Dreamshaper_attack_11: 4626843349868554243
+      Dreamshaper_attack_12: 1579090703047607707
+      Dreamshaper_attack_13: 4418980777475419860
+      Dreamshaper_attack_14: -692316586453848040
+      Dreamshaper_attack_15: -2848843370569284964
+      Dreamshaper_attack_16: -3587490893259695103
+      Dreamshaper_attack_17: -404120012768697771
+      Dreamshaper_attack_18: 831799834066714426
+      Dreamshaper_attack_19: -3909040177830210267
+      Dreamshaper_attack_2: -5292087537394616582
+      Dreamshaper_attack_3: 3799372471989161005
+      Dreamshaper_attack_4: -7046252612382395680
+      Dreamshaper_attack_5: -5164554024900854273
+      Dreamshaper_attack_6: -3991027783990288601
+      Dreamshaper_attack_7: -505251432235656643
+      Dreamshaper_attack_8: -8142770232455656799
+      Dreamshaper_attack_9: 563328740997468775
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

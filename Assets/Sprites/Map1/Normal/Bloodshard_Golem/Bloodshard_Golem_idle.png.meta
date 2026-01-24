@@ -1,0 +1,496 @@
+fileFormatVersion: 2
+guid: 2cc7273f1ab94ee4dbf4b1d32fbe1c05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3573027006357756683
+    second: Bloodshard_Golem_idle_0
+  - first:
+      213: -7675628031308179713
+    second: Bloodshard_Golem_idle_1
+  - first:
+      213: 3183521910345521000
+    second: Bloodshard_Golem_idle_2
+  - first:
+      213: 3862055319986890506
+    second: Bloodshard_Golem_idle_3
+  - first:
+      213: 5244170183146370037
+    second: Bloodshard_Golem_idle_4
+  - first:
+      213: -3482817110703210118
+    second: Bloodshard_Golem_idle_5
+  - first:
+      213: -1826563437455458728
+    second: Bloodshard_Golem_idle_6
+  - first:
+      213: 3687754424011046407
+    second: Bloodshard_Golem_idle_7
+  - first:
+      213: -2658820180531205427
+    second: Bloodshard_Golem_idle_8
+  - first:
+      213: -6115365942312258918
+    second: Bloodshard_Golem_idle_9
+  - first:
+      213: 1589469963103480015
+    second: Bloodshard_Golem_idle_10
+  - first:
+      213: 6693156806083244157
+    second: Bloodshard_Golem_idle_11
+  - first:
+      213: -2553268043017940198
+    second: Bloodshard_Golem_idle_12
+  - first:
+      213: 191561126428752209
+    second: Bloodshard_Golem_idle_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 256
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0bd4dea121f59130800000000000000
+      internalID: 3573027006357756683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 256
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff658d509f0ba7590800000000000000
+      internalID: -7675628031308179713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 256
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86751d87f442e2c20800000000000000
+      internalID: 3183521910345521000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_3
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 256
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07e9baf9d6c89530800000000000000
+      internalID: 3862055319986890506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_4
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 176
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3722c2ff807c840800000000000000
+      internalID: 5244170183146370037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_5
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 176
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7102e26a4c8aafc0800000000000000
+      internalID: -3482817110703210118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_6
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 176
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e30ce2b3eb6a6e0800000000000000
+      internalID: -1826563437455458728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_7
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 176
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ebd0e2c198d2330800000000000000
+      internalID: 3687754424011046407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 96
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca2cc10229f91bd0800000000000000
+      internalID: -2658820180531205427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 96
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92b4f8731bd12ba0800000000000000
+      internalID: -6115365942312258918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_10
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 96
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc8afe3928eee0610800000000000000
+      internalID: 1589469963103480015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_11
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 96
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70749c37aed2ec50800000000000000
+      internalID: 6693156806083244157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 16
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a131f8f1e38f09cd0800000000000000
+      internalID: -2553268043017940198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodshard_Golem_idle_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 16
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1593f8d54df88a200800000000000000
+      internalID: 191561126428752209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 95097928218173645b02b7ef645920db
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Bloodshard_Golem_idle_0: 3573027006357756683
+      Bloodshard_Golem_idle_1: -7675628031308179713
+      Bloodshard_Golem_idle_10: 1589469963103480015
+      Bloodshard_Golem_idle_11: 6693156806083244157
+      Bloodshard_Golem_idle_12: -2553268043017940198
+      Bloodshard_Golem_idle_13: 191561126428752209
+      Bloodshard_Golem_idle_2: 3183521910345521000
+      Bloodshard_Golem_idle_3: 3862055319986890506
+      Bloodshard_Golem_idle_4: 5244170183146370037
+      Bloodshard_Golem_idle_5: -3482817110703210118
+      Bloodshard_Golem_idle_6: -1826563437455458728
+      Bloodshard_Golem_idle_7: 3687754424011046407
+      Bloodshard_Golem_idle_8: -2658820180531205427
+      Bloodshard_Golem_idle_9: -6115365942312258918
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
