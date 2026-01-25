@@ -10,7 +10,8 @@ public class PlayerHealth : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D col;
     private Dreamshaper controller;
-
+    private float invincibleTime = 1f;
+    private float invincibleTimer;
     void Awake()
     {
         currentHealth = maxHealth;
@@ -23,15 +24,15 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        // TEST: nhấn K để mất máu
-        if (Keyboard.current.kKey.wasPressedThisFrame)
-        {
-            TakeDamage(10);
-        }
+        invincibleTimer -= Time.deltaTime;
     }
 
     public void TakeDamage(int damage)
     {
+        if (invincibleTimer > 0) return;
+
+        invincibleTimer = invincibleTime;
+
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
