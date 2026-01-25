@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 
-public class Crimson_Oculus : MonoBehaviour
+public class CrimsonOculus : EnemyBase
 {
-    [Header("Patrol")]
+    enum State { Patrol, Chase, Attack }
+    State currentState;
+
+    [Header("Movement")]
     public float patrolDistance = 0.5f;
     public float patrolSpeed = 1.2f;
-
-    [Header("Chase")]
     public float detectRange = 4f;
     public float chaseSpeed = 2.5f;
 
@@ -15,78 +16,59 @@ public class Crimson_Oculus : MonoBehaviour
     public float attackCooldown = 1.5f;
     public int damage = 10;
 
-    private Vector2 startPos;
-    private bool movingRight = true;
-    private float attackTimer;
-    private float faceDelay = 0.15f;
-    private float faceTimer;
+    [Header("Death Effect")]
+    public GameObject deathEffectPrefab;
 
     private Rigidbody2D rb;
     private Animator animator;
+    private SpriteRenderer sr;
     private Transform player;
-    private PlayerHealth playerHealth;
 
-    void Start()
+    private Vector2 startPos;
+    private bool movingRight = true;
+    private float attackTimer;
+
+    protected override void Awake()
     {
+        base.Awake();
+
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
 
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-
-        if (playerObj != null)
-        {
-            player = playerObj.transform;
-            playerHealth = playerObj.GetComponent<PlayerHealth>();
-        }
-        else
-        {
-            Debug.LogError("PLAYER NOT FOUND! Add Tag Player to Dreamshaper.");
-        }
+        GameObject p = GameObject.FindWithTag("Player");
+        if (p != null) player = p.transform;
 
         startPos = transform.position;
     }
 
-
     void Update()
     {
-        if (player == null || playerHealth == null) return;
+        if (!player) return;
 
         attackTimer -= Time.deltaTime;
-
         float dist = Vector2.Distance(transform.position, player.position);
 
-        if (dist <= attackRange)
+        if (dist <= attackRange) currentState = State.Attack;
+        else if (dist <= detectRange) currentState = State.Chase;
+        else currentState = State.Patrol;
+
+        switch (currentState)
         {
-            Attack();
-        }
-        else if (dist <= detectRange)
-        {
-            Chase();
-        }
-        else
-        {
-            Patrol();
+            case State.Patrol: Patrol(); break;
+            case State.Chase: Chase(); break;
+            case State.Attack: Attack(); break;
         }
     }
-
 
     // ================= PATROL =================
     void Patrol()
     {
-        animator.SetBool("IsMoving", true);
+        float target = movingRight ? patrolSpeed : -patrolSpeed;
+        rb.linearVelocity = new Vector2(target, rb.linearVelocity.y);
 
-        if (movingRight)
-        {
-            rb.linearVelocity = new Vector2(patrolSpeed, rb.linearVelocity.y);
-            if (transform.position.x >= startPos.x + patrolDistance)
-                movingRight = false;
-        }
-        else
-        {
-            rb.linearVelocity = new Vector2(-patrolSpeed, rb.linearVelocity.y);
-            if (transform.position.x <= startPos.x - patrolDistance)
-                movingRight = true;
-        }
+        if (transform.position.x > startPos.x + patrolDistance) movingRight = false;
+        if (transform.position.x < startPos.x - patrolDistance) movingRight = true;
 
         Flip();
     }
@@ -94,64 +76,61 @@ public class Crimson_Oculus : MonoBehaviour
     // ================= CHASE =================
     void Chase()
     {
-        animator.SetBool("IsMoving", true);
-
-        float dir = player.position.x > transform.position.x ? 1 : -1;
-        rb.linearVelocity = new Vector2(dir * chaseSpeed, rb.linearVelocity.y);
-
-        movingRight = dir > 0;
+        movingRight = player.position.x > transform.position.x;
+        rb.linearVelocity = new Vector2(movingRight ? chaseSpeed : -chaseSpeed, rb.linearVelocity.y);
         Flip();
     }
 
     // ================= ATTACK =================
     void Attack()
     {
-        rb.linearVelocity = Vector2.zero;
+        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        movingRight = player.position.x > transform.position.x;
+        Flip();
 
-        // Tính hướng player
-        float dirToPlayer = Mathf.Sign(player.position.x - transform.position.x);
-
-        // Nếu quái đang quay sai hướng → chỉ quay, chưa đánh
-        if((movingRight ? 1 : -1) != dirToPlayer)
-{
-            faceTimer = faceDelay;
-            movingRight = dirToPlayer > 0;
-            Flip();
-            return;
-        }
-
-        if (faceTimer > 0)
-        {
-            faceTimer -= Time.deltaTime;
-            return;
-        }
-
-        // Nếu đúng hướng rồi → mới đánh
         if (attackTimer <= 0)
         {
             attackTimer = attackCooldown;
             animator.SetTrigger("Attack");
-            DealDamage();
         }
     }
 
-
-    // ================= DAMAGE PLAYER =================
-    void DealDamage()
+    // Animation Event
+    public void DealDamage()
     {
-        if (playerHealth == null) return;
+        if (!player) return;
 
         float dist = Vector2.Distance(transform.position, player.position);
         if (dist <= attackRange)
         {
-            playerHealth.TakeDamage(damage);
+            player.GetComponent<PlayerHealth>()?.TakeDamage(damage);
         }
     }
 
     // ================= FLIP =================
     void Flip()
     {
-        GetComponent<SpriteRenderer>().flipX = !movingRight;
+        sr.flipX = !movingRight;
+    }
+
+    // ================= DEATH =================
+    protected override void Die()
+    {
+        // Spawn effect ngay lập tức
+        if (deathEffectPrefab != null)
+            Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
+
+        // Play animation
+        animator.SetTrigger("isDead");
+
+        // Stop physics
+        rb.linearVelocity = Vector2.zero;
+        rb.gravityScale = 0;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+
+        // Disable collider để không va chạm
+        GetComponent<Collider2D>().enabled = false;
+        Destroy(gameObject, 1f);
     }
 
 }

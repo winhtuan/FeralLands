@@ -4,45 +4,34 @@ public class LightOrb : MonoBehaviour
 {
     public float speed = 10f;
     public float maxDistance = 3f;
-    public int damage = 10; 
+    public int damage = 10;
 
-    private Rigidbody2D rb;
-    private Vector2 shooterStartPos;
-
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    private Vector2 startPos;
+    private Vector2 dir;
 
     public void Launch(Vector2 direction, Transform shooter, int dmg)
     {
-        shooterStartPos = shooter.position;
+        startPos = transform.position;
+        dir = direction.normalized;
         damage = dmg;
-        rb.linearVelocity = direction.normalized * speed;
     }
-
 
     void Update()
     {
-        if (Vector2.Distance(shooterStartPos, transform.position) >= maxDistance)
-        {
+        transform.position += (Vector3)(dir * speed * Time.deltaTime);
+
+        if (Vector2.Distance(startPos, transform.position) >= maxDistance)
             Destroy(gameObject);
-        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //Enemy enemy = other.GetComponent<Enemy>();
-        //if (enemy != null)
-        //{
-        //    enemy.TakeDamage(damage);
-        //    Destroy(gameObject);
-        //}
-    }
-
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, 0.2f);
+        IDamageable dmg = other.GetComponent<IDamageable>();
+        if (dmg != null)
+        {
+            dmg.TakeDamage(damage);
+            Destroy(gameObject);
+        }
     }
 }
+
