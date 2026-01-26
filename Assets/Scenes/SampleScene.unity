@@ -564,11 +564,11 @@ MonoBehaviour:
     m_Bits: 256
   groundCheck: {fileID: 1223597643}
   groundCheckRadius: 0.25
-  lightOrbPrefab: {fileID: 0}
-  firePoint: {fileID: 0}
+  lightOrbPrefab: {fileID: 8777999582666900016, guid: 245bbca46358a1946a814c91acd04ae4, type: 3}
+  firePoint: {fileID: 28848144}
   fireCooldown: 0.3
   orbDamage: 15
-  slashPrefab: {fileID: 0}
+  slashPrefab: {fileID: 8026487566832198741, guid: 7d2b79401c641b3429fcb70b49498789, type: 3}
   attackPoint: {fileID: 0}
   attackRange: 2
   meleeDamage: 10
@@ -929,7 +929,7 @@ Transform:
   m_GameObject: {fileID: 1223597642}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: -0.33, z: 0}
+  m_LocalPosition: {x: 0.05, y: -0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1060,7 +1060,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.4031896}
+  m_Offset: {x: 0, y: -0.37966615}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1070,7 +1070,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.1936208}
+  m_Size: {x: 1, y: 0.24066773}
   m_EdgeRadius: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
