@@ -392,6 +392,10 @@ GameObject:
   - component: {fileID: 406872450}
   - component: {fileID: 406872451}
   - component: {fileID: 406872452}
+  - component: {fileID: 406872455}
+  - component: {fileID: 406872454}
+  - component: {fileID: 406872453}
+  - component: {fileID: 406872456}
   m_Layer: 0
   m_Name: Dreamshaper
   m_TagString: Player
@@ -467,12 +471,11 @@ Transform:
   m_GameObject: {fileID: 406872445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.29, y: 0.85, z: 0}
+  m_LocalPosition: {x: -5.31, y: 0.771, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 54429267}
-  - {fileID: 677405714}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &406872448
@@ -509,20 +512,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce364aa3160fad4daf32a00ec04e619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  moveSpeed: 4
-  jumpForce: 10
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  groundCheck: {fileID: 54429267}
-  groundRadius: 0.2
-  lightOrbPrefab: {fileID: 8777999582666900016, guid: 245bbca46358a1946a814c91acd04ae4, type: 3}
-  firePoint: {fileID: 677405714}
-  orbSpeed: 12
-  fireCooldown: 0.3
-  fireRadiusDebug: 0.15
-  orbDamage: 10
-  orbScale: 1.5
+  movement: {fileID: 0}
+  jump: {fileID: 406872454}
+  castOrb: {fileID: 406872455}
+  melee: {fileID: 406872456}
 --- !u!61 &406872450
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -610,6 +603,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 100
   currentHealth: 100
+--- !u!114 &406872453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406872445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633e0357ec765894da000a5b99d0ef17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  moveSpeed: 6
+  firePoint: {fileID: 0}
+  attackPoint: {fileID: 0}
+--- !u!114 &406872454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406872445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24fba04eaedc9f48ba795807574632f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
+  jumpForce: 12
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  groundCheck: {fileID: 54429267}
+  groundRadius: 0.2
+--- !u!114 &406872455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406872445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8ef482893c9a44bb930b3a4aca187d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCastOrb
+  lightOrbPrefab: {fileID: 8777999582666900016, guid: 245bbca46358a1946a814c91acd04ae4, type: 3}
+  firePoint: {fileID: 0}
+  orbSpeed: 12
+  fireCooldown: 0.3
+  orbDamage: 10
+  orbScale: 1.5
+--- !u!114 &406872456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406872445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e3b9d346116554b9604b072d10a8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMeleeAttack
+  meleeHitboxPrefab: {fileID: 4087902218653683928, guid: 9da1f39f8d54a364b8ac2eafca3b7a5b, type: 3}
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
+  attackCooldown: 0.4
+  meleeDamage: 15
+  hitboxLifeTime: 0.15
 --- !u!1 &596856843
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,37 +747,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596856843}
   m_CullTransparentMesh: 1
---- !u!1 &677405713
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 677405714}
-  m_Layer: 0
-  m_Name: FirePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &677405714
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677405713}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 406872447}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &776173481
 GameObject:
   m_ObjectHideFlags: 0
