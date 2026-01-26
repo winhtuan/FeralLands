@@ -22,7 +22,8 @@ public class Dreamshaper : MonoBehaviour
     public float fireCooldown = 0.3f;
     public float fireRadiusDebug = 0.15f;
     public int orbDamage = 10;
-
+    public float orbScale = 1.5f;
+    float castTimer;
     float fireTimer;
 
     // ================= COMPONENTS =================
@@ -69,8 +70,6 @@ public class Dreamshaper : MonoBehaviour
     // ================= MOVE =================
     void Move()
     {
-        if (isCasting) return;
-
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
     }
 
@@ -123,33 +122,39 @@ public class Dreamshaper : MonoBehaviour
         {
             fireTimer = fireCooldown;
             isCasting = true;
+            castTimer = 0.6f; 
             animator.SetTrigger("CastOrb");
+        }
+
+        if (isCasting)
+        {
+            castTimer -= Time.deltaTime;
+            if (castTimer <= 0)
+                isCasting = false;
         }
     }
 
-    // CALLED BY ANIMATION EVENT
     public void SpawnOrb()
     {
-        if (!lightOrbPrefab || !firePoint) return;
+        Debug.Log("SpawnOrb called");
+
+        if (!lightOrbPrefab || !firePoint)
+            return;
 
         GameObject orbObj = Instantiate(lightOrbPrefab, firePoint.position, Quaternion.identity);
+        orbObj.transform.localScale = Vector3.one * orbScale;
         LightOrb orb = orbObj.GetComponent<LightOrb>();
 
         float dir = facingLeft ? -1 : 1;
-        orb.speed = orbSpeed;
         orb.Launch(new Vector2(dir, 0), transform, orbDamage);
-
-        // Flip sprite orb
-        SpriteRenderer orbSr = orbObj.GetComponent<SpriteRenderer>();
-        if (orbSr && facingLeft)
-            orbSr.flipX = true;
     }
 
-    // CALLED BY ANIMATION EVENT
     public void EndCast()
     {
+        Debug.Log("EndCast called");
         isCasting = false;
     }
+
 
     // ================= ANIMATION =================
     void UpdateAnimation()
