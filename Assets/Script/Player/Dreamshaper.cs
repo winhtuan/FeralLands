@@ -5,50 +5,47 @@ public class Dreamshaper : MonoBehaviour
 {
     // ================= MOVEMENT =================
     [Header("Movement")]
-    [SerializeField] private float walkSpeed = 5f;
-    [SerializeField] private float runSpeed = 8f;
-    [SerializeField] private float acceleration = 25f;
-    [SerializeField] private float deceleration = 30f;
+    [SerializeField] float walkSpeed = 5f;
+    [SerializeField] float runSpeed = 8f;
+    [SerializeField] float acceleration = 25f;
+    [SerializeField] float deceleration = 30f;
 
     // ================= JUMP =================
     [Header("Jump")]
-    [SerializeField] private float jumpForce = 12f;
-    [SerializeField] private float coyoteTime = 0.15f;
-    [SerializeField] private float jumpBufferTime = 0.15f;
-    [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckRadius = 0.25f;
+    [SerializeField] float jumpForce = 12f;
+    [SerializeField] float coyoteTime = 0.15f;
+    [SerializeField] float jumpBufferTime = 0.15f;
+    [SerializeField] LayerMask groundLayer;
+    [SerializeField] Transform groundCheck;
+    [SerializeField] float groundCheckRadius = 0.25f;
 
-    // ================= RANGED SKILL =================
-    [Header("Skill - Light Orb")]
-    [SerializeField] private GameObject lightOrbPrefab;
-    [SerializeField] private Transform firePoint;
-    [SerializeField] private float fireCooldown = 0.3f;
-    [SerializeField] private int orbDamage = 15;
-    private float fireTimer;
+    // ================= RANGED =================
+    [Header("Light Orb")]
+    [SerializeField] GameObject lightOrbPrefab;
+    [SerializeField] Transform firePoint;
+    [SerializeField] float fireCooldown = 0.3f;
+    [SerializeField] int orbDamage = 15;
+    float fireTimer;
 
-    // ================= MELEE ATTACK =================
-    [Header("Melee Attack")]
-    [SerializeField] private GameObject slashPrefab;
-    [SerializeField] private Transform attackPoint;
-    [SerializeField] private float attackRange = 2.0f;
-    [SerializeField] private int meleeDamage = 10;
-    [SerializeField] private LayerMask enemyLayer;
-    [SerializeField] private float meleeCooldown = 0.3f;
-    private float meleeTimer;
+    // ================= MELEE =================
+    [Header("Melee")]
+    [SerializeField] MeleeHitbox meleeHitbox;
+    [SerializeField] GameObject slashPrefab;
+    [SerializeField] float meleeCooldown = 0.3f;
+    float meleeTimer;
 
     // ================= COMPONENTS =================
-    private Rigidbody2D rb;
-    private SpriteRenderer sr;
-    private Animator animator;
+    Rigidbody2D rb;
+    SpriteRenderer sr;
+    Animator animator;
 
     // ================= INPUT =================
-    private float moveInput;
-    private bool isRunning;
-    private float coyoteCounter;
-    private float jumpBufferCounter;
+    float moveInput;
+    bool isRunning;
+    float coyoteCounter;
+    float jumpBufferCounter;
+    bool facingLeft;
 
-    // ================= INIT =================
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -56,7 +53,6 @@ public class Dreamshaper : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // ================= UPDATE =================
     void Update()
     {
         ReadInput();
@@ -77,39 +73,31 @@ public class Dreamshaper : MonoBehaviour
     void ReadInput()
     {
         moveInput = 0;
-
         if (Keyboard.current.aKey.isPressed) moveInput = -1;
         if (Keyboard.current.dKey.isPressed) moveInput = 1;
 
         isRunning = Keyboard.current.leftShiftKey.isPressed;
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
             jumpBufferCounter = jumpBufferTime;
-        }
     }
 
-    // ================= MOVEMENT =================
+    // ================= MOVE =================
     void MovePlayer()
     {
         float speed = isRunning ? runSpeed : walkSpeed;
-        float targetVelocityX = moveInput * speed;
+        float target = moveInput * speed;
         float accel = Mathf.Abs(moveInput) > 0 ? acceleration : deceleration;
 
-        float newVelX = Mathf.MoveTowards(rb.linearVelocity.x, targetVelocityX, accel * Time.fixedDeltaTime);
+        float newVelX = Mathf.MoveTowards(rb.linearVelocity.x, target, accel * Time.fixedDeltaTime);
         rb.linearVelocity = new Vector2(newVelX, rb.linearVelocity.y);
     }
 
-    // ================= GROUND CHECK =================
+    // ================= GROUND =================
     void GroundCheck()
     {
         bool grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-
-        if (grounded)
-            coyoteCounter = coyoteTime;
-        else
-            coyoteCounter -= Time.deltaTime;
-
+        coyoteCounter = grounded ? coyoteTime : coyoteCounter - Time.deltaTime;
         jumpBufferCounter -= Time.deltaTime;
     }
 
@@ -129,7 +117,7 @@ public class Dreamshaper : MonoBehaviour
         }
     }
 
-    // ================= RANGED ATTACK =================
+    // ================= RANGED =================
     void HandleFire()
     {
         fireTimer -= Time.deltaTime;
@@ -142,22 +130,15 @@ public class Dreamshaper : MonoBehaviour
         }
     }
 
-    public void ShootOrb()
+    void ShootOrb()
     {
-        if (lightOrbPrefab == null) return;
+        if (!lightOrbPrefab || !firePoint) return;
 
         GameObject orb = Instantiate(lightOrbPrefab, firePoint.position, Quaternion.identity);
-        LightOrb orbScript = orb.GetComponent<LightOrb>();
-
-        if (orbScript != null)
-        {
-            Vector2 direction = sr.flipX ? Vector2.left : Vector2.right;
-            orbScript.Launch(direction, transform, orbDamage);
-        }
+        orb.GetComponent<LightOrb>()?.Launch(facingLeft ? Vector2.left : Vector2.right, transform, orbDamage);
     }
 
-
-    // ================= MELEE ATTACK =================
+    // ================= MELEE =================
     void HandleMelee()
     {
         meleeTimer -= Time.deltaTime;
@@ -165,88 +146,60 @@ public class Dreamshaper : MonoBehaviour
         if (Keyboard.current.hKey.wasPressedThisFrame && meleeTimer <= 0)
         {
             meleeTimer = meleeCooldown;
-
             animator.SetTrigger("MeleeAttack");
             SpawnSlash();
-            DoMeleeDamage(); 
         }
     }
 
     void SpawnSlash()
     {
-        if (slashPrefab == null || attackPoint == null) return;
+        if (!slashPrefab || !meleeHitbox) return;
 
-        Vector3 pos = attackPoint.position;
         Quaternion rot = sr.flipX ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
-
-        Instantiate(slashPrefab, pos, rot);
+        Instantiate(slashPrefab, meleeHitbox.transform.position, rot);
     }
 
-    void DoMeleeDamage()
+    // Animation Event
+    public void EnableMeleeHitbox()
     {
-        Vector2 size = new Vector2(1.55f, 1.1f); 
-        Vector2 center = attackPoint.position;
-
-        Collider2D[] hits = Physics2D.OverlapBoxAll(center, size, 0f, enemyLayer);
-
-        //foreach (Collider2D hit in hits)
-        //{
-        //    var enemy = hit.GetComponent<Enemy>();
-        //    if (enemy != null)
-        //    {
-        //        enemy.TakeDamage(meleeDamage);
-        //    }
-        //}
+        meleeHitbox.EnableHitbox();
     }
 
-    // ================= DEBUG GIZMOS =================
-    void OnDrawGizmosSelected()
+    public void DisableMeleeHitbox()
     {
-        if (!attackPoint) return;
-
-        Gizmos.color = Color.red;
-        Vector2 size = new Vector2(1.55f, 1.1f); 
-        Gizmos.DrawWireCube(attackPoint.position, size);
+        meleeHitbox.DisableHitbox();
     }
-
 
     // ================= FLIP =================
-    bool facingLeft;
-
     void FlipPlayer()
     {
         if (moveInput < 0 && !facingLeft)
         {
             facingLeft = true;
             sr.flipX = true;
-            FlipPoints();
+            FlipTransforms();
         }
         else if (moveInput > 0 && facingLeft)
         {
             facingLeft = false;
             sr.flipX = false;
-            FlipPoints();
+            FlipTransforms();
         }
     }
 
-    void FlipPoints()
+    void FlipTransforms()
     {
-        if (attackPoint != null)
-        {
-            Vector3 pos = attackPoint.localPosition;
-            pos.x *= -1;
-            attackPoint.localPosition = pos;
-        }
-
-        if (firePoint != null)
-        {
-            Vector3 pos = firePoint.localPosition;
-            pos.x *= -1;
-            firePoint.localPosition = pos;
-        }
+        FlipTransform(firePoint);
+        FlipTransform(meleeHitbox.transform);
     }
 
-
+    void FlipTransform(Transform t)
+    {
+        if (!t) return;
+        Vector3 p = t.localPosition;
+        p.x *= -1;
+        t.localPosition = p;
+    }
 
     // ================= ANIMATION =================
     void UpdateAnimation()

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SlashEffect : MonoBehaviour
 {
-    public float lifeTime = 0.2f;
+    public float lifeTime = 0.3f;
 
     void Start()
     {
