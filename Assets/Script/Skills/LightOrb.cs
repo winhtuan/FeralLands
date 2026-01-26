@@ -2,36 +2,42 @@
 
 public class LightOrb : MonoBehaviour
 {
-    public float speed = 10f;
-    public float maxDistance = 3f;
+    public float speed = 12f;
+    public float lifeTime = 2.5f;
     public int damage = 10;
 
-    private Vector2 startPos;
-    private Vector2 dir;
+    Rigidbody2D rb;
 
     public void Launch(Vector2 direction, Transform shooter, int dmg)
     {
-        startPos = transform.position;
-        dir = direction.normalized;
+        rb = GetComponent<Rigidbody2D>();
         damage = dmg;
-    }
 
-    void Update()
-    {
-        transform.position += (Vector3)(dir * speed * Time.deltaTime);
+        rb.linearVelocity = direction.normalized * speed;
 
-        if (Vector2.Distance(startPos, transform.position) >= maxDistance)
-            Destroy(gameObject);
+        // Ignore player collision
+        Collider2D shooterCol = shooter.GetComponent<Collider2D>();
+        Collider2D orbCol = GetComponent<Collider2D>();
+        if (shooterCol && orbCol)
+            Physics2D.IgnoreCollision(orbCol, shooterCol);
+
+        Destroy(gameObject, lifeTime);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        IDamageable dmg = other.GetComponent<IDamageable>();
-        if (dmg != null)
+        IDamageable dmgTarget = other.GetComponent<IDamageable>();
+        if (dmgTarget != null)
         {
-            dmg.TakeDamage(damage);
+            dmgTarget.TakeDamage(damage);
+
+            // TODO: Screen Shake / HitStop here
+            Destroy(gameObject);
+        }
+
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
             Destroy(gameObject);
         }
     }
 }
-
