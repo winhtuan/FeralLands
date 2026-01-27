@@ -35,8 +35,22 @@ public class PlayerMovement : MonoBehaviour
     void ReadInput()
     {
         moveInput = 0;
-        if (Keyboard.current.aKey.isPressed) moveInput = -1;
-        if (Keyboard.current.dKey.isPressed) moveInput = 1;
+        
+        // Safety check if Input System is not initialized correctly for Keyboard
+        if (Keyboard.current == null) return;
+
+        int scheme = PlayerPrefs.GetInt("ControlScheme", 0); // 0 = WASD, 1 = Arrows
+
+        if (scheme == 0) // WASD
+        {
+            if (Keyboard.current.aKey.isPressed) moveInput = -1;
+            if (Keyboard.current.dKey.isPressed) moveInput = 1;
+        }
+        else // Arrows
+        {
+            if (Keyboard.current.leftArrowKey.isPressed) moveInput = -1;
+            if (Keyboard.current.rightArrowKey.isPressed) moveInput = 1;
+        }
     }
 
     void Move()
