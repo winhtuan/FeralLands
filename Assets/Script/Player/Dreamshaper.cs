@@ -9,6 +9,7 @@ public class Dreamshaper : MonoBehaviour
     [HideInInspector] public PlayerMeleeAttack melee;
     [HideInInspector] public PlayerUltimate ulti;
     [HideInInspector] public PlayerActionState action;
+    [HideInInspector] public PlayerEnergy mana;
 
     void Awake()
     {
@@ -18,6 +19,8 @@ public class Dreamshaper : MonoBehaviour
         melee = GetComponent<PlayerMeleeAttack>();
         ulti = GetComponent<PlayerUltimate>();
         action = GetComponent<PlayerActionState>();
+        mana = GetComponent<PlayerEnergy>();
+
     }
 
     void OnDrawGizmosSelected()

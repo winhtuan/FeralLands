@@ -14,22 +14,26 @@ public class PlayerUltimate : MonoBehaviour
     Animator animator;
     PlayerActionState action;
     CameraShake camShake;
+    PlayerEnergy mana;
+
     void Awake()
     {
         animator = GetComponent<Animator>();
         action = GetComponent<PlayerActionState>();
         camShake = Camera.main.GetComponent<CameraShake>();
+        mana = GetComponent<PlayerEnergy>();
     }
 
     void Update()
     {
         if (action.IsBusy) return;
 
-        if (timer > 0)
-            timer -= Time.deltaTime;
+        timer = Mathf.Max(0, timer - Time.deltaTime);
 
         if (Keyboard.current.uKey.wasPressedThisFrame && timer <= 0)
         {
+            if (!mana.UseEnergy(40f)) return;
+
             action.SetBusy(true);
             timer = cooldown;
             animator.SetTrigger("Ultimate");
