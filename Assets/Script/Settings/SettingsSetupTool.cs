@@ -80,7 +80,7 @@ public class SettingsSetupTool : MonoBehaviour
         ctrlText.color = Color.yellow; 
         ctrlText.text = "CONTROLS: WASD"; 
         RectTransform ctrlRect = ctrlTextObj.GetComponent<RectTransform>();
-        ctrlRect.anchoredPosition = new Vector2(-60, -120); // Text bên Trái
+        ctrlRect.anchoredPosition = new Vector2(-100, -120); // Text dời qua trái thêm để không đè nút
         ctrlRect.sizeDelta = new Vector2(250, 40);
         controller.controlSchemeText = ctrlText;
 

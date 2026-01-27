@@ -77,26 +77,20 @@ public class SettingsController : MonoBehaviour
 
     public void SetFullscreen(bool isFullscreen)
     {
-        // Safety check for resolutions
-        if (Screen.resolutions == null || Screen.resolutions.Length == 0)
-        {
-            Debug.LogWarning("SettingsController: Could not find valid screen resolutions.");
-            Screen.fullScreen = isFullscreen; // Fallback basic
-            return;
-        }
-
+        Screen.fullScreen = isFullscreen;
+        
         if (isFullscreen)
         {
-            Resolution maxRes = Screen.resolutions[Screen.resolutions.Length - 1];
-            Screen.SetResolution(maxRes.width, maxRes.height, FullScreenMode.FullScreenWindow);
+            Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
         }
         else
         {
-            Screen.SetResolution(Screen.width, Screen.height, FullScreenMode.Windowed);
+            Screen.fullScreenMode = FullScreenMode.Windowed;
         }
         
         PlayerPrefs.SetInt("Setting_Fullscreen", isFullscreen ? 1 : 0);
         PlayerPrefs.Save();
+        Debug.Log("Fullscreen set to: " + isFullscreen);
     }
 
     private void LoadSettings()
