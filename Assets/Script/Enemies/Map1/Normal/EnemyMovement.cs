@@ -106,7 +106,7 @@ public class EnemyMovement : EnemyBase
     {
         attackTimer = attackCooldown; // khóa spam
         SetSpeed(0);
-        Attack(); // Trigger Animator "Attack"
+        BaseAttack(); // Trigger Animator "Attack"
     }
 
     // Vẽ Gizmos để dễ dàng căn chỉnh trong Unity Editor
