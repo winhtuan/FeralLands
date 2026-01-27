@@ -808,6 +808,10 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024
+  lightningPrefab: {fileID: 6488802846403167074, guid: e9e28886d82d9c14bb651fe52b9a65cf, type: 3}
+  lightningCount: 5
+  lightningSpacing: 1.8
+  lightningDelay: 0.15
   cooldown: 10
   timer: 0
 --- !u!114 &406872458
@@ -2325,6 +2329,7 @@ GameObject:
   - component: {fileID: 2003825909}
   - component: {fileID: 2003825911}
   - component: {fileID: 2003825910}
+  - component: {fileID: 2003825912}
   m_Layer: 0
   m_Name: Layer_Sky
   m_TagString: Untagged
@@ -2404,6 +2409,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003825908}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &2003825912
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003825908}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5226d95f3f3657b4686af407733a299c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2135187342
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 247557597318109050}
   - component: {fileID: 429584851540369002}
   - component: {fileID: 243665756703234087}
+  - component: {fileID: 6003714695367352223}
   m_Layer: 0
   m_Name: UltimateLightning
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 6488802846403167074}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -5, z: 0}
+  m_LocalScale: {x: 1.5, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,3 +115,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6003714695367352223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6488802846403167074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 266931a48e28cd845a964731affaa15b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  lifeTime: 0.5
+  damage: 30
+  radius: 0.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
