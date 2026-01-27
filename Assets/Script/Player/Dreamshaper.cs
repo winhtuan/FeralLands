@@ -7,6 +7,8 @@ public class Dreamshaper : MonoBehaviour
     [HideInInspector] public PlayerJump jump;
     [HideInInspector] public PlayerCastOrb castOrb;
     [HideInInspector] public PlayerMeleeAttack melee;
+    [HideInInspector] public PlayerUltimate ulti;
+    [HideInInspector] public PlayerActionState action;
 
     void Awake()
     {
@@ -14,6 +16,8 @@ public class Dreamshaper : MonoBehaviour
         jump = GetComponent<PlayerJump>();
         castOrb = GetComponent<PlayerCastOrb>();
         melee = GetComponent<PlayerMeleeAttack>();
+        ulti = GetComponent<PlayerUltimate>();
+        action = GetComponent<PlayerActionState>();
     }
 
     void OnDrawGizmosSelected()

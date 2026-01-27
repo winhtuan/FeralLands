@@ -19,11 +19,13 @@ public class PlayerMeleeAttack : MonoBehaviour
 
     Animator animator;
     PlayerMovement movement;
+    PlayerActionState action;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
         movement = GetComponent<PlayerMovement>();
+        action = GetComponent<PlayerActionState>();
     }
 
     void Update()
@@ -33,12 +35,14 @@ public class PlayerMeleeAttack : MonoBehaviour
 
     void HandleMelee()
     {
+        if (action.IsBusy) return;
+
         timer -= Time.deltaTime;
 
-        if (Keyboard.current.kKey.wasPressedThisFrame && timer <= 0 && !isAttacking)
+        if (Keyboard.current.hKey.wasPressedThisFrame && timer <= 0)
         {
+            action.SetBusy(true);
             timer = attackCooldown;
-            isAttacking = true;
             animator.SetTrigger("Melee");
         }
     }
@@ -63,7 +67,7 @@ public class PlayerMeleeAttack : MonoBehaviour
 
     public void EndMelee()
     {
-        isAttacking = false;
+        action.SetBusy(false);
     }
 
     void OnDrawGizmosSelected()

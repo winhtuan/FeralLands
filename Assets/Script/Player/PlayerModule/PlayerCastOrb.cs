@@ -19,11 +19,13 @@ public class PlayerCastOrb : MonoBehaviour
 
     Animator animator;
     PlayerMovement movement;
+    PlayerActionState action;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
         movement = GetComponent<PlayerMovement>();
+        action = GetComponent<PlayerActionState>();
     }
 
     void Update()
@@ -33,12 +35,14 @@ public class PlayerCastOrb : MonoBehaviour
 
     void HandleCast()
     {
+        if (action.IsBusy) return;
+
         fireTimer -= Time.deltaTime;
 
-        if (Keyboard.current.jKey.wasPressedThisFrame && fireTimer <= 0 && !isCasting)
+        if (Keyboard.current.jKey.wasPressedThisFrame && fireTimer <= 0)
         {
+            action.SetBusy(true);
             fireTimer = fireCooldown;
-            isCasting = true;
             animator.SetTrigger("CastOrb");
         }
     }
@@ -65,7 +69,7 @@ public class PlayerCastOrb : MonoBehaviour
 
     public void EndCast()
     {
-        isCasting = false;
+        action.SetBusy(false);
     }
 
     void OnDrawGizmosSelected()
