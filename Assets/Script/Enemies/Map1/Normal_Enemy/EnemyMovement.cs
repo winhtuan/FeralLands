@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyMovement : EnemyBase
+public class EnemyMovement : NormalEnemyBase
 {
     [Header("Movement")]
     public float moveSpeed = 2f;
@@ -106,7 +106,7 @@ public class EnemyMovement : EnemyBase
     {
         attackTimer = attackCooldown; // khóa spam
         SetSpeed(0);
-        BaseAttack(); // Trigger Animator "Attack"
+        Attack(); // Trigger Animator "Attack"
     }
 
     // Vẽ Gizmos để dễ dàng căn chỉnh trong Unity Editor
