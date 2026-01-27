@@ -7,15 +7,14 @@ public class PlayerCastOrb : MonoBehaviour
 
     [Header("Orb Settings")]
     public float orbSpeed = 25f;
-    public float fireCooldown = 0.3f;
     public int orbDamage = 10;
     public float orbScale = 1.5f;
 
     [Header("Spawn Offset")]
     public Vector2 fireOffset = new Vector2(0.4f, -0.1f);
 
-    float fireTimer;
-    bool isCasting;
+    public float fireCooldown = 0.5f;
+    public float fireTimer;
 
     Animator animator;
     PlayerMovement movement;
@@ -37,7 +36,8 @@ public class PlayerCastOrb : MonoBehaviour
     {
         if (action.IsBusy) return;
 
-        fireTimer -= Time.deltaTime;
+        if (fireTimer > 0)
+            fireTimer -= Time.deltaTime;
 
         if (Keyboard.current.jKey.wasPressedThisFrame && fireTimer <= 0)
         {
@@ -58,7 +58,11 @@ public class PlayerCastOrb : MonoBehaviour
                            new Vector2(fireOffset.x * dir, fireOffset.y);
 
         GameObject orbObj = Instantiate(lightOrbPrefab, spawnPos, Quaternion.identity);
-        orbObj.transform.localScale = Vector3.one * orbScale;
+
+        Vector3 scale = Vector3.one * orbScale;
+        scale.x *= dir; // lật khi quay trái
+        orbObj.transform.localScale = scale;
+
 
         LightOrb orb = orbObj.GetComponent<LightOrb>();
         if (orb == null) return;
@@ -82,6 +86,11 @@ public class PlayerCastOrb : MonoBehaviour
         Vector2 pos = (Vector2)transform.position + new Vector2(fireOffset.x * dir, fireOffset.y);
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(pos, 0.05f);
+    }
+
+    public float GetCooldownPercent()
+    {
+        return Mathf.Clamp01(fireTimer / fireCooldown);
     }
 
 }

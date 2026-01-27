@@ -6,11 +6,10 @@ public class PlayerUltimate : MonoBehaviour
     [Header("Ultimate Settings")]
     public float ultimateRadius = 1.2f;
     public int ultimateDamage = 50;
-    public float cooldown = 10f;
     public LayerMask enemyLayer;
 
-    float timer;
-    bool isUltimate;
+    public float cooldown = 10f;
+    public float timer;
 
     Animator animator;
     PlayerActionState action;
@@ -26,7 +25,8 @@ public class PlayerUltimate : MonoBehaviour
     {
         if (action.IsBusy) return;
 
-        timer -= Time.deltaTime;
+        if (timer > 0)
+            timer -= Time.deltaTime;
 
         if (Keyboard.current.uKey.wasPressedThisFrame && timer <= 0)
         {
@@ -57,6 +57,11 @@ public class PlayerUltimate : MonoBehaviour
     public void EndUltimate()
     {
         action.SetBusy(false);
+    }
+
+    public float GetCooldownPercent()
+    {
+        return Mathf.Clamp01(timer / cooldown);
     }
 
     void OnDrawGizmosSelected()

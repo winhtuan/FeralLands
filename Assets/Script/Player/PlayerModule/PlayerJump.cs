@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerJump : MonoBehaviour
 {
-    public float jumpForce = 8f;
+    public float jumpForce = 10f;
     public LayerMask groundLayer;
     public Transform groundCheck;
     public float groundRadius = 0.2f;
