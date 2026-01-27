@@ -3,14 +3,14 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 6f;
+    public float moveSpeed = 3f;
 
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator animator;
 
     float moveInput;
-    float facing = 1; // 1 = right, -1 = left
+    float facing = 1; 
     public float Facing => facing;
 
     void Awake()
