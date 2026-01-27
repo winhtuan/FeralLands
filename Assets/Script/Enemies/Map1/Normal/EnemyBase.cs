@@ -3,7 +3,7 @@ using System;
 
 public abstract class EnemyBase : MonoBehaviour, IDamageable
 {
-    protected Animator animator;
+    protected Animator enemyAnim;
 
     [Header("Stats")]
     public int maxHP = 50;
@@ -18,7 +18,7 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
 
     protected virtual void Awake()
     {
-        animator = GetComponent<Animator>();
+        enemyAnim = GetComponent<Animator>();
         currentHP = maxHP;
 
         if (hitbox == null)
@@ -40,24 +40,24 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
 
     public void SetSpeed(float speed)
     {
-        if (animator != null)
-            animator.SetFloat("Speed", speed);
+        if (enemyAnim != null)
+            enemyAnim.SetFloat("Speed", speed);
     }
 
-    public void Attack()
+    public virtual void BaseAttack()
     {
-        if (animator != null)
-            animator.SetTrigger("Attack");
+        if (enemyAnim != null)
+            enemyAnim.SetTrigger("Attack");
     }
 
-    public virtual void Die()
+    protected virtual void Die()
     {
         if (IsDead) return;
         IsDead = true;
 
         OnDeath?.Invoke();
-        if (animator != null)
-            animator.SetTrigger("Die");
+        if (enemyAnim != null)
+            enemyAnim.SetTrigger("Die");
         
         // Disable collider to stop physical interactions
         Collider2D col = GetComponent<Collider2D>();
