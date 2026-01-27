@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 04e787af2835eae4a98d84bad9781870
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e745a055bd6bf114a84a7184ca338162
+  - enabled: 1
+    path: Assets/Scenes/MapBeach.unity
+    guid: e2a1514146b29e843baa458f5a054e3c
+  - enabled: 1
+    path: Assets/Scenes/MapBeachTestQuan.unity
+    guid: 6dd05dba6a4be0448a90c00163ae000e
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
     IEnumerator LoadSceneDelay()
     {
         yield return new WaitForSeconds(delayBeforeLoad);
-        SceneManager.LoadScene("MapBeach");
+        SceneManager.LoadScene("IntroScene");
     }
 
     public void QuitGame()
