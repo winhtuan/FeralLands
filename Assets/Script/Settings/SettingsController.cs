@@ -63,6 +63,11 @@ public class SettingsController : MonoBehaviour
     {
         float db = Mathf.Log10(Mathf.Clamp(value, 0.0001f, 1f)) * 20;
         if (mainMixer != null) mainMixer.SetFloat(MIXER_MUSIC, db);
+        
+        // Gọi AudioManager để đồng bộ (nếu không dùng Mixer thì code này sẽ chỉnh volume source)
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.SetMusicVolume(value);
+
         PlayerPrefs.SetFloat("Setting_Music", value);
         PlayerPrefs.Save();
     }
@@ -71,6 +76,10 @@ public class SettingsController : MonoBehaviour
     {
         float db = Mathf.Log10(Mathf.Clamp(value, 0.0001f, 1f)) * 20;
         if (mainMixer != null) mainMixer.SetFloat(MIXER_SFX, db);
+
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.SetSFXVolume(value);
+
         PlayerPrefs.SetFloat("Setting_SFX", value);
         PlayerPrefs.Save();
     }
