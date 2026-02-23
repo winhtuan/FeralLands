@@ -20,7 +20,35 @@ public class Dreamshaper : MonoBehaviour
         ulti = GetComponent<PlayerUltimate>();
         action = GetComponent<PlayerActionState>();
         mana = GetComponent<PlayerEnergy>();
+    }
 
+    /// <summary>
+    /// Khoá (false) hoặc mở khoá (true) toàn bộ module điều khiển nhân vật.
+    /// </summary>
+    public void SetAllModulesEnabled(bool state)
+    {
+        // Fallback: lấy lại component nếu null (phòng trường hợp Awake chưa chạy đúng lúc)
+        if (movement == null) movement = GetComponent<PlayerMovement>();
+        if (jump     == null) jump     = GetComponent<PlayerJump>();
+        if (castOrb  == null) castOrb  = GetComponent<PlayerCastOrb>();
+        if (melee    == null) melee    = GetComponent<PlayerMeleeAttack>();
+        if (ulti     == null) ulti     = GetComponent<PlayerUltimate>();
+        if (mana     == null) mana     = GetComponent<PlayerEnergy>();
+
+        Debug.Log($"[Dreamshaper] SetAllModulesEnabled({state}) | " +
+                  $"movement={movement != null} | jump={jump != null} | " +
+                  $"castOrb={castOrb != null} | melee={melee != null} | ulti={ulti != null}");
+
+        if (movement != null) movement.enabled = state;
+        if (jump     != null) jump.enabled     = state;
+        if (castOrb  != null) castOrb.enabled  = state;
+        if (melee    != null) melee.enabled     = state;
+        if (ulti     != null) ulti.enabled      = state;
+        if (mana     != null) mana.enabled      = state;
+
+        // Xác nhận trạng thái sau khi set
+        if (movement != null)
+            Debug.Log($"[Dreamshaper] Sau khi set: movement.enabled = {movement.enabled}");
     }
 
     void OnDrawGizmosSelected()
@@ -33,5 +61,4 @@ public class Dreamshaper : MonoBehaviour
             Gizmos.DrawWireSphere(jump.groundCheck.position, jump.groundRadius);
         }
     }
-
 }

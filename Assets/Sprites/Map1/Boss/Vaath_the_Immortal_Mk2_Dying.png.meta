@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 91f69eb3da2563e488b4b8cae106971e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1470609514044677202
+    second: Vaath_the_Immortal_Mk2_Dying_0
+  - first:
+      213: -2070861119971417142
+    second: Vaath_the_Immortal_Mk2_Dying_1
+  - first:
+      213: -5734391322715042731
+    second: Vaath_the_Immortal_Mk2_Dying_2
+  - first:
+      213: -5450970276556200756
+    second: Vaath_the_Immortal_Mk2_Dying_3
+  - first:
+      213: 6526416979616984456
+    second: Vaath_the_Immortal_Mk2_Dying_4
+  - first:
+      213: 3353800811279555449
+    second: Vaath_the_Immortal_Mk2_Dying_5
+  - first:
+      213: -2368111322058591654
+    second: Vaath_the_Immortal_Mk2_Dying_6
+  - first:
+      213: -4401533588260633465
+    second: Vaath_the_Immortal_Mk2_Dying_7
+  - first:
+      213: -1679625070841205221
+    second: Vaath_the_Immortal_Mk2_Dying_8
+  - first:
+      213: 5008224924231188758
+    second: Vaath_the_Immortal_Mk2_Dying_9
+  - first:
+      213: 7508774982044780740
+    second: Vaath_the_Immortal_Mk2_Dying_10
+  - first:
+      213: -6905790834425461793
+    second: Vaath_the_Immortal_Mk2_Dying_11
+  - first:
+      213: 4080340538048739071
+    second: Vaath_the_Immortal_Mk2_Dying_12
+  - first:
+      213: 5787367870785067338
+    second: Vaath_the_Immortal_Mk2_Dying_13
+  - first:
+      213: -4207386483847759376
+    second: Vaath_the_Immortal_Mk2_Dying_14
+  - first:
+      213: 6219914911239148109
+    second: Vaath_the_Immortal_Mk2_Dying_15
+  - first:
+      213: -780409074840532388
+    second: Vaath_the_Immortal_Mk2_Dying_16
+  - first:
+      213: -2409262955057909264
+    second: Vaath_the_Immortal_Mk2_Dying_17
+  - first:
+      213: 7564931036143668771
+    second: Vaath_the_Immortal_Mk2_Dying_18
+  - first:
+      213: -1556529194378673087
+    second: Vaath_the_Immortal_Mk2_Dying_19
+  - first:
+      213: 2841035437312494179
+    second: Vaath_the_Immortal_Mk2_Dying_20
+  - first:
+      213: 5548548770675230843
+    second: Vaath_the_Immortal_Mk2_Dying_21
+  - first:
+      213: -8382917322831964704
+    second: Vaath_the_Immortal_Mk2_Dying_22
+  - first:
+      213: 9036904235162613045
+    second: Vaath_the_Immortal_Mk2_Dying_23
+  - first:
+      213: 5965543735703286724
+    second: Vaath_the_Immortal_Mk2_Dying_24
+  - first:
+      213: -3124364740810692702
+    second: Vaath_the_Immortal_Mk2_Dying_25
+  - first:
+      213: 3746998038552743169
+    second: Vaath_the_Immortal_Mk2_Dying_26
+  - first:
+      213: 340450795630458176
+    second: Vaath_the_Immortal_Mk2_Dying_27
+  - first:
+      213: -7558678976598680261
+    second: Vaath_the_Immortal_Mk2_Dying_28
+  - first:
+      213: -5412956739881256677
+    second: Vaath_the_Immortal_Mk2_Dying_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3ae084078579be0800000000000000
+      internalID: -1470609514044677202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 456
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3afe488c2d243e0800000000000000
+      internalID: -2070861119971417142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 456
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ccc7e59795b60b0800000000000000
+      internalID: -5734391322715042731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 456
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4a7a8f9634a54b0800000000000000
+      internalID: -5450970276556200756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_4
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 456
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88de52e1aad729a50800000000000000
+      internalID: 6526416979616984456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b1cb391181b8e20800000000000000
+      internalID: 3353800811279555449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_6
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52fd14ac47c22fd0800000000000000
+      internalID: -2368111322058591654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78446c4958c9ae2c0800000000000000
+      internalID: -4401533588260633465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_8
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e6ba8a5e5c0b8e0800000000000000
+      internalID: -1679625070841205221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_9
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611ce0ca80ac08540800000000000000
+      internalID: 5008224924231188758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c88e1f1017843860800000000000000
+      internalID: 7508774982044780740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_11
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd30ce413d3b920a0800000000000000
+      internalID: -6905790834425461793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_12
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6750dc91840a830800000000000000
+      internalID: 4080340538048739071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_13
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4917aa6a6cd05050800000000000000
+      internalID: 5787367870785067338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9797dd84c5c95c0800000000000000
+      internalID: -4207386483847759376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42909148a3915650800000000000000
+      internalID: 6219914911239148109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_16
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a83aac41e6b25f0800000000000000
+      internalID: -780409074840532388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_17
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1f3417b14909ed0800000000000000
+      internalID: -2409262955057909264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_18
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ecba752b80cf860800000000000000
+      internalID: 7564931036143668771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_19
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144c88ec1f8166ae0800000000000000
+      internalID: -1556529194378673087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ace438da26d6720800000000000000
+      internalID: 2841035437312494179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Dying_21
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78070f95b7600d40800000000000000
+      internalID: 5548548770675230843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4d964743654a91549ab722833f14168a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":114.0,"y":114.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Vaath_the_Immortal_Mk2_Dying_0: -1470609514044677202
+      Vaath_the_Immortal_Mk2_Dying_1: -2070861119971417142
+      Vaath_the_Immortal_Mk2_Dying_10: 7508774982044780740
+      Vaath_the_Immortal_Mk2_Dying_11: -6905790834425461793
+      Vaath_the_Immortal_Mk2_Dying_12: 4080340538048739071
+      Vaath_the_Immortal_Mk2_Dying_13: 5787367870785067338
+      Vaath_the_Immortal_Mk2_Dying_14: -4207386483847759376
+      Vaath_the_Immortal_Mk2_Dying_15: 6219914911239148109
+      Vaath_the_Immortal_Mk2_Dying_16: -780409074840532388
+      Vaath_the_Immortal_Mk2_Dying_17: -2409262955057909264
+      Vaath_the_Immortal_Mk2_Dying_18: 7564931036143668771
+      Vaath_the_Immortal_Mk2_Dying_19: -1556529194378673087
+      Vaath_the_Immortal_Mk2_Dying_2: -5734391322715042731
+      Vaath_the_Immortal_Mk2_Dying_20: 2841035437312494179
+      Vaath_the_Immortal_Mk2_Dying_21: 5548548770675230843
+      Vaath_the_Immortal_Mk2_Dying_3: -5450970276556200756
+      Vaath_the_Immortal_Mk2_Dying_4: 6526416979616984456
+      Vaath_the_Immortal_Mk2_Dying_5: 3353800811279555449
+      Vaath_the_Immortal_Mk2_Dying_6: -2368111322058591654
+      Vaath_the_Immortal_Mk2_Dying_7: -4401533588260633465
+      Vaath_the_Immortal_Mk2_Dying_8: -1679625070841205221
+      Vaath_the_Immortal_Mk2_Dying_9: 5008224924231188758
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

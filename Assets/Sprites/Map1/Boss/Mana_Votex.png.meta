@@ -1,0 +1,2860 @@
+fileFormatVersion: 2
+guid: a44dc0d82cfe2b8498883904df6ec1a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4065234645170681956
+    second: Mana_Votex_0
+  - first:
+      213: -8981964933619924012
+    second: Mana_Votex_1
+  - first:
+      213: -8407115603466927114
+    second: Mana_Votex_2
+  - first:
+      213: -8508885896606610054
+    second: Mana_Votex_3
+  - first:
+      213: -1446030173294470399
+    second: Mana_Votex_4
+  - first:
+      213: 96880694137796680
+    second: Mana_Votex_5
+  - first:
+      213: -49553944684172986
+    second: Mana_Votex_6
+  - first:
+      213: 3479887383793269012
+    second: Mana_Votex_7
+  - first:
+      213: 5056861995521025531
+    second: Mana_Votex_8
+  - first:
+      213: -4902375570755555020
+    second: Mana_Votex_9
+  - first:
+      213: -2081544162806568392
+    second: Mana_Votex_10
+  - first:
+      213: 7336043018684146416
+    second: Mana_Votex_11
+  - first:
+      213: -8120569952476831507
+    second: Mana_Votex_12
+  - first:
+      213: 3763290328876079292
+    second: Mana_Votex_13
+  - first:
+      213: -3250621322463621960
+    second: Mana_Votex_14
+  - first:
+      213: 2874256283644505074
+    second: Mana_Votex_15
+  - first:
+      213: 3323958958220831141
+    second: Mana_Votex_16
+  - first:
+      213: 5065302921457701653
+    second: Mana_Votex_17
+  - first:
+      213: -8586236477348155931
+    second: Mana_Votex_18
+  - first:
+      213: 4313273254311937163
+    second: Mana_Votex_19
+  - first:
+      213: -1695502967399082628
+    second: Mana_Votex_20
+  - first:
+      213: 8409536253447729362
+    second: Mana_Votex_21
+  - first:
+      213: 5991604808766546283
+    second: Mana_Votex_22
+  - first:
+      213: -7233853821566650666
+    second: Mana_Votex_23
+  - first:
+      213: 3264005660557065635
+    second: Mana_Votex_24
+  - first:
+      213: -5349359455047310686
+    second: Mana_Votex_25
+  - first:
+      213: -4059660934204790452
+    second: Mana_Votex_26
+  - first:
+      213: 8018502965462628118
+    second: Mana_Votex_27
+  - first:
+      213: -6832946234189419295
+    second: Mana_Votex_28
+  - first:
+      213: 2918429117467083745
+    second: Mana_Votex_29
+  - first:
+      213: -2543102349811052829
+    second: Mana_Votex_30
+  - first:
+      213: -465149473984724449
+    second: Mana_Votex_31
+  - first:
+      213: 7778582710829823938
+    second: Mana_Votex_32
+  - first:
+      213: -1850028600446730677
+    second: Mana_Votex_33
+  - first:
+      213: 5117200848770919673
+    second: Mana_Votex_34
+  - first:
+      213: -1563303062287870202
+    second: Mana_Votex_35
+  - first:
+      213: -7434655682641928339
+    second: Mana_Votex_36
+  - first:
+      213: -5121738795833010903
+    second: Mana_Votex_37
+  - first:
+      213: 3020270045132939315
+    second: Mana_Votex_38
+  - first:
+      213: -1606092760342215441
+    second: Mana_Votex_39
+  - first:
+      213: -7445046278367156873
+    second: Mana_Votex_40
+  - first:
+      213: -1445042761097454809
+    second: Mana_Votex_41
+  - first:
+      213: -8339332956772338196
+    second: Mana_Votex_42
+  - first:
+      213: -2465124093069321513
+    second: Mana_Votex_43
+  - first:
+      213: 4734996717169566738
+    second: Mana_Votex_44
+  - first:
+      213: -6438032027854565875
+    second: Mana_Votex_45
+  - first:
+      213: 6813226727663295664
+    second: Mana_Votex_46
+  - first:
+      213: 891195302333807088
+    second: Mana_Votex_47
+  - first:
+      213: -7674942776971523010
+    second: Mana_Votex_48
+  - first:
+      213: 708981517055085577
+    second: Mana_Votex_49
+  - first:
+      213: 3445864052033112276
+    second: Mana_Votex_50
+  - first:
+      213: 6763162471495844656
+    second: Mana_Votex_51
+  - first:
+      213: -7899935532259853744
+    second: Mana_Votex_52
+  - first:
+      213: 741880993932045205
+    second: Mana_Votex_53
+  - first:
+      213: -789859092333012956
+    second: Mana_Votex_54
+  - first:
+      213: -6291798264740392057
+    second: Mana_Votex_55
+  - first:
+      213: 4382746265537814650
+    second: Mana_Votex_56
+  - first:
+      213: 2159982330162206678
+    second: Mana_Votex_57
+  - first:
+      213: -5860421104118500796
+    second: Mana_Votex_58
+  - first:
+      213: 3517117479234213662
+    second: Mana_Votex_59
+  - first:
+      213: 4644710655643018431
+    second: Mana_Votex_60
+  - first:
+      213: 8111368423037097255
+    second: Mana_Votex_61
+  - first:
+      213: 7104914828620550585
+    second: Mana_Votex_62
+  - first:
+      213: 5854756607685096295
+    second: Mana_Votex_63
+  - first:
+      213: 8721763703781628132
+    second: Mana_Votex_64
+  - first:
+      213: 1725950827600564680
+    second: Mana_Votex_65
+  - first:
+      213: -8139342237745661436
+    second: Mana_Votex_66
+  - first:
+      213: 4767829267043043196
+    second: Mana_Votex_67
+  - first:
+      213: 3018913465234763955
+    second: Mana_Votex_68
+  - first:
+      213: 7037435284888809235
+    second: Mana_Votex_69
+  - first:
+      213: -951433426811676683
+    second: Mana_Votex_70
+  - first:
+      213: -6288529290460349194
+    second: Mana_Votex_71
+  - first:
+      213: 5234846607033169484
+    second: Mana_Votex_72
+  - first:
+      213: -5786676417866877679
+    second: Mana_Votex_73
+  - first:
+      213: 5699923964380920045
+    second: Mana_Votex_74
+  - first:
+      213: 1868399959079113477
+    second: Mana_Votex_75
+  - first:
+      213: -4522141500654089818
+    second: Mana_Votex_76
+  - first:
+      213: -7986321782252913929
+    second: Mana_Votex_77
+  - first:
+      213: -4218325274925914527
+    second: Mana_Votex_78
+  - first:
+      213: 7867344791960533144
+    second: Mana_Votex_79
+  - first:
+      213: 4768245110528176310
+    second: Mana_Votex_80
+  - first:
+      213: 6382504836700686754
+    second: Mana_Votex_81
+  - first:
+      213: 8998195832771513441
+    second: Mana_Votex_82
+  - first:
+      213: 495192718237050471
+    second: Mana_Votex_83
+  - first:
+      213: -5797918456734264190
+    second: Mana_Votex_84
+  - first:
+      213: -4515054794312602505
+    second: Mana_Votex_85
+  - first:
+      213: -8770825619704851627
+    second: Mana_Votex_86
+  - first:
+      213: -8276413436780600911
+    second: Mana_Votex_87
+  - first:
+      213: -8423954971137622562
+    second: Mana_Votex_88
+  - first:
+      213: 8153929048962109423
+    second: Mana_Votex_89
+  - first:
+      213: 2134936372167146931
+    second: Mana_Votex_90
+  - first:
+      213: 2664299776497224992
+    second: Mana_Votex_91
+  - first:
+      213: 6564179752178721692
+    second: Mana_Votex_92
+  - first:
+      213: -3236782514191221155
+    second: Mana_Votex_93
+  - first:
+      213: 5379818707561860953
+    second: Mana_Votex_94
+  - first:
+      213: -7515131384822040780
+    second: Mana_Votex_95
+  - first:
+      213: 6789823783327919400
+    second: Mana_Votex_96
+  - first:
+      213: -6287688606956675932
+    second: Mana_Votex_97
+  - first:
+      213: -7817049038896118043
+    second: Mana_Votex_98
+  - first:
+      213: -3572034628006983686
+    second: Mana_Votex_99
+  - first:
+      213: 4342701069770942394
+    second: Mana_Votex_100
+  - first:
+      213: -3117733334344060406
+    second: Mana_Votex_101
+  - first:
+      213: 5149777259138879815
+    second: Mana_Votex_102
+  - first:
+      213: 2814174110183594543
+    second: Mana_Votex_103
+  - first:
+      213: 1586012218278360998
+    second: Mana_Votex_104
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mana_Votex_0
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 738
+        width: 390
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468720a0f5d9a6830800000000000000
+      internalID: 4065234645170681956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_1
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 738
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3c19a3b76a95380800000000000000
+      internalID: -8981964933619924012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 572
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3c5b5c6ece35b80800000000000000
+      internalID: -8407115603466927114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 571
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d8e6aeb5d5ae980800000000000000
+      internalID: -8508885896606610054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 570
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b5942083baeebe0800000000000000
+      internalID: -1446030173294470399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_5
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 572
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8483daf5a70385100800000000000000
+      internalID: 96880694137796680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_6
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 570
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64961e923f2ff4ff0800000000000000
+      internalID: -49553944684172986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_7
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 571
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4197c59632b0b4030800000000000000
+      internalID: 3479887383793269012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_8
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 558
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5243941359d2640800000000000000
+      internalID: 5056861995521025531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_9
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 555
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431ff8d646347fbb0800000000000000
+      internalID: -4902375570755555020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 558
+        width: 40
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a60a7cc9edc13e0800000000000000
+      internalID: -2081544162806568392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_11
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 558
+        width: 40
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f227a9e14cdec560800000000000000
+      internalID: 7336043018684146416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_12
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 564
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de068e027a0fd4f80800000000000000
+      internalID: -8120569952476831507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_13
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 558
+        width: 43
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb852578d94e93430800000000000000
+      internalID: 3763290328876079292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_14
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 373
+        width: 71
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bcce37312973e2d0800000000000000
+      internalID: -3250621322463621960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_15
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 373
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fba01c8cd863e720800000000000000
+      internalID: 2874256283644505074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_16
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 470
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9eab8bf03112e20800000000000000
+      internalID: 3323958958220831141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_17
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 408
+        width: 33
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5131c318b229b4640800000000000000
+      internalID: 5065302921457701653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_18
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 476
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed692a6a6f87d880800000000000000
+      internalID: -8586236477348155931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_19
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 462
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84c47e0c23dbdb30800000000000000
+      internalID: 4313273254311937163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_20
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 472
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c759e88c80d5878e0800000000000000
+      internalID: -1695502967399082628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_21
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 480
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d07588baaca4b470800000000000000
+      internalID: 8409536253447729362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_22
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 478
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b616d0524d4762350800000000000000
+      internalID: 5991604808766546283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_23
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 473
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6fa60a6403c9b90800000000000000
+      internalID: -7233853821566650666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_24
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 475
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad3e56dad31c4d20800000000000000
+      internalID: 3264005660557065635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_25
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 466
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a22702fae143c5b0800000000000000
+      internalID: -5349359455047310686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_26
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 433
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49613ca3ef29a7c0800000000000000
+      internalID: -4059660934204790452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_27
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 468
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617f0d696f1774f60800000000000000
+      internalID: 8018502965462628118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_28
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 456
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ecebcd3a9f7c21a0800000000000000
+      internalID: -6832946234189419295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_29
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 451
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e348c0e1d7508820800000000000000
+      internalID: 2918429117467083745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_30
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 466
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee0d0403e515bcd0800000000000000
+      internalID: -2543102349811052829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_31
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 462
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f124ea394057b89f0800000000000000
+      internalID: -465149473984724449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_32
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 441
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7b10743c313fb60800000000000000
+      internalID: 7778582710829823938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_33
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 445
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e3f0e2ac06356e0800000000000000
+      internalID: -1850028600446730677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_34
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 451
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc61535f03f30740800000000000000
+      internalID: 5117200848770919673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_35
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 395
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6071d08c5280e4ae0800000000000000
+      internalID: -1563303062287870202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_36
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 457
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6fd9c01c0cc2d890800000000000000
+      internalID: -7434655682641928339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_37
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 445
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925590a83bdebe8b0800000000000000
+      internalID: -5121738795833010903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_38
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 400
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330e6ed9a972ae920800000000000000
+      internalID: 3020270045132939315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_39
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 425
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4c977d42306b9e0800000000000000
+      internalID: -1606092760342215441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_40
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 439
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775e499fad1eda890800000000000000
+      internalID: -7445046278367156873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_41
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 435
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b5983d34d22fbe0800000000000000
+      internalID: -1445042761097454809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_42
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 438
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce570e70cdcb44c80800000000000000
+      internalID: -8339332956772338196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_43
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 441
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da9859b2be1acdd0800000000000000
+      internalID: -2465124093069321513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_44
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 433
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214688b5d6616b140800000000000000
+      internalID: 4734996717169566738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_45
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 436
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e04271bf387a6a0800000000000000
+      internalID: -6438032027854565875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_46
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 429
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc519c5c917d8e50800000000000000
+      internalID: 6813226727663295664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_47
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f97a1dd7692e5c00800000000000000
+      internalID: 891195302333807088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_48
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 391
+        width: 10
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c892b35302d7590800000000000000
+      internalID: -7674942776971523010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_49
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 392
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90cc264feeec6d900800000000000000
+      internalID: 708981517055085577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_50
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 424
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8c8bd291b22df20800000000000000
+      internalID: 3445864052033112276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_51
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 417
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03343cf5f649bdd50800000000000000
+      internalID: 6763162471495844656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_52
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 424
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a3a233d7acd5290800000000000000
+      internalID: -7899935532259853744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_53
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 410
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59beee455d0bb4a00800000000000000
+      internalID: 741880993932045205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_54
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 409
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428d0e2275bd905f0800000000000000
+      internalID: -789859092333012956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_55
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 408
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783dab740da0fa8a0800000000000000
+      internalID: -6291798264740392057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_56
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 406
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a702d0af184a2dc30800000000000000
+      internalID: 4382746265537814650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_57
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 373
+        width: 71
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d750763c7cc9fd10800000000000000
+      internalID: 2159982330162206678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_58
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 373
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44270de3e0a9baea0800000000000000
+      internalID: -5860421104118500796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_59
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 373
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17921f76bf4fc030800000000000000
+      internalID: 3517117479234213662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_60
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 288
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4e21a8bb3557040800000000000000
+      internalID: 4644710655643018431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_61
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 284
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7255279da9e519070800000000000000
+      internalID: 8111368423037097255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_62
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 224
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b15557a46ab99260800000000000000
+      internalID: 7104914828620550585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_63
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 226
+        width: 68
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763f0776d16404150800000000000000
+      internalID: 5854756607685096295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_64
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 234
+        width: 71
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e89cc2f0ede90970800000000000000
+      internalID: 8721763703781628132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_65
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 294
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c15cea122fc3f710800000000000000
+      internalID: 1725950827600564680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_66
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 283
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a36dddb5f3b0f80800000000000000
+      internalID: -8139342237745661436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_67
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 283
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77cfc3157bba2240800000000000000
+      internalID: 4767829267043043196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_68
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 236
+        width: 67
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b036fe3dc555e920800000000000000
+      internalID: 3018913465234763955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_69
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 265
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fe89d0b1ef9a160800000000000000
+      internalID: 7037435284888809235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_70
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 274
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f71577d654dbc2f0800000000000000
+      internalID: -951433426811676683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_71
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 269
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcb87aade7aab8a0800000000000000
+      internalID: -6288529290460349194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_72
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 250
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46fed1f049e5a840800000000000000
+      internalID: 5234846607033169484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_73
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 255
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1153ae2057891bfa0800000000000000
+      internalID: -5786676417866877679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_74
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 260
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de839a765a23a1f40800000000000000
+      internalID: 5699923964380920045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_75
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 254
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503d3431dd3ede910800000000000000
+      internalID: 1868399959079113477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_76
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 235
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a90675b3402e31c0800000000000000
+      internalID: -4522141500654089818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_77
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 233
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fab9d207a2ea2190800000000000000
+      internalID: -7986321782252913929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_78
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 234
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1662df8138f7575c0800000000000000
+      internalID: -4218325274925914527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_79
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 239
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 898b352c76c6e2d60800000000000000
+      internalID: 7867344791960533144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_80
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 239
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0760f2aa53c2240800000000000000
+      internalID: 4768245110528176310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_81
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 238
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9c1c04556339850800000000000000
+      internalID: 6382504836700686754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_82
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 225
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c0fb77f6300ec70800000000000000
+      internalID: 8998195832771513441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_83
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 193
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76621e157274fd600800000000000000
+      internalID: 495192718237050471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_84
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 193
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2845cadd1e7a98fa0800000000000000
+      internalID: -5797918456734264190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_85
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 193
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ca29b169d4751c0800000000000000
+      internalID: -4515054794312602505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_86
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 193
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553d8969194c74680800000000000000
+      internalID: -8770825619704851627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_87
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 193
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b12c6e54d5442d80800000000000000
+      internalID: -8276413436780600911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_88
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 64
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddb475f599181b80800000000000000
+      internalID: -8423954971137622562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_89
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 100
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef0027c443982170800000000000000
+      internalID: 8153929048962109423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_90
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 78
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd7511b151d0ad10800000000000000
+      internalID: 2134936372167146931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_91
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 94
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d0549d78e79f420800000000000000
+      internalID: 2664299776497224992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_92
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 78
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93ac62c4b6a81b50800000000000000
+      internalID: 6564179752178721692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_93
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 78
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ebf6ad373a413d0800000000000000
+      internalID: -3236782514191221155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_94
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 86
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95fc93c6c94f8aa40800000000000000
+      internalID: 5379818707561860953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_95
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 63
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 437fa4782d3e4b790800000000000000
+      internalID: -7515131384822040780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_96
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 87
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d62c4c1cc4a3e50800000000000000
+      internalID: 6789823783327919400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_97
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 75
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac931c8684adb8a0800000000000000
+      internalID: -6287688606956675932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_98
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 78
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6c9ccc053448390800000000000000
+      internalID: -7817049038896118043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_99
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 61
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7cf386e659d6ec0800000000000000
+      internalID: -3572034628006983686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_100
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 56
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7e7654d9f544c30800000000000000
+      internalID: 4342701069770942394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_101
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 13
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0237060d069bb4d0800000000000000
+      internalID: -3117733334344060406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_102
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 13
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7419b5be12fa77740800000000000000
+      internalID: 5149777259138879815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_103
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 15
+        width: 55
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a189d6174fd0720800000000000000
+      internalID: 2814174110183594543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mana_Votex_104
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 18
+        width: 217
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a739ef95b5a20610800000000000000
+      internalID: 1586012218278360998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mana_Votex_0: 4065234645170681956
+      Mana_Votex_1: -8981964933619924012
+      Mana_Votex_10: -2081544162806568392
+      Mana_Votex_100: 4342701069770942394
+      Mana_Votex_101: -3117733334344060406
+      Mana_Votex_102: 5149777259138879815
+      Mana_Votex_103: 2814174110183594543
+      Mana_Votex_104: 1586012218278360998
+      Mana_Votex_11: 7336043018684146416
+      Mana_Votex_12: -8120569952476831507
+      Mana_Votex_13: 3763290328876079292
+      Mana_Votex_14: -3250621322463621960
+      Mana_Votex_15: 2874256283644505074
+      Mana_Votex_16: 3323958958220831141
+      Mana_Votex_17: 5065302921457701653
+      Mana_Votex_18: -8586236477348155931
+      Mana_Votex_19: 4313273254311937163
+      Mana_Votex_2: -8407115603466927114
+      Mana_Votex_20: -1695502967399082628
+      Mana_Votex_21: 8409536253447729362
+      Mana_Votex_22: 5991604808766546283
+      Mana_Votex_23: -7233853821566650666
+      Mana_Votex_24: 3264005660557065635
+      Mana_Votex_25: -5349359455047310686
+      Mana_Votex_26: -4059660934204790452
+      Mana_Votex_27: 8018502965462628118
+      Mana_Votex_28: -6832946234189419295
+      Mana_Votex_29: 2918429117467083745
+      Mana_Votex_3: -8508885896606610054
+      Mana_Votex_30: -2543102349811052829
+      Mana_Votex_31: -465149473984724449
+      Mana_Votex_32: 7778582710829823938
+      Mana_Votex_33: -1850028600446730677
+      Mana_Votex_34: 5117200848770919673
+      Mana_Votex_35: -1563303062287870202
+      Mana_Votex_36: -7434655682641928339
+      Mana_Votex_37: -5121738795833010903
+      Mana_Votex_38: 3020270045132939315
+      Mana_Votex_39: -1606092760342215441
+      Mana_Votex_4: -1446030173294470399
+      Mana_Votex_40: -7445046278367156873
+      Mana_Votex_41: -1445042761097454809
+      Mana_Votex_42: -8339332956772338196
+      Mana_Votex_43: -2465124093069321513
+      Mana_Votex_44: 4734996717169566738
+      Mana_Votex_45: -6438032027854565875
+      Mana_Votex_46: 6813226727663295664
+      Mana_Votex_47: 891195302333807088
+      Mana_Votex_48: -7674942776971523010
+      Mana_Votex_49: 708981517055085577
+      Mana_Votex_5: 96880694137796680
+      Mana_Votex_50: 3445864052033112276
+      Mana_Votex_51: 6763162471495844656
+      Mana_Votex_52: -7899935532259853744
+      Mana_Votex_53: 741880993932045205
+      Mana_Votex_54: -789859092333012956
+      Mana_Votex_55: -6291798264740392057
+      Mana_Votex_56: 4382746265537814650
+      Mana_Votex_57: 2159982330162206678
+      Mana_Votex_58: -5860421104118500796
+      Mana_Votex_59: 3517117479234213662
+      Mana_Votex_6: -49553944684172986
+      Mana_Votex_60: 4644710655643018431
+      Mana_Votex_61: 8111368423037097255
+      Mana_Votex_62: 7104914828620550585
+      Mana_Votex_63: 5854756607685096295
+      Mana_Votex_64: 8721763703781628132
+      Mana_Votex_65: 1725950827600564680
+      Mana_Votex_66: -8139342237745661436
+      Mana_Votex_67: 4767829267043043196
+      Mana_Votex_68: 3018913465234763955
+      Mana_Votex_69: 7037435284888809235
+      Mana_Votex_7: 3479887383793269012
+      Mana_Votex_70: -951433426811676683
+      Mana_Votex_71: -6288529290460349194
+      Mana_Votex_72: 5234846607033169484
+      Mana_Votex_73: -5786676417866877679
+      Mana_Votex_74: 5699923964380920045
+      Mana_Votex_75: 1868399959079113477
+      Mana_Votex_76: -4522141500654089818
+      Mana_Votex_77: -7986321782252913929
+      Mana_Votex_78: -4218325274925914527
+      Mana_Votex_79: 7867344791960533144
+      Mana_Votex_8: 5056861995521025531
+      Mana_Votex_80: 4768245110528176310
+      Mana_Votex_81: 6382504836700686754
+      Mana_Votex_82: 8998195832771513441
+      Mana_Votex_83: 495192718237050471
+      Mana_Votex_84: -5797918456734264190
+      Mana_Votex_85: -4515054794312602505
+      Mana_Votex_86: -8770825619704851627
+      Mana_Votex_87: -8276413436780600911
+      Mana_Votex_88: -8423954971137622562
+      Mana_Votex_89: 8153929048962109423
+      Mana_Votex_9: -4902375570755555020
+      Mana_Votex_90: 2134936372167146931
+      Mana_Votex_91: 2664299776497224992
+      Mana_Votex_92: 6564179752178721692
+      Mana_Votex_93: -3236782514191221155
+      Mana_Votex_94: 5379818707561860953
+      Mana_Votex_95: -7515131384822040780
+      Mana_Votex_96: 6789823783327919400
+      Mana_Votex_97: -6287688606956675932
+      Mana_Votex_98: -7817049038896118043
+      Mana_Votex_99: -3572034628006983686
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
