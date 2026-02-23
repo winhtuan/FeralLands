@@ -20,8 +20,16 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    // TEMP DEBUG – xóa sau khi fix xong
+    bool _debugLogged = false;
     void Update()
     {
+        // Chỉ log 1 lần để không spam console
+        if (!_debugLogged)
+        {
+            Debug.Log($"[PlayerMovement] Update đang chạy! moveInput={moveInput}");
+            _debugLogged = true;
+        }
         ReadInput();
         Flip();
         UpdateAnimation();
