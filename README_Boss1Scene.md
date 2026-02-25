@@ -1,286 +1,312 @@
-# Boss1Scene – Tài Liệu Chi Tiết
+# 📖 README – Boss1Scene
 
-> **Cập nhật lần cuối:** 2026-02-21  
-> **Map:** `FeralLands/Assets/Scenes/Boss1Scene.unity`  
-> **Mục tiêu của scene:** Màn chiến Boss đầu tiên, có cutscene intro dùng Timeline + hiện banner tên boss.
+> **FeralLands | Unity 2D Platformer | Boss Map 1**
 
 ---
 
-## 1. Tổng Quan Hierarchy (Cấu Trúc Scene)
+## 1. Tổng quan về Scene
 
+**Boss1Scene** là màn chiến đấu với Boss đầu tiên của game (**"Thần Lằn Bám Kính"** – theo tên hiển thị trong Banner). Đây là một scene khép kín (closed arena) với vách tường cố định hai bên, không có Parallax nền mở rộng như các map thường.
+
+### Mục đích chính của Scene:
+1. **Dungeon Intro Cutscene** – Khi nhân vật bước vào vùng trigger, Boss được đánh thức, camera cutscene chạy, sau đó banner Boss xuất hiện.
+2. **Boss Fight** – Sau khi cutscene kết thúc, nhân vật và Boss bắt đầu chiến đấu.
+
+---
+
+## 2. Hierarchy – Các GameObject trong Scene
+
+| GameObject | Mục đích |
+|---|---|
+| `Main Camera` | Camera chính, gắn `CinemachineBrain` và `CameraFollow` |
+| `CM_FullMap` | Cinemachine Camera nhìn toàn bộ map (OrthographicSize = 10) |
+| `CM_Hero` | Cinemachine Camera theo nhân vật (OrthographicSize = 2.36) |
+| `CM_Boss` | Cinemachine Camera theo Boss (OrthographicSize = 2.68) |
+| `CM_BossStatic` | Cinemachine Camera tĩnh (bị tắt mặc định) |
+| `BossDirector` | `PlayableDirector` – chạy Timeline cutscene Boss |
+| `Dreamshaper` | Nhân vật người chơi (Tag: `Player`) |
+| `BossPosition` | Đối tượng Boss (bị tắt mặc định, chỉ bật khi trigger) |
+| `BossCanvas` | UI Banner Boss (Panel + Animation), bị tắt mặc định |
+| `BossEventTrigger` | Trigger vô hình để phát hiện Player bước vào zone Boss |
+| `Environment` | Nhóm chứa Ground, Wall_Left, Wall_Right, BossEventTrigger |
+| `tinywow_boss1_...` | Sprite nền (background) của map Boss |
+| `EventSystem` | Xử lý Input UI |
+
+### Chi tiết `BossCanvas` (UI Banner):
 ```
-Boss1Scene
-├── Environment (rỗng – group)
-│   ├── Ground_Collider      ← BoxCollider2D, Tag="Ground", dùng để BossLanding phát hiện tiếp đất
-│   ├── Wall_Left            ← BoxCollider2D đứng bên trái, gắn script BossIntroTrigger (disabled)
-│   ├── Wall_Right           ← BoxCollider2D đứng bên phải (chặn Player thoát arena)
-│   └── BossEventTrigger     ← BoxCollider2D **IsTrigger=true**, gắn BossWakeUp.cs (ĐANG HOẠT ĐỘNG)
-│
-├── tinywow_boss1_...        ← SpriteRenderer fullscreen, là background ảnh của map boss
-│
-├── Dreamshaper              ← Nhân vật Player (Tag="Player")
-│   ├── Rigidbody2D (GravityScale=3, Freeze Rotation Z)
-│   ├── BoxCollider2D
-│   ├── Animator (controller Dreamshaper)
-│   ├── PlayerHealth (maxHealth=100)
-│   ├── CameraFollow (offset Y=2, lockY=true)
-│   ├── AttackPoint
-│   └── FirePoint
-│
-├── BossPosition             ← Boss (tạm thời là "Square" sprite), INACTIVE lúc đầu
-│   ├── Rigidbody2D (GravityScale=3, rơi xuống khi SetActive)
-│   ├── BoxCollider2D
-│   ├── BossLanding.cs       ← Script chính điều phối chuỗi sự kiện sau khi boss tiếp đất
-│   └── Square               ← SpriteRenderer (sprite boss placeholder)
-│
-├── BossDirector             ← PlayableDirector chứa BossDirectorTimeline.playable
-│
-├── CM_FullMap               ← CinemachineCamera, OrthographicSize=10 (zoom toàn map)
-├── CM_Hero                  ← CinemachineCamera, OrthographicSize=2.36 (nhìn theo Player)
-│   └── CameraAnchor
-└── CM_Boss                  ← CinemachineCamera, OrthographicSize=2.68 (nhìn theo Boss)
-│
-├── Main Camera              ← Camera chính (Orthographic, size=2.68)
-│   ├── CinemachineBrain     ← Blend mượt giữa các Cinemachine cameras (Style=Ease, Time=2s)
-│   └── CameraFollow         ← script follow nhưng player=null (Cinemachine đảm nhận)
-│
-└── BossCanvas               ← Canvas Overlay (1920×1080), Animator dùng BossCanvas.controller
-    └── BossNamePanel        ← Panel chứa banner boss (được animate bởi BossBannerAnim)
-        ├── Chain_Left       ← Image (màu xám đậm #333), Size 10×1000, pos (-387, 307) – xích trái
-        ├── Chain_Right      ← Image (màu xám đậm #333), Size 10×1000, pos (373, 266) – xích phải
-        ├── BannerBG         ← Image sprite banner, Size 921×515 – nền banner boss
-        └── BossName         ← TextMeshProUGUI, text = "Hoả Ngục Quỷ", fontSize=61.69
+BossCanvas (GameObject - bị tắt mặc định, có Animator)
+└── BossNamePanel (Canvas Group)
+    ├── Chain_Left     (Image – dây xích trái)
+    ├── Chain_Right    (Image – dây xích phải)
+    ├── BannerBG       (Image – nền banner Boss)
+    └── BossName       (TextMeshProUGUI – "Thần Lằn Bám Kính")
 ```
 
 ---
 
-## 2. Timeline Intro Boss (`BossDirectorTimeline.playable`)
+## 3. Các Script liên quan đến Boss1Scene
 
-### Cấu Trúc Timeline
+### 3.1 `BossWakeUp.cs` – Trigger khóa nhân vật & bật Boss
 
-Timeline chỉ có **1 track duy nhất**: `Cinemachine Track`, gồm **4 clip camera** nối tiếp nhau:
+> **Đường dẫn:** `Assets/Script/TimeLineBoss1/BossWakeUp.cs`  
+> **Gắn trên:** `BossEventTrigger` (GameObject trigger vô hình trong Environment)
 
-| Thứ tự | Tên Clip      | Bắt đầu (s) | Thời lượng (s) | Camera Virtual     | Tác dụng                                    |
-|--------|---------------|-------------|----------------|--------------------|---------------------------------------------|
-| 1      | `CM_FullMap`  | 0.0         | 1.0            | `CM_FullMap`       | Zoom ra toàn map (OrthographicSize=10)      |
-| 2      | `CM_Hero`     | 0.5         | 3.45           | `CM_Hero`          | Blend sang camera nhìn Player (blend in 0.5s)|
-| 3      | `CM_Boss`     | 1.5         | 4.5            | `CM_Boss`          | Blend sang camera nhìn Boss (blend in 2.45s)|
-| 4      | `CM_FullMap`  | 5.5         | 0.5            | `CM_FullMap`       | Kết thúc – blend về toàn map (blend in 0.5s)|
+**Chức năng:**
+- Khi nhân vật (`Tag: Player`) bước vào vùng trigger, script này:
+  1. Dừng vận tốc nhân vật (`linearVelocity = Vector2.zero`)
+  2. **Khóa toàn bộ module điều khiển** bằng `player.SetAllModulesEnabled(false)`
+  3. Bật đối tượng Boss lên (`bossObject.SetActive(true)`) → Boss rơi xuống từ trên cao
+  4. Hủy trigger (`Destroy(gameObject)`) → chỉ kích hoạt 1 lần
 
-> **Tổng thời lượng Timeline:** ~6 giây  
-> **Blend mặc định (CinemachineBrain):** Style = Ease, Time = 2s
+```csharp
+// BossWakeUp.cs - OnTriggerEnter2D
+playerRb.linearVelocity = Vector2.zero;         // 1. Dừng nhân vật
+player.SetAllModulesEnabled(false);              // 2. KHÓA di chuyển
+bossObject.SetActive(true);                      // 3. Thả Boss xuống
+Destroy(gameObject);                             // 4. Xóa trigger
+```
 
-### Diễn biến Camerawork
+**⚠️ Lưu ý trong Inspector:**
+- `player` field = **null** trong scene → Script tự tìm bằng `FindFirstObjectByType<Dreamshaper>()` ✅
+- `playerRb` = **đã được gán** (fileID: 1763837068) ✅
+- `bossObject` = **đã được gán** (fileID: 452833174) ✅
+
+---
+
+### 3.2 `BossLanding.cs` – Chạy Timeline & Banner, mở khóa sau khi xong
+
+> **Đường dẫn:** `Assets/Script/TimeLineBoss1/BossLanding.cs`  
+> **Gắn trên:** `BossPosition` (đối tượng Boss, bị tắt mặc định)
+
+**Chức năng:** Đây là script **trung tâm** điều khiển toàn bộ cutscene Boss. Khi Boss được bật và rơi xuống chạm đất, Coroutine `QuyTrinhBossRaMat()` sẽ chạy theo trình tự:
 
 ```
-[0.0s] ──► CM_FullMap (zoom toàn map, OrthographicSize=10)
-[0.5s] ──► Bắt đầu blend sang CM_Hero (nhìn Player)
-[1.5s] ──► Bắt đầu blend sang CM_Boss (nhìn Boss đang rơi, blend in dài 2.45s = mượt)
-[5.5s] ──► Blend về CM_FullMap
-[6.0s] ──► Timeline kết thúc → BossLanding.cs tiếp tục
+[Boss bật lên] → OnEnable: khóa lại nhân vật (phòng hờ)
+      ↓
+[Boss rơi chạm Ground] → OnCollisionEnter2D → StartCoroutine
+      ↓
+Bước 1: bossTimeline.Play()  →  WaitForSeconds(bossTimeline.duration)
+      ↓
+Bước 2: bossCanvasObject.SetActive(true) → bossCanvasAnimator.Play("BossBannerAnim")
+         WaitForSeconds(3f)   ← banner hiển thị trong 3 giây
+      ↓
+Bước 3: player.SetAllModulesEnabled(true)  ← MỞ KHÓA di chuyển
+         playerRb.linearVelocity = Vector2.zero
+```
+
+```csharp
+// BossLanding.cs - QuyTrinhBossRaMat()
+bossTimeline.Play();
+yield return new WaitForSeconds((float)bossTimeline.duration);   // Đợi Timeline xong
+
+bossCanvasObject.SetActive(true);
+bossCanvasAnimator.Play("BossBannerAnim", 0, 0);
+yield return new WaitForSeconds(3f);                             // Đợi Banner 3 giây
+
+player.SetAllModulesEnabled(true);   // ✅ MỞ KHÓA
+playerRb.linearVelocity = Vector2.zero;
+```
+
+**⚠️ Lưu ý trong Inspector:**
+- `player` field = **null** trong scene → Script tự tìm bằng `FindFirstObjectByType<Dreamshaper>()` ✅
+- `playerRb` = **null** trong scene → Tự tìm qua `player.GetComponent<Rigidbody2D>()` ✅
+- `bossTimeline` = **đã được gán** (BossDirector) ✅
+- `bossCanvasAnimator` = **đã được gán** (Animator của BossCanvas) ✅
+- `bossCanvasObject` = **đã được gán** (BossCanvas GameObject) ✅
+
+---
+
+### 3.3 `BossTrigger.cs` – Script cũ (KHÔNG SỬ DỤNG)
+
+> **Đường dẫn:** `Assets/Script/TimeLineBoss1/BossTrigger.cs`
+
+Script này là phiên bản cũ được phát triển trước khi có `BossWakeUp`+`BossLanding`. **Hiện tại không gắn vào bất kỳ GameObject nào trong scene.** Code mở khóa di chuyển bên trong bị comment-out:
+
+```csharp
+// if (scriptDiChuyen != null) scriptDiChuyen.enabled = true; // ← bị comment!
+```
+
+> Script này **lỗi thời**, không có tác dụng trong scene. Có thể xóa an toàn.
+
+---
+
+### 3.4 `Dreamshaper.cs` – Quản lý tất cả module nhân vật
+
+> **Đường dẫn:** `Assets/Script/Player/Dreamshaper.cs`  
+> **Gắn trên:** `Dreamshaper` (GameObject nhân vật)
+
+Script trung tâm của nhân vật. Hàm quan trọng nhất:
+
+```csharp
+public void SetAllModulesEnabled(bool state)
+{
+    if (movement != null) movement.enabled = state;  // PlayerMovement
+    if (jump     != null) jump.enabled     = state;  // PlayerJump
+    if (castOrb  != null) castOrb.enabled  = state;  // PlayerCastOrb
+    if (melee    != null) melee.enabled    = state;  // PlayerMeleeAttack
+    if (ulti     != null) ulti.enabled     = state;  // PlayerUltimate
+}
+```
+
+Khi `state = false` → khóa toàn bộ (không di chuyển, không nhảy, không đánh).  
+Khi `state = true` → mở khóa toàn bộ.
+
+**⚠️ Quan sát quan trọng trong scene file:**
+```yaml
+# Dreamshaper GameObject (fileID: 1763837070) - Component Dreamshaper.cs
+movement: {fileID: 0}   ← NULL
+jump:     {fileID: 0}   ← NULL
+castOrb:  {fileID: 0}   ← NULL
+melee:    {fileID: 0}   ← NULL
+ulti:     {fileID: 0}   ← NULL
+action:   {fileID: 0}   ← NULL
+```
+
+Tất cả module đều bị `[HideInInspector]` và được khởi tạo trong `Awake()` → đây là **bình thường**, các giá trị sẽ được lấy lại qua `GetComponent<>()` khi runtime.
+
+---
+
+### 3.5 Camera System – Cinemachine
+
+Scene dùng `CinemachineBrain` trên Main Camera để chuyển đổi giữa các camera:
+
+| Camera | TrackingTarget | OrthographicSize | Dùng khi |
+|---|---|---|---|
+| `CM_FullMap` | Không có | 10 | Nhìn toàn map (Timeline?) |
+| `CM_Hero` | Dreamshaper | 2.36 | Theo nhân vật |
+| `CM_Boss` | BossPosition | 2.68 | Theo Boss (Timeline) |
+| `CM_BossStatic` | Không có | 10 | Bị tắt mặc định |
+
+Timeline `BossDirector` điều khiển việc kích hoạt các camera này theo thứ tự trong cutscene.
+
+---
+
+## 4. Luồng hoạt động đầy đủ khi vào Scene
+
+```
+[Load Boss1Scene]
+       │
+       ▼
+[Dreamshaper xuất hiện ở trái màn hình (-13.7, -4.11)]
+[BossPosition (Boss) đang BỊ TẮT]
+[BossCanvas (bannner UI) đang BỊ TẮT]
+       │
+       ▼ Player bước phải → chạm BossEventTrigger
+[BossWakeUp.OnTriggerEnter2D]
+  → linearVelocity = zero         ← phanh nhân vật
+  → SetAllModulesEnabled(false)   ← KHÓA DI CHUYỂN
+  → BossPosition.SetActive(true)  ← BOSS RƠI TỪ TRÊN XUỐNG
+  → Destroy(BossEventTrigger)
+       │
+       ▼ Boss rơi xuống chạm Ground_Collider (Tag: "Ground")
+[BossLanding.OnCollisionEnter2D]
+  → StartCoroutine(QuyTrinhBossRaMat)
+       │
+       ▼ Bước 1: Timeline
+  → bossTimeline.Play()
+     [Camera chuyển sang CM_Boss hoặc CM_FullMap]
+     [Cutscene ~Xs chạy]
+  → WaitForSeconds(bossTimeline.duration)
+       │
+       ▼ Bước 2: Banner
+  → BossCanvas.SetActive(true)
+  → Animator.Play("BossBannerAnim")
+     [Banner "Thần Lằn Bám Kính" hiện lên]
+  → WaitForSeconds(3f)
+       │
+       ▼ Bước 3: Mở khóa
+  → SetAllModulesEnabled(true)    ← MỞ KHÓA DI CHUYỂN ✅
+  → linearVelocity = zero
+       │
+       ▼
+[BẮT ĐẦU CHIẾN ĐẤU!]
 ```
 
 ---
 
-## 3. Cách Kích Hoạt Intro (Trigger System)
+## 5. ❌ Phân tích BUG: Nhân vật không di chuyển được sau cutscene
 
-### Luồng sự kiện hoàn chỉnh
+### Vấn đề
 
-```
-Player bước vào vùng Wall_Left
-        │
-        ▼ (BossWakeUp.cs – KHÔNG được dùng nữa, xem ghi chú)
-        │
-        ▼ (BossTrigger.cs – chạy thực tế trên Wall_Left, nhưng disabled)
-        │
-        ▼ ──► BossPosition.SetActive(true)
-                │
-                ▼ Boss rơi xuống (Rigidbody2D GravityScale=3)
-                │
-                ▼ Chạm Ground_Collider (Tag="Ground")
-                │
-                ▼ BossLanding.OnCollisionEnter2D()
-                │
-                ▽─────────────────────────────────────────────────┐
-         [Bước 1] BossDirector.Play()                             │
-                  → Timeline camera 6 giây chạy                  │
-                  → yield return WaitForSeconds(6s)               │
-                ▼                                                  │
-         [Bước 2] BossCanvasAnimator.Play("BossBannerAnim")       │
-                  → Banner kéo xuống 3 giây                       │
-                  → yield return WaitForSeconds(3s)               │
-                ▼                                                  │
-         [Bước 3] Debug.Log("FIGHT!")                             │
-                  playerScript.enabled = true ─────────────────────┘
+Sau khi Timeline và Banner chạy xong, nhân vật **vẫn không di chuyển được**.
+
+### Nguyên nhân có thể
+
+#### Nguyên nhân #1 – `player` null trong `BossLanding` (⚠️ Khả năng cao nhất)
+
+Trong Inspector của `BossLanding` (gắn trên `BossPosition`):
+```yaml
+player: {fileID: 0}   ← NULL
+playerRb: {fileID: 0} ← NULL
 ```
 
-### Chi tiết Scripts
+Script dùng `FindFirstObjectByType<Dreamshaper>()` để tự tìm trong `OnEnable()`. **Vấn đề là `OnEnable()` chạy ngay khi `BossPosition.SetActive(true)`** – tức là trước khi `Dreamshaper` có cơ hội khởi tạo đầy đủ. Nếu lúc đó `FindFirstObjectByType` trả về `null`, thì `player` vẫn là `null`, và lệnh:
 
-#### `BossWakeUp.cs` (**Script ĐANG được dùng** – gắn trên `BossEventTrigger`, Enabled)
-- **Vị trí trong scene:** `Environment > BossEventTrigger`, Position=(-12.46, -3.16), Scale=0.646, BoxCollider2D là **Trigger**
-- **Cách hoạt động:** `OnTriggerEnter2D` khi Player chạm → dừng Player (`rbPlayer.linearVelocity = zero`) → tắt `playerScript` → `bossObject.SetActive(true)` → `Destroy(gameObject)` (xóa trigger để không kích hoạt lại)
-- **Kết nối trong Inspector:**
-  - `bossObject` → `BossPosition` (Boss cần bật lên)
-  - `playerScript` → component trên `Dreamshaper`
-  - `playerRb` → Rigidbody2D của `Dreamshaper`
-- **Đây là bước KHỞI ĐẦU của toàn bộ chuỗi sự kiện** – nếu tắt object này thì boss không bao giờ rơi → timeline không chạy.
+```csharp
+player.SetAllModulesEnabled(true);  // ← KHÔNG CHẠY vì player == null
+```
 
-#### `BossTrigger.cs` (Script phiên bản mới, gắn trên `Wall_Left` nhưng **Disabled**)
-- **Cách hoạt động:** `OnTriggerEnter2D` → phanh Player (`rbPlayer.linearVelocity = Vector2.zero`) → `bossTimeline.Play()` → đăng ký event `bossTimeline.stopped` → khi xong hiện thanh máu boss.
-- **Trạng thái trong scene:** `m_Enabled: 0` (bị disable). Script giao tiếp `BossTimeline` nhưng **chưa mở playerScript**.
-- **Lưu ý:** Script này kéo `BossDirector` vào field `bossTimeline`, nhưng field `player` và `uiThanhMauBoss` đang **trống (null)**.
+sẽ không mở khóa được!
 
-#### `BossLanding.cs` (**Script ĐANG được dùng** – gắn trên `BossPosition`, Enabled)
-- **Cách hoạt động:** `OnCollisionEnter2D` khi BossPosition chạm Ground → chạy Coroutine `QuyTrinhBossRaMat()`:
-  1. Play BossDirectorTimeline → chờ xong
-  2. Play animation `BossBannerAnim` → chờ 3 giây
-  3. Unlock Player
-- **Kết nối trong Inspector:**
-  - `bossTimeline` → `BossDirector` (PlayableDirector)
-  - `bossCanvasAnimator` → `BossCanvas` (Animator)
-  - `playerScript` → component trên `Dreamshaper`
-  - `bossObject` → chính `BossPosition` (tự tham chiếu)
+Console sẽ in ra lỗi:
+```
+[BossLanding] ❌ player vẫn null → KHÔNG mở khóa được! Kéo Dreamshaper vào Inspector.
+```
+
+**👉 Giải pháp:** **Kéo GameObject Dreamshaper vào field `player` của `BossLanding` trong Inspector.**
+
+#### Nguyên nhân #2 – `BossPosition` bị tắt nên `OnEnable` không chạy đúng thời điểm
+
+Khi `BossWakeUp` gọi `bossObject.SetActive(true)`, `OnEnable` của `BossLanding` chạy ngay. Nếu `FindFirstObjectByType<Dreamshaper>()` thành công thì `player` có giá trị. Nhưng nếu scene chưa load xong hoặc `Dreamshaper` chưa có trong scene lúc đó thì sẽ fail.
+
+#### Nguyên nhân #3 – `BossCanvas` Animator bị lỗi
+
+Nếu animation `"BossBannerAnim"` không tồn tại trong Animator Controller, hoặc Animator bị `null`, thì `WaitForSeconds(3f)` không chạy, Coroutine bị ngắt → không đến bước mở khóa.
 
 ---
 
-## 4. Banner Boss (`BossBannerAnim`)
+## 6. ✅ Cách sửa Bug
 
-### Cấu Trúc Animator
+### Sửa nhanh nhất – Kéo trực tiếp trong Inspector
 
+Trong Unity Editor:
+1. Chọn `BossPosition` trong Hierarchy
+2. Ở component `BossLanding`, tìm field **`Player`** và **`PlayerRb`**
+3. Kéo GameObject `Dreamshaper` vào field `Player`
+4. Kéo `Dreamshaper > Rigidbody2D` vào field `PlayerRb`
+
+### Sửa bằng code – Đảm bảo fallback trong `OnEnable`
+
+Nếu muốn giữ tự động tìm, thêm fallback trong coroutine:
+
+```csharp
+// BossLanding.cs - Bước 3 (đảm bảo tìm lại nếu vẫn null)
+if (player == null)
+    player = FindFirstObjectByType<Dreamshaper>();
+
+if (player != null)
+{
+    player.SetAllModulesEnabled(true);
+    Debug.Log("[BossLanding] ✅ Đã mở khóa toàn bộ Player modules → FIGHT!");
+}
 ```
-BossCanvas (Animator Controller: BossCanvas.controller)
-└── Base Layer
-    └── State: BossBannerAnim (default state, speed=1)
-        └── Motion: BossBannerAnim.anim
-```
-
-> Animator **không có transition** nào – chỉ có 1 state duy nhất. Play bằng code: `animator.Play("BossBannerAnim")`.
-
-### Chi Tiết Animation `BossBannerAnim.anim`
-
-Animation dài **3 giây** (StopTime=3), sample rate 60fps, áp dụng lên child object `BossNamePanel`:
-
-#### Đường cong `m_AnchoredPosition.y` (trục Y của BossNamePanel)
-
-| Thời gian | Giá trị Y | Ý nghĩa                          |
-|-----------|-----------|----------------------------------|
-| 0.0s      | 983       | BossNamePanel ở **trên màn hình** (ngoài tầm nhìn) |
-| 0.5s      | 0         | BossNamePanel **vào đúng giữa** màn hình |
-| 2.5s      | 0         | Giữ nguyên giữa màn                      |
-| 3.0s      | 1016.4    | BossNamePanel **biến mất xuống dưới** màn hình |
-
-#### Đường cong `m_AnchoredPosition.x`
-
-| Thời gian | Giá trị X | Ý nghĩa             |
-|-----------|-----------|---------------------|
-| 0.0s      | 0         | Không di chuyển ngang |
-| 2.5s      | 0         | Không di chuyển ngang |
-
-#### Đường cong `m_Alpha` (CanvasGroup Alpha của BossNamePanel)
-
-| Thời gian | Alpha | Ý nghĩa                  |
-|-----------|-------|--------------------------|
-| 0.0s      | 0     | Banner **trong suốt** (ẩn) |
-| 0.5s      | 1     | Banner **hiện đầy đủ**     |
-| 3.0s      | 0     | Banner **fade out**        |
-
-### Tóm Tắt Hiệu Ứng Banner
-
-```
-[0.0s] Banner ở ngoài màn hình trên (Y=983), Alpha=0 (ẩn)
-[0.5s] Banner trượt xuống vào giữa màn (Y=0), Alpha=1 (hiện rõ)
-[2.5s] Banner đứng yên ở giữa màn
-[3.0s] Banner tiếp tục trượt xuống biến mất (Y=1016), đồng thời fade out (Alpha=0)
-```
-
-**Nội dung hiển thị trong banner:**
-- `BannerBG`: Ảnh nền banner (Sprite từ Asset, màu gần trắng `#FFFAFA`)
-- `Chain_Left`: Hình thanh xích bên trái (màu xám đậm `#333333`)
-- `Chain_Right`: Hình thanh xích bên phải (màu xám đậm `#333333`)
-- `BossName`: Text **"Hoả Ngục Quỷ"**, TextMeshProUGUI, màu trắng, size 61.69
 
 ---
 
-## 5. Hệ Thống Camera (Cinemachine)
+## 7. Tóm tắt file Script & trạng thái
 
-| Object          | Script                  | OrthographicSize | Follow Target       | Ghi Chú                         |
-|-----------------|-------------------------|------------------|---------------------|---------------------------------|
-| `Main Camera`   | Camera + CinemachineBrain | 2.68           | –                   | Blend mượt, Style=Ease, 2s      |
-| `CM_FullMap`    | CinemachineCamera        | **10.0**         | Không               | Nhìn toàn bộ bản đồ boss        |
-| `CM_Hero`       | CinemachineCamera        | **2.36**         | `Dreamshaper` (Player) | Nhìn theo nhân vật           |
-| `CM_Boss`       | CinemachineCamera        | **2.68**         | `BossPosition`      | Nhìn theo boss khi boss rơi xuống |
-
-**Binding trong BossDirector (PlayableDirector):**
-- `CinemachineTrack` ← bind vào `Main Camera` (CinemachineBrain nhận output)
-- `CM_FullMap`, `CM_Hero`, `CM_Boss` ← bind qua `m_ExposedReferences` vào đúng CinemachineCamera tương ứng
+| Script | Vị trí | Được dùng? | Chức năng |
+|---|---|---|---|
+| `BossWakeUp.cs` | `BossEventTrigger` | ✅ Đang dùng | Trigger khoá nhân vật, bật Boss |
+| `BossLanding.cs` | `BossPosition` (Boss) | ✅ Đang dùng | Chạy Timeline → Banner → Mở khóa |
+| `BossTrigger.cs` | Không gắn đâu | ❌ Không dùng | Script cũ, có thể xóa |
+| `Dreamshaper.cs` | `Dreamshaper` (Player) | ✅ Đang dùng | Quản lý module điều khiển nhân vật |
+| `IntroController.cs` | Scene khác | ❌ Không dùng | Điều khiển video intro, chuyển scene |
 
 ---
 
-## 6. Trạng Thái Hiện Tại & Những Gì Chưa Làm
+## 8. Kết luận
 
-### ✅ Đã Hoàn Thành
-- [x] Timeline intro boss: 4 clip camera, camerawork zoom in/out mượt mà (~6s)
-- [x] Script `BossLanding.cs` hoạt động: Detect tiếp đất → chạy Timeline → hiện Banner → unlock Player
-- [x] Banner boss: Animation 3s (slide in, hold, slide out + fade)
-- [x] Tên boss trên Banner: **"Hoả Ngục Quỷ"**
-- [x] Boss placeholder: `BossPosition` (Square sprite) có Rigidbody2D tự rơi
-- [x] Walls arena: `Wall_Left`, `Wall_Right` (BoxCollider2D chặn Player)
-- [x] Ground collider cho arena: `Ground_Collider` (Tag=Ground)
+**Code mở khóa di chuyển ĐÃ CÓ** trong `BossLanding.cs` ở bước 3 của `QuyTrinhBossRaMat()`. Tuy nhiên, do field `player` chưa được gán trong Inspector, nếu `FindFirstObjectByType<Dreamshaper>()` thất bại (trả về null), hàm mở khóa sẽ **không được gọi** và nhân vật sẽ bị khóa mãi mãi.
 
-### ⚠️ Còn Dang Dở / Lưu Ý
-- [ ] `BossTrigger.cs` trên `Wall_Left` đang **Disabled** – hiện tại `BossWakeUp.cs` trên `BossEventTrigger` đóng vai trò tương tự
-- [ ] Boss thật chưa có sprite/animation boss xịn – chỉ dùng `Square` placeholder
-- [ ] AI của Boss chưa được viết (dòng code `bossObject.GetComponent<BossAI>()` đang comment out trong `BossLanding.cs`)
-- [ ] Thanh máu Boss (`uiThanhMauBoss`) trong `BossTrigger.cs` chưa được kéo vào
-- [ ] `BossIntroTrigger` (class cũ) – là code commented out trong `BossTrigger.cs`, đã được thay thế
-
----
-
-## 7. Vị Trí Các File Quan Trọng
-
-| File | Đường Dẫn |
-|------|-----------|
-| Scene chính | `Assets/Scenes/Boss1Scene.unity` |
-| Timeline asset | `Assets/Animation/TimeLineBoss1/BossDirectorTimeline.playable` |
-| Animation Banner | `Assets/Animation/AnimationBannerMapBoss1/BossBannerAnim.anim` |
-| Animator Controller Banner | `Assets/Animation/AnimationBannerMapBoss1/BossCanvas.controller` |
-| Script – BossLanding | `Assets/Script/TimeLineBoss1/BossLanding.cs` |
-| Script – BossTrigger | `Assets/Script/TimeLineBoss1/BossTrigger.cs` |
-| Script – BossWakeUp (cũ) | `Assets/Script/TimeLineBoss1/BossWakeUp.cs` |
-
----
-
-## 8. Sơ Đồ Luồng Hoàn Chỉnh
-
-```
-[GAME START]
-      │
-      ▼
-Dreamshaper xuất hiện tại vị trí ban đầu
-BossPosition = INACTIVE (boss chưa hiện)
-      │
-      ▼ Player đi sang phải
-[BossEventTrigger phát hiện Player – BossWakeUp.cs]
-      │  dừng Player + gọi BossPosition.SetActive(true) + tự Destroy()
-      ▼
-BossPosition kích hoạt → Rigidbody2D bắt đầu rơi (GravityScale=3)
-      │
-      ▼ Boss rơi chạm Ground_Collider (Tag="Ground")
-[BossLanding.OnCollisionEnter2D] → bắt đầu Coroutine
-      │
-      ├─► [Phase 1 ~6s] BossDirectorTimeline chạy:
-      │     0.0s: Camera zoom toàn map
-      │     0.5s: Camera blend sang nhìn Player
-      │     1.5s: Camera blend sang nhìn Boss (mượt 2.45s)
-      │     5.5s: Camera blend về toàn map
-      │
-      ├─► [Phase 2 ~3s] BossBannerAnim chạy:
-      │     0.0s: Banner ẩn trên màn
-      │     0.5s: Banner trượt xuống giữa, fade in rõ
-      │     2.5s: Banner hiện "Hoả Ngục Quỷ" + xích 2 bên
-      │     3.0s: Banner fade out, trượt xuống biến mất
-      │
-      └─► [Phase 3] FIGHT!
-            playerScript.enabled = true (Player có thể điều khiển trở lại)
-            Debug.Log("FIGHT!")
-```
+**→ Giải pháp:** Kéo `Dreamshaper` vào field `Player` của `BossLanding` trong Inspector của `BossPosition`.
