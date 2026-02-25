@@ -9,15 +9,17 @@ public class Dreamshaper : MonoBehaviour
     [HideInInspector] public PlayerMeleeAttack melee;
     [HideInInspector] public PlayerUltimate ulti;
     [HideInInspector] public PlayerActionState action;
+    [HideInInspector] public PlayerEnergy mana;
 
     void Awake()
     {
         movement = GetComponent<PlayerMovement>();
-        jump     = GetComponent<PlayerJump>();
-        castOrb  = GetComponent<PlayerCastOrb>();
-        melee    = GetComponent<PlayerMeleeAttack>();
-        ulti     = GetComponent<PlayerUltimate>();
-        action   = GetComponent<PlayerActionState>();
+        jump = GetComponent<PlayerJump>();
+        castOrb = GetComponent<PlayerCastOrb>();
+        melee = GetComponent<PlayerMeleeAttack>();
+        ulti = GetComponent<PlayerUltimate>();
+        action = GetComponent<PlayerActionState>();
+        mana = GetComponent<PlayerEnergy>();
     }
 
     /// <summary>
@@ -31,6 +33,7 @@ public class Dreamshaper : MonoBehaviour
         if (castOrb  == null) castOrb  = GetComponent<PlayerCastOrb>();
         if (melee    == null) melee    = GetComponent<PlayerMeleeAttack>();
         if (ulti     == null) ulti     = GetComponent<PlayerUltimate>();
+        if (mana     == null) mana     = GetComponent<PlayerEnergy>();
 
         Debug.Log($"[Dreamshaper] SetAllModulesEnabled({state}) | " +
                   $"movement={movement != null} | jump={jump != null} | " +
@@ -41,6 +44,7 @@ public class Dreamshaper : MonoBehaviour
         if (castOrb  != null) castOrb.enabled  = state;
         if (melee    != null) melee.enabled     = state;
         if (ulti     != null) ulti.enabled      = state;
+        if (mana     != null) mana.enabled      = state;
 
         // Xác nhận trạng thái sau khi set
         if (movement != null)

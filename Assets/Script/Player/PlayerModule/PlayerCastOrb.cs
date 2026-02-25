@@ -6,7 +6,7 @@ public class PlayerCastOrb : MonoBehaviour
     public GameObject lightOrbPrefab;
 
     [Header("Orb Settings")]
-    public float orbSpeed = 25f;
+    public float orbSpeed = 10f;
     public int orbDamage = 10;
     public float orbScale = 1.5f;
 
@@ -19,12 +19,15 @@ public class PlayerCastOrb : MonoBehaviour
     Animator animator;
     PlayerMovement movement;
     PlayerActionState action;
+    PlayerEnergy mana;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
         movement = GetComponent<PlayerMovement>();
         action = GetComponent<PlayerActionState>();
+        mana = GetComponent<PlayerEnergy>();
+
     }
 
     void Update()
@@ -41,6 +44,8 @@ public class PlayerCastOrb : MonoBehaviour
 
         if (Keyboard.current.jKey.wasPressedThisFrame && fireTimer <= 0)
         {
+            if (!mana.UseEnergy(15f)) return;
+
             action.SetBusy(true);
             fireTimer = fireCooldown;
             animator.SetTrigger("CastOrb");
