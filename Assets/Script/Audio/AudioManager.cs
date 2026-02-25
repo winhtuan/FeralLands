@@ -83,7 +83,7 @@ public class AudioManager : MonoBehaviour
         // Debug.Log("Scene loaded: " + currentScene);
 
         // Logic chọn nhạc theo Scene
-        if (currentScene == "MapBeachTestQuan")
+        if (currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan")
         {
             if (bossBattleMusic != null)
             {
