@@ -5,6 +5,12 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 3f;
 
+    [Header("Audio")]
+    public AudioClip footstepSound;
+    public UnityEngine.Audio.AudioMixerGroup sfxMixerGroup; // Thêm biến lưu AudioMixerGroup
+    private AudioSource footstepSource;
+    private PlayerJump playerJump;
+
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator animator;
@@ -18,6 +24,22 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        
+        playerJump = GetComponent<PlayerJump>();
+        
+        // Setup AudioSource for footsteps
+        footstepSource = gameObject.AddComponent<AudioSource>();
+        if (footstepSound != null) footstepSource.clip = footstepSound;
+        if (sfxMixerGroup != null) footstepSource.outputAudioMixerGroup = sfxMixerGroup; // Gắn MixerGroup
+        
+        footstepSource.loop = true;
+        footstepSource.playOnAwake = false;
+        
+        // Cập nhật âm lượng ban đầu (nếu không có MixerGroup)
+        if (sfxMixerGroup == null)
+        {
+            footstepSource.volume = PlayerPrefs.GetFloat("Setting_SFX", 0.75f);
+        }
     }
 
     // TEMP DEBUG – xóa sau khi fix xong
@@ -33,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         ReadInput();
         Flip();
         UpdateAnimation();
+        HandleFootsteps();
     }
 
     void FixedUpdate()
@@ -84,5 +107,26 @@ public class PlayerMovement : MonoBehaviour
     {
         float normalizedSpeed = Mathf.Abs(rb.linearVelocity.x) / moveSpeed;
         animator.SetFloat("Speed", normalizedSpeed);
+    }
+
+    void HandleFootsteps()
+    {
+        bool isMoving = Mathf.Abs(moveInput) > 0.1f;
+        bool isGrounded = playerJump != null ? playerJump.IsGrounded : true;
+
+        if (isMoving && isGrounded)
+        {
+            if (!footstepSource.isPlaying)
+            {
+                footstepSource.Play();
+            }
+        }
+        else
+        {
+            if (footstepSource.isPlaying)
+            {
+                footstepSource.Stop();
+            }
+        }
     }
 }

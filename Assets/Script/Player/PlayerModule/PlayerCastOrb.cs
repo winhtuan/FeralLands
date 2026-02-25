@@ -13,6 +13,11 @@ public class PlayerCastOrb : MonoBehaviour
     [Header("Spawn Offset")]
     public Vector2 fireOffset = new Vector2(0.4f, -0.1f);
 
+    [Header("Audio")]
+    public AudioClip castSound;
+    public UnityEngine.Audio.AudioMixerGroup sfxMixerGroup;
+    private AudioSource castAudioSource;
+
     public float fireCooldown = 0.5f;
     public float fireTimer;
 
@@ -25,6 +30,15 @@ public class PlayerCastOrb : MonoBehaviour
         animator = GetComponent<Animator>();
         movement = GetComponent<PlayerMovement>();
         action = GetComponent<PlayerActionState>();
+
+        // Setup AudioSource for Cast Orb
+        castAudioSource = gameObject.AddComponent<AudioSource>();
+        if (castSound != null) castAudioSource.clip = castSound;
+        if (sfxMixerGroup != null) castAudioSource.outputAudioMixerGroup = sfxMixerGroup;
+        castAudioSource.playOnAwake = false;
+
+        if (sfxMixerGroup == null)
+            castAudioSource.volume = PlayerPrefs.GetFloat("Setting_SFX", 0.75f);
     }
 
     void Update()
@@ -44,6 +58,11 @@ public class PlayerCastOrb : MonoBehaviour
             action.SetBusy(true);
             fireTimer = fireCooldown;
             animator.SetTrigger("CastOrb");
+
+            if (castSound != null)
+            {
+                castAudioSource.Play();
+            }
         }
     }
 

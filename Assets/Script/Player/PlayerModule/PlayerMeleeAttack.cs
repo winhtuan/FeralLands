@@ -14,6 +14,11 @@ public class PlayerMeleeAttack : MonoBehaviour
     public Vector2 attackOffset = new Vector2(0.4f, -0.2f);
     public Vector2 hitboxSize = new Vector2(1.0f, 0.8f);
 
+    [Header("Audio")]
+    public AudioClip attackSound;
+    public UnityEngine.Audio.AudioMixerGroup sfxMixerGroup;
+    private AudioSource attackAudioSource;
+
     float timer;
     bool isAttacking;
 
@@ -26,6 +31,15 @@ public class PlayerMeleeAttack : MonoBehaviour
         animator = GetComponent<Animator>();
         movement = GetComponent<PlayerMovement>();
         action = GetComponent<PlayerActionState>();
+
+        // Setup AudioSource for Melee
+        attackAudioSource = gameObject.AddComponent<AudioSource>();
+        if (attackSound != null) attackAudioSource.clip = attackSound;
+        if (sfxMixerGroup != null) attackAudioSource.outputAudioMixerGroup = sfxMixerGroup;
+        attackAudioSource.playOnAwake = false;
+
+        if (sfxMixerGroup == null)
+            attackAudioSource.volume = PlayerPrefs.GetFloat("Setting_SFX", 0.75f);
     }
 
     void Update()
@@ -44,6 +58,11 @@ public class PlayerMeleeAttack : MonoBehaviour
             action.SetBusy(true);
             timer = attackCooldown;
             animator.SetTrigger("Melee");
+
+            if (attackSound != null)
+            {
+                attackAudioSource.Play();
+            }
         }
     }
 

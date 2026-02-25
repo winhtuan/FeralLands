@@ -8,6 +8,11 @@ public class PlayerUltimate : MonoBehaviour
     public int ultimateDamage = 50;
     public LayerMask enemyLayer;
 
+    [Header("Audio")]
+    public AudioClip ultimateSound;
+    public UnityEngine.Audio.AudioMixerGroup sfxMixerGroup;
+    private AudioSource ultimateAudioSource;
+
     public float cooldown = 10f;
     public float timer;
 
@@ -19,6 +24,15 @@ public class PlayerUltimate : MonoBehaviour
         animator = GetComponent<Animator>();
         action = GetComponent<PlayerActionState>();
         camShake = Camera.main.GetComponent<CameraShake>();
+
+        // Setup AudioSource for Ultimate
+        ultimateAudioSource = gameObject.AddComponent<AudioSource>();
+        if (ultimateSound != null) ultimateAudioSource.clip = ultimateSound;
+        if (sfxMixerGroup != null) ultimateAudioSource.outputAudioMixerGroup = sfxMixerGroup;
+        ultimateAudioSource.playOnAwake = false;
+
+        if (sfxMixerGroup == null)
+            ultimateAudioSource.volume = PlayerPrefs.GetFloat("Setting_SFX", 0.75f);
     }
 
     void Update()
@@ -33,6 +47,11 @@ public class PlayerUltimate : MonoBehaviour
             action.SetBusy(true);
             timer = cooldown;
             animator.SetTrigger("Ultimate");
+
+            if (ultimateSound != null)
+            {
+                ultimateAudioSource.Play();
+            }
         }
     }
 
