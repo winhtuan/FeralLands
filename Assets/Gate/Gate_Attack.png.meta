@@ -179,12 +179,12 @@ TextureImporter:
       name: Gate_Attack_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 415
-        width: 48
-        height: 51
+        x: 0
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -201,12 +201,12 @@ TextureImporter:
       name: Gate_Attack_1
       rect:
         serializedVersion: 2
-        x: 125
-        y: 415
-        width: 48
-        height: 51
+        x: 100
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -223,12 +223,12 @@ TextureImporter:
       name: Gate_Attack_2
       rect:
         serializedVersion: 2
-        x: 225
-        y: 415
-        width: 48
-        height: 52
+        x: 200
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: Gate_Attack_3
       rect:
         serializedVersion: 2
-        x: 320
-        y: 415
-        width: 58
-        height: 52
+        x: 300
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -267,12 +267,12 @@ TextureImporter:
       name: Gate_Attack_4
       rect:
         serializedVersion: 2
-        x: 415
-        y: 415
-        width: 71
-        height: 51
+        x: 400
+        y: 400
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -289,12 +289,12 @@ TextureImporter:
       name: Gate_Attack_5
       rect:
         serializedVersion: 2
-        x: 15
-        y: 315
-        width: 72
-        height: 52
+        x: 0
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -311,12 +311,12 @@ TextureImporter:
       name: Gate_Attack_6
       rect:
         serializedVersion: 2
-        x: 114
-        y: 315
-        width: 73
-        height: 53
+        x: 100
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -333,12 +333,12 @@ TextureImporter:
       name: Gate_Attack_7
       rect:
         serializedVersion: 2
-        x: 143
-        y: 359
-        width: 11
-        height: 8
+        x: 200
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -355,12 +355,12 @@ TextureImporter:
       name: Gate_Attack_8
       rect:
         serializedVersion: 2
-        x: 214
-        y: 315
-        width: 73
-        height: 54
+        x: 300
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -377,12 +377,12 @@ TextureImporter:
       name: Gate_Attack_9
       rect:
         serializedVersion: 2
-        x: 314
-        y: 315
-        width: 72
-        height: 54
+        x: 400
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -399,12 +399,12 @@ TextureImporter:
       name: Gate_Attack_10
       rect:
         serializedVersion: 2
-        x: 417
-        y: 315
-        width: 69
-        height: 55
+        x: 0
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -421,12 +421,12 @@ TextureImporter:
       name: Gate_Attack_11
       rect:
         serializedVersion: 2
-        x: 17
-        y: 215
-        width: 65
-        height: 56
+        x: 100
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -443,12 +443,12 @@ TextureImporter:
       name: Gate_Attack_12
       rect:
         serializedVersion: 2
-        x: 117
-        y: 215
-        width: 65
-        height: 52
+        x: 200
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -465,12 +465,12 @@ TextureImporter:
       name: Gate_Attack_13
       rect:
         serializedVersion: 2
-        x: 221
-        y: 215
-        width: 57
-        height: 52
+        x: 300
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -487,12 +487,12 @@ TextureImporter:
       name: Gate_Attack_14
       rect:
         serializedVersion: 2
-        x: 324
-        y: 215
-        width: 51
-        height: 51
+        x: 400
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -509,12 +509,12 @@ TextureImporter:
       name: Gate_Attack_15
       rect:
         serializedVersion: 2
-        x: 425
-        y: 215
-        width: 48
-        height: 51
+        x: 0
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -531,12 +531,12 @@ TextureImporter:
       name: Gate_Attack_16
       rect:
         serializedVersion: 2
-        x: 25
-        y: 115
-        width: 48
-        height: 51
+        x: 100
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -553,12 +553,12 @@ TextureImporter:
       name: Gate_Attack_17
       rect:
         serializedVersion: 2
-        x: 125
-        y: 115
-        width: 48
-        height: 51
+        x: 200
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -575,12 +575,12 @@ TextureImporter:
       name: Gate_Attack_18
       rect:
         serializedVersion: 2
-        x: 225
-        y: 115
-        width: 48
-        height: 51
+        x: 300
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -597,12 +597,12 @@ TextureImporter:
       name: Gate_Attack_19
       rect:
         serializedVersion: 2
-        x: 325
-        y: 115
-        width: 48
-        height: 51
+        x: 400
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -619,12 +619,12 @@ TextureImporter:
       name: Gate_Attack_20
       rect:
         serializedVersion: 2
-        x: 425
-        y: 115
-        width: 48
-        height: 51
+        x: 0
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -637,33 +637,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Gate_Attack_21
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 15
-        width: 48
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ecc715f519b7ad960800000000000000
-      internalID: 7627544783205006542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 229c2cc56e1576b4bb63b015b15d7974
     internalID: 0
     vertices: []
     indices: 
@@ -671,7 +649,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":100.0,"y":100.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Gate_Attack_0: -3583176884752445845
       Gate_Attack_1: -7172685093517206256
@@ -687,7 +667,6 @@ TextureImporter:
       Gate_Attack_19: -4811216364274096265
       Gate_Attack_2: 5604762914251330982
       Gate_Attack_20: 2677299064876553131
-      Gate_Attack_21: 7627544783205006542
       Gate_Attack_3: -6561112780511855828
       Gate_Attack_4: -7396868542963717252
       Gate_Attack_5: -570708205650865926

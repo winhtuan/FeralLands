@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 54429267}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 406872456}
   - component: {fileID: 406872457}
   - component: {fileID: 406872458}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Dreamshaper
   m_TagString: Player
   m_Icon: {fileID: 0}
