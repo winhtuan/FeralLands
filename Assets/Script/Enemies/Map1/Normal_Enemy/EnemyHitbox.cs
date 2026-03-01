@@ -17,20 +17,36 @@ public class EnemyHitbox : MonoBehaviour
         ResetHitbox();
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        TryDealDamage(other);
+    }
+
     private void OnTriggerStay2D(Collider2D other)
+    {
+        TryDealDamage(other);
+    }
+
+    private void TryDealDamage(Collider2D other)
     {
         if (hasHit) return;
 
-        // Tìm bất kỳ script nào kế thừa IDamageable (bao gồm DummyHealth và Player sau này)
+        // CHỈ gây sát thương lên Player. Quái sẽ không bao giờ đánh lẫn nhau dù đứng chồng lên nhau.
+        if (!other.CompareTag("Player")) return;
+
+        // Tránh tự đánh chính mình (Đề phòng trường hợp Player cũng có tag Player - thường là đúng)
+        if (transform.parent != null && other.gameObject == transform.parent.gameObject) return;
+
+        // Tìm bất kỳ script nào kế thừa IDamageable
         IDamageable damageable = other.GetComponent<IDamageable>();
         if (damageable == null) damageable = other.GetComponentInParent<IDamageable>();
         if (damageable == null) damageable = other.GetComponentInChildren<IDamageable>();
 
         if (damageable != null)
         {
-            Debug.Log($"[HIT] Quái đánh trúng {other.name}, gây {damage} sát thương.");
+            Debug.Log($"[HIT] {transform.parent.name} đánh trúng {other.name}, gây {damage} sát thương.");
             damageable.TakeDamage(damage);
-            hasHit = true; // Chỉ đánh trúng 1 lần trong 1 chu kỳ bật hitbox
+            hasHit = true; 
         }
     }
 }
