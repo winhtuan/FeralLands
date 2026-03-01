@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Crimson_Oculus_attack
+  m_Name: CrimsonOculus_Attack
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -22,28 +22,28 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 1464290383400075153, guid: 1f11dab0b9593eb43a56cd373cf9814e, type: 3}
-    - time: 0.083333336
+    - time: 0.1
       value: {fileID: -816165088631741791, guid: 1f11dab0b9593eb43a56cd373cf9814e, type: 3}
-    - time: 0.16666667
+    - time: 0.21666667
       value: {fileID: 3416555828300185113, guid: 1f11dab0b9593eb43a56cd373cf9814e, type: 3}
-    - time: 0.25
+    - time: 0.31666666
       value: {fileID: -2621342124871753571, guid: 1f11dab0b9593eb43a56cd373cf9814e, type: 3}
-    - time: 0.33333334
-      value: {fileID: -8242853739032732590, guid: 1f11dab0b9593eb43a56cd373cf9814e, type: 3}
     - time: 0.41666666
+      value: {fileID: -8242853739032732590, guid: 1f11dab0b9593eb43a56cd373cf9814e, type: 3}
+    - time: 0.51666665
       value: {fileID: -2874860340339146926, guid: 1f11dab0b9593eb43a56cd373cf9814e, type: 3}
-    - time: 0.5
+    - time: 0.6333333
       value: {fileID: -1730281156721280908, guid: 1f11dab0b9593eb43a56cd373cf9814e, type: 3}
-    - time: 0.5833333
+    - time: 0.73333335
       value: {fileID: -3601787510042635774, guid: 1f11dab0b9593eb43a56cd373cf9814e, type: 3}
-    - time: 0.6666667
+    - time: 0.8333333
       value: {fileID: -3525042770099922083, guid: 1f11dab0b9593eb43a56cd373cf9814e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 12
+  m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -74,7 +74,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.84999996
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
