@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 54429267}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 406872456}
   - component: {fileID: 406872457}
   - component: {fileID: 406872458}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Dreamshaper
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -520,6 +520,7 @@ MonoBehaviour:
   melee: {fileID: 406872456}
   ulti: {fileID: 0}
   action: {fileID: 0}
+  mana: {fileID: 0}
 --- !u!61 &406872450
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -692,6 +693,10 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024
+  lightningPrefab: {fileID: 0}
+  lightningCount: 5
+  lightningSpacing: 1.8
+  lightningDelay: 1.5
   cooldown: 10
   timer: 0
 --- !u!114 &406872458
