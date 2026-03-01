@@ -8,9 +8,6 @@ public class MeleeHitbox : MonoBehaviour
     float lifeTime;
     float dir;
 
-    PlayerEnergy playerMana;
-    bool hasHit; // tránh hồi mana nhiều lần
-
     public void Init(float direction, int dmg, float time)
     {
         dir = direction;
@@ -22,31 +19,21 @@ public class MeleeHitbox : MonoBehaviour
         s.x = Mathf.Abs(s.x) * direction;
         transform.localScale = s;
 
-        playerMana = GetComponentInParent<PlayerEnergy>();
-
         Destroy(gameObject, lifeTime);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (hasHit) return;
-
         if (((1 << other.gameObject.layer) & enemyLayer) == 0) return;
 
-        hasHit = true;
+        IDamageable damageable = other.GetComponent<IDamageable>();
+        if (damageable == null) damageable = other.GetComponentInParent<IDamageable>();
+        if (damageable == null) damageable = other.GetComponentInChildren<IDamageable>();
 
-        Debug.Log("Melee hit: " + other.name);
-
-        // EnemyHealth hp = other.GetComponent<EnemyHealth>();
-        // if (hp != null) hp.TakeDamage(damage);
-
-        // Hồi mana khi trúng enemy
-        if (playerMana != null)
+        if (damageable != null)
         {
-            playerMana.GainEnergy(5f);
+            damageable.TakeDamage(damage);
+            Debug.Log("Melee hit target: " + other.gameObject.name);
         }
-
-        // Optional: phá hitbox ngay khi trúng
-        Destroy(gameObject);
     }
 }
