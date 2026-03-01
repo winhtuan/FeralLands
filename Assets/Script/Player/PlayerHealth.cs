@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour, IDamageable
 {
     public int maxHealth = 100;
     public int currentHealth;
@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D col;
     private Dreamshaper controller;
-    private float invincibleTime = 1f;
+    private float invincibleTime = 0.2f;
     private float invincibleTimer;
     void Awake()
     {
