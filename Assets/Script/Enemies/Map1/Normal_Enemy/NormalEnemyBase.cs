@@ -4,7 +4,6 @@ using System;
 public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
 {
     protected Animator animator;
-    protected Rigidbody2D rb;
 
     [Header("Stats")]
     public int maxHP = 50;
@@ -20,12 +19,11 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
         currentHP = maxHP;
 
         if (hitbox == null)
         {
-            Debug.LogWarning($"{name}: Không có AttackHitboxController (Quái bắn đạn thì bình thường).");
+            Debug.LogError($"{name}: CHƯA GÁN AttackHitboxController!");
         }
     }
 
@@ -34,8 +32,8 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
         if (IsDead) return;
 
         currentHP -= dmg;
-        Debug.Log($"{gameObject.name} HP: {currentHP}/{maxHP}");
         OnDamaged?.Invoke(dmg);
+        Debug.Log($"Enemy {gameObject.name} took {dmg} damage! Remaining HP: {currentHP}/{maxHP}");
 
         if (currentHP <= 0)
             Die();
@@ -67,11 +65,15 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
         if (col != null) col.enabled = false;
 
         // Freeze Rigidbody if exists
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
             rb.simulated = false;
         }
+
+        // Hủy diệt (xóa sổ xác) quái vật khỏi bản đồ sau 1.5 giây để chơi xong animation chết
+        Destroy(gameObject, 1.5f);
     }
 
     // 👉 ANIMATION EVENT GỌI HÀM NÀY
@@ -85,10 +87,5 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
     {
         if (hitbox != null)
             hitbox.DisableHitbox();
-    }
-
-    private void OnDestroy()
-    {
-        Debug.LogWarning($"[DESTROY] {gameObject.name} đã bị biến mất khỏi Hierarchy!");
     }
 }
