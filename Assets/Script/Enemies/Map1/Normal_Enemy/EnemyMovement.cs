@@ -12,6 +12,11 @@ public class EnemyMovement : NormalEnemyBase
     public float detectRange = 5f;
     public float attackCooldown = 1.0f;
 
+    [Header("Attack Type")]
+    public bool isRanged = false;               // true = bắn đạn, false = đánh gần
+    public GameObject projectilePrefab;          // kéo prefab đạn vào đây
+    public Transform projectileSpawnPoint;       // vị trí bắn đạn (thường là tầm tay ra gàn nhân vật)
+
     private Vector3 startPos;
     private int direction = 1;
 
@@ -104,9 +109,46 @@ public class EnemyMovement : NormalEnemyBase
 
     void DoAttack()
     {
-        attackTimer = attackCooldown; // khóa spam
+        attackTimer = attackCooldown;
         SetSpeed(0);
         Attack(); // Trigger Animator "Attack"
+
+        if (isRanged)
+        {
+            ShootProjectile(); // Bắn đạn ngay lập tức
+        }
+    }
+
+    // Được gọi từ Animation Event trên Animator khi đến frame bắn
+    public void ShootProjectile()
+    {
+        Debug.Log($"[SHOOT] ShootProjectile được gọi. isRanged={isRanged}, prefab={projectilePrefab}");
+
+        if (!isRanged || projectilePrefab == null)
+        {
+            Debug.LogWarning("[SHOOT] Dừng lại: isRanged=false HOẶC projectilePrefab chưa được gán!");
+            return;
+        }
+
+        Transform spawnPoint = projectileSpawnPoint != null ? projectileSpawnPoint : transform;
+
+        // Tính hướng bắn thẳng về phía Player (bao gồm cả trục Y - bắn chéo xuống được)
+        Vector2 dir = Vector2.right; // Mặc định bắn sang phải
+        if (target != null)
+        {
+            // Offset Y âm vì pivot Player ở đầu, cần nhắm xuống giữa thân
+            Vector2 aimPoint = (Vector2)target.position + new Vector2(0, -0.5f);
+            dir = (aimPoint - (Vector2)spawnPoint.position).normalized;
+        }
+
+        GameObject bullet = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
+        Debug.Log($"[SHOOT] Đạn đã tạo ra tại {spawnPoint.position}, hướng={dir}");
+
+        EnemyProjectile proj = bullet.GetComponent<EnemyProjectile>();
+        if (proj != null)
+        {
+            proj.Init(dir);
+        }
     }
 
     // Vẽ Gizmos để dễ dàng căn chỉnh trong Unity Editor
