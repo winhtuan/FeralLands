@@ -1736,6 +1736,7 @@ GameObject:
   - component: {fileID: 523447303}
   - component: {fileID: 523447302}
   - component: {fileID: 523447301}
+  - component: {fileID: 523447304}
   m_Layer: 0
   m_Name: PlayerWorldCanvas
   m_TagString: Untagged
@@ -1826,6 +1827,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &523447304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523447299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669e1d89231c8294f8a38a3aed6a7ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerExpUI
+  expSlider: {fileID: 182784182}
+  legacyText: {fileID: 0}
+  tmpText: {fileID: 2093806939}
+  playerLevel: {fileID: 406872460}
 --- !u!1 &596856843
 GameObject:
   m_ObjectHideFlags: 0
@@ -3694,8 +3711,8 @@ RectTransform:
   - {fileID: 349540006}
   - {fileID: 332633718}
   - {fileID: 12341438}
-  - {fileID: 2093806938}
   - {fileID: 1137650003}
+  - {fileID: 2093806938}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4330,6 +4347,12 @@ MonoBehaviour:
   musicGroup: {fileID: 5524457805921807633, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
   sfxGroup: {fileID: -2362617805984967503, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
   bossBattleMusic: {fileID: 8300000, guid: b7c2d82f33f7d2142bb00bd33446d4c3, type: 3}
+  clickSFX: {fileID: 0}
+  hoverSFX: {fileID: 0}
+  jumpSFX: {fileID: 0}
+  meleeSFX: {fileID: 0}
+  plasmaOrbSFX: {fileID: 0}
+  runSFX: {fileID: 0}
 --- !u!4 &1357652729
 Transform:
   m_ObjectHideFlags: 0
