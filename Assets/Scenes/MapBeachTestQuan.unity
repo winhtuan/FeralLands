@@ -1018,6 +1018,7 @@ MonoBehaviour:
   melee: {fileID: 406872456}
   ulti: {fileID: 0}
   action: {fileID: 0}
+  mana: {fileID: 0}
 --- !u!61 &406872450
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1118,8 +1119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 2
-  footstepSound: {fileID: 8300000, guid: 62e18a46e263f2140b54c161c9ec961c, type: 3}
-  sfxMixerGroup: {fileID: -2362617805984967503, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
 --- !u!114 &406872454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1138,8 +1137,6 @@ MonoBehaviour:
     m_Bits: 256
   groundCheck: {fileID: 54429267}
   groundRadius: 0.2
-  jumpSound: {fileID: 8300000, guid: 60a1560b558bb3f41a14c1881c5e7d7a, type: 3}
-  sfxMixerGroup: {fileID: -2362617805984967503, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
 --- !u!114 &406872455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1157,8 +1154,6 @@ MonoBehaviour:
   orbDamage: 10
   orbScale: 1.5
   fireOffset: {x: 0.4, y: -0.1}
-  castSound: {fileID: 8300000, guid: 0023e68f116780c44936440622a9593c, type: 3}
-  sfxMixerGroup: {fileID: -2362617805984967503, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
   fireCooldown: 0.3
   fireTimer: 0
 --- !u!114 &406872456
@@ -1179,8 +1174,6 @@ MonoBehaviour:
   hitboxLifeTime: 0.15
   attackOffset: {x: 0.4, y: -0.2}
   hitboxSize: {x: 1, y: 0.8}
-  attackSound: {fileID: 8300000, guid: 81dd2bc2bcc6ae642bd8c8cc4f70d227, type: 3}
-  sfxMixerGroup: {fileID: -2362617805984967503, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
 --- !u!114 &406872457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1198,8 +1191,10 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024
-  ultimateSound: {fileID: 0}
-  sfxMixerGroup: {fileID: 0}
+  lightningPrefab: {fileID: 0}
+  lightningCount: 5
+  lightningSpacing: 1.8
+  lightningDelay: 1.5
   cooldown: 10
   timer: 0
 --- !u!114 &406872458
@@ -2063,6 +2058,9 @@ MonoBehaviour:
   attackRange: 0.5
   detectRange: 5
   attackCooldown: 2
+  isRanged: 0
+  projectilePrefab: {fileID: 0}
+  projectileSpawnPoint: {fileID: 0}
 --- !u!95 &734115474
 Animator:
   serializedVersion: 7
@@ -3991,6 +3989,12 @@ MonoBehaviour:
   musicGroup: {fileID: 5524457805921807633, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
   sfxGroup: {fileID: -2362617805984967503, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
   bossBattleMusic: {fileID: 8300000, guid: b7c2d82f33f7d2142bb00bd33446d4c3, type: 3}
+  clickSFX: {fileID: 0}
+  hoverSFX: {fileID: 0}
+  jumpSFX: {fileID: 8300000, guid: 60a1560b558bb3f41a14c1881c5e7d7a, type: 3}
+  meleeSFX: {fileID: 8300000, guid: 81dd2bc2bcc6ae642bd8c8cc4f70d227, type: 3}
+  plasmaOrbSFX: {fileID: 8300000, guid: 415cc93547a53d847adcf8a46e279661, type: 3}
+  runSFX: {fileID: 8300000, guid: 62e18a46e263f2140b54c161c9ec961c, type: 3}
 --- !u!1 &1410526918
 GameObject:
   m_ObjectHideFlags: 0
@@ -4209,6 +4213,9 @@ MonoBehaviour:
   attackRange: 0.5
   detectRange: 5
   attackCooldown: 2
+  isRanged: 0
+  projectilePrefab: {fileID: 0}
+  projectileSpawnPoint: {fileID: 0}
 --- !u!95 &1564689830
 Animator:
   serializedVersion: 7
