@@ -56,6 +56,8 @@ public class PlayerCastOrb : MonoBehaviour
             fireTimer = fireCooldown;
             animator.SetTrigger("CastOrb");
 
+            if (AudioManager.Instance != null) AudioManager.Instance.PlayPlasmaOrbSFX();
+
             // Gọi trực tiếp SpawnOrb và cởi trói IsBusy ngay để đảm bảo chắc chắn chạy
             SpawnOrb();
             Invoke(nameof(EndCast), 0.3f);

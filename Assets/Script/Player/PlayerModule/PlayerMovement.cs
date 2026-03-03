@@ -49,15 +49,15 @@ public class PlayerMovement : MonoBehaviour
 
         int scheme = PlayerPrefs.GetInt("ControlScheme", 0); // 0 = WASD, 1 = Arrows
 
-        if (scheme == 0) // WASD
+        if (scheme == 0) // Chế độ WASD
         {
-            if (Keyboard.current.aKey.isPressed) moveInput = -1;
-            if (Keyboard.current.dKey.isPressed) moveInput = 1;
+            if (Keyboard.current.aKey.isPressed) moveInput = -1f;
+            if (Keyboard.current.dKey.isPressed) moveInput = 1f;
         }
-        else // Arrows
+        else // Chế độ Arrows
         {
-            if (Keyboard.current.leftArrowKey.isPressed) moveInput = -1;
-            if (Keyboard.current.rightArrowKey.isPressed) moveInput = 1;
+            if (Keyboard.current.leftArrowKey.isPressed) moveInput = -1f;
+            if (Keyboard.current.rightArrowKey.isPressed) moveInput = 1f;
         }
     }
 
@@ -84,5 +84,14 @@ public class PlayerMovement : MonoBehaviour
     {
         float normalizedSpeed = Mathf.Abs(rb.linearVelocity.x) / moveSpeed;
         animator.SetFloat("Speed", normalizedSpeed);
+
+        if (Mathf.Abs(moveInput) > 0)
+        {
+            if (AudioManager.Instance != null) AudioManager.Instance.PlayRunSFX();
+        }
+        else
+        {
+            if (AudioManager.Instance != null) AudioManager.Instance.StopRunSFX();
+        }
     }
 }

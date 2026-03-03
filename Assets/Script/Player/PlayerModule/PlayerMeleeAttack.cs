@@ -44,6 +44,8 @@ public class PlayerMeleeAttack : MonoBehaviour
             action.SetBusy(true);
             timer = attackCooldown;
             animator.SetTrigger("Melee");
+            
+            if (AudioManager.Instance != null) AudioManager.Instance.PlayMeleeSFX();
         }
     }
 
