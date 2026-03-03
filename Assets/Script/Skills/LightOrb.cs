@@ -31,20 +31,33 @@ public class LightOrb : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Nếu layer của đối tượng chạm phải KHÔNG NẰM TRONG hitLayer, bỏ qua, KHÔNG HỦY NGỌC
-        if (hitLayer != 0 && ((1 << other.gameObject.layer) & hitLayer) == 0) return;
+        // 1. Tránh tự huỷ khi vừa mới sinh ra nếu lỡ đụng người chơi
+        if (other.gameObject.CompareTag("Player")) return;
 
-        IDamageable damageable = other.GetComponent<IDamageable>();
-        if (damageable == null) damageable = other.GetComponentInParent<IDamageable>();
-        if (damageable == null) damageable = other.GetComponentInChildren<IDamageable>();
+        // 2. Nếu người dùng quên set hitLayer (để = Nothing / 0) thì tránh việc đụng đất nổ ngay.
+        if (hitLayer == 0)
+        {
+            // Tạm thời nếu hitLayer = 0, chỉ nổ khi có IDamageable
+            IDamageable dmgTmp = other.GetComponent<IDamageable>() ?? other.GetComponentInParent<IDamageable>() ?? other.GetComponentInChildren<IDamageable>();
+            if (dmgTmp != null) 
+            {
+                dmgTmp.TakeDamage(damage);
+                Destroy(gameObject);
+            }
+            return;
+        }
 
+        // 3. Nếu layer của đối tượng chạm phải KHÔNG NẰM TRONG hitLayer, bỏ qua, KHÔNG HỦY NGỌC
+        if (((1 << other.gameObject.layer) & hitLayer) == 0) return;
+
+        IDamageable damageable = other.GetComponent<IDamageable>() ?? other.GetComponentInParent<IDamageable>() ?? other.GetComponentInChildren<IDamageable>();
         if (damageable != null)
         {
             damageable.TakeDamage(damage);
             Debug.Log("Orb damaged: " + other.gameObject.name);
         }
 
-        // Chỉ nổ hủy viên ngọc nếu nó đụng trúng người nằm trong LayerMask hợp lệ (Enemy)
+        // Đã đụng vào mục tiêu hợp lệ (nằm trong hitLayer) thì huỷ ngọc
         Destroy(gameObject); 
     }
 }
