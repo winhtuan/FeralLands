@@ -37,6 +37,11 @@ public class BossLanding : MonoBehaviour
 
         // Dừng vận tốc nhân vật
         if (playerRb != null) playerRb.linearVelocity = Vector2.zero;
+
+        // Đảm bảo boss không đánh khi đang intro
+        VaathBoss bossScript = GetComponent<VaathBoss>();
+        if (bossScript == null) bossScript = GetComponentInChildren<VaathBoss>();
+        if (bossScript != null) bossScript.isBattleStarted = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -78,6 +83,7 @@ public class BossLanding : MonoBehaviour
         }
 
         // 3. MỞ KHÓA – BẮT ĐẦU ĐÁNH NHAU
+        if (player == null) player = FindFirstObjectByType<Dreamshaper>();
         if (player != null)
         {
             player.SetAllModulesEnabled(true);
@@ -86,6 +92,28 @@ public class BossLanding : MonoBehaviour
         else
         {
             Debug.LogError("[BossLanding] ❌ player vẫn null → KHÔNG mở khóa được! Kéo Dreamshaper vào Inspector.");
+        }
+
+        // KÍCH HOẠT BOSS
+        if (bossObject != null)
+        {
+            VaathBoss bossScript = bossObject.GetComponent<VaathBoss>();
+            if (bossScript == null) bossScript = bossObject.GetComponentInChildren<VaathBoss>();
+
+            if (bossScript != null)
+            {
+                bossScript.isBattleStarted = true;
+                bossScript.enabled = true; // Chắc chắn script được bật
+                Debug.Log($"[BossLanding] ✅ Đã kích hoạt Boss logic trên: {bossScript.gameObject.name}");
+            }
+            else
+            {
+                Debug.LogError("[BossLanding] ❌ KHÔNG tìm thấy VaathBoss component trên 'bossObject'!");
+            }
+        }
+        else
+        {
+            Debug.LogError("[BossLanding] ❌ 'bossObject' chưa được kéo vào Inspector!");
         }
 
         // Reset velocity sau cutscene
