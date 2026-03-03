@@ -28,14 +28,7 @@ public class BossAttackHitbox : MonoBehaviour
         // Đã hit rồi thì không hit nữa
         if (hasHit) return;
 
-        // Check layer nếu được set
-        if (playerLayer.value != 0)
-        {
-            if (((1 << other.gameObject.layer) & playerLayer) == 0)
-                return;
-        }
-
-        // Check tag Player
+        // Ưu tiên check tag Player để Hero luôn nhận damage bất kể layer hay mask
         if (other.CompareTag("Player"))
         {
             PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
@@ -43,7 +36,7 @@ public class BossAttackHitbox : MonoBehaviour
             {
                 playerHealth.TakeDamage(damage);
                 hasHit = true;
-                Debug.Log($"Boss hitbox dealt {damage} damage to player");
+                Debug.Log($"Boss hitbox dealt {damage} damage to player: {other.name}");
 
                 // Destroy hitbox ngay sau khi hit
                 Destroy(gameObject);
