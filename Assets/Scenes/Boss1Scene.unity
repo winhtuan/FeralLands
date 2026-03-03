@@ -218,7 +218,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 305398672975631464, guid: b73fd18018457bf4e840ead7029984fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -239,8 +239,8 @@ Transform:
   m_GameObject: {fileID: 270717737}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.845847, y: 0.8321682, z: 1}
+  m_LocalPosition: {x: -0.0418, y: -0.013, z: 0}
+  m_LocalScale: {x: 2.649808, y: 2.6018527, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1045,6 +1045,10 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 1024
+  lightningPrefab: {fileID: 0}
+  lightningCount: 5
+  lightningSpacing: 1.8
+  lightningDelay: 1.5
   cooldown: 10
   timer: 0
 --- !u!114 &1188419040
@@ -1220,6 +1224,7 @@ MonoBehaviour:
   melee: {fileID: 1188419040}
   ulti: {fileID: 0}
   action: {fileID: 0}
+  mana: {fileID: 0}
 --- !u!95 &1188419048
 Animator:
   serializedVersion: 7
@@ -1957,7 +1962,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 35590de999b99d944be7d5d51d30fb67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
