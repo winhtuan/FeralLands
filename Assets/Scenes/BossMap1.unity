@@ -744,6 +744,18 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.029398397
       objectReference: {fileID: 0}
+    - target: {fileID: 3702253520632791431, guid: 4132638f612365f47b74d5e92aff3669, type: 3}
+      propertyPath: attackRange
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702253520632791431, guid: 4132638f612365f47b74d5e92aff3669, type: 3}
+      propertyPath: rangedCooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702253520632791431, guid: 4132638f612365f47b74d5e92aff3669, type: 3}
+      propertyPath: meteorHorizontalOffset
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8932637315563238799, guid: 4132638f612365f47b74d5e92aff3669, type: 3}
       propertyPath: m_LocalScale.x
       value: -0.422764

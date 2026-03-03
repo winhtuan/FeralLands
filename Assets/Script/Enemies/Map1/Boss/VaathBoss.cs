@@ -7,14 +7,14 @@ public class VaathBoss : MonoBehaviour
 
     [Header("Detection & Range")]
     public float detectRange = 50f; 
-    public float attackRange = 20f; 
+    public float attackRange = 2.0f; 
     public float meteorRange = 25f; 
 
     [Header("Movement")]
     public float chaseSpeed = 3.5f;
 
     [Header("Attack Settings")]
-    public float attackCooldown = 2.0f;
+    public float attackCooldown = 1.2f;
     public int damage = 20;
     public float rangedCooldown = 5.0f; 
 
@@ -41,6 +41,7 @@ public class VaathBoss : MonoBehaviour
     private float rangedTimer;
     private bool facingRight = false;
     private bool isCasting = false;
+    private bool isAttacking = false;
     public bool isBattleStarted = false;
 
     // Lưu vị trí gốc của camera để rung xong còn quay lại
@@ -75,6 +76,9 @@ public class VaathBoss : MonoBehaviour
                 transform.localScale = scale;
             }
         }
+
+        // Đặt timer bằng 0 để tấn công thiên thạch ngay khi hết banner
+        rangedTimer = 0f;
     }
 
     void Update()
@@ -87,14 +91,15 @@ public class VaathBoss : MonoBehaviour
 
         if (!isBattleStarted) return; 
 
-        if (isCasting) return;
+        if (isCasting || isAttacking) return;
 
         attackTimer -= Time.deltaTime;
         rangedTimer -= Time.deltaTime;
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (distanceToPlayer >= meteorRange && rangedTimer <= 0)
+        // Ưu tiên đòn gồng phép thiên thạch theo thời gian ngẫu nhiên 5-10s, không quan tâm khoảng cách
+        if (rangedTimer <= 0)
         {
             currentState = State.RangedAttack;
         }
@@ -143,9 +148,18 @@ public class VaathBoss : MonoBehaviour
 
         if (attackTimer <= 0)
         {
+            isAttacking = true;
             attackTimer = attackCooldown;
             animator.SetTrigger("Attack");
+            
+            // Unlock hướng sau khi animation attack kết thúc nhanh hơn (1.8s)
+            Invoke(nameof(EndAttack), 1.8f);
         }
+    }
+
+    void EndAttack()
+    {
+        isAttacking = false;
     }
 
     void StartRangedAttack()
@@ -155,7 +169,19 @@ public class VaathBoss : MonoBehaviour
         animator.SetBool("isRunning", false);
         UpdateFacing();
 
-        rangedTimer = rangedCooldown;
+        // Tính toán timer cho lần sau dựa trên khoảng cách hiện tại
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        if (distanceToPlayer <= attackRange)
+        {
+            // Trong tầm đánh cận chiến: ngẫu nhiên 3-6s
+            rangedTimer = Random.Range(3f, 6f);
+        }
+        else
+        {
+            // Ngoài tầm đánh cận chiến: cố định 3s
+            rangedTimer = 3f;
+        }
+        
         animator.SetTrigger("Cast"); 
         
         // Với animation casting.png mới dài hơn, chúng ta sẽ gọi meteor sau 1.5s (hoặc tùy bạn chỉnh)
@@ -231,7 +257,7 @@ public class VaathBoss : MonoBehaviour
 
     void UpdateFacing()
     {
-        if (player == null) return;
+        if (player == null || isAttacking || isCasting) return;
         bool shouldFaceRight = player.position.x > transform.position.x;
         if (shouldFaceRight != facingRight)
         {
@@ -250,9 +276,24 @@ public class VaathBoss : MonoBehaviour
     public void SpawnAttackHitbox()
     {
         if (attackHitboxPrefab == null) return;
+        
         float direction = facingRight ? 1f : -1f;
-        Vector2 spawnPos = (Vector2)transform.position + new Vector2(hitboxOffset.x * direction, hitboxOffset.y);
-        GameObject hitbox = Instantiate(attackHitboxPrefab, spawnPos, Quaternion.identity, transform);
+        
+        // Tầm với thực tế của đòn đánh
+        float reach = attackRange; 
+        
+        // Đặt tâm hitbox tại vị trí (reach / 2) tính từ Boss để nó bao phủ toàn bộ vùng từ 0 đến reach
+        Vector2 spawnPos = (Vector2)transform.position + new Vector2((reach / 2f) * direction, hitboxOffset.y);
+        
+        // Tạo hitbox ở world space
+        GameObject hitbox = Instantiate(attackHitboxPrefab, spawnPos, Quaternion.identity);
+        
+        // Điều chỉnh kích thước hitbox cho khớp với reach (giả sử BoxCollider2D mặc định size = 1)
+        Vector3 newScale = hitbox.transform.localScale;
+        newScale.x = reach; 
+        newScale.y = 3.0f; // Tăng vùng quét theo chiều dọc để dễ trúng hơn khi Hero nhảy
+        hitbox.transform.localScale = newScale;
+
         BossAttackHitbox hitboxScript = hitbox.GetComponent<BossAttackHitbox>();
         if (hitboxScript != null) hitboxScript.Init(direction, damage, hitboxLifetime);
     }
