@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb1c6b896a05f524caebebfff2906825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Meteor
-  fallSpeed: 10
+  fallSpeed: 15
   damage: 10
   playerLayer:
     serializedVersion: 2
