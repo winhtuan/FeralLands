@@ -44,15 +44,23 @@ public class SceneTransitionManager : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / transitionDuration;
-            t = t * t * (3f - 2f * t); // Làm mượt chuyển động
+            t = t * t * (3f - 2f * t);
 
-            topBar.anchoredPosition = new Vector2(0, Mathf.Lerp(screenHalfHeight, 0, t));
-            bottomBar.anchoredPosition = new Vector2(0, Mathf.Lerp(-screenHalfHeight, 0, t));
+            if (topBar != null) topBar.anchoredPosition = new Vector2(0, Mathf.Lerp(screenHalfHeight, 0, t));
+            if (bottomBar != null) bottomBar.anchoredPosition = new Vector2(0, Mathf.Lerp(-screenHalfHeight, 0, t));
             yield return null;
         }
 
-        // 2. Load Scene Boss
+        // 2. Load Scene
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+        if (asyncLoad == null)
+        {
+            Debug.LogError($"[SceneTransitionManager] Không thể load scene '{sceneName}'! " +
+                           $"Hãy kiểm tra: (1) Tên scene đúng chính xác, (2) Scene đã được thêm vào Build Settings (File → Build Settings).");
+            gameObject.SetActive(false);
+            yield break; // Dừng coroutine, không crash
+        }
+
         while (!asyncLoad.isDone)
         {
             yield return null;
@@ -66,15 +74,11 @@ public class SceneTransitionManager : MonoBehaviour
             float t = elapsedTime / transitionDuration;
             t = t * t * (3f - 2f * t);
 
-            topBar.anchoredPosition = new Vector2(0, Mathf.Lerp(0, screenHalfHeight, t));
-            bottomBar.anchoredPosition = new Vector2(0, Mathf.Lerp(0, -screenHalfHeight, t));
+            if (topBar != null) topBar.anchoredPosition = new Vector2(0, Mathf.Lerp(0, screenHalfHeight, t));
+            if (bottomBar != null) bottomBar.anchoredPosition = new Vector2(0, Mathf.Lerp(0, -screenHalfHeight, t));
             yield return null;
         }
-        // --- THÊM DÒNG NÀY VÀO ĐÂY ---
-        // Cách 1: Tắt ẩn Canvas đi (Khuyên dùng, an toàn nhất)
-        gameObject.SetActive(false);
 
-        // Cách 2: Hoặc nếu bạn muốn xóa sổ nó hoàn toàn khỏi Hierarchy cho sạch sẽ:
-        // Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
