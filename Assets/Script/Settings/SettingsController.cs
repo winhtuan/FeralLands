@@ -27,20 +27,65 @@ public class SettingsController : MonoBehaviour
     private const string MIXER_MUSIC = "MusicVol";
     private const string MIXER_SFX = "SFXVol";
 
+    private bool listenersAdded = false;
+
     void Start()
     {
         // 1. Tự động load cài đặt cũ ngay khi game bật lên
         LoadSettings();
+        RegisterListeners();
+    }
 
-        // 2. Gán sự kiện cho các nút
+    void OnEnable()
+    {
+        // Mỗi lần bảng Settings mở lên, load lại đúng giá trị hiện tại
+        int scheme = PlayerPrefs.GetInt(PREF_CONTROL, 0);
+        UpdateControlText(scheme);
+        Debug.Log($"[SettingsController] OnEnable - ControlScheme hiện tại = {scheme}");
+    }
+
+    private void RegisterListeners()
+    {
+        if (listenersAdded) return;
+        listenersAdded = true;
+
         if (musicSlider != null) musicSlider.onValueChanged.AddListener(SetMusicVolume);
         if (sfxSlider != null) sfxSlider.onValueChanged.AddListener(SetSFXVolume);
         if (fullscreenToggle != null) fullscreenToggle.onValueChanged.AddListener(SetFullscreen);
         
-        if (controlSchemeButton != null) controlSchemeButton.onClick.AddListener(ToggleControlScheme);
+        // TỰ ĐỘNG tìm nút CHANGE bằng chữ hiển thị, không dựa vào Inspector
+        Button[] allButtons = GetComponentsInChildren<Button>(true);
+        foreach (Button btn in allButtons)
+        {
+            // Kiểm tra text (UI cũ)
+            Text btnText = btn.GetComponentInChildren<Text>();
+            if (btnText != null && btnText.text.Trim().ToUpper() == "CHANGE")
+            {
+                btn.onClick.AddListener(DoToggleControlScheme);
+                Debug.Log("[SettingsController] Đã tự động gán DoToggle vào nút: " + btn.gameObject.name);
+                break;
+            }
+
+            // Kiểm tra TextMeshPro (UI mới)
+            TextMeshProUGUI tmpText = btn.GetComponentInChildren<TextMeshProUGUI>();
+            if (tmpText != null && tmpText.text.Trim().ToUpper() == "CHANGE")
+            {
+                btn.onClick.AddListener(DoToggleControlScheme);
+                Debug.Log("[SettingsController] Đã tự động gán DoToggle vào nút TMP: " + btn.gameObject.name);
+                break;
+            }
+        }
     }
 
+    // Hàm public này CỐ TÌNH để trống
+    // Nếu nút Close (hoặc bất kỳ nút nào) gọi hàm này qua Inspector => KHÔNG LÀM GÌ CẢ
     public void ToggleControlScheme()
+    {
+        // Không làm gì. Logic thật nằm ở DoToggleControlScheme().
+    }
+
+    // Hàm private - CHỈ được gọi từ nút Change qua AddListener
+    private void DoToggleControlScheme()
     {
         int current = PlayerPrefs.GetInt(PREF_CONTROL, 0);
         int newValue = (current == 0) ? 1 : 0;
@@ -49,6 +94,7 @@ public class SettingsController : MonoBehaviour
         PlayerPrefs.Save();
         
         UpdateControlText(newValue);
+        Debug.Log($"[SettingsController] DoToggle: {current} -> {newValue}");
     }
 
     private void UpdateControlText(int scheme)

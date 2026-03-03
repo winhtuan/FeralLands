@@ -35,6 +35,7 @@ public class PlayerJump : MonoBehaviour
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            if (AudioManager.Instance != null) AudioManager.Instance.PlayJumpSFX();
         }
     }
 

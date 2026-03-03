@@ -20,6 +20,7 @@ public class AudioManager : MonoBehaviour
     // Audio Sources
     private AudioSource musicSource;
     private AudioSource sfxSource;
+    private AudioSource runSource;
 
     private void Awake()
     {
@@ -50,6 +51,12 @@ public class AudioManager : MonoBehaviour
         sfxSource = gameObject.AddComponent<AudioSource>();
         sfxSource.outputAudioMixerGroup = sfxGroup;
         sfxSource.playOnAwake = false;
+
+        // Tạo AudioSource riêng cho Run SFX để có thể loop
+        runSource = gameObject.AddComponent<AudioSource>();
+        runSource.outputAudioMixerGroup = sfxGroup;
+        runSource.loop = true;
+        runSource.playOnAwake = false;
     }
 
     private void Start()
@@ -83,7 +90,7 @@ public class AudioManager : MonoBehaviour
         // Debug.Log("Scene loaded: " + currentScene);
 
         // Logic chọn nhạc theo Scene
-        if (currentScene == "MapBeachTestQuan")
+        if (currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan")
         {
             if (bossBattleMusic != null)
             {
@@ -92,6 +99,13 @@ public class AudioManager : MonoBehaviour
         }
         // Thêm các scene khác tại đây
     }
+
+    [Header("--- SFX TRACKS ---")]
+    public AudioClip jumpSFX;
+    public AudioClip meleeSFX;
+    public AudioClip plasmaOrbSFX;
+    public AudioClip runSFX;
+    public AudioClip ultimateSFX;
 
     public void PlayMusic(AudioClip clip)
     {
@@ -106,6 +120,46 @@ public class AudioManager : MonoBehaviour
         if (clip != null)
         {
             sfxSource.PlayOneShot(clip);
+        }
+    }
+
+    // --- PLAYER ACTION SFX ---
+    public void PlayJumpSFX()
+    {
+        PlaySFX(jumpSFX);
+    }
+
+    public void PlayMeleeSFX()
+    {
+        PlaySFX(meleeSFX);
+    }
+
+    public void PlayPlasmaOrbSFX()
+    {
+        PlaySFX(plasmaOrbSFX);
+    }
+    
+    public void PlayUltimateSFX()
+    {
+        PlaySFX(ultimateSFX);
+    }
+
+    public void PlayRunSFX()
+    {
+        if (runSFX == null || runSource == null) return;
+
+        if (!runSource.isPlaying || runSource.clip != runSFX)
+        {
+            runSource.clip = runSFX;
+            runSource.Play();
+        }
+    }
+
+    public void StopRunSFX()
+    {
+        if (runSource != null && runSource.isPlaying)
+        {
+            runSource.Stop();
         }
     }
 
@@ -134,10 +188,12 @@ public class AudioManager : MonoBehaviour
         if (sfxGroup != null)
         {
             sfxSource.volume = 1f;
+            if (runSource != null) runSource.volume = 1f;
         }
         else
         {
             sfxSource.volume = value;
+            if (runSource != null) runSource.volume = value;
         }
     }
 }

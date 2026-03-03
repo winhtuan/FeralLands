@@ -45,6 +45,8 @@ public class PlayerUltimate : MonoBehaviour
             action.SetBusy(true);
             timer = cooldown;
             animator.SetTrigger("Ultimate");
+
+            if (AudioManager.Instance != null) AudioManager.Instance.PlayUltimateSFX();
         }
     }
 
