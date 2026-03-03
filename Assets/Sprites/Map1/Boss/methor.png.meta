@@ -323,12 +323,12 @@ TextureImporter:
       name: methor_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 432
+        x: 0
+        y: 424
         width: 61
-        height: 74
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -345,12 +345,12 @@ TextureImporter:
       name: methor_1
       rect:
         serializedVersion: 2
-        x: 10
-        y: 502
-        width: 9
-        height: 6
+        x: 61
+        y: 424
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -367,12 +367,12 @@ TextureImporter:
       name: methor_2
       rect:
         serializedVersion: 2
-        x: 43
-        y: 502
-        width: 9
-        height: 6
+        x: 122
+        y: 424
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -389,12 +389,12 @@ TextureImporter:
       name: methor_3
       rect:
         serializedVersion: 2
-        x: 65
-        y: 432
-        width: 55
-        height: 74
+        x: 183
+        y: 424
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -411,12 +411,12 @@ TextureImporter:
       name: methor_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 432
-        width: 59
-        height: 76
+        x: 244
+        y: 424
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -433,12 +433,12 @@ TextureImporter:
       name: methor_5
       rect:
         serializedVersion: 2
-        x: 190
-        y: 432
-        width: 51
-        height: 72
+        x: 305
+        y: 424
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -455,12 +455,12 @@ TextureImporter:
       name: methor_6
       rect:
         serializedVersion: 2
-        x: 313
-        y: 434
-        width: 50
-        height: 69
+        x: 366
+        y: 424
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -477,12 +477,12 @@ TextureImporter:
       name: methor_7
       rect:
         serializedVersion: 2
-        x: 375
-        y: 432
-        width: 49
-        height: 74
+        x: 427
+        y: 424
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -499,12 +499,12 @@ TextureImporter:
       name: methor_8
       rect:
         serializedVersion: 2
-        x: 434
-        y: 425
-        width: 54
-        height: 79
+        x: 0
+        y: 340
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -521,12 +521,12 @@ TextureImporter:
       name: methor_9
       rect:
         serializedVersion: 2
-        x: 439
-        y: 499
-        width: 9
-        height: 9
+        x: 61
+        y: 340
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -543,12 +543,12 @@ TextureImporter:
       name: methor_10
       rect:
         serializedVersion: 2
-        x: 474
-        y: 499
-        width: 9
-        height: 9
+        x: 122
+        y: 340
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -565,12 +565,12 @@ TextureImporter:
       name: methor_11
       rect:
         serializedVersion: 2
-        x: 252
-        y: 433
-        width: 57
-        height: 67
+        x: 183
+        y: 340
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -587,12 +587,12 @@ TextureImporter:
       name: methor_12
       rect:
         serializedVersion: 2
-        x: 367
-        y: 432
-        width: 7
-        height: 7
+        x: 244
+        y: 340
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -609,12 +609,12 @@ TextureImporter:
       name: methor_13
       rect:
         serializedVersion: 2
-        x: 3
-        y: 344
+        x: 305
+        y: 340
         width: 61
-        height: 87
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -631,12 +631,12 @@ TextureImporter:
       name: methor_14
       rect:
         serializedVersion: 2
-        x: 65
-        y: 348
-        width: 55
-        height: 73
+        x: 366
+        y: 340
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -653,12 +653,12 @@ TextureImporter:
       name: methor_15
       rect:
         serializedVersion: 2
-        x: 128
-        y: 348
-        width: 52
-        height: 79
+        x: 427
+        y: 340
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -675,12 +675,12 @@ TextureImporter:
       name: methor_16
       rect:
         serializedVersion: 2
-        x: 190
-        y: 348
-        width: 51
-        height: 72
+        x: 0
+        y: 256
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -697,12 +697,12 @@ TextureImporter:
       name: methor_17
       rect:
         serializedVersion: 2
-        x: 252
-        y: 348
-        width: 57
-        height: 68
+        x: 61
+        y: 256
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -719,12 +719,12 @@ TextureImporter:
       name: methor_18
       rect:
         serializedVersion: 2
-        x: 313
-        y: 349
-        width: 50
-        height: 69
+        x: 122
+        y: 256
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -741,12 +741,12 @@ TextureImporter:
       name: methor_19
       rect:
         serializedVersion: 2
-        x: 375
-        y: 348
-        width: 49
-        height: 73
+        x: 183
+        y: 256
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -763,12 +763,12 @@ TextureImporter:
       name: methor_20
       rect:
         serializedVersion: 2
-        x: 434
-        y: 338
-        width: 54
-        height: 82
+        x: 244
+        y: 256
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -785,12 +785,12 @@ TextureImporter:
       name: methor_21
       rect:
         serializedVersion: 2
-        x: 439
-        y: 415
-        width: 9
-        height: 9
+        x: 305
+        y: 256
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -807,12 +807,12 @@ TextureImporter:
       name: methor_22
       rect:
         serializedVersion: 2
-        x: 474
-        y: 415
-        width: 9
-        height: 9
+        x: 366
+        y: 256
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -829,12 +829,12 @@ TextureImporter:
       name: methor_23
       rect:
         serializedVersion: 2
-        x: 3
-        y: 263
+        x: 427
+        y: 256
         width: 61
-        height: 74
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -851,12 +851,12 @@ TextureImporter:
       name: methor_24
       rect:
         serializedVersion: 2
-        x: 65
-        y: 263
-        width: 55
-        height: 73
+        x: 0
+        y: 172
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -873,12 +873,12 @@ TextureImporter:
       name: methor_25
       rect:
         serializedVersion: 2
-        x: 123
-        y: 263
-        width: 57
-        height: 80
+        x: 61
+        y: 172
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -895,12 +895,12 @@ TextureImporter:
       name: methor_26
       rect:
         serializedVersion: 2
-        x: 190
-        y: 263
-        width: 51
-        height: 72
+        x: 122
+        y: 172
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -917,12 +917,12 @@ TextureImporter:
       name: methor_27
       rect:
         serializedVersion: 2
-        x: 252
-        y: 264
-        width: 50
-        height: 67
+        x: 183
+        y: 172
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -939,12 +939,12 @@ TextureImporter:
       name: methor_28
       rect:
         serializedVersion: 2
-        x: 313
-        y: 265
-        width: 50
-        height: 68
+        x: 244
+        y: 172
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -961,12 +961,12 @@ TextureImporter:
       name: methor_29
       rect:
         serializedVersion: 2
-        x: 375
-        y: 323
-        width: 10
-        height: 14
+        x: 305
+        y: 172
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -983,12 +983,12 @@ TextureImporter:
       name: methor_30
       rect:
         serializedVersion: 2
-        x: 375
-        y: 263
-        width: 49
-        height: 73
+        x: 366
+        y: 172
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1005,12 +1005,12 @@ TextureImporter:
       name: methor_31
       rect:
         serializedVersion: 2
-        x: 434
-        y: 253
-        width: 54
-        height: 82
+        x: 427
+        y: 172
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1027,12 +1027,12 @@ TextureImporter:
       name: methor_32
       rect:
         serializedVersion: 2
-        x: 439
-        y: 330
-        width: 9
-        height: 9
+        x: 0
+        y: 88
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1049,12 +1049,12 @@ TextureImporter:
       name: methor_33
       rect:
         serializedVersion: 2
-        x: 474
-        y: 330
-        width: 9
-        height: 9
+        x: 61
+        y: 88
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1071,12 +1071,12 @@ TextureImporter:
       name: methor_34
       rect:
         serializedVersion: 2
-        x: 3
-        y: 178
+        x: 122
+        y: 88
         width: 61
-        height: 79
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1093,12 +1093,12 @@ TextureImporter:
       name: methor_35
       rect:
         serializedVersion: 2
-        x: 23
-        y: 253
-        width: 9
-        height: 9
+        x: 183
+        y: 88
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1115,12 +1115,12 @@ TextureImporter:
       name: methor_36
       rect:
         serializedVersion: 2
-        x: 43
-        y: 248
-        width: 9
-        height: 7
+        x: 244
+        y: 88
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1137,12 +1137,12 @@ TextureImporter:
       name: methor_37
       rect:
         serializedVersion: 2
-        x: 128
-        y: 178
-        width: 59
-        height: 76
+        x: 305
+        y: 88
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1159,12 +1159,12 @@ TextureImporter:
       name: methor_38
       rect:
         serializedVersion: 2
-        x: 143
-        y: 253
-        width: 9
-        height: 6
+        x: 366
+        y: 88
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1181,12 +1181,12 @@ TextureImporter:
       name: methor_39
       rect:
         serializedVersion: 2
-        x: 439
-        y: 245
-        width: 9
-        height: 9
+        x: 427
+        y: 88
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1203,12 +1203,12 @@ TextureImporter:
       name: methor_40
       rect:
         serializedVersion: 2
-        x: 474
-        y: 245
-        width: 9
-        height: 9
+        x: 0
+        y: 4
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1225,12 +1225,12 @@ TextureImporter:
       name: methor_41
       rect:
         serializedVersion: 2
-        x: 64
-        y: 176
+        x: 61
+        y: 4
         width: 61
-        height: 76
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1247,12 +1247,12 @@ TextureImporter:
       name: methor_42
       rect:
         serializedVersion: 2
-        x: 190
-        y: 178
-        width: 51
-        height: 72
+        x: 122
+        y: 4
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1269,12 +1269,12 @@ TextureImporter:
       name: methor_43
       rect:
         serializedVersion: 2
-        x: 252
-        y: 179
-        width: 57
-        height: 67
+        x: 183
+        y: 4
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1291,12 +1291,12 @@ TextureImporter:
       name: methor_44
       rect:
         serializedVersion: 2
-        x: 313
-        y: 180
-        width: 50
-        height: 69
+        x: 244
+        y: 4
+        width: 61
+        height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1309,561 +1309,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: methor_45
-      rect:
-        serializedVersion: 2
-        x: 367
-        y: 178
-        width: 57
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dc89c1de8a84ab0c0800000000000000
-      internalID: -4559251782389425971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_46
-      rect:
-        serializedVersion: 2
-        x: 428
-        y: 169
-        width: 60
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc5e89430014c0eb0800000000000000
-      internalID: -4752352037644474933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_47
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 94
-        width: 57
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d00c73c88810e000800000000000000
-      internalID: 63077370457489625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_48
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 163
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d855f908aee525f0800000000000000
-      internalID: -781956554789922602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_49
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 168
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6bea240a1a329fc40800000000000000
-      internalID: 5546503593168907958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_50
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 163
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c47f72b26d86ea70800000000000000
-      internalID: 8855921172311667907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_51
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 94
-        width: 52
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c7a17319cd727be0800000000000000
-      internalID: -1480983024883357755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_52
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 168
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f34cedd34ec5db50800000000000000
-      internalID: 6617422018372191223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_53
-      rect:
-        serializedVersion: 2
-        x: 439
-        y: 161
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d98ff58ac5d3874b0800000000000000
-      internalID: -5442532681506096995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_54
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 161
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79bcd18b0e90b77e0800000000000000
-      internalID: -1766807568046503017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_55
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 94
-        width: 60
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1e7ef3258c1c69c40800000000000000
-      internalID: 5518811459506661345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_56
-      rect:
-        serializedVersion: 2
-        x: 190
-        y: 94
-        width: 51
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94db4b4debe693f30800000000000000
-      internalID: 4555794263953423689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_57
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 94
-        width: 54
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 545b1f88752011fe0800000000000000
-      internalID: -1220191449057741499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_58
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 94
-        width: 50
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ceac8fe94f8fe1f30800000000000000
-      internalID: 4548346403213593324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_59
-      rect:
-        serializedVersion: 2
-        x: 372
-        y: 92
-        width: 52
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47d16dcce732efca0800000000000000
-      internalID: -5981304227592004236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_60
-      rect:
-        serializedVersion: 2
-        x: 434
-        y: 94
-        width: 53
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bddbc553f7f93d7d0800000000000000
-      internalID: -2894794766764163621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_61
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 5
-        width: 57
-        height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0de6dbc3d8d51f310800000000000000
-      internalID: 1437032617298718416
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_62
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 79
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed54b61514c3c7e40800000000000000
-      internalID: 5655461483307025886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_63
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 82
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d7a52ef0b12a4630800000000000000
-      internalID: 3911976270386538457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_64
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 79
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e90ed846e6c1758b0800000000000000
-      internalID: -5163627187297984354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_65
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 9
-        width: 56
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94c203963c0b43c70800000000000000
-      internalID: 8949972712821894217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_66
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 9
-        width: 61
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6be14ad35ce56d280800000000000000
-      internalID: -9018917002527105354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_67
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 9
-        width: 57
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69c5a18f75106ae50800000000000000
-      internalID: 6820140163035454614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_68
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 79
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 43bbd579ba07eac60800000000000000
-      internalID: 7831320684325092148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: methor_69
-      rect:
-        serializedVersion: 2
-        x: 244
-        y: 9
-        width: 61
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7d9221ba81260ca90800000000000000
-      internalID: -7295723538251372073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 74a709c535dbb334c8b8f2bea63c9e62
     internalID: 0
     vertices: []
     indices: 
@@ -1871,7 +1321,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":6.0},"gridSpriteSize":{"x":61.0,"y":84.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       methor_0: 3510551313456940907
       methor_1: 2158660672076242464
@@ -1913,33 +1365,8 @@ TextureImporter:
       methor_42: 600937033578071437
       methor_43: 1068546233588847890
       methor_44: 7347829260344461489
-      methor_45: -4559251782389425971
-      methor_46: -4752352037644474933
-      methor_47: 63077370457489625
-      methor_48: -781956554789922602
-      methor_49: 5546503593168907958
       methor_5: -8976820020161849885
-      methor_50: 8855921172311667907
-      methor_51: -1480983024883357755
-      methor_52: 6617422018372191223
-      methor_53: -5442532681506096995
-      methor_54: -1766807568046503017
-      methor_55: 5518811459506661345
-      methor_56: 4555794263953423689
-      methor_57: -1220191449057741499
-      methor_58: 4548346403213593324
-      methor_59: -5981304227592004236
       methor_6: -4552367379384565967
-      methor_60: -2894794766764163621
-      methor_61: 1437032617298718416
-      methor_62: 5655461483307025886
-      methor_63: 3911976270386538457
-      methor_64: -5163627187297984354
-      methor_65: 8949972712821894217
-      methor_66: -9018917002527105354
-      methor_67: 6820140163035454614
-      methor_68: 7831320684325092148
-      methor_69: -7295723538251372073
       methor_7: -3566890748978970689
       methor_8: -2772304466892720637
       methor_9: -1227812435916445146
