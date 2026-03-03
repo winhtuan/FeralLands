@@ -37,25 +37,52 @@ public class PlayerCastOrb : MonoBehaviour
 
     void HandleCast()
     {
-        if (action.IsBusy) return;
-
+        // Luôn giảm thời gian hồi chiêu độc lập với action.IsBusy
         if (fireTimer > 0)
             fireTimer -= Time.deltaTime;
 
         if (Keyboard.current.jKey.wasPressedThisFrame && fireTimer <= 0)
         {
-            if (!mana.UseEnergy(15f)) return;
+            Debug.Log($"[PlayerCastOrb] Pressed J. Mana: {mana.currentEnergy}");
+            if (!mana.UseEnergy(15f))
+            {
+                Debug.Log("[PlayerCastOrb] Not enough mana!");
+                return;
+            }
+
+            Debug.Log("[PlayerCastOrb] Casting Orb directly!");
 
             action.SetBusy(true);
             fireTimer = fireCooldown;
             animator.SetTrigger("CastOrb");
+
+            // Gọi trực tiếp SpawnOrb và cởi trói IsBusy ngay để đảm bảo chắc chắn chạy
+            SpawnOrb();
+            Invoke(nameof(EndCast), 0.3f);
         }
     }
 
-    // Animation Event
+
+    float lastSpawnTime = -1f;
+
+    // Animation Event hoặc được gọi trực tiếp từ code
     public void SpawnOrb()
     {
-        if (!lightOrbPrefab) return;
+        Debug.Log($"[PlayerCastOrb] SpawnOrb called! lightOrbPrefab: {lightOrbPrefab != null}");
+        
+        // Tránh tình trạng bắn đúp do gọi 1 lần từ code và 1 lần từ Animation Event
+        if (Time.time - lastSpawnTime < 0.2f) 
+        {
+            Debug.Log("[PlayerCastOrb] Blocked double-fire");
+            return;
+        }
+        lastSpawnTime = Time.time;
+
+        if (!lightOrbPrefab) 
+        {
+            Debug.LogError("[PlayerCastOrb] LỖI: lightOrbPrefab bị NULL! Chưa kéo prefab vào Inspector.");
+            return;
+        }
 
         float dir = movement.Facing;
 

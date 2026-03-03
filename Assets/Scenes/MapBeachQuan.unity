@@ -4347,12 +4347,6 @@ MonoBehaviour:
   musicGroup: {fileID: 5524457805921807633, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
   sfxGroup: {fileID: -2362617805984967503, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
   bossBattleMusic: {fileID: 8300000, guid: b7c2d82f33f7d2142bb00bd33446d4c3, type: 3}
-  clickSFX: {fileID: 0}
-  hoverSFX: {fileID: 0}
-  jumpSFX: {fileID: 0}
-  meleeSFX: {fileID: 0}
-  plasmaOrbSFX: {fileID: 0}
-  runSFX: {fileID: 0}
 --- !u!4 &1357652729
 Transform:
   m_ObjectHideFlags: 0
