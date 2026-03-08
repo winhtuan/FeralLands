@@ -32,6 +32,13 @@ public class VaathBoss : MonoBehaviour
     public float shakeIntensity = 0.5f;
     public float shakeDuration = 0.3f;
 
+    [Header("Enrage Settings (HP < 50%)")]
+    public float enragedAttackCooldown = 0.7f;
+    public float enragedMeteorSpeed = 20f;
+    public float enragedMeleeAnimSpeed = 1.5f;
+    private bool isEnraged = false;
+    private BossHealth bossHealth;
+
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer sr;
@@ -53,6 +60,7 @@ public class VaathBoss : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        bossHealth = GetComponent<BossHealth>();
 
         // Đảm bảo boss không tự ý đánh khi chưa hết banner intro
         isBattleStarted = false;
@@ -91,6 +99,9 @@ public class VaathBoss : MonoBehaviour
 
         if (!isBattleStarted) return; 
 
+        // Kiểm tra Enrage (Dưới 50% máu)
+        CheckEnrage();
+
         if (isCasting || isAttacking) return;
 
         attackTimer -= Time.deltaTime;
@@ -98,7 +109,6 @@ public class VaathBoss : MonoBehaviour
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        // Ưu tiên đòn gồng phép thiên thạch theo thời gian ngẫu nhiên 5-10s, không quan tâm khoảng cách
         if (rangedTimer <= 0)
         {
             currentState = State.RangedAttack;
@@ -122,6 +132,33 @@ public class VaathBoss : MonoBehaviour
             case State.Chase: Chase(); break;
             case State.Attack: Attack(); break;
             case State.RangedAttack: StartRangedAttack(); break;
+        }
+    }
+
+    void CheckEnrage()
+    {
+        if (isEnraged || bossHealth == null) return;
+
+        float hpPercent = (float)bossHealth.GetCurrentHP() / bossHealth.GetMaxHP();
+        if (hpPercent < 0.5f)
+        {
+            isEnraged = true;
+            Debug.Log("<color=red>BOSS ENRAGED!</color>");
+            
+            // 🎨 HIỆU ỨNG THỊ GIÁC (Visual Effects)
+            
+            // 1. Đổi màu boss sang tông đỏ vĩnh viễn
+            if (sr != null) sr.color = new Color(1f, 0.5f, 0.5f); 
+
+            // 2. Rung màn hình mạnh một cái để báo hiệu
+            TriggerScreenShake();
+
+            // 3. Kích hoạt Animator
+            if (animator != null)
+            {
+                animator.SetTrigger("Enrage");
+                animator.SetBool("isEnraged", true);
+            }
         }
     }
 
@@ -149,17 +186,24 @@ public class VaathBoss : MonoBehaviour
         if (attackTimer <= 0)
         {
             isAttacking = true;
-            attackTimer = attackCooldown;
+            
+            // Buff tốc độ đánh khi Enraged
+            float currentCooldown = isEnraged ? enragedAttackCooldown : attackCooldown;
+            attackTimer = currentCooldown;
+
+            if (isEnraged) animator.speed = enragedMeleeAnimSpeed;
             animator.SetTrigger("Attack");
             
-            // Unlock hướng sau khi animation attack kết thúc nhanh hơn (1.8s)
-            Invoke(nameof(EndAttack), 1.8f);
+            // Unlock hướng sau khi animation attack kết thúc nhanh hơn (tùy thuộc vào animation speed)
+            float unlockTime = isEnraged ? (1.8f / enragedMeleeAnimSpeed) : 1.8f;
+            Invoke(nameof(EndAttack), unlockTime);
         }
     }
 
     void EndAttack()
     {
         isAttacking = false;
+        animator.speed = 1f; // Trả lại tốc độ bình thường
     }
 
     void StartRangedAttack()
@@ -173,27 +217,30 @@ public class VaathBoss : MonoBehaviour
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         if (distanceToPlayer <= attackRange)
         {
-            // Trong tầm đánh cận chiến: ngẫu nhiên 3-6s
-            rangedTimer = Random.Range(3f, 6f);
+            // Trong tầm đánh cận chiến: ngẫu nhiên 3-6s (nhanh hơn nếu enraged)
+            float minT = isEnraged ? 2f : 3f;
+            float maxT = isEnraged ? 4f : 6f;
+            rangedTimer = Random.Range(minT, maxT);
         }
         else
         {
-            // Ngoài tầm đánh cận chiến: cố định 3s
-            rangedTimer = 3f;
+            // Ngoài tầm đánh cận chiến: cố định 3s (nhanh hơn nếu enraged)
+            rangedTimer = isEnraged ? 2f : 3f;
         }
         
         animator.SetTrigger("Cast"); 
         
-        // Với animation casting.png mới dài hơn, chúng ta sẽ gọi meteor sau 1.5s (hoặc tùy bạn chỉnh)
-        Invoke("PerformMeteorStrike", 1.5f); 
+        // Thời gian chờ Meteor rơi (nhanh hơn nếu enraged)
+        float castDelay = isEnraged ? 0.8f : 1.5f;
+        Invoke("PerformMeteorStrike", castDelay); 
     }
 
     public void PerformMeteorStrike()
     {
         if (player == null) return;
 
-        // Số lượng thiên thạch ngẫu nhiên từ 1 đến 5
-        int count = Random.Range(1, 6);
+        // Số lượng thiên thạch ngẫu nhiên từ 5 đến 10
+        int count = Random.Range(5, 11);
 
         // Vị trí xuất hiện: phía trên và hơi lùi về phía sau boss (tùy direction boss đang nhìn)
         float spawnOffsetX = facingRight ? -8f : 8f; 
@@ -210,6 +257,9 @@ public class VaathBoss : MonoBehaviour
                 Meteor meteorScript = meteor.GetComponent<Meteor>();
                 if (meteorScript != null)
                 {
+                    // Tăng tốc độ rơi nếu enraged
+                    if (isEnraged) meteorScript.fallSpeed = enragedMeteorSpeed;
+
                     // Tính hướng bay về phía player (có thêm một chút xOffset để né được)
                     float xOffsetPerMeteor = (i - (count - 1) / 2f) * meteorHorizontalOffset;
                     Vector2 targetPos = new Vector2(player.position.x + xOffsetPerMeteor, player.position.y);
@@ -224,8 +274,10 @@ public class VaathBoss : MonoBehaviour
         TriggerScreenShake();
 
         // Chờ kết thúc casting phù hợp với độ dài animation mới
-        Invoke("EndCasting", 1.0f);
+        float endCastDelay = isEnraged ? 0.5f : 1.0f;
+        Invoke("EndCasting", endCastDelay);
     }
+
 
     void TriggerScreenShake()
     {
