@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: a34732e8545cb4e4da983d64db0060e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7264762105793646969
+    second: BrightmossGolem_Idle_0
+  - first:
+      213: -1824683649620835597
+    second: BrightmossGolem_Idle_1
+  - first:
+      213: 8536083972416153381
+    second: BrightmossGolem_Idle_2
+  - first:
+      213: -9102326217179110720
+    second: BrightmossGolem_Idle_3
+  - first:
+      213: 312448102759469435
+    second: BrightmossGolem_Idle_4
+  - first:
+      213: -3269019776215202940
+    second: BrightmossGolem_Idle_5
+  - first:
+      213: 1316377606752318468
+    second: BrightmossGolem_Idle_6
+  - first:
+      213: -213191364139379566
+    second: BrightmossGolem_Idle_7
+  - first:
+      213: -3855857847995854989
+    second: BrightmossGolem_Idle_8
+  - first:
+      213: 1774003510932840782
+    second: BrightmossGolem_Idle_9
+  - first:
+      213: 9157459256327114079
+    second: BrightmossGolem_Idle_10
+  - first:
+      213: -5411767591426914022
+    second: BrightmossGolem_Idle_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 255
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9719c8515ae91d460800000000000000
+      internalID: 7264762105793646969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 255
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f203e463eb6da6e0800000000000000
+      internalID: -1824683649620835597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 255
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52725c49523467670800000000000000
+      internalID: 8536083972416153381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 175
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2605b188a0ea180800000000000000
+      internalID: -9102326217179110720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 175
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7119bfd4e9065400800000000000000
+      internalID: 312448102759469435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 175
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48347f265db12a2d0800000000000000
+      internalID: -3269019776215202940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 95
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40430c87576b44210800000000000000
+      internalID: 1316377606752318468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 95
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2949a4775979a0df0800000000000000
+      internalID: -213191364139379566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 95
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f0ec967bd3d7ac0800000000000000
+      internalID: -3855857847995854989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 15
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41a27b4bc68e9810800000000000000
+      internalID: 1774003510932840782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 15
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d8d72eca4d51f70800000000000000
+      internalID: 9157459256327114079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrightmossGolem_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 15
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1907026c0a85e4b0800000000000000
+      internalID: -5411767591426914022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BrightmossGolem_Idle_0: 7264762105793646969
+      BrightmossGolem_Idle_1: -1824683649620835597
+      BrightmossGolem_Idle_10: 9157459256327114079
+      BrightmossGolem_Idle_11: -5411767591426914022
+      BrightmossGolem_Idle_2: 8536083972416153381
+      BrightmossGolem_Idle_3: -9102326217179110720
+      BrightmossGolem_Idle_4: 312448102759469435
+      BrightmossGolem_Idle_5: -3269019776215202940
+      BrightmossGolem_Idle_6: 1316377606752318468
+      BrightmossGolem_Idle_7: -213191364139379566
+      BrightmossGolem_Idle_8: -3855857847995854989
+      BrightmossGolem_Idle_9: 1774003510932840782
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
