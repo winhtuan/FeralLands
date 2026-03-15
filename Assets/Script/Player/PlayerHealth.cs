@@ -43,6 +43,16 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         }
     }
 
+    // Method để set health trực tiếp (dùng cho boss kill player)
+    public void SetHealth(int health)
+    {
+        currentHealth = Mathf.Clamp(health, 0, maxHealth);
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
     void Die()
     {
         Debug.Log("Player Dead!");
