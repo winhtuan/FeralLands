@@ -1461,6 +1461,8 @@ MonoBehaviour:
   fireOffset: {x: 0.4, y: -0.1}
   fireCooldown: 0.3
   fireTimer: 0
+  extraOrbCount: 0
+  isTripleOrbActive: 0
 --- !u!114 &406872456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1544,7 +1546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerLevel
   currentLevel: 1
   currentExp: 0
-  expToNextLevel: 0a000000190000003200000064000000c8000000900100002003000040060000800c000000190000
+  expToNextLevel: 02000000020000000200000002000000020000000200000002000000020000000200000002000000
 --- !u!1 &429867797
 GameObject:
   m_ObjectHideFlags: 0
@@ -7859,10 +7861,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5ef781685592846bb34267c1393255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AugmentManager
-  augmentPool:
+  augmentPoolLv2:
   - {fileID: 11400000, guid: ea28416fe71da7b47993509a5c830dec, type: 2}
   - {fileID: 11400000, guid: 69e19b4a79f9fba4a90b1441985861c7, type: 2}
   - {fileID: 11400000, guid: cc7eece4730b1004aa15380b91aa43d3, type: 2}
+  augmentPoolLv5:
+  - {fileID: 11400000, guid: a40ad2685743e55479f1efed21826476, type: 2}
+  - {fileID: 11400000, guid: 88e0b61e265a27d459bbf01bd054c79c, type: 2}
+  - {fileID: 11400000, guid: 23a3f255724749b4098aba5ce65dce1c, type: 2}
+  augmentPoolLv8:
+  - {fileID: 11400000, guid: 74028866b74a9674d95da9e235d0e487, type: 2}
+  - {fileID: 11400000, guid: bfc608b6b5f6a54449a01cb8abc64373, type: 2}
+  - {fileID: 11400000, guid: fb423af5bb93a044c906ea536e51caf5, type: 2}
+  augmentPoolLv10:
+  - {fileID: 11400000, guid: a6bab859ed537c047ad61528a796dc6c, type: 2}
+  - {fileID: 11400000, guid: ca2481454e9a2f24eb97c73780a47510, type: 2}
+  - {fileID: 11400000, guid: a9841b64971e3c24aaa11e1ba10c3ba2, type: 2}
   playerLevel: {fileID: 406872460}
   augmentUI: {fileID: 1434712119}
 --- !u!4 &1930279326

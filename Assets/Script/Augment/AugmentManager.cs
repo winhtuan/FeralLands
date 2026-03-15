@@ -1,19 +1,27 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 /// <summary>
-/// AugmentManager — Quản lý logic chọn Lõi khi nhân vật lên cấp 2.
-/// Gắn lên một GameObject bất kỳ trong Scene (ví dụ: GameManager).
+/// AugmentManager — Quản lý logic chọn Lõi ở nhiều mốc cấp (2, 5, 8, 10).
+/// Gắn lên một GameObject bất kỳ trong Scene (ví dụ: AugmentManager).
 /// </summary>
 public class AugmentManager : MonoBehaviour
 {
-    [Header("Augment Pool — Kéo 3 Lõi ScriptableObject vào đây")]
-    public AugmentData[] augmentPool; // Kéo 3 AugmentData vào Inspector
+    [Header("Augment Pools — Mỗi level có pool riêng")]
+    public AugmentData[] augmentPoolLv2;   // Level 2: HP, DMG, Speed
+    public AugmentData[] augmentPoolLv5;   // Level 5: Skin (đổi màu)
+    public AugmentData[] augmentPoolLv8;   // Level 8: Mana Regen, Attack Speed, Double Orb
+    public AugmentData[] augmentPoolLv10;  // Level 10: HP+, DMG+, Speed+ (mạnh hơn)
 
     [Header("References")]
     public PlayerLevel playerLevel;
     public AugmentUI augmentUI;
 
-    private bool hasOfferedAugment = false; // Chỉ cho chọn 1 lần khi lên cấp 2
+    // Các mốc level cho lõi
+    private readonly int[] augmentLevels = { 2, 5, 8, 10 };
+
+    // Track level nào đã cho chọn rồi
+    private HashSet<int> offeredLevels = new HashSet<int>();
 
     void Start()
     {
@@ -37,23 +45,55 @@ public class AugmentManager : MonoBehaviour
 
     void HandleLevelUp(int newLevel)
     {
-        // Chỉ hiện chọn Lõi khi lên cấp 2 và chưa chọn
-        if (newLevel == 2 && !hasOfferedAugment)
+        // Kiểm tra level này có trong danh sách cho lõi không
+        if (!offeredLevels.Contains(newLevel) && IsAugmentLevel(newLevel))
         {
-            hasOfferedAugment = true;
-            ShowAugmentSelection();
+            offeredLevels.Add(newLevel);
+            ShowAugmentSelection(newLevel);
         }
     }
 
-    void ShowAugmentSelection()
+    bool IsAugmentLevel(int level)
     {
+        foreach (int lv in augmentLevels)
+        {
+            if (lv == level) return true;
+        }
+        return false;
+    }
+
+    /// <summary>
+    /// Lấy pool lõi đúng theo level
+    /// </summary>
+    AugmentData[] GetPoolForLevel(int level)
+    {
+        switch (level)
+        {
+            case 2:  return augmentPoolLv2;
+            case 5:  return augmentPoolLv5;
+            case 8:  return augmentPoolLv8;
+            case 10: return augmentPoolLv10;
+            default: return null;
+        }
+    }
+
+    void ShowAugmentSelection(int level)
+    {
+        AugmentData[] pool = GetPoolForLevel(level);
+
+        if (pool == null || pool.Length == 0)
+        {
+            Debug.LogWarning($"[Augment] Không có pool lõi cho level {level}!");
+            return;
+        }
+
         // Pause game
         Time.timeScale = 0f;
 
-        // Hiện UI với 3 lõi
+        // Hiện UI
         if (augmentUI != null)
         {
-            augmentUI.Show(augmentPool, OnAugmentSelected);
+            augmentUI.Show(pool, OnAugmentSelected);
         }
     }
 
@@ -86,13 +126,14 @@ public class AugmentManager : MonoBehaviour
 
         switch (augment.type)
         {
+            // ===== LEVEL 2 & 10: Stats cơ bản =====
             case AugmentData.AugmentType.Health:
                 PlayerHealth hp = player.GetComponent<PlayerHealth>();
                 if (hp != null)
                 {
                     hp.maxHealth += (int)augment.value;
-                    hp.currentHealth += (int)augment.value; // Hồi thêm luôn
-                    Debug.Log($"[Augment] HP tối đa tăng thêm {augment.value} → {hp.maxHealth}");
+                    hp.currentHealth += (int)augment.value;
+                    Debug.Log($"[Augment] HP tối đa +{augment.value} → {hp.maxHealth}");
                 }
                 break;
 
@@ -101,7 +142,7 @@ public class AugmentManager : MonoBehaviour
                 if (melee != null)
                 {
                     melee.meleeDamage += (int)augment.value;
-                    Debug.Log($"[Augment] Sát thương tăng thêm {augment.value} → {melee.meleeDamage}");
+                    Debug.Log($"[Augment] Sát thương +{augment.value} → {melee.meleeDamage}");
                 }
                 break;
 
@@ -110,7 +151,46 @@ public class AugmentManager : MonoBehaviour
                 if (move != null)
                 {
                     move.moveSpeed += augment.value;
-                    Debug.Log($"[Augment] Tốc độ tăng thêm {augment.value} → {move.moveSpeed}");
+                    Debug.Log($"[Augment] Tốc chạy +{augment.value} → {move.moveSpeed}");
+                }
+                break;
+
+            // ===== LEVEL 5: Đổi Skin (Tint màu) =====
+            case AugmentData.AugmentType.Skin:
+                SpriteRenderer sr = player.GetComponent<SpriteRenderer>();
+                if (sr != null)
+                {
+                    sr.color = augment.skinColor;
+                    Debug.Log($"[Augment] Đổi màu nhân vật → {augment.skinColor}");
+                }
+                break;
+
+            // ===== LEVEL 8: Buff nâng cao =====
+            case AugmentData.AugmentType.ManaRegen:
+                PlayerEnergy energy = player.GetComponent<PlayerEnergy>();
+                if (energy != null)
+                {
+                    energy.regenRate += augment.value;
+                    Debug.Log($"[Augment] Hồi mana +{augment.value}/s → {energy.regenRate}/s");
+                }
+                break;
+
+            case AugmentData.AugmentType.AttackSpeed:
+                PlayerMeleeAttack meleeAS = player.GetComponent<PlayerMeleeAttack>();
+                if (meleeAS != null)
+                {
+                    // Giảm cooldown = đánh nhanh hơn (value là % giảm, ví dụ 0.3 = giảm 30%)
+                    meleeAS.attackCooldown *= (1f - augment.value);
+                    Debug.Log($"[Augment] Tốc đánh nhanh hơn! Cooldown → {meleeAS.attackCooldown:F2}s");
+                }
+                break;
+
+            case AugmentData.AugmentType.TripleOrb:
+                PlayerCastOrb castOrb = player.GetComponent<PlayerCastOrb>();
+                if (castOrb != null)
+                {
+                    castOrb.isTripleOrbActive = true;
+                    Debug.Log("[Augment] Kích hoạt bắn Orb 3 tia!");
                 }
                 break;
         }

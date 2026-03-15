@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerCastOrb : MonoBehaviour
@@ -15,6 +15,8 @@ public class PlayerCastOrb : MonoBehaviour
 
     public float fireCooldown = 0.5f;
     public float fireTimer;
+    public int extraOrbCount = 0; // Số lượng orb bắn thêm theo lượt (nếu có)
+    public bool isTripleOrbActive = false; // Flag cho chế độ 3 tia (Augment Lv8)
 
     Animator animator;
     PlayerMovement movement;
@@ -27,7 +29,6 @@ public class PlayerCastOrb : MonoBehaviour
         movement = GetComponent<PlayerMovement>();
         action = GetComponent<PlayerActionState>();
         mana = GetComponent<PlayerEnergy>();
-
     }
 
     void Update()
@@ -37,20 +38,12 @@ public class PlayerCastOrb : MonoBehaviour
 
     void HandleCast()
     {
-        // Luôn giảm thời gian hồi chiêu độc lập với action.IsBusy
         if (fireTimer > 0)
             fireTimer -= Time.deltaTime;
 
         if (Keyboard.current.jKey.wasPressedThisFrame && fireTimer <= 0)
         {
-            Debug.Log($"[PlayerCastOrb] Pressed J. Mana: {mana.currentEnergy}");
-            if (!mana.UseEnergy(15f))
-            {
-                Debug.Log("[PlayerCastOrb] Not enough mana!");
-                return;
-            }
-
-            Debug.Log("[PlayerCastOrb] Casting Orb directly!");
+            if (!mana.UseEnergy(15f)) return;
 
             action.SetBusy(true);
             fireTimer = fireCooldown;
@@ -58,51 +51,63 @@ public class PlayerCastOrb : MonoBehaviour
 
             if (AudioManager.Instance != null) AudioManager.Instance.PlayPlasmaOrbSFX();
 
-            // Gọi trực tiếp SpawnOrb và cởi trói IsBusy ngay để đảm bảo chắc chắn chạy
             SpawnOrb();
             Invoke(nameof(EndCast), 0.3f);
         }
     }
 
-
     float lastSpawnTime = -1f;
 
-    // Animation Event hoặc được gọi trực tiếp từ code
     public void SpawnOrb()
     {
-        Debug.Log($"[PlayerCastOrb] SpawnOrb called! lightOrbPrefab: {lightOrbPrefab != null}");
-        
-        // Tránh tình trạng bắn đúp do gọi 1 lần từ code và 1 lần từ Animation Event
-        if (Time.time - lastSpawnTime < 0.2f) 
-        {
-            Debug.Log("[PlayerCastOrb] Blocked double-fire");
-            return;
-        }
+        if (Time.time - lastSpawnTime < 0.1f) return;
         lastSpawnTime = Time.time;
 
-        if (!lightOrbPrefab) 
-        {
-            Debug.LogError("[PlayerCastOrb] LỖI: lightOrbPrefab bị NULL! Chưa kéo prefab vào Inspector.");
-            return;
-        }
+        if (!lightOrbPrefab) return;
 
         float dir = movement.Facing;
 
+        // CHẾ ĐỘ 3 TIA (Triple Orb)
+        if (isTripleOrbActive)
+        {
+            FireSingleOrb(new Vector2(dir, 0));      // Thẳng
+            FireSingleOrb(new Vector2(dir, 0.4f));   // Xiên lên
+            FireSingleOrb(new Vector2(dir, -0.4f));  // Xiên xuống
+        }
+        else
+        {
+            int totalOrbs = 1 + extraOrbCount;
+            StartCoroutine(FireMultipleOrbs(totalOrbs));
+        }
+    }
+
+    void FireSingleOrb(Vector2 launchDir)
+    {
         Vector2 spawnPos = (Vector2)transform.position +
-                           new Vector2(fireOffset.x * dir, fireOffset.y);
+                           new Vector2(fireOffset.x * movement.Facing, fireOffset.y);
 
         GameObject orbObj = Instantiate(lightOrbPrefab, spawnPos, Quaternion.identity);
 
         Vector3 scale = Vector3.one * orbScale;
-        scale.x *= dir; // lật khi quay trái
+        scale.x *= movement.Facing;
         orbObj.transform.localScale = scale;
 
-
         LightOrb orb = orbObj.GetComponent<LightOrb>();
-        if (orb == null) return;
+        if (orb != null)
+        {
+            orb.speed = orbSpeed;
+            orb.Launch(launchDir, transform, orbDamage);
+        }
+    }
 
-        orb.speed = orbSpeed;
-        orb.Launch(new Vector2(dir, 0), transform, orbDamage);
+    System.Collections.IEnumerator FireMultipleOrbs(int count)
+    {
+        float dir = movement.Facing;
+        for (int i = 0; i < count; i++)
+        {
+            FireSingleOrb(new Vector2(dir, 0));
+            if (count > 1) yield return new WaitForSeconds(0.08f);
+        }
     }
 
     public void EndCast()
@@ -110,21 +115,8 @@ public class PlayerCastOrb : MonoBehaviour
         action.SetBusy(false);
     }
 
-    void OnDrawGizmosSelected()
-    {
-        PlayerMovement m = GetComponent<PlayerMovement>();
-        if (m == null) return;
-
-        float dir = m != null ? m.Facing : 1;
-
-        Vector2 pos = (Vector2)transform.position + new Vector2(fireOffset.x * dir, fireOffset.y);
-        Gizmos.color = Color.red;
-        Gizmos.DrawSphere(pos, 0.05f);
-    }
-
     public float GetCooldownPercent()
     {
         return Mathf.Clamp01(fireTimer / fireCooldown);
     }
-
 }

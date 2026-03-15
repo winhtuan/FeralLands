@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e197c2da7e74b1244bfd13a9197282b0, type: 3}
+  m_Name: Super_Titan
+  m_EditorClassIdentifier: Assembly-CSharp::AugmentData
+  augmentName: "Th\u1EC3 Ch\u1EA5t Titan"
+  description: "T\u0103ng c\u1EF1c m\u1EA1nh 100 m\xE1u t\u1ED1i \u0111a"
+  icon: {fileID: 0}
+  type: 0
+  value: 100
+  skinColor: {r: 1, g: 1, b: 1, a: 1}
