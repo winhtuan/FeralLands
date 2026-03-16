@@ -47,6 +47,19 @@ public class EnemyHitbox : MonoBehaviour
             Debug.Log($"[HIT] {transform.parent.name} đánh trúng {other.name}, gây {damage} sát thương.");
             damageable.TakeDamage(damage);
             hasHit = true; 
+
+            // Áp dụng hiệu ứng nếu quái có trait đặc biệt
+            NormalEnemyBase enemyBase = GetComponentInParent<NormalEnemyBase>();
+            PlayerStatusEffects playerEffects = other.GetComponent<PlayerStatusEffects>();
+
+            if (enemyBase != null && playerEffects != null)
+            {
+                if (enemyBase.inflictBurnOnHit) 
+                    playerEffects.ApplyBurn(enemyBase.burnDamagePerTick, enemyBase.burnDuration);
+                
+                if (enemyBase.inflictSlowOnHit) 
+                    playerEffects.ApplySlow(enemyBase.slowPercent, enemyBase.slowDuration);
+            }
         }
     }
 }

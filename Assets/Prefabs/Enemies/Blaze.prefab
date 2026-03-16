@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 8865807546149402105}
   - component: {fileID: 3229484126502066871}
   - component: {fileID: 7003989071498445457}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Attack2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -526,9 +526,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7894484459788092451}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.000000016352663, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.497458, y: 0.248815, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5305318086204449543}
@@ -582,7 +582,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1081441696188535089, guid: 2ad7c20dc20d7e9439ea7ee3b5e264a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -630,6 +630,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   maxHP: 50
   currentHP: 50
+  hitColor: {r: 1, g: 1, b: 1, a: 1}
+  flashDuration: 0.1
+  inflictBurnOnHit: 1
+  burnDamagePerTick: 2
+  burnDuration: 3
+  inflictSlowOnHit: 0
+  slowPercent: 0.5
+  slowDuration: 2
   hitbox: {fileID: 8865807546149402105}
   moveSpeed: 2
   moveDistance: 3

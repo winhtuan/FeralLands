@@ -1446,6 +1446,76 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &988463316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 988463318}
+  - component: {fileID: 988463317}
+  m_Layer: 0
+  m_Name: 'MonsterSpawner '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &988463317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988463316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adbd8ff081e13e847b250fd4fa2865c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
+  waves:
+  - waveName: 1
+    enemyPrefab: {fileID: 7894484459788092451, guid: 8d75b52f8ecb5154ea01f3068665ca90, type: 3}
+    count: 3
+    minX: 101.3
+    maxX: 103
+    spawnY: -3.4
+  - waveName: 2
+    enemyPrefab: {fileID: 7640388490484865178, guid: 57b3b308a62133743b5827a0832fa280, type: 3}
+    count: 3
+    minX: 107
+    maxX: 109
+    spawnY: -3.4
+  - waveName: 3
+    enemyPrefab: {fileID: 3032738182587097638, guid: c261c79661aead7429ae3b2fba0694a9, type: 3}
+    count: 3
+    minX: 113
+    maxX: 115
+    spawnY: -3.4
+  - waveName: 
+    enemyPrefab: {fileID: 0}
+    count: 0
+    minX: 0
+    maxX: 0
+    spawnY: 0
+  spawnOnEnable: 1
+--- !u!4 &988463318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988463316}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 82.2382, y: 3.98123, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1007691251
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,6 +2943,7 @@ GameObject:
   - component: {fileID: 2053868950}
   - component: {fileID: 2053868949}
   - component: {fileID: 2053868948}
+  - component: {fileID: 2053868962}
   m_Layer: 6
   m_Name: Dreamshaper
   m_TagString: Player
@@ -2999,6 +3070,8 @@ MonoBehaviour:
   fireOffset: {x: 0.4, y: -0.1}
   fireCooldown: 0.3
   fireTimer: 0
+  extraOrbCount: 0
+  isTripleOrbActive: 0
 --- !u!114 &2053868955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3011,8 +3084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f9d75fcf317cc469acfd8a797f5148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 500
+  currentHealth: 500
 --- !u!50 &2053868956
 Rigidbody2D:
   serializedVersion: 5
@@ -3202,6 +3275,18 @@ Transform:
   - {fileID: 1777121457}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2053868962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053868947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23cf49c90d14f964996c154017e9e001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStatusEffects
 --- !u!1 &2057683388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3270,3 +3355,4 @@ SceneRoots:
   - {fileID: 1023869169}
   - {fileID: 955903552}
   - {fileID: 1007691252}
+  - {fileID: 988463318}

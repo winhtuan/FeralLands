@@ -147,7 +147,7 @@ public class EnemyMovement : NormalEnemyBase
         EnemyProjectile proj = bullet.GetComponent<EnemyProjectile>();
         if (proj != null)
         {
-            proj.Init(dir);
+            proj.Init(dir, this);
         }
     }
 
