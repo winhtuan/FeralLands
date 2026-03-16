@@ -7,12 +7,29 @@ public class EnemyProjectile : MonoBehaviour
     public int damage = 5;
     public float lifeTime = 3f;
 
-    private Vector2 moveDir; // Hướng bay (có cả X và Y - bắn chéo được)
+    private Vector2 moveDir; 
+    private bool shouldBurn;
+    private int burnDmg;
+    private float burnDur;
+
+    private bool shouldSlow;
+    private float slowPct;
+    private float slowDur;
 
     // Được gọi bởi EnemyMovement.ShootProjectile()
-    public void Init(Vector2 direction)
+    public void Init(Vector2 direction, NormalEnemyBase source = null)
     {
         moveDir = direction.normalized;
+        if (source != null)
+        {
+            shouldBurn = source.inflictBurnOnHit;
+            burnDmg = source.burnDamagePerTick;
+            burnDur = source.burnDuration;
+
+            shouldSlow = source.inflictSlowOnHit;
+            slowPct = source.slowPercent;
+            slowDur = source.slowDuration;
+        }
 
         // Xoay đạn theo hướng bay (để sprite quay đúng góc)
         float angle = Mathf.Atan2(moveDir.y, moveDir.x) * Mathf.Rad2Deg;
@@ -38,6 +55,13 @@ public class EnemyProjectile : MonoBehaviour
         {
             Debug.Log($"[BULLET HIT] Đạn trúng {other.name}, gây {damage} sát thương.");
             damageable.TakeDamage(damage);
+
+            PlayerStatusEffects playerEffects = other.GetComponent<PlayerStatusEffects>();
+            if (playerEffects != null)
+            {
+                if (shouldBurn) playerEffects.ApplyBurn(burnDmg, burnDur);
+                if (shouldSlow) playerEffects.ApplySlow(slowPct, slowDur);
+            }
         }
 
         Destroy(gameObject);

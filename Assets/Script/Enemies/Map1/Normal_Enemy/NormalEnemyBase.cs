@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Collections;
 
 public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
 {
@@ -14,6 +15,22 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
     public event Action OnDeath;
     public event Action<int> OnDamaged;
 
+    [Header("Visual Effects")]
+    public Color hitColor = Color.white;
+    public float flashDuration = 0.1f;
+    private Color originalColor;
+    private SpriteRenderer sr;
+
+    [Header("Special Attributes")]
+    public bool inflictBurnOnHit = false; 
+    public int burnDamagePerTick = 2;
+    public float burnDuration = 3f;
+
+    [Space]
+    public bool inflictSlowOnHit = false; 
+    public float slowPercent = 0.5f;
+    public float slowDuration = 2f;
+
     [Header("Attack Settings")]
     public AttackHitboxController hitbox; // KÉO TỪ ATTACKHITBOX
 
@@ -21,6 +38,9 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+        if (sr != null) originalColor = sr.color;
+
         currentHP = maxHP;
 
         if (hitbox == null)
@@ -40,8 +60,19 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
         currentHP -= dmg;
         OnDamaged?.Invoke(dmg);
 
+        // Hiệu ứng chớp trắng khi trúng đòn
+        if (sr != null) StartCoroutine(HitFlashRoutine());
+
         if (currentHP <= 0)
             Die();
+    }
+
+    // --- HIỆU ỨNG HÌNH ẢNH ---
+    private IEnumerator HitFlashRoutine()
+    {
+        sr.color = hitColor;
+        yield return new WaitForSeconds(flashDuration);
+        sr.color = originalColor;
     }
 
     public void SetSpeed(float speed)
