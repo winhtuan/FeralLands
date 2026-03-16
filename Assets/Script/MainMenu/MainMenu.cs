@@ -22,4 +22,10 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Quit Game");
     }
+
+    public void SaveGame()
+    {
+        // Chỗ này để bạn của bạn viết logic save
+        Debug.Log("Save Game clicked - Waiting for logic...");
+    }
 }
