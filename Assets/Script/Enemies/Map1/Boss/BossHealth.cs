@@ -70,6 +70,9 @@ public class BossHealth : EnemyBase
     {
         Debug.Log("Boss Defeated!");
 
+        // Kích hoạt event cho các Manager (như EnemyClearManager) biết
+        InvokeOnDeath();
+
         // Trigger death animation
         animator.SetTrigger("Death");
 

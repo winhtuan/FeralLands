@@ -23,38 +23,44 @@ public class EnemyClearManager : MonoBehaviour
         else
             Debug.LogWarning("[EnemyClearManager] Chưa gán Portal Object trong Inspector!");
 
-        // Tìm tất cả EnemyBase trong scene
+        // Tìm tất cả EnemyBase bao gồm cả những đối tượng đang ẩn (vd: Boss khi chưa kích hoạt)
         List<EnemyBase> enemyBases = new List<EnemyBase>(
-            FindObjectsByType<EnemyBase>(FindObjectsSortMode.None)
+            FindObjectsByType<EnemyBase>(FindObjectsInactive.Include, FindObjectsSortMode.None)
         );
 
-        // Tìm tất cả NormalEnemyBase trong scene
+        // Tìm tất cả NormalEnemyBase bao gồm cả ẩn
         List<NormalEnemyBase> normalEnemyBases = new List<NormalEnemyBase>(
-            FindObjectsByType<NormalEnemyBase>(FindObjectsSortMode.None)
+            FindObjectsByType<NormalEnemyBase>(FindObjectsInactive.Include, FindObjectsSortMode.None)
         );
 
-        totalEnemies = enemyBases.Count + normalEnemyBases.Count;
+        // Tìm tất cả BossHealth cụ thể (phòng trường hợp Boss không kế thừa đúng hoặc cần đếm riêng)
+        List<BossHealth> bossHealths = new List<BossHealth>(
+            FindObjectsByType<BossHealth>(FindObjectsInactive.Include, FindObjectsSortMode.None)
+        );
+
+        // Lọc trùng lặp vì BossHealth kế thừa từ EnemyBase
+        HashSet<MonoBehaviour> uniqueEnemies = new HashSet<MonoBehaviour>();
+        foreach (var e in enemyBases) uniqueEnemies.Add(e);
+        foreach (var e in normalEnemyBases) uniqueEnemies.Add(e);
+        foreach (var b in bossHealths) uniqueEnemies.Add(b);
+
+        totalEnemies = uniqueEnemies.Count;
         enemiesRemaining = totalEnemies;
 
         if (totalEnemies == 0)
         {
-            Debug.LogWarning("[EnemyClearManager] Không tìm thấy quái nào trong scene! Portal sẽ mở ngay.");
+            Debug.LogWarning("[EnemyClearManager] Không tìm thấy quái hoặc Boss nào trong scene! Portal sẽ mở ngay.");
             ShowPortal();
             return;
         }
 
-        Debug.Log($"[EnemyClearManager] Tổng số quái: {totalEnemies}. Portal bị ẩn cho đến khi tiêu diệt hết.");
+        Debug.Log($"[EnemyClearManager] Tổng số mục tiêu (bao gồm Boss): {totalEnemies}. Portal bị ẩn cho đến khi tiêu diệt hết.");
 
-        // Subscribe vào event OnDeath của từng EnemyBase
-        foreach (var enemy in enemyBases)
+        // Đăng ký sự kiện OnDeath cho từng đối tượng
+        foreach (var target in uniqueEnemies)
         {
-            enemy.OnDeath += OnEnemyDied;
-        }
-
-        // Subscribe vào event OnDeath của từng NormalEnemyBase
-        foreach (var enemy in normalEnemyBases)
-        {
-            enemy.OnDeath += OnEnemyDied;
+            if (target is EnemyBase eb) eb.OnDeath += OnEnemyDied;
+            else if (target is NormalEnemyBase neb) neb.OnDeath += OnEnemyDied;
         }
     }
 
