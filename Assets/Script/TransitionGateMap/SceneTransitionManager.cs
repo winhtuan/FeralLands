@@ -19,11 +19,24 @@ public class SceneTransitionManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject); // Giữ Canvas này không bị hủy khi qua map mới
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Đảm bảo timeScale luôn được reset khi scene mới load
+        Time.timeScale = 1f;
+        screenHalfHeight = Screen.height / 2f;
     }
 
     private void Start()
@@ -33,6 +46,8 @@ public class SceneTransitionManager : MonoBehaviour
 
     public void TeleportToMap(string sceneName)
     {
+        Time.timeScale = 1f; // Đảm bảo không bị stuck ở timeScale=0
+        gameObject.SetActive(true);
         StartCoroutine(CinematicTransition(sceneName));
     }
 

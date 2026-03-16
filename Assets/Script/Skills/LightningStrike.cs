@@ -18,7 +18,7 @@ public class LightningStrike : MonoBehaviour
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, radius, enemyLayer);
         foreach (var hit in hits)
         {
-            Debug.Log("Lightning hit: " + hit.name);
+            hit.GetComponent<IDamageable>()?.TakeDamage(damage);
         }
     }
 

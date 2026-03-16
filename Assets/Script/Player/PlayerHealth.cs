@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     private Dreamshaper controller;
     private float invincibleTime = 0.2f;
     private float invincibleTimer;
+    private bool isDead;
     void Awake()
     {
         currentHealth = maxHealth;
@@ -55,7 +56,13 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     void Die()
     {
+        if (isDead) return;
+        isDead = true;
+
         Debug.Log("Player Dead!");
+
+        // Xoá save — player chết thì reset tiến trình
+        SaveManager.Instance?.DeleteSave();
 
         // Trigger animation
         animator.SetTrigger("Death");

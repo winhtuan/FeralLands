@@ -82,5 +82,8 @@ public class EnemyClearManager : MonoBehaviour
             portalObject.SetActive(true);
             Debug.Log("[EnemyClearManager] Tất cả quái đã bị tiêu diệt! Portal xuất hiện.");
         }
+
+        // Auto-save progress when the area is cleared
+        PlayerSaveLoad.Instance?.SaveGame();
     }
 }
