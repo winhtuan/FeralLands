@@ -9,7 +9,7 @@ public class IntroController : MonoBehaviour
     public VideoPlayer videoPlayer;
 
     [Tooltip("Tên chính xác của Scene muốn chuyển đến sau khi Intro kết thúc.")]
-    public string nextSceneName = "MapBeachTestQuan";
+    public string nextSceneName = "MapBeach 1";
 
     void Start()
     {
