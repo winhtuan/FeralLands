@@ -7,6 +7,11 @@ using System.Collections.Generic;
 /// </summary>
 public class AugmentManager : MonoBehaviour
 {
+    public static AugmentManager Instance { get; private set; }
+
+    /// <summary>True khi AugmentUI đang mở (game đang bị pause bởi Augment).</summary>
+    public bool IsPanelVisible { get; private set; }
+
     [Header("Augment Pools — Mỗi level có pool riêng")]
     public AugmentData[] augmentPoolLv2;   // Level 2: HP, DMG, Speed
     public AugmentData[] augmentPoolLv5;   // Level 5: Skin (đổi màu)
@@ -22,6 +27,15 @@ public class AugmentManager : MonoBehaviour
 
     // Track level nào đã cho chọn rồi
     private HashSet<int> offeredLevels = new HashSet<int>();
+
+    // Applied augment type indices — read by SaveManager when saving
+    [HideInInspector] public List<int> appliedAugmentTypes = new List<int>();
+
+
+    void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -89,6 +103,7 @@ public class AugmentManager : MonoBehaviour
 
         // Pause game
         Time.timeScale = 0f;
+        IsPanelVisible = true;
 
         // Hiện UI
         if (augmentUI != null)
@@ -107,12 +122,19 @@ public class AugmentManager : MonoBehaviour
         // Áp dụng buff lên nhân vật
         ApplyAugment(selected);
 
+        // Record the applied augment type for save system
+        appliedAugmentTypes.Add((int)selected.type);
+
         // Ẩn UI
         if (augmentUI != null)
             augmentUI.Hide();
 
         // Tiếp tục game
+        IsPanelVisible = false;
         Time.timeScale = 1f;
+
+        // Auto-save after upgrade is applied
+        PlayerSaveLoad.Instance?.SaveGame();
     }
 
     void ApplyAugment(AugmentData augment)

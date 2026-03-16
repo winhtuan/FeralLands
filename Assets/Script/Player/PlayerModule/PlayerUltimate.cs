@@ -11,8 +11,8 @@ public class PlayerUltimate : MonoBehaviour
     [Header("Directional Lightning Settings")]
     public GameObject lightningPrefab;
     public int lightningCount = 5;
-    public float lightningSpacing = 1.8f;   // khoảng cách giữa các tia
-    public float lightningDelay = 1.5f;     // delay giữa từng tia
+    public float lightningSpacing = 1.8f; // khoảng cách giữa các tia
+    public float lightningDelay = 1.5f; // delay giữa từng tia
 
     public float cooldown = 10f;
     public float timer;
@@ -34,19 +34,22 @@ public class PlayerUltimate : MonoBehaviour
 
     void Update()
     {
-        if (action.IsBusy) return;
+        if (action.IsBusy)
+            return;
 
         timer = Mathf.Max(0, timer - Time.deltaTime);
 
         if (Keyboard.current.uKey.wasPressedThisFrame && timer <= 0)
         {
-            if (!mana.UseEnergy(40f)) return;
+            if (!mana.UseEnergy(40f))
+                return;
 
             action.SetBusy(true);
             timer = cooldown;
             animator.SetTrigger("Ultimate");
 
-            if (AudioManager.Instance != null) AudioManager.Instance.PlayUltimateSFX();
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.PlayUltimateSFX();
         }
     }
 
@@ -57,10 +60,14 @@ public class PlayerUltimate : MonoBehaviour
             camShake.Shake(0.65f, 0.2f);
 
         // Damage trung tâm
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, ultimateRadius, enemyLayer);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
+            transform.position,
+            ultimateRadius,
+            enemyLayer
+        );
         foreach (var hit in hits)
         {
-            Debug.Log("Ultimate hit: " + hit.name);
+            hit.GetComponent<IDamageable>()?.TakeDamage(ultimateDamage);
         }
 
         // BẮN SÉT THEO HƯỚNG NHÂN VẬT

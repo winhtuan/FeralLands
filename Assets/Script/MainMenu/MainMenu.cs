@@ -1,20 +1,94 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
-    public float delayBeforeLoad = 0.25f; // thời gian cho click sound phát
+    public float delayBeforeLoad = 0.25f;
 
-    public void StartGame()
+    [Header("Buttons")]
+    public Button continueButton; // Kéo nút Continue vào đây
+
+    void Start()
     {
-        StartCoroutine(LoadSceneDelay());
+        // Fallback: find by GameObject name if not assigned in Inspector
+        if (continueButton == null)
+            continueButton = GameObject.Find("Continue")?.GetComponent<Button>();
+
+        // Always use File.Exists directly — most reliable regardless of SaveManager state
+        bool hasSave = System.IO.File.Exists(
+            Application.persistentDataPath + "/save.json");
+
+        if (continueButton != null)
+        {
+            continueButton.interactable = hasSave;
+
+            if (!hasSave)
+            {
+                // Keep button frame visible but darkened (high alpha so image still shows)
+                ColorBlock colors = continueButton.colors;
+                colors.disabledColor = new Color(0.4f, 0.4f, 0.4f, 0.6f);
+                continueButton.colors = colors;
+
+                // Directly darken the button Image so the frame stays visible
+                Image img = continueButton.GetComponent<Image>();
+                if (img != null)
+                    img.color = new Color(0.4f, 0.4f, 0.4f, 0.6f);
+
+                // Gray out all text children (Legacy Text)
+                foreach (Text t in continueButton.GetComponentsInChildren<Text>(true))
+                    t.color = Color.gray;
+
+                // Gray out all text children (TextMeshPro)
+                foreach (TMPro.TextMeshProUGUI t in continueButton.GetComponentsInChildren<TMPro.TextMeshProUGUI>(true))
+                    t.color = Color.gray;
+
+                Debug.Log("[MainMenu] No save found — Continue button disabled.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("[MainMenu] continueButton not found! Kéo nút CONTINIUE vào Inspector.");
+        }
     }
 
-    IEnumerator LoadSceneDelay()
+    /// <summary>
+    /// Nút NEW GAME — xóa save cũ và bắt đầu từ đầu.
+    /// </summary>
+    public void NewGame()
     {
-        yield return new WaitForSeconds(delayBeforeLoad);
-        SceneManager.LoadScene("IntroScene");
+        if (SaveManager.Instance != null)
+            SaveManager.Instance.DeleteSave();
+
+        StartCoroutine(LoadSceneDelay("IntroScene"));
+    }
+
+    /// <summary>
+    /// Nút CONTINUE — vào lại đúng scene đã lưu, PlayerSaveLoad tự restore trạng thái.
+    /// </summary>
+    public void ContinueGame()
+    {
+        if (!SaveManager.HasSave())
+        {
+            Debug.LogWarning("[MainMenu] Không có save để load! Path: " + Application.persistentDataPath + "/save.json");
+            return;
+        }
+
+        GameData data = SaveManager.Instance.LoadGame();
+        string targetScene = (data != null && !string.IsNullOrEmpty(data.currentSceneName))
+            ? data.currentSceneName
+            : "MapBeach 1";
+
+        StartCoroutine(LoadSceneDelay(targetScene));
+    }
+
+    /// <summary>
+    /// Giữ lại cho các nút cũ đã gán trong Inspector.
+    /// </summary>
+    public void StartGame()
+    {
+        NewGame();
     }
 
     public void QuitGame()
@@ -23,9 +97,13 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quit Game");
     }
 
-    public void SaveGame()
+    IEnumerator LoadSceneDelay(string sceneName)
     {
-        // Chỗ này để bạn của bạn viết logic save
-        Debug.Log("Save Game clicked - Waiting for logic...");
+        yield return new WaitForSeconds(delayBeforeLoad);
+
+        if (SceneTransitionManager.Instance != null)
+            SceneTransitionManager.Instance.TeleportToMap(sceneName);
+        else
+            SceneManager.LoadScene(sceneName);
     }
 }

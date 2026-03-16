@@ -34,6 +34,9 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
     [Header("Attack Settings")]
     public AttackHitboxController hitbox; // KÉO TỪ ATTACKHITBOX
 
+    [Header("Save System")]
+    [SerializeField] private string enemyID; // Tự động tạo nếu để trống
+
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
@@ -43,6 +46,10 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
 
         currentHP = maxHP;
 
+        // Auto-generate a unique ID from scene + name + position if not set in Inspector
+        if (string.IsNullOrEmpty(enemyID))
+            enemyID = $"{gameObject.scene.name}_{gameObject.name}_{transform.position.x:F0}_{transform.position.y:F0}";
+
         if (hitbox == null)
         {
             // Chỉ cảnh báo nếu là quái đánh gần (không phải quái bắn đạn)
@@ -50,6 +57,15 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
             bool ranged = em != null && em.isRanged;
             if (!ranged)
                 Debug.LogWarning($"{name}: Không có AttackHitboxController!");
+        }
+    }
+
+    protected virtual void Start()
+    {
+        // If this enemy was killed in a previous session, remove it immediately
+        if (SaveManager.Instance != null && SaveManager.Instance.WasEnemyKilled(enemyID))
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -91,6 +107,9 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
     {
         if (IsDead) return;
         IsDead = true;
+
+        // Register as killed so it won't respawn on next load
+        SaveManager.Instance?.MarkEnemyKilled(enemyID);
 
         OnDeath?.Invoke();
         if (animator != null)
