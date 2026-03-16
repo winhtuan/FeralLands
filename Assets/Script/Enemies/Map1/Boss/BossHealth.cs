@@ -57,9 +57,6 @@ public class BossHealth : EnemyBase
         // Thông báo UI update
         OnHealthChanged?.Invoke(currentHP, maxHP);
 
-        // Trigger damage animation nếu có
-        // animator.SetTrigger("Hit");
-
         if (currentHP <= 0)
         {
             Die();
@@ -85,9 +82,6 @@ public class BossHealth : EnemyBase
         // Tắt collider
         if (col != null)
             col.enabled = false;
-
-        // Note: Không invoke OnDeath event trực tiếp vì event thuộc base class
-        // GameObject sẽ được destroy trong OnDeathAnimationEnd()
     }
 
     // Animation Event - gọi từ frame cuối của Death animation

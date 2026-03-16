@@ -570,7 +570,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &452833175
 Transform:
   m_ObjectHideFlags: 0
@@ -1382,7 +1382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1008653664
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1776,6 +1776,7 @@ MonoBehaviour:
   blueFillImage: {fileID: 600251348}
   phase2Root: {fileID: 1008653663}
   redFillImage: {fileID: 1797796845}
+  fadeDuration: 0.5
 --- !u!1 &1337122897
 GameObject:
   m_ObjectHideFlags: 0
