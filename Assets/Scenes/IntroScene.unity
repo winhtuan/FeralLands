@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IntroController
   videoPlayer: {fileID: 884500986}
-  sceneToLoad: MapBeachTestQuan
+  nextSceneName: MapBeach 1
 --- !u!328 &884500986
 VideoPlayer:
   m_ObjectHideFlags: 0
