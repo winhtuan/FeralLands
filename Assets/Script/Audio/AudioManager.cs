@@ -88,18 +88,31 @@ public class AudioManager : MonoBehaviour
     private void PlayMusicForCurrentScene()
     {
         string currentScene = SceneManager.GetActiveScene().name;
-        // Debug.Log("Scene loaded: " + currentScene);
+        Debug.Log("AudioManager: PlayMusicForCurrentScene -> " + currentScene);
 
-        // Logic chọn nhạc theo Scene
+        // Xác định clip nhạc cho scene hiện tại
+        AudioClip targetClip = null;
+
         if (currentScene == "BossMap1")
         {
-            if (bossBattleMusic != null) PlayMusic(bossBattleMusic);
+            targetClip = bossBattleMusic;
         }
-        else if (currentScene == "MapNormal2" || currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan" || currentScene == "MapBeach 1")
+        else if (currentScene == "MapNormal2" || currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan" || currentScene == "MapBeach 1" || currentScene == "MapBeach1")
         {
-            if (normalMapMusic != null) PlayMusic(normalMapMusic);
+            targetClip = normalMapMusic;
         }
-        // Thêm các scene khác tại đây
+
+        // Phát nhạc mới hoặc dừng nhạc nếu scene không có nhạc riêng
+        if (targetClip != null)
+        {
+            Debug.Log("AudioManager: Switching music to -> " + targetClip.name);
+            PlayMusic(targetClip);
+        }
+        else
+        {
+            Debug.Log("AudioManager: No music assigned for scene -> " + currentScene + ". Stopping music.");
+            StopMusic();
+        }
     }
 
     [Header("--- SFX TRACKS ---")]
@@ -120,10 +133,23 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic(AudioClip clip)
     {
+        if (clip == null) return;
+
+        // Nếu đang phát đúng bài này rồi thì không làm gì
         if (musicSource.clip == clip && musicSource.isPlaying) return;
 
+        // DỪNG nhạc cũ trước, rồi mới gán và phát nhạc mới
+        musicSource.Stop();
         musicSource.clip = clip;
         musicSource.Play();
+    }
+
+    public void StopMusic()
+    {
+        if (musicSource != null && musicSource.isPlaying)
+        {
+            musicSource.Stop();
+        }
     }
 
     public void PlaySFX(AudioClip clip)
