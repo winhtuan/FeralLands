@@ -75,6 +75,11 @@ public class PlayerSaveLoad : MonoBehaviour
         _loadedData = null;
     }
 
+    void OnDestroy()
+    {
+        if (Instance == this) Instance = null;
+    }
+
     // ── Augment restoration ────────────────────────────────────────────────────
 
     private void ApplyAugmentStats(List<AugmentSaveEntry> entries)

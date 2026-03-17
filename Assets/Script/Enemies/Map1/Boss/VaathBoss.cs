@@ -153,6 +153,11 @@ public class VaathBoss : MonoBehaviour
             // 2. Rung màn hình mạnh một cái để báo hiệu
             TriggerScreenShake();
 
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayBossRoarSFX();
+            }
+
             // 3. Kích hoạt Animator
             if (animator != null)
             {
@@ -192,7 +197,12 @@ public class VaathBoss : MonoBehaviour
             attackTimer = currentCooldown;
 
             if (isEnraged) animator.speed = enragedMeleeAnimSpeed;
-            animator.SetTrigger("Attack");
+            if (animator != null) animator.SetTrigger("Attack");
+
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayBossNormalAttackSFX(); 
+            }
             
             // Unlock hướng sau khi animation attack kết thúc nhanh hơn (tùy thuộc vào animation speed)
             float unlockTime = isEnraged ? (1.8f / enragedMeleeAnimSpeed) : 1.8f;
@@ -230,6 +240,11 @@ public class VaathBoss : MonoBehaviour
         
         animator.SetTrigger("Cast"); 
         
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayBossFireSFX();
+        }
+
         // Thời gian chờ Meteor rơi (nhanh hơn nếu enraged)
         float castDelay = isEnraged ? 0.8f : 1.5f;
         Invoke("PerformMeteorStrike", castDelay); 

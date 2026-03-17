@@ -71,19 +71,30 @@ public class BossHealth : EnemyBase
         Debug.Log("Boss Defeated!");
 
         // Kích hoạt event cho các Manager (như EnemyClearManager) biết
-        InvokeOnDeath();
+        try
+        {
+            InvokeOnDeath();
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"[BossHealth] Lỗi trong sự kiện OnDeath: {e.Message}");
+        }
 
         // Trigger death animation
-        animator.SetTrigger("Death");
+        if (animator != null)
+            animator.SetTrigger("Death");
 
         // Tắt AI controller
         if (bossController != null)
             bossController.enabled = false;
 
         // Stop movement
-        rb.linearVelocity = Vector2.zero;
-        rb.gravityScale = 0;
-        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.gravityScale = 0;
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
 
         // Tắt collider
         if (col != null)

@@ -1549,7 +1549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerLevel
   currentLevel: 1
   currentExp: 0
-  expToNextLevel: 02000000020000000200000002000000020000000200000002000000020000000200000002000000
+  expToNextLevel: 0a0000000a0000000f00000014000000190000001e00000023000000280000002800000032000000
 --- !u!114 &406872461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7427,12 +7427,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   musicGroup: {fileID: 5524457805921807633, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
   sfxGroup: {fileID: -2362617805984967503, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
-  bossBattleMusic: {fileID: 8300000, guid: b7c2d82f33f7d2142bb00bd33446d4c3, type: 3}
+  bossBattleMusic: {fileID: 8300000, guid: 479eca7faa4ed9a419d43243f95d4351, type: 3}
+  normalMapMusic: {fileID: 8300000, guid: b7c2d82f33f7d2142bb00bd33446d4c3, type: 3}
   jumpSFX: {fileID: 8300000, guid: 60a1560b558bb3f41a14c1881c5e7d7a, type: 3}
   meleeSFX: {fileID: 8300000, guid: 81dd2bc2bcc6ae642bd8c8cc4f70d227, type: 3}
   plasmaOrbSFX: {fileID: 8300000, guid: ee14867a12c863f4ba080ce94d746fd0, type: 3}
   runSFX: {fileID: 8300000, guid: 62e18a46e263f2140b54c161c9ec961c, type: 3}
   ultimateSFX: {fileID: 8300000, guid: 3ea278b7e99334042983c380776b5f72, type: 3}
+  monsterRangedAttackSFX: {fileID: 8300000, guid: e5fe4d1fbc421374285a669968d44722, type: 3}
+  monsterNormalAttackSFX: {fileID: 8300000, guid: 2fac0c656280a2e44977229ce9905f4f, type: 3}
+  bossRoarSFX: {fileID: 8300000, guid: 8f41c90d8e9d131429edb8a4a647f543, type: 3}
+  bossFireSFX: {fileID: 8300000, guid: 563d27f29934cd64bbf10024830c6842, type: 3}
+  bossNormalAttackSFX: {fileID: 8300000, guid: 7886b28a507e346448b05af215606eb4, type: 3}
 --- !u!4 &1611807233
 Transform:
   m_ObjectHideFlags: 0

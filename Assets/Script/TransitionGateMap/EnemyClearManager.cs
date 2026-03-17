@@ -1,6 +1,6 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 /// <summary>
 /// Gắn script này vào một Empty GameObject trong scene.
@@ -13,8 +13,11 @@ public class EnemyClearManager : MonoBehaviour
     public GameObject portalObject;
 
     [Header("Thông tin (chỉ để xem, không cần điền)")]
-    [SerializeField] private int totalEnemies = 0;
-    [SerializeField] private int enemiesRemaining = 0;
+    [SerializeField]
+    private int totalEnemies = 0;
+
+    [SerializeField]
+    private int enemiesRemaining = 0;
 
     private IEnumerator Start()
     {
@@ -35,7 +38,10 @@ public class EnemyClearManager : MonoBehaviour
 
         // Tìm tất cả NormalEnemyBase bao gồm cả ẩn
         List<NormalEnemyBase> normalEnemyBases = new List<NormalEnemyBase>(
-            FindObjectsByType<NormalEnemyBase>(FindObjectsInactive.Include, FindObjectsSortMode.None)
+            FindObjectsByType<NormalEnemyBase>(
+                FindObjectsInactive.Include,
+                FindObjectsSortMode.None
+            )
         );
 
         // Tìm tất cả BossHealth cụ thể (phòng trường hợp Boss không kế thừa đúng hoặc cần đếm riêng)
@@ -45,9 +51,12 @@ public class EnemyClearManager : MonoBehaviour
 
         // Lọc trùng lặp vì BossHealth kế thừa từ EnemyBase
         HashSet<MonoBehaviour> uniqueEnemies = new HashSet<MonoBehaviour>();
-        foreach (var e in enemyBases) uniqueEnemies.Add(e);
-        foreach (var e in normalEnemyBases) uniqueEnemies.Add(e);
-        foreach (var b in bossHealths) uniqueEnemies.Add(b);
+        foreach (var e in enemyBases)
+            uniqueEnemies.Add(e);
+        foreach (var e in normalEnemyBases)
+            uniqueEnemies.Add(e);
+        foreach (var b in bossHealths)
+            uniqueEnemies.Add(b);
 
         totalEnemies = uniqueEnemies.Count;
         enemiesRemaining = totalEnemies;
@@ -59,13 +68,17 @@ public class EnemyClearManager : MonoBehaviour
             yield break;
         }
 
-        Debug.Log($"[EnemyClearManager] Còn lại {totalEnemies} mục tiêu sau khi loại bỏ quái đã chết từ save.");
+        Debug.Log(
+            $"[EnemyClearManager] Còn lại {totalEnemies} mục tiêu sau khi loại bỏ quái đã chết từ save."
+        );
 
         // Đăng ký sự kiện OnDeath cho từng đối tượng
         foreach (var target in uniqueEnemies)
         {
-            if (target is EnemyBase eb) eb.OnDeath += OnEnemyDied;
-            else if (target is NormalEnemyBase neb) neb.OnDeath += OnEnemyDied;
+            if (target is EnemyBase eb)
+                eb.OnDeath += OnEnemyDied;
+            else if (target is NormalEnemyBase neb)
+                neb.OnDeath += OnEnemyDied;
         }
     }
 
@@ -89,6 +102,16 @@ public class EnemyClearManager : MonoBehaviour
         }
 
         // Auto-save progress when the area is cleared
-        if (PlayerSaveLoad.Instance != null) PlayerSaveLoad.Instance.SaveGame();
+        try
+        {
+            if (PlayerSaveLoad.Instance != null)
+            {
+                PlayerSaveLoad.Instance.SaveGame();
+            }
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"[EnemyClearManager] Lỗi khi tự động lưu game: {e.Message}");
+        }
     }
 }

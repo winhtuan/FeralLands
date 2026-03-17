@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     [Header("--- MUSIC TRACKS ---")]
     [Tooltip("Kéo file 'intense_boss_battle.mp3' vào đây")]
     public AudioClip bossBattleMusic;
+    public AudioClip normalMapMusic;
 
     // Audio Sources
     private AudioSource musicSource;
@@ -87,17 +88,31 @@ public class AudioManager : MonoBehaviour
     private void PlayMusicForCurrentScene()
     {
         string currentScene = SceneManager.GetActiveScene().name;
-        // Debug.Log("Scene loaded: " + currentScene);
+        Debug.Log("AudioManager: PlayMusicForCurrentScene -> " + currentScene);
 
-        // Logic chọn nhạc theo Scene
-        if (currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan"|| currentScene == "MapBeach 1")
+        // Xác định clip nhạc cho scene hiện tại
+        AudioClip targetClip = null;
+
+        if (currentScene == "BossMap1")
         {
-            if (bossBattleMusic != null)
-            {
-                PlayMusic(bossBattleMusic);
-            }
+            targetClip = bossBattleMusic;
         }
-        // Thêm các scene khác tại đây
+        else if (currentScene == "MapNormal2" || currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan" || currentScene == "MapBeach 1" || currentScene == "MapBeach1")
+        {
+            targetClip = normalMapMusic;
+        }
+
+        // Phát nhạc mới hoặc dừng nhạc nếu scene không có nhạc riêng
+        if (targetClip != null)
+        {
+            Debug.Log("AudioManager: Switching music to -> " + targetClip.name);
+            PlayMusic(targetClip);
+        }
+        else
+        {
+            Debug.Log("AudioManager: No music assigned for scene -> " + currentScene + ". Stopping music.");
+            StopMusic();
+        }
     }
 
     [Header("--- SFX TRACKS ---")]
@@ -106,13 +121,35 @@ public class AudioManager : MonoBehaviour
     public AudioClip plasmaOrbSFX;
     public AudioClip runSFX;
     public AudioClip ultimateSFX;
+    
+    [Header("--- MONSTER SFX ---")]
+    public AudioClip monsterRangedAttackSFX;
+    public AudioClip monsterNormalAttackSFX;
+
+    [Header("--- BOSS SFX ---")]
+    public AudioClip bossRoarSFX;
+    public AudioClip bossFireSFX;
+    public AudioClip bossNormalAttackSFX;
 
     public void PlayMusic(AudioClip clip)
     {
+        if (clip == null) return;
+
+        // Nếu đang phát đúng bài này rồi thì không làm gì
         if (musicSource.clip == clip && musicSource.isPlaying) return;
 
+        // DỪNG nhạc cũ trước, rồi mới gán và phát nhạc mới
+        musicSource.Stop();
         musicSource.clip = clip;
         musicSource.Play();
+    }
+
+    public void StopMusic()
+    {
+        if (musicSource != null && musicSource.isPlaying)
+        {
+            musicSource.Stop();
+        }
     }
 
     public void PlaySFX(AudioClip clip)
@@ -142,6 +179,33 @@ public class AudioManager : MonoBehaviour
     public void PlayUltimateSFX()
     {
         PlaySFX(ultimateSFX);
+    }
+
+    // --- MONSTER ACTION SFX ---
+    public void PlayMonsterRangedAttackSFX()
+    {
+        PlaySFX(monsterRangedAttackSFX);
+    }
+
+    public void PlayMonsterNormalAttackSFX()
+    {
+        PlaySFX(monsterNormalAttackSFX);
+    }
+
+    // --- BOSS ACTION SFX ---
+    public void PlayBossRoarSFX()
+    {
+        PlaySFX(bossRoarSFX);
+    }
+
+    public void PlayBossFireSFX()
+    {
+        PlaySFX(bossFireSFX);
+    }
+
+    public void PlayBossNormalAttackSFX()
+    {
+        PlaySFX(bossNormalAttackSFX);
     }
 
     public void PlayRunSFX()
