@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+using System.Collections;
+using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
@@ -78,6 +79,25 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
         // Không cho rơi trong lúc animation chết
         rb.gravityScale = 0;
+
+        // Bắt đầu Nhịp 2: Khoảng lặng điện ảnh
+        StartCoroutine(GameOverSequence());
+    }
+
+    private IEnumerator GameOverSequence()
+    {
+        // Chờ 1.5 giây khoảng lặng
+        yield return new WaitForSeconds(1.5f);
+
+        // Gọi UI Game Over hiện ra và đóng băng thời gian
+        if (GameOverManager.Instance != null)
+        {
+            GameOverManager.Instance.ShowGameOver();
+        }
+        else
+        {
+            Debug.LogWarning("Không tìm thấy GameOverManager trong Scene!");
+        }
     }
 
     // GỌI TỪ ANIMATION EVENT (frame cuối Die)
