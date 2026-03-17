@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Super_Speed
   m_EditorClassIdentifier: Assembly-CSharp::AugmentData
   augmentName: "Th\u1EA7n T\u1ED1c"
-  description: "Di chuy\u1EC3n c\u1EF1c nhanh (+3 t\u1ED1c \u0111\u1ED9)"
+  description: "Di chuy\u1EC3n c\u1EF1c nhanh (+1 t\u1ED1c \u0111\u1ED9)"
   icon: {fileID: 0}
   type: 2
-  value: 3
+  value: 1
   skinColor: {r: 1, g: 1, b: 1, a: 1}

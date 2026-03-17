@@ -90,7 +90,7 @@ public class AudioManager : MonoBehaviour
         // Debug.Log("Scene loaded: " + currentScene);
 
         // Logic chọn nhạc theo Scene
-        if (currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan"|| currentScene == "MapBeach 1")
+        if (currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan" || currentScene == "MapBeach 1" || currentScene == "BossMap1")
         {
             if (bossBattleMusic != null)
             {
@@ -106,6 +106,15 @@ public class AudioManager : MonoBehaviour
     public AudioClip plasmaOrbSFX;
     public AudioClip runSFX;
     public AudioClip ultimateSFX;
+    
+    [Header("--- MONSTER SFX ---")]
+    public AudioClip monsterRangedAttackSFX;
+    public AudioClip monsterNormalAttackSFX;
+
+    [Header("--- BOSS SFX ---")]
+    public AudioClip bossRoarSFX;
+    public AudioClip bossFireSFX;
+    public AudioClip bossNormalAttackSFX;
 
     public void PlayMusic(AudioClip clip)
     {
@@ -142,6 +151,33 @@ public class AudioManager : MonoBehaviour
     public void PlayUltimateSFX()
     {
         PlaySFX(ultimateSFX);
+    }
+
+    // --- MONSTER ACTION SFX ---
+    public void PlayMonsterRangedAttackSFX()
+    {
+        PlaySFX(monsterRangedAttackSFX);
+    }
+
+    public void PlayMonsterNormalAttackSFX()
+    {
+        PlaySFX(monsterNormalAttackSFX);
+    }
+
+    // --- BOSS ACTION SFX ---
+    public void PlayBossRoarSFX()
+    {
+        PlaySFX(bossRoarSFX);
+    }
+
+    public void PlayBossFireSFX()
+    {
+        PlaySFX(bossFireSFX);
+    }
+
+    public void PlayBossNormalAttackSFX()
+    {
+        PlaySFX(bossNormalAttackSFX);
     }
 
     public void PlayRunSFX()

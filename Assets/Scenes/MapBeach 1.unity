@@ -7433,6 +7433,11 @@ MonoBehaviour:
   plasmaOrbSFX: {fileID: 8300000, guid: ee14867a12c863f4ba080ce94d746fd0, type: 3}
   runSFX: {fileID: 8300000, guid: 62e18a46e263f2140b54c161c9ec961c, type: 3}
   ultimateSFX: {fileID: 8300000, guid: 3ea278b7e99334042983c380776b5f72, type: 3}
+  monsterRangedAttackSFX: {fileID: 8300000, guid: e5fe4d1fbc421374285a669968d44722, type: 3}
+  monsterNormalAttackSFX: {fileID: 8300000, guid: 2fac0c656280a2e44977229ce9905f4f, type: 3}
+  bossRoarSFX: {fileID: 8300000, guid: 8f41c90d8e9d131429edb8a4a647f543, type: 3}
+  bossFireSFX: {fileID: 8300000, guid: 563d27f29934cd64bbf10024830c6842, type: 3}
+  bossNormalAttackSFX: {fileID: 8300000, guid: 7886b28a507e346448b05af215606eb4, type: 3}
 --- !u!4 &1611807233
 Transform:
   m_ObjectHideFlags: 0
@@ -8106,7 +8111,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a9841b64971e3c24aaa11e1ba10c3ba2, type: 2}
   playerLevel: {fileID: 406872460}
   augmentUI: {fileID: 1434712119}
-  appliedAugmentTypes: 
 --- !u!4 &1930279326
 Transform:
   m_ObjectHideFlags: 0
