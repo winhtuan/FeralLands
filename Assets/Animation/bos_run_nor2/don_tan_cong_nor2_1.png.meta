@@ -1,0 +1,318 @@
+fileFormatVersion: 2
+guid: 5b18f13e41e838d4fa6b6fe9197aa1f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3981674821211389547
+    second: don_tan_cong_nor2_1_0
+  - first:
+      213: -2574069747053073029
+    second: don_tan_cong_nor2_1_1
+  - first:
+      213: -5213882571037628085
+    second: don_tan_cong_nor2_1_2
+  - first:
+      213: -3548309332717000414
+    second: don_tan_cong_nor2_1_3
+  - first:
+      213: -7690999744287391982
+    second: don_tan_cong_nor2_1_4
+  - first:
+      213: -6667481777303294612
+    second: don_tan_cong_nor2_1_5
+  - first:
+      213: -8580435379714370585
+    second: don_tan_cong_nor2_1_6
+  - first:
+      213: 4580992529353596751
+    second: don_tan_cong_nor2_1_7
+  - first:
+      213: 3462176779646227142
+    second: don_tan_cong_nor2_1_8
+  - first:
+      213: -7160157906508542047
+    second: don_tan_cong_nor2_1_9
+  - first:
+      213: -2121562579628122720
+    second: don_tan_cong_nor2_1_10
+  - first:
+      213: 8603957010786168098
+    second: don_tan_cong_nor2_1_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: don_tan_cong_nor2_1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2117
+        height: 1029
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c31ba9fd9578640be962793c7f9988
+      internalID: -708138861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don_tan_cong_nor2_1_13
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 0
+        width: 2117
+        height: 1029
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9435ec49eaf5c240bf4f602fc090240
+      internalID: 2143536815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don_tan_cong_nor2_1_14
+      rect:
+        serializedVersion: 2
+        x: 4234
+        y: 0
+        width: 2117
+        height: 1029
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f8904ec307df7438275c4e8db1629e
+      internalID: -1350127263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don_tan_cong_nor2_1_15
+      rect:
+        serializedVersion: 2
+        x: 6351
+        y: 0
+        width: 2117
+        height: 1029
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2678664990dc04d438103d6f0bcdc715
+      internalID: -717326092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don_tan_cong_nor2_1_16
+      rect:
+        serializedVersion: 2
+        x: 8468
+        y: 0
+        width: 2117
+        height: 1029
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121c467f66a8f0a479515cc32eeeb430
+      internalID: -946291942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: don_tan_cong_nor2_1_17
+      rect:
+        serializedVersion: 2
+        x: 10585
+        y: 0
+        width: 2117
+        height: 1029
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fb872f99569a847afc12bd3b1c295c
+      internalID: -519073311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9ebda8a7e5811b047b09b1a36dbc30c6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":2117.0,"y":1029.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      don_tan_cong_nor2_1_0: 3981674821211389547
+      don_tan_cong_nor2_1_1: -2574069747053073029
+      don_tan_cong_nor2_1_10: -2121562579628122720
+      don_tan_cong_nor2_1_11: 8603957010786168098
+      don_tan_cong_nor2_1_12: -708138861
+      don_tan_cong_nor2_1_13: 2143536815
+      don_tan_cong_nor2_1_14: -1350127263
+      don_tan_cong_nor2_1_15: -717326092
+      don_tan_cong_nor2_1_16: -946291942
+      don_tan_cong_nor2_1_17: -519073311
+      don_tan_cong_nor2_1_2: -5213882571037628085
+      don_tan_cong_nor2_1_3: -3548309332717000414
+      don_tan_cong_nor2_1_4: -7690999744287391982
+      don_tan_cong_nor2_1_5: -6667481777303294612
+      don_tan_cong_nor2_1_6: -8580435379714370585
+      don_tan_cong_nor2_1_7: 4580992529353596751
+      don_tan_cong_nor2_1_8: 3462176779646227142
+      don_tan_cong_nor2_1_9: -7160157906508542047
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

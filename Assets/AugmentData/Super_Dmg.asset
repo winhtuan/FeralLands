@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e197c2da7e74b1244bfd13a9197282b0, type: 3}
+  m_Name: Super_Dmg
+  m_EditorClassIdentifier: Assembly-CSharp::AugmentData
+  augmentName: "Ki\u1EBFm Th\xE1nh"
+  description: "T\u0103ng c\u1EF1c m\u1EA1nh 50 s\xE1t th\u01B0\u01A1ng"
+  icon: {fileID: 0}
+  type: 1
+  value: 50
+  skinColor: {r: 1, g: 1, b: 1, a: 1}

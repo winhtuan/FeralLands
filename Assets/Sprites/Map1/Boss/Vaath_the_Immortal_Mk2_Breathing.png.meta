@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: 8841831f8b8da1f43b656e3828b348b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5072280043927012401
+    second: Vaath_the_Immortal_Mk2_Breathing_0
+  - first:
+      213: -5666482495832280818
+    second: Vaath_the_Immortal_Mk2_Breathing_1
+  - first:
+      213: 3940495624397829413
+    second: Vaath_the_Immortal_Mk2_Breathing_2
+  - first:
+      213: -1993067763420910364
+    second: Vaath_the_Immortal_Mk2_Breathing_3
+  - first:
+      213: -5657649146788068341
+    second: Vaath_the_Immortal_Mk2_Breathing_4
+  - first:
+      213: 3791588217658976790
+    second: Vaath_the_Immortal_Mk2_Breathing_5
+  - first:
+      213: 6537502572998381992
+    second: Vaath_the_Immortal_Mk2_Breathing_6
+  - first:
+      213: 1308572282590471349
+    second: Vaath_the_Immortal_Mk2_Breathing_7
+  - first:
+      213: 5217397874813045861
+    second: Vaath_the_Immortal_Mk2_Breathing_8
+  - first:
+      213: -4273478516495705449
+    second: Vaath_the_Immortal_Mk2_Breathing_9
+  - first:
+      213: 7026023420267921489
+    second: Vaath_the_Immortal_Mk2_Breathing_10
+  - first:
+      213: -2075459791501017443
+    second: Vaath_the_Immortal_Mk2_Breathing_11
+  - first:
+      213: -137083033384537950
+    second: Vaath_the_Immortal_Mk2_Breathing_12
+  - first:
+      213: 5810102600498134119
+    second: Vaath_the_Immortal_Mk2_Breathing_13
+  - first:
+      213: -1392282812506552688
+    second: Vaath_the_Immortal_Mk2_Breathing_14
+  - first:
+      213: -2407830534514877799
+    second: Vaath_the_Immortal_Mk2_Breathing_15
+  - first:
+      213: 4391494335486771302
+    second: Vaath_the_Immortal_Mk2_Breathing_16
+  - first:
+      213: -750925810302200959
+    second: Vaath_the_Immortal_Mk2_Breathing_17
+  - first:
+      213: 8841572752053720725
+    second: Vaath_the_Immortal_Mk2_Breathing_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb7d649c24ab99b0800000000000000
+      internalID: -5072280043927012401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01b2fd313c9c51b0800000000000000
+      internalID: -5666482495832280818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525b63b84e37fa630800000000000000
+      internalID: 3940495624397829413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eca30ccd633754e0800000000000000
+      internalID: -1993067763420910364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b04c7e5931efb71b0800000000000000
+      internalID: -5657649146788068341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_5
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61aae10356d6e9430800000000000000
+      internalID: 3791588217658976790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_6
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a155c5f3ffd9ba50800000000000000
+      internalID: 6537502572998381992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_7
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b42ab2de8bf82210800000000000000
+      internalID: 1308572282590471349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c0c1469bbe76840800000000000000
+      internalID: 5217397874813045861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_9
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a920d5eed81b4c0800000000000000
+      internalID: -4273478516495705449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_10
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15005a44313718160800000000000000
+      internalID: 7026023420267921489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_11
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9eb9fdd05c7233e0800000000000000
+      internalID: -2075459791501017443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0b16a15bbf81ef0800000000000000
+      internalID: -137083033384537950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Breathing_13
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76cb34b2881a1a050800000000000000
+      internalID: 5810102600498134119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ae46c14393190c947b4e74222e945fea
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":114.0,"y":114.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Vaath_the_Immortal_Mk2_Breathing_0: -5072280043927012401
+      Vaath_the_Immortal_Mk2_Breathing_1: -5666482495832280818
+      Vaath_the_Immortal_Mk2_Breathing_10: 7026023420267921489
+      Vaath_the_Immortal_Mk2_Breathing_11: -2075459791501017443
+      Vaath_the_Immortal_Mk2_Breathing_12: -137083033384537950
+      Vaath_the_Immortal_Mk2_Breathing_13: 5810102600498134119
+      Vaath_the_Immortal_Mk2_Breathing_2: 3940495624397829413
+      Vaath_the_Immortal_Mk2_Breathing_3: -1993067763420910364
+      Vaath_the_Immortal_Mk2_Breathing_4: -5657649146788068341
+      Vaath_the_Immortal_Mk2_Breathing_5: 3791588217658976790
+      Vaath_the_Immortal_Mk2_Breathing_6: 6537502572998381992
+      Vaath_the_Immortal_Mk2_Breathing_7: 1308572282590471349
+      Vaath_the_Immortal_Mk2_Breathing_8: 5217397874813045861
+      Vaath_the_Immortal_Mk2_Breathing_9: -4273478516495705449
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

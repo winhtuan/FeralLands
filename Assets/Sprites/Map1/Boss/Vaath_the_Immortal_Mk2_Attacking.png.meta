@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: 927f82be0b99e40439d0babf7cd312f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9140127963293644325
+    second: Vaath_the_Immortal_Mk2_Attacking_0
+  - first:
+      213: -2944545597951752767
+    second: Vaath_the_Immortal_Mk2_Attacking_1
+  - first:
+      213: 8757387370141867937
+    second: Vaath_the_Immortal_Mk2_Attacking_2
+  - first:
+      213: -1612172619710672720
+    second: Vaath_the_Immortal_Mk2_Attacking_3
+  - first:
+      213: -3150981511405343216
+    second: Vaath_the_Immortal_Mk2_Attacking_4
+  - first:
+      213: -1153990028466707912
+    second: Vaath_the_Immortal_Mk2_Attacking_5
+  - first:
+      213: -1344961504412490947
+    second: Vaath_the_Immortal_Mk2_Attacking_6
+  - first:
+      213: 2383380678447437519
+    second: Vaath_the_Immortal_Mk2_Attacking_7
+  - first:
+      213: -6448063448106000047
+    second: Vaath_the_Immortal_Mk2_Attacking_8
+  - first:
+      213: -5151332799536314660
+    second: Vaath_the_Immortal_Mk2_Attacking_9
+  - first:
+      213: 2154337154523463278
+    second: Vaath_the_Immortal_Mk2_Attacking_10
+  - first:
+      213: 2874363389540003009
+    second: Vaath_the_Immortal_Mk2_Attacking_11
+  - first:
+      213: -8684740335651715167
+    second: Vaath_the_Immortal_Mk2_Attacking_12
+  - first:
+      213: 2829917820964482984
+    second: Vaath_the_Immortal_Mk2_Attacking_13
+  - first:
+      213: 2969347621018583750
+    second: Vaath_the_Immortal_Mk2_Attacking_14
+  - first:
+      213: 5373060607019260074
+    second: Vaath_the_Immortal_Mk2_Attacking_15
+  - first:
+      213: 5585258432467137753
+    second: Vaath_the_Immortal_Mk2_Attacking_16
+  - first:
+      213: 9192189968875389345
+    second: Vaath_the_Immortal_Mk2_Attacking_17
+  - first:
+      213: -8516528578073729819
+    second: Vaath_the_Immortal_Mk2_Attacking_18
+  - first:
+      213: -3970853443709105366
+    second: Vaath_the_Immortal_Mk2_Attacking_19
+  - first:
+      213: -7918952738086007511
+    second: Vaath_the_Immortal_Mk2_Attacking_20
+  - first:
+      213: 1299738446914188639
+    second: Vaath_the_Immortal_Mk2_Attacking_21
+  - first:
+      213: 8285565958375993539
+    second: Vaath_the_Immortal_Mk2_Attacking_22
+  - first:
+      213: 2481494374518908260
+    second: Vaath_the_Immortal_Mk2_Attacking_23
+  - first:
+      213: 4902720570915101727
+    second: Vaath_the_Immortal_Mk2_Attacking_24
+  - first:
+      213: 349418489766164569
+    second: Vaath_the_Immortal_Mk2_Attacking_25
+  - first:
+      213: -6051934097498885816
+    second: Vaath_the_Immortal_Mk2_Attacking_26
+  - first:
+      213: -837060994878225252
+    second: Vaath_the_Immortal_Mk2_Attacking_27
+  - first:
+      213: 3579033556619983742
+    second: Vaath_the_Immortal_Mk2_Attacking_28
+  - first:
+      213: -6517010505824666802
+    second: Vaath_the_Immortal_Mk2_Attacking_29
+  - first:
+      213: -464706435433260296
+    second: Vaath_the_Immortal_Mk2_Attacking_30
+  - first:
+      213: -1843656257576799940
+    second: Vaath_the_Immortal_Mk2_Attacking_31
+  - first:
+      213: -5237069115519089323
+    second: Vaath_the_Immortal_Mk2_Attacking_32
+  - first:
+      213: -5454586655764842809
+    second: Vaath_the_Immortal_Mk2_Attacking_33
+  - first:
+      213: -5110642829480111303
+    second: Vaath_the_Immortal_Mk2_Attacking_34
+  - first:
+      213: -3208107945130292071
+    second: Vaath_the_Immortal_Mk2_Attacking_35
+  - first:
+      213: 5295062527954525257
+    second: Vaath_the_Immortal_Mk2_Attacking_36
+  - first:
+      213: 286636046390816530
+    second: Vaath_the_Immortal_Mk2_Attacking_37
+  - first:
+      213: -5189036372933107251
+    second: Vaath_the_Immortal_Mk2_Attacking_38
+  - first:
+      213: 5995933217475402873
+    second: Vaath_the_Immortal_Mk2_Attacking_39
+  - first:
+      213: -2114644298276787148
+    second: Vaath_the_Immortal_Mk2_Attacking_40
+  - first:
+      213: -5031248817746989387
+    second: Vaath_the_Immortal_Mk2_Attacking_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd9844a3b0eb72180800000000000000
+      internalID: -9140127963293644325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 570
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c54529216fd227d0800000000000000
+      internalID: -2944545597951752767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 570
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af5ccd1a6d788970800000000000000
+      internalID: 8757387370141867937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 570
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0d8854b8960a9e0800000000000000
+      internalID: -1612172619710672720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_4
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 570
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01e6cde82077544d0800000000000000
+      internalID: -3150981511405343216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_5
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 570
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83226e6ee243cffe0800000000000000
+      internalID: -1153990028466707912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d332bec33acb55de0800000000000000
+      internalID: -1344961504412490947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 456
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6936f6918731120800000000000000
+      internalID: 2383380678447437519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_8
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 456
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151267e0570e386a0800000000000000
+      internalID: -6448063448106000047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_9
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 456
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6c1db9c1ac288b0800000000000000
+      internalID: -5151332799536314660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_10
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 456
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6efbc55a3eb5ed10800000000000000
+      internalID: 2154337154523463278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_11
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 456
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc6be4164ac3e720800000000000000
+      internalID: 2874363389540003009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a709feadaa997780800000000000000
+      internalID: -8684740335651715167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_13
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afa22eb343e54720800000000000000
+      internalID: 2829917820964482984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_14
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2c675dded353920800000000000000
+      internalID: 2969347621018583750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_15
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa817068722f09a40800000000000000
+      internalID: 5373060607019260074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_16
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d475fdc3f2d28d40800000000000000
+      internalID: 5585258432467137753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_17
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 342
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a10aba0318319f70800000000000000
+      internalID: 9192189968875389345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4e37871663fc980800000000000000
+      internalID: -8516528578073729819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_19
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b0598d4d1b4e8c0800000000000000
+      internalID: -3970853443709105366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_20
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92dc64de07a3a1290800000000000000
+      internalID: -7918952738086007511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_21
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55fc3d2b39990210800000000000000
+      internalID: 1299738446914188639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_22
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0f110275e3cf270800000000000000
+      internalID: 8285565958375993539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_23
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 228
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46564517cf9007220800000000000000
+      internalID: 2481494374518908260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c156e2266f90440800000000000000
+      internalID: 4902720570915101727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_25
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9583770e34269d400800000000000000
+      internalID: 349418489766164569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_26
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841318ab006330ca0800000000000000
+      internalID: -6051934097498885816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_27
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94c2f8c5792264f0800000000000000
+      internalID: -837060994878225252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_28
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b7985ae084ba130800000000000000
+      internalID: 3579033556619983742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_29
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 114
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bf4da397dee85a0800000000000000
+      internalID: -6517010505824666802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa992785f70d89f0800000000000000
+      internalID: -464706435433260296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_31
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31753fd6640a66e0800000000000000
+      internalID: -1843656257576799940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_32
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555c059f2613257b0800000000000000
+      internalID: -5237069115519089323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vaath_the_Immortal_Mk2_Attacking_33
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6fc82165a6d44b0800000000000000
+      internalID: -5454586655764842809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ac5e2b7d5d9978f498b67e6a2b609068
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":114.0,"y":114.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Vaath_the_Immortal_Mk2_Attacking_0: -9140127963293644325
+      Vaath_the_Immortal_Mk2_Attacking_1: -2944545597951752767
+      Vaath_the_Immortal_Mk2_Attacking_10: 2154337154523463278
+      Vaath_the_Immortal_Mk2_Attacking_11: 2874363389540003009
+      Vaath_the_Immortal_Mk2_Attacking_12: -8684740335651715167
+      Vaath_the_Immortal_Mk2_Attacking_13: 2829917820964482984
+      Vaath_the_Immortal_Mk2_Attacking_14: 2969347621018583750
+      Vaath_the_Immortal_Mk2_Attacking_15: 5373060607019260074
+      Vaath_the_Immortal_Mk2_Attacking_16: 5585258432467137753
+      Vaath_the_Immortal_Mk2_Attacking_17: 9192189968875389345
+      Vaath_the_Immortal_Mk2_Attacking_18: -8516528578073729819
+      Vaath_the_Immortal_Mk2_Attacking_19: -3970853443709105366
+      Vaath_the_Immortal_Mk2_Attacking_2: 8757387370141867937
+      Vaath_the_Immortal_Mk2_Attacking_20: -7918952738086007511
+      Vaath_the_Immortal_Mk2_Attacking_21: 1299738446914188639
+      Vaath_the_Immortal_Mk2_Attacking_22: 8285565958375993539
+      Vaath_the_Immortal_Mk2_Attacking_23: 2481494374518908260
+      Vaath_the_Immortal_Mk2_Attacking_24: 4902720570915101727
+      Vaath_the_Immortal_Mk2_Attacking_25: 349418489766164569
+      Vaath_the_Immortal_Mk2_Attacking_26: -6051934097498885816
+      Vaath_the_Immortal_Mk2_Attacking_27: -837060994878225252
+      Vaath_the_Immortal_Mk2_Attacking_28: 3579033556619983742
+      Vaath_the_Immortal_Mk2_Attacking_29: -6517010505824666802
+      Vaath_the_Immortal_Mk2_Attacking_3: -1612172619710672720
+      Vaath_the_Immortal_Mk2_Attacking_30: -464706435433260296
+      Vaath_the_Immortal_Mk2_Attacking_31: -1843656257576799940
+      Vaath_the_Immortal_Mk2_Attacking_32: -5237069115519089323
+      Vaath_the_Immortal_Mk2_Attacking_33: -5454586655764842809
+      Vaath_the_Immortal_Mk2_Attacking_4: -3150981511405343216
+      Vaath_the_Immortal_Mk2_Attacking_5: -1153990028466707912
+      Vaath_the_Immortal_Mk2_Attacking_6: -1344961504412490947
+      Vaath_the_Immortal_Mk2_Attacking_7: 2383380678447437519
+      Vaath_the_Immortal_Mk2_Attacking_8: -6448063448106000047
+      Vaath_the_Immortal_Mk2_Attacking_9: -5151332799536314660
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

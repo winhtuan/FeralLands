@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: ad9747ed250c540428dc72fde805caa1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4750282354486024259
+    second: Blaze_breathing_0
+  - first:
+      213: 3224995860476692600
+    second: Blaze_breathing_1
+  - first:
+      213: 5525434839706096406
+    second: Blaze_breathing_2
+  - first:
+      213: 9119000692587540186
+    second: Blaze_breathing_3
+  - first:
+      213: 6273675595190372403
+    second: Blaze_breathing_4
+  - first:
+      213: 7907561980738745889
+    second: Blaze_breathing_5
+  - first:
+      213: 4807405586299096402
+    second: Blaze_breathing_6
+  - first:
+      213: 5137591446627567358
+    second: Blaze_breathing_7
+  - first:
+      213: -1271474719515630634
+    second: Blaze_breathing_8
+  - first:
+      213: 5997167901266847478
+    second: Blaze_breathing_9
+  - first:
+      213: 2793654508303342581
+    second: Blaze_breathing_10
+  - first:
+      213: -2345429611563637452
+    second: Blaze_breathing_11
+  - first:
+      213: 437337023789581315
+    second: Blaze_breathing_12
+  - first:
+      213: 5214595156217700814
+    second: Blaze_breathing_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blaze_breathing_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 255
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7ed0edd5b931eb0800000000000000
+      internalID: -4750282354486024259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 255
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87881d9f5ac71cc20800000000000000
+      internalID: 3224995860476692600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 255
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613df3236b94eac40800000000000000
+      internalID: 5525434839706096406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_3
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 255
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adea83cb0d23d8e70800000000000000
+      internalID: 9119000692587540186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 175
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3380c57e6b2901750800000000000000
+      internalID: 6273675595190372403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 175
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1263155b9bd4dbd60800000000000000
+      internalID: 7907561980738745889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_6
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 175
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d0696f8e557b240800000000000000
+      internalID: 4807405586299096402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 175
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6425953346c4740800000000000000
+      internalID: 5137591446627567358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 95
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3a16aaa70da5ee0800000000000000
+      internalID: -1271474719515630634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_9
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 95
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6a26d8e683a3350800000000000000
+      internalID: 5997167901266847478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_10
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 95
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fbd69059fd05c620800000000000000
+      internalID: 2793654508303342581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_11
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 95
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4352115e13c537fd0800000000000000
+      internalID: -2345429611563637452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 15
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304ca1eb4bbb11600800000000000000
+      internalID: 437337023789581315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blaze_breathing_13
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 15
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec124dd9aa6fd5840800000000000000
+      internalID: 5214595156217700814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Blaze_breathing_0: -4750282354486024259
+      Blaze_breathing_1: 3224995860476692600
+      Blaze_breathing_10: 2793654508303342581
+      Blaze_breathing_11: -2345429611563637452
+      Blaze_breathing_12: 437337023789581315
+      Blaze_breathing_13: 5214595156217700814
+      Blaze_breathing_2: 5525434839706096406
+      Blaze_breathing_3: 9119000692587540186
+      Blaze_breathing_4: 6273675595190372403
+      Blaze_breathing_5: 7907561980738745889
+      Blaze_breathing_6: 4807405586299096402
+      Blaze_breathing_7: 5137591446627567358
+      Blaze_breathing_8: -1271474719515630634
+      Blaze_breathing_9: 5997167901266847478
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

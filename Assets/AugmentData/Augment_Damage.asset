@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e197c2da7e74b1244bfd13a9197282b0, type: 3}
+  m_Name: Augment_Damage
+  m_EditorClassIdentifier: Assembly-CSharp::AugmentData
+  augmentName: " Nanh S\u1EAFc"
+  description: "T\u0103ng 10 s\xE1t th\u01B0\u01A1ng c\u1EADn chi\u1EBFn"
+  icon: {fileID: 1735502859755850197, guid: f184ce934fa503649a87106f2a0b375e, type: 3}
+  type: 1
+  value: 10

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e197c2da7e74b1244bfd13a9197282b0, type: 3}
+  m_Name: Skin_Dark
+  m_EditorClassIdentifier: Assembly-CSharp::AugmentData
+  augmentName: "B\xF3ng T\u1ED1i"
+  description: "Bi\u1EBFn nh\xE2n v\u1EADt th\xE0nh chi\u1EBFn binh b\xF3ng t\u1ED1i"
+  icon: {fileID: 0}
+  type: 3
+  value: 0
+  skinColor: {r: 0.6, g: 0.1960784, b: 0.8000001, a: 1}

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 
 public abstract class EnemyBase : MonoBehaviour, IDamageable
@@ -28,5 +28,11 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
     {
         OnDeath?.Invoke();
         Destroy(gameObject);
+    }
+
+    // Hàm bổ trợ để các lớp con (như BossHealth) có thể kích hoạt event OnDeath
+    protected void InvokeOnDeath()
+    {
+        OnDeath?.Invoke();
     }
 }

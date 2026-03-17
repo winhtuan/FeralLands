@@ -1,0 +1,1377 @@
+fileFormatVersion: 2
+guid: fe9551f2d241eb24cb39e39aa04c16b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3510551313456940907
+    second: methor_0
+  - first:
+      213: 2158660672076242464
+    second: methor_1
+  - first:
+      213: -1570572319234296747
+    second: methor_2
+  - first:
+      213: -3199400149392314185
+    second: methor_3
+  - first:
+      213: 8777505105837190569
+    second: methor_4
+  - first:
+      213: -8976820020161849885
+    second: methor_5
+  - first:
+      213: -4552367379384565967
+    second: methor_6
+  - first:
+      213: -3566890748978970689
+    second: methor_7
+  - first:
+      213: -2772304466892720637
+    second: methor_8
+  - first:
+      213: -1227812435916445146
+    second: methor_9
+  - first:
+      213: 6220945915206881581
+    second: methor_10
+  - first:
+      213: 1525949227517250680
+    second: methor_11
+  - first:
+      213: 9024606091342893682
+    second: methor_12
+  - first:
+      213: 7274463069749519778
+    second: methor_13
+  - first:
+      213: 7686880021505667562
+    second: methor_14
+  - first:
+      213: -3164561082267424488
+    second: methor_15
+  - first:
+      213: -7165304460878227456
+    second: methor_16
+  - first:
+      213: 7233021358762543510
+    second: methor_17
+  - first:
+      213: -5575643708973898277
+    second: methor_18
+  - first:
+      213: 8510420195917713801
+    second: methor_19
+  - first:
+      213: -6747576623096442217
+    second: methor_20
+  - first:
+      213: -1828434007335948951
+    second: methor_21
+  - first:
+      213: -9116305339500580364
+    second: methor_22
+  - first:
+      213: -755077623800004872
+    second: methor_23
+  - first:
+      213: -6486321096861075623
+    second: methor_24
+  - first:
+      213: -4736771563080355424
+    second: methor_25
+  - first:
+      213: -5534064809424601416
+    second: methor_26
+  - first:
+      213: 6618341567499225112
+    second: methor_27
+  - first:
+      213: -442173941218086069
+    second: methor_28
+  - first:
+      213: -2636987060474822467
+    second: methor_29
+  - first:
+      213: 1323916092333380224
+    second: methor_30
+  - first:
+      213: 3810006659564634403
+    second: methor_31
+  - first:
+      213: -6377069564489531412
+    second: methor_32
+  - first:
+      213: -1322319856859717067
+    second: methor_33
+  - first:
+      213: 2396076114766639136
+    second: methor_34
+  - first:
+      213: -2069830431998827
+    second: methor_35
+  - first:
+      213: -2305823703215565412
+    second: methor_36
+  - first:
+      213: 3084700752504597705
+    second: methor_37
+  - first:
+      213: -8311735599668038915
+    second: methor_38
+  - first:
+      213: -6071218561915856732
+    second: methor_39
+  - first:
+      213: -492279945439754492
+    second: methor_40
+  - first:
+      213: 2375581958120098013
+    second: methor_41
+  - first:
+      213: 600937033578071437
+    second: methor_42
+  - first:
+      213: 1068546233588847890
+    second: methor_43
+  - first:
+      213: 7347829260344461489
+    second: methor_44
+  - first:
+      213: -4559251782389425971
+    second: methor_45
+  - first:
+      213: -4752352037644474933
+    second: methor_46
+  - first:
+      213: 63077370457489625
+    second: methor_47
+  - first:
+      213: -781956554789922602
+    second: methor_48
+  - first:
+      213: 5546503593168907958
+    second: methor_49
+  - first:
+      213: 8855921172311667907
+    second: methor_50
+  - first:
+      213: -1480983024883357755
+    second: methor_51
+  - first:
+      213: 6617422018372191223
+    second: methor_52
+  - first:
+      213: -5442532681506096995
+    second: methor_53
+  - first:
+      213: -1766807568046503017
+    second: methor_54
+  - first:
+      213: 5518811459506661345
+    second: methor_55
+  - first:
+      213: 4555794263953423689
+    second: methor_56
+  - first:
+      213: -1220191449057741499
+    second: methor_57
+  - first:
+      213: 4548346403213593324
+    second: methor_58
+  - first:
+      213: -5981304227592004236
+    second: methor_59
+  - first:
+      213: -2894794766764163621
+    second: methor_60
+  - first:
+      213: 1437032617298718416
+    second: methor_61
+  - first:
+      213: 5655461483307025886
+    second: methor_62
+  - first:
+      213: 3911976270386538457
+    second: methor_63
+  - first:
+      213: -5163627187297984354
+    second: methor_64
+  - first:
+      213: 8949972712821894217
+    second: methor_65
+  - first:
+      213: -9018917002527105354
+    second: methor_66
+  - first:
+      213: 6820140163035454614
+    second: methor_67
+  - first:
+      213: 7831320684325092148
+    second: methor_68
+  - first:
+      213: -7295723538251372073
+    second: methor_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: methor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67c164e1dbf7b030800000000000000
+      internalID: 3510551313456940907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 424
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ed5b5b17a15fd10800000000000000
+      internalID: 2158660672076242464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 424
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5547af10cc4343ae0800000000000000
+      internalID: -1570572319234296747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 424
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0b329e3827993d0800000000000000
+      internalID: -3199400149392314185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_4
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 424
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad6a977366ffc970800000000000000
+      internalID: 8777505105837190569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 424
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e553adb0cdeb6380800000000000000
+      internalID: -8976820020161849885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_6
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 424
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ff4b8ecfdb2d0c0800000000000000
+      internalID: -4552367379384565967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 424
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf3b7213cbdf7ec0800000000000000
+      internalID: -3566890748978970689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30671a196cbc689d0800000000000000
+      internalID: -2772304466892720637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_9
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 340
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62aa462481fe5fee0800000000000000
+      internalID: -1227812435916445146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_10
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 340
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21d2d2995d355650800000000000000
+      internalID: 6220945915206881581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_11
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 340
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c8273dcb24d2510800000000000000
+      internalID: 1525949227517250680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_12
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 340
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272d158fc67dd3d70800000000000000
+      internalID: 9024606091342893682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_13
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 340
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a52e14ce9514f460800000000000000
+      internalID: 7274463069749519778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_14
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 340
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae174e817a84daa60800000000000000
+      internalID: 7686880021505667562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_15
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 340
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819ac6556783514d0800000000000000
+      internalID: -3164561082267424488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008d4d56e89bf8c90800000000000000
+      internalID: -7165304460878227456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_17
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 256
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699cad58a9ad06460800000000000000
+      internalID: 7233021358762543510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_18
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 256
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5287476955f92b0800000000000000
+      internalID: -5575643708973898277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_19
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 256
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9815cfaf3161b1670800000000000000
+      internalID: 8510420195917713801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_20
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 256
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7925b9dbfcacb52a0800000000000000
+      internalID: -6747576623096442217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_21
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 256
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d2f7135f810a6e0800000000000000
+      internalID: -1828434007335948951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_22
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 256
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1321f08906c7180800000000000000
+      internalID: -9116305339500580364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_23
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 256
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fefd87d6ec6585f0800000000000000
+      internalID: -755077623800004872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 172
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95739721455fbf5a0800000000000000
+      internalID: -6486321096861075623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_25
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 172
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a17c602c5b934eb0800000000000000
+      internalID: -4736771563080355424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_26
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 172
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8beb146606d0333b0800000000000000
+      internalID: -5534064809424601416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_27
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 172
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8184ef4179219db50800000000000000
+      internalID: 6618341567499225112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_28
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 172
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43f2c8a4251dd9f0800000000000000
+      internalID: -442173941218086069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_29
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 172
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0c8176d3a876bd0800000000000000
+      internalID: -2636987060474822467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_30
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 172
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08254fbebae7f5210800000000000000
+      internalID: 1323916092333380224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_31
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 172
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321093fdedcdfd430800000000000000
+      internalID: 3810006659564634403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef75aca4091087a0800000000000000
+      internalID: -6377069564489531412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_33
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 88
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5326e6c981d26ade0800000000000000
+      internalID: -1322319856859717067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_34
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 88
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020b67b0882904120800000000000000
+      internalID: 2396076114766639136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_35
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 88
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59cfa5c0085a8fff0800000000000000
+      internalID: -2069830431998827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_36
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 88
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9519270f811000e0800000000000000
+      internalID: -2305823703215565412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_37
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 88
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ccaa6fadfe0fca20800000000000000
+      internalID: 3084700752504597705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_38
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 88
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df271d27288c6ac80800000000000000
+      internalID: -8311735599668038915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_39
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 88
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a85f3772e2bebba0800000000000000
+      internalID: -6071218561915856732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407c3027ff11b29f0800000000000000
+      internalID: -492279945439754492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_41
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 4
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8439c5433c7f020800000000000000
+      internalID: 2375581958120098013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_42
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 4
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d854cc25c05f65800800000000000000
+      internalID: 600937033578071437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_43
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 4
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2151527532d34de00800000000000000
+      internalID: 1068546233588847890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: methor_44
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 4
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b88d0528cbb8f560800000000000000
+      internalID: 7347829260344461489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 74a709c535dbb334c8b8f2bea63c9e62
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":6.0},"gridSpriteSize":{"x":61.0,"y":84.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      methor_0: 3510551313456940907
+      methor_1: 2158660672076242464
+      methor_10: 6220945915206881581
+      methor_11: 1525949227517250680
+      methor_12: 9024606091342893682
+      methor_13: 7274463069749519778
+      methor_14: 7686880021505667562
+      methor_15: -3164561082267424488
+      methor_16: -7165304460878227456
+      methor_17: 7233021358762543510
+      methor_18: -5575643708973898277
+      methor_19: 8510420195917713801
+      methor_2: -1570572319234296747
+      methor_20: -6747576623096442217
+      methor_21: -1828434007335948951
+      methor_22: -9116305339500580364
+      methor_23: -755077623800004872
+      methor_24: -6486321096861075623
+      methor_25: -4736771563080355424
+      methor_26: -5534064809424601416
+      methor_27: 6618341567499225112
+      methor_28: -442173941218086069
+      methor_29: -2636987060474822467
+      methor_3: -3199400149392314185
+      methor_30: 1323916092333380224
+      methor_31: 3810006659564634403
+      methor_32: -6377069564489531412
+      methor_33: -1322319856859717067
+      methor_34: 2396076114766639136
+      methor_35: -2069830431998827
+      methor_36: -2305823703215565412
+      methor_37: 3084700752504597705
+      methor_38: -8311735599668038915
+      methor_39: -6071218561915856732
+      methor_4: 8777505105837190569
+      methor_40: -492279945439754492
+      methor_41: 2375581958120098013
+      methor_42: 600937033578071437
+      methor_43: 1068546233588847890
+      methor_44: 7347829260344461489
+      methor_5: -8976820020161849885
+      methor_6: -4552367379384565967
+      methor_7: -3566890748978970689
+      methor_8: -2772304466892720637
+      methor_9: -1227812435916445146
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

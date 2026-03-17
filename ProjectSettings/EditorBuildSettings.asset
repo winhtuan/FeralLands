@@ -5,9 +5,33 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 04e787af2835eae4a98d84bad9781870
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e745a055bd6bf114a84a7184ca338162
+  - enabled: 0
+    path: Assets/Scenes/MapBeach.unity
+    guid: e2a1514146b29e843baa458f5a054e3c
+  - enabled: 0
+    path: Assets/Scenes/MapBeachTestQuan.unity
+    guid: 6dd05dba6a4be0448a90c00163ae000e
+  - enabled: 0
+    path: Assets/Scenes/Boss1Scene.unity
+    guid: fb480eb771478c64a9e3d87cea36a7b0
+  - enabled: 1
+    path: Assets/Scenes/BossMap1.unity
+    guid: b77a3b1d696a1a145b9cfd1818b6113a
+  - enabled: 1
+    path: Assets/Scenes/MapBeach 1.unity
+    guid: 677258770d65a4f48a74198af2350c4f
+  - enabled: 1
+    path: Assets/Scenes/MapNormal2.unity
+    guid: 6f5ec39d54b2aeb4a90466ce17c95d22
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
