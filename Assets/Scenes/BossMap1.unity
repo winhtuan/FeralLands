@@ -1367,6 +1367,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f9d75fcf317cc469acfd8a797f5148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+--- !u!1 &979957080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979957082}
+  - component: {fileID: 979957081}
+  m_Layer: 0
+  m_Name: --- AUDIO MANAGER ---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &979957081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979957080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9ef994f03491d498d8f7ea957d59c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  musicGroup: {fileID: 5524457805921807633, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
+  sfxGroup: {fileID: -2362617805984967503, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
+  bossBattleMusic: {fileID: 8300000, guid: 479eca7faa4ed9a419d43243f95d4351, type: 3}
+  jumpSFX: {fileID: 8300000, guid: 60a1560b558bb3f41a14c1881c5e7d7a, type: 3}
+  meleeSFX: {fileID: 8300000, guid: 81dd2bc2bcc6ae642bd8c8cc4f70d227, type: 3}
+  plasmaOrbSFX: {fileID: 8300000, guid: ee14867a12c863f4ba080ce94d746fd0, type: 3}
+  runSFX: {fileID: 8300000, guid: 62e18a46e263f2140b54c161c9ec961c, type: 3}
+  ultimateSFX: {fileID: 8300000, guid: 3ea278b7e99334042983c380776b5f72, type: 3}
+  monsterRangedAttackSFX: {fileID: 8300000, guid: e5fe4d1fbc421374285a669968d44722, type: 3}
+  monsterNormalAttackSFX: {fileID: 8300000, guid: 2fac0c656280a2e44977229ce9905f4f, type: 3}
+  bossRoarSFX: {fileID: 8300000, guid: 8f41c90d8e9d131429edb8a4a647f543, type: 3}
+  bossFireSFX: {fileID: 8300000, guid: 563d27f29934cd64bbf10024830c6842, type: 3}
+  bossNormalAttackSFX: {fileID: 8300000, guid: 7886b28a507e346448b05af215606eb4, type: 3}
+--- !u!4 &979957082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979957080}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1008653663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,6 +1833,7 @@ MonoBehaviour:
   blueFillImage: {fileID: 600251348}
   phase2Root: {fileID: 1008653663}
   redFillImage: {fileID: 1797796845}
+  fadeDuration: 0.5
 --- !u!1 &1337122897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2927,3 +2985,4 @@ SceneRoots:
   - {fileID: 2053644039}
   - {fileID: 1612424136}
   - {fileID: 2080151154}
+  - {fileID: 979957082}
