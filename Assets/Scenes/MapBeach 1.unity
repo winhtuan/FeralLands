@@ -1501,6 +1501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 100
   currentHealth: 100
+  baseMaxHealth: 0
 --- !u!114 &406872453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1514,6 +1515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 3
+  baseMoveSpeed: 0
 --- !u!114 &406872454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1568,6 +1570,7 @@ MonoBehaviour:
   meleeHitboxPrefab: {fileID: 4087902218653683928, guid: 9da1f39f8d54a364b8ac2eafca3b7a5b, type: 3}
   attackCooldown: 0.4
   meleeDamage: 15
+  baseMeleeDamage: 0
   hitboxLifeTime: 0.15
   attackOffset: {x: 0.4, y: -0.2}
   hitboxSize: {x: 1, y: 0.8}
@@ -1636,7 +1639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerLevel
   currentLevel: 1
   currentExp: 0
-  expToNextLevel: 0a0000000a0000000f00000014000000190000001e00000023000000280000002800000032000000
+  expToNextLevel: 0a000000020000000500000005000000050000000500000064000000640000006400000064000000
 --- !u!114 &406872461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7690,6 +7693,7 @@ MonoBehaviour:
   sfxGroup: {fileID: -2362617805984967503, guid: 1ca070d703a8b2141b2b56ec7c31a5dd, type: 2}
   bossBattleMusic: {fileID: 8300000, guid: 479eca7faa4ed9a419d43243f95d4351, type: 3}
   normalMapMusic: {fileID: 8300000, guid: b7c2d82f33f7d2142bb00bd33446d4c3, type: 3}
+  mapNormal2Music: {fileID: 8300000, guid: 51d6e566c565a11418be1a1ced986a29, type: 3}
   jumpSFX: {fileID: 8300000, guid: 60a1560b558bb3f41a14c1881c5e7d7a, type: 3}
   meleeSFX: {fileID: 8300000, guid: 81dd2bc2bcc6ae642bd8c8cc4f70d227, type: 3}
   plasmaOrbSFX: {fileID: 8300000, guid: ee14867a12c863f4ba080ce94d746fd0, type: 3}
