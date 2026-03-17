@@ -128,8 +128,19 @@ public class PlayerSaveLoad : MonoBehaviour
             sfxVolume        = PlayerPrefs.GetFloat("Setting_SFX",         0.75f),
             isFullscreen     = PlayerPrefs.GetInt  ("Setting_Fullscreen",  1) == 1,
         };
-        // appliedAugments and killedEnemyIDs are merged inside SaveManager.SaveGame()
+        // Collect alive enemy positions
+        data.enemyPositions = new List<EnemyPositionData>();
+        foreach (var enemy in FindObjectsByType<NormalEnemyBase>(FindObjectsSortMode.None))
+        {
+            data.enemyPositions.Add(new EnemyPositionData
+            {
+                enemyID = enemy.EnemyID,
+                posX    = enemy.transform.position.x,
+                posY    = enemy.transform.position.y,
+            });
+        }
 
+        // appliedAugments and killedEnemyIDs are merged inside SaveManager.SaveGame()
         SaveManager.Instance.SaveGame(data);
     }
 

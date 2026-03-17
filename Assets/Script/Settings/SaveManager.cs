@@ -135,7 +135,8 @@ public class SaveManager : MonoBehaviour
             if (data.appliedAugments != null)
                 _appliedAugments.AddRange(data.appliedAugments);
 
-            Debug.Log($"[SaveManager] Loaded — {_killedThisSession.Count} killed enemies, {_appliedAugments.Count} augments");
+            _cachedData = data;
+            Debug.Log($"[SaveManager] Loaded — {_killedThisSession.Count} killed enemies, {_appliedAugments.Count} augments, {data.enemyPositions?.Count ?? 0} enemy positions");
             return data;
         }
         catch (Exception e)
@@ -155,6 +156,7 @@ public class SaveManager : MonoBehaviour
         if (File.Exists(SavePath)) File.Delete(SavePath);
         _killedThisSession.Clear();
         _appliedAugments.Clear();
+        _cachedData = null;
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
         Debug.Log("[SaveManager] Save deleted.");
