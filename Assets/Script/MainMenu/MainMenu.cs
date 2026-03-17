@@ -76,10 +76,15 @@ public class MainMenu : MonoBehaviour
         }
 
         GameData data = SaveManager.Instance.LoadGame();
-        string targetScene = (data != null && !string.IsNullOrEmpty(data.currentSceneName))
-            ? data.currentSceneName
-            : "MapBeach 1";
+        if (data == null) return;
 
+        string targetScene = data.currentSceneName;
+
+        // Guard against corrupted saves that wrote "MainMenu" as the scene name
+        if (string.IsNullOrEmpty(targetScene) || targetScene == "MainMenu")
+            targetScene = "MapBeach 1";
+
+        Debug.Log($"[MainMenu] Continuing to scene: {targetScene}");
         StartCoroutine(LoadSceneDelay(targetScene));
     }
 
@@ -101,9 +106,17 @@ public class MainMenu : MonoBehaviour
     {
         yield return new WaitForSeconds(delayBeforeLoad);
 
-        if (SceneTransitionManager.Instance != null)
-            SceneTransitionManager.Instance.TeleportToMap(sceneName);
-        else
-            SceneManager.LoadScene(sceneName);
+        try
+        {
+            if (SceneTransitionManager.Instance != null)
+                SceneTransitionManager.Instance.TeleportToMap(sceneName);
+            else
+                SceneManager.LoadScene(sceneName);
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"[MainMenu] Scene load failed for '{sceneName}': {e.Message}");
+            SceneManager.LoadScene(sceneName); // fallback
+        }
     }
 }
