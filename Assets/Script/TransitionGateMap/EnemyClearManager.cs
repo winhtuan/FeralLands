@@ -84,6 +84,16 @@ public class EnemyClearManager : MonoBehaviour
         }
 
         // Auto-save progress when the area is cleared
-        PlayerSaveLoad.Instance?.SaveGame();
+        try
+        {
+            if (PlayerSaveLoad.Instance != null)
+            {
+                PlayerSaveLoad.Instance.SaveGame();
+            }
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"[EnemyClearManager] Lỗi khi tự động lưu game: {e.Message}");
+        }
     }
 }
