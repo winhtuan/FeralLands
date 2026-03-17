@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 /// <summary>
@@ -15,13 +16,17 @@ public class EnemyClearManager : MonoBehaviour
     [SerializeField] private int totalEnemies = 0;
     [SerializeField] private int enemiesRemaining = 0;
 
-    private void Start()
+    private IEnumerator Start()
     {
         // Ẩn cổng ngay khi bắt đầu
         if (portalObject != null)
             portalObject.SetActive(false);
         else
             Debug.LogWarning("[EnemyClearManager] Chưa gán Portal Object trong Inspector!");
+
+        // Wait one frame so NormalEnemyBase.Start() can Destroy() pre-killed enemies
+        // (Unity defers Destroy to end-of-frame, so yielding here ensures they're gone).
+        yield return null;
 
         // Tìm tất cả EnemyBase bao gồm cả những đối tượng đang ẩn (vd: Boss khi chưa kích hoạt)
         List<EnemyBase> enemyBases = new List<EnemyBase>(
@@ -49,12 +54,12 @@ public class EnemyClearManager : MonoBehaviour
 
         if (totalEnemies == 0)
         {
-            Debug.LogWarning("[EnemyClearManager] Không tìm thấy quái hoặc Boss nào trong scene! Portal sẽ mở ngay.");
+            Debug.Log("[EnemyClearManager] Không còn quái nào trong scene — Portal mở ngay.");
             ShowPortal();
-            return;
+            yield break;
         }
 
-        Debug.Log($"[EnemyClearManager] Tổng số mục tiêu (bao gồm Boss): {totalEnemies}. Portal bị ẩn cho đến khi tiêu diệt hết.");
+        Debug.Log($"[EnemyClearManager] Còn lại {totalEnemies} mục tiêu sau khi loại bỏ quái đã chết từ save.");
 
         // Đăng ký sự kiện OnDeath cho từng đối tượng
         foreach (var target in uniqueEnemies)
@@ -84,6 +89,6 @@ public class EnemyClearManager : MonoBehaviour
         }
 
         // Auto-save progress when the area is cleared
-        PlayerSaveLoad.Instance?.SaveGame();
+        if (PlayerSaveLoad.Instance != null) PlayerSaveLoad.Instance.SaveGame();
     }
 }

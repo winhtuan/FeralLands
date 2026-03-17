@@ -109,6 +109,7 @@ public class SaveManager : MonoBehaviour
 
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(SavePath, json);
+        _cachedData = data; // keep cache in sync so next GetCachedData() is not stale
         Debug.Log("[SaveManager] Saved to: " + SavePath);
     }
 

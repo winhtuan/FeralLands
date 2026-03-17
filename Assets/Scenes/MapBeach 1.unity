@@ -8106,7 +8106,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a9841b64971e3c24aaa11e1ba10c3ba2, type: 2}
   playerLevel: {fileID: 406872460}
   augmentUI: {fileID: 1434712119}
-  appliedAugmentTypes: 
 --- !u!4 &1930279326
 Transform:
   m_ObjectHideFlags: 0
