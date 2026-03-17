@@ -12,6 +12,10 @@ TextureImporter:
       213: -8943731079878390572
     second: Game over_2_2
   - first:
+<<<<<<< HEAD:Assets/Background2/PlatForm_be_dung2/be_dung_nor2_1.png.meta
+      213: -3323725456146572971
+    second: be_dung_nor2_1_3
+=======
       213: 6837476471625508794
     second: Game over_2_3
   - first:
@@ -29,6 +33,7 @@ TextureImporter:
   - first:
       213: 1877715186059556238
     second: Game over_2_8
+>>>>>>> 609c33cdff5b595b23cedba958641430f41c3929:Assets/Background2/Game_Over/Game over_2.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -140,10 +145,17 @@ TextureImporter:
       name: Game over_2_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD:Assets/Background2/PlatForm_be_dung2/be_dung_nor2_1.png.meta
+        x: 49
+        y: 312
+        width: 6
+        height: 9
+=======
         x: 50
         y: 247
         width: 276
         height: 171
+>>>>>>> 609c33cdff5b595b23cedba958641430f41c3929:Assets/Background2/Game_Over/Game over_2.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +174,17 @@ TextureImporter:
       name: Game over_2_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD:Assets/Background2/PlatForm_be_dung2/be_dung_nor2_1.png.meta
+        x: 133
+        y: 75
+        width: 539
+        height: 781
+=======
         x: 240
         y: 244
         width: 9
         height: 7
+>>>>>>> 609c33cdff5b595b23cedba958641430f41c3929:Assets/Background2/Game_Over/Game over_2.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,13 +193,26 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<< HEAD:Assets/Background2/PlatForm_be_dung2/be_dung_nor2_1.png.meta
+      spriteID: 0ad796a7b15202b50800000000000000
+      internalID: 6566289056654261664
+=======
       spriteID: a77f32d37d0703410800000000000000
       internalID: 1454786749386717050
+>>>>>>> 609c33cdff5b595b23cedba958641430f41c3929:Assets/Background2/Game_Over/Game over_2.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD:Assets/Background2/PlatForm_be_dung2/be_dung_nor2_1.png.meta
+      name: be_dung_nor2_1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 302
+        width: 9
+=======
       name: Game over_2_2
       rect:
         serializedVersion: 2
@@ -297,6 +329,7 @@ TextureImporter:
         x: 283
         y: 236
         width: 10
+>>>>>>> 609c33cdff5b595b23cedba958641430f41c3929:Assets/Background2/Game_Over/Game over_2.png.meta
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -306,13 +339,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<< HEAD:Assets/Background2/PlatForm_be_dung2/be_dung_nor2_1.png.meta
+      spriteID: bd8bf18cf3ee2b3f0800000000000000
+      internalID: -886384218930693925
+=======
       spriteID: de400d4ca847cdfd0800000000000000
       internalID: -2315847969019001619
+>>>>>>> 609c33cdff5b595b23cedba958641430f41c3929:Assets/Background2/Game_Over/Game over_2.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD:Assets/Background2/PlatForm_be_dung2/be_dung_nor2_1.png.meta
+      name: be_dung_nor2_1_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 287
+        width: 10
+        height: 10
+=======
       name: Game over_2_8
       rect:
         serializedVersion: 2
@@ -320,6 +367,7 @@ TextureImporter:
         y: 75
         width: 111
         height: 166
+>>>>>>> 609c33cdff5b595b23cedba958641430f41c3929:Assets/Background2/Game_Over/Game over_2.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,8 +376,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<< HEAD:Assets/Background2/PlatForm_be_dung2/be_dung_nor2_1.png.meta
+      spriteID: 559d577be41cfd1d0800000000000000
+      internalID: -3323725456146572971
+=======
       spriteID: e85bf6e530cfe0a10800000000000000
       internalID: 1877715186059556238
+>>>>>>> 609c33cdff5b595b23cedba958641430f41c3929:Assets/Background2/Game_Over/Game over_2.png.meta
       vertices: []
       indices: 
       edges: []
@@ -348,6 +401,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD:Assets/Background2/PlatForm_be_dung2/be_dung_nor2_1.png.meta
+      be_dung_nor2_1_0: 1766167274643903011
+      be_dung_nor2_1_1: 6566289056654261664
+      be_dung_nor2_1_2: -886384218930693925
+      be_dung_nor2_1_3: -3323725456146572971
+=======
       Game over_2_0: -7832661759395958167
       Game over_2_1: 1454786749386717050
       Game over_2_2: -8943731079878390572
@@ -357,6 +416,7 @@ TextureImporter:
       Game over_2_6: -5897499126353580705
       Game over_2_7: -2315847969019001619
       Game over_2_8: 1877715186059556238
+>>>>>>> 609c33cdff5b595b23cedba958641430f41c3929:Assets/Background2/Game_Over/Game over_2.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
