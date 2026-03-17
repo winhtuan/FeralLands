@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     [Header("--- MUSIC TRACKS ---")]
     [Tooltip("Kéo file 'intense_boss_battle.mp3' vào đây")]
     public AudioClip bossBattleMusic;
+    public AudioClip normalMapMusic;
 
     // Audio Sources
     private AudioSource musicSource;
@@ -90,12 +91,13 @@ public class AudioManager : MonoBehaviour
         // Debug.Log("Scene loaded: " + currentScene);
 
         // Logic chọn nhạc theo Scene
-        if (currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan" || currentScene == "MapBeach 1" || currentScene == "BossMap1")
+        if (currentScene == "BossMap1")
         {
-            if (bossBattleMusic != null)
-            {
-                PlayMusic(bossBattleMusic);
-            }
+            if (bossBattleMusic != null) PlayMusic(bossBattleMusic);
+        }
+        else if (currentScene == "MapNormal2" || currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan" || currentScene == "MapBeach 1")
+        {
+            if (normalMapMusic != null) PlayMusic(normalMapMusic);
         }
         // Thêm các scene khác tại đây
     }
