@@ -4,21 +4,40 @@ using System.IO;
 using UnityEngine;
 
 [System.Serializable]
+public class EnemyPositionData
+{
+    public string enemyID;
+    public float posX;
+    public float posY;
+}
+
+[System.Serializable]
+public class AugmentSaveEntry
+{
+    public int augmentID;       // AugmentData.AugmentType cast to int
+    public string statType;     // AugmentData.AugmentType.ToString()
+    public float value;         // augment.value
+    // Skin color fields (only used when statType == "Skin")
+    public float skinR, skinG, skinB, skinA;
+}
+
+[System.Serializable]
 public class GameData
 {
     // Player state
     public int level;
-    public int score; // currentExp
+    public int score;           // currentExp
     public float playerHealth;
     public float playerPosX;
     public float playerPosY;
     public string currentSceneName;
 
-    // Applied augment type indices
-    public int[] unlockedAugments;
+    // Augments — full entries replace old int[] unlockedAugments
+    public List<AugmentSaveEntry> appliedAugments = new List<AugmentSaveEntry>();
 
-    // Enemy state — IDs of enemies killed this run
+    // Enemy state
     public List<string> killedEnemyIDs = new List<string>();
+    public List<EnemyPositionData> enemyPositions = new List<EnemyPositionData>();
 
     // Settings — mirrored here for portability, authoritative copy stays in PlayerPrefs
     public float musicVolume;
@@ -32,15 +51,15 @@ public class SaveManager : MonoBehaviour
 
     private static string SavePath => Application.persistentDataPath + "/save.json";
 
-    // Runtime cache — tracks killed enemies during this session
-    private HashSet<string> _killedThisSession = new HashSet<string>();
+    // Runtime caches
+    private HashSet<string>        _killedThisSession = new HashSet<string>();
+    private List<AugmentSaveEntry> _appliedAugments   = new List<AugmentSaveEntry>();
+    private GameData               _cachedData;
 
-    // Auto-create SaveManager before any scene loads — no prefab needed in scene.
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void AutoCreate()
     {
-        if (Instance != null)
-            return;
+        if (Instance != null) return;
         var go = new GameObject("SaveManager");
         Instance = go.AddComponent<SaveManager>();
         DontDestroyOnLoad(go);
@@ -48,52 +67,51 @@ public class SaveManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else if (Instance != this)
-        {
-            Destroy(gameObject);
-        }
+        if (Instance == null) { Instance = this; DontDestroyOnLoad(gameObject); }
+        else if (Instance != this) { Destroy(gameObject); }
     }
 
-    /// <summary>Mark an enemy as killed so it won't respawn when the scene reloads.</summary>
-    public void MarkEnemyKilled(string id)
+    // ── Enemy tracking ─────────────────────────────────────────────────────────
+
+    public void MarkEnemyKilled(string id) => _killedThisSession.Add(id);
+    public bool WasEnemyKilled(string id)  => _killedThisSession.Contains(id);
+
+    // ── Augment tracking ───────────────────────────────────────────────────────
+
+    /// <summary>Called by AugmentManager each time the player picks an augment.</summary>
+    public void AddAppliedAugment(AugmentData augData)
     {
-        _killedThisSession.Add(id);
+        _appliedAugments.Add(new AugmentSaveEntry
+        {
+            augmentID = (int)augData.type,
+            statType  = augData.type.ToString(),
+            value     = augData.value,
+            skinR = augData.skinColor.r,
+            skinG = augData.skinColor.g,
+            skinB = augData.skinColor.b,
+            skinA = augData.skinColor.a,
+        });
     }
 
-    /// <summary>Returns true if this enemy was already killed in the current session.</summary>
-    public bool WasEnemyKilled(string id)
-    {
-        return _killedThisSession.Contains(id);
-    }
+    public List<AugmentSaveEntry> GetAppliedAugments() => _appliedAugments;
 
-    /// <summary>
-    /// Writes GameData to disk as JSON. Settings fields are also mirrored to PlayerPrefs.
-    /// Caller must supply the data; killed-enemy list is merged from runtime cache.
-    /// </summary>
+    // ── Save / Load ────────────────────────────────────────────────────────────
+
     public void SaveGame(GameData data)
     {
-        // Merge runtime killed-enemy cache into the save data
-        data.killedEnemyIDs = new List<string>(_killedThisSession);
+        data.killedEnemyIDs  = new List<string>(_killedThisSession);
+        data.appliedAugments = new List<AugmentSaveEntry>(_appliedAugments);
 
-        // Mirror settings to PlayerPrefs so SettingsController can read them
-        PlayerPrefs.SetFloat("Setting_Music", data.musicVolume);
-        PlayerPrefs.SetFloat("Setting_SFX", data.sfxVolume);
-        PlayerPrefs.SetInt("Setting_Fullscreen", data.isFullscreen ? 1 : 0);
+        PlayerPrefs.SetFloat("Setting_Music",      data.musicVolume);
+        PlayerPrefs.SetFloat("Setting_SFX",        data.sfxVolume);
+        PlayerPrefs.SetInt  ("Setting_Fullscreen",  data.isFullscreen ? 1 : 0);
         PlayerPrefs.Save();
 
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(SavePath, json);
-
         Debug.Log("[SaveManager] Saved to: " + SavePath);
     }
 
-    /// <summary>Returns GameData from disk and restores the killed-enemy cache.
-    /// Returns null if no save file exists or file is corrupted.</summary>
     public GameData LoadGame()
     {
         if (!File.Exists(SavePath))
@@ -104,20 +122,21 @@ public class SaveManager : MonoBehaviour
 
         try
         {
-            string json = File.ReadAllText(SavePath);
+            string json   = File.ReadAllText(SavePath);
             GameData data = JsonUtility.FromJson<GameData>(json);
 
-            // Restore killed-enemy cache from disk
+            // Restore runtime caches
             _killedThisSession.Clear();
             if (data.killedEnemyIDs != null)
-            {
                 foreach (string id in data.killedEnemyIDs)
                     _killedThisSession.Add(id);
-            }
 
-            Debug.Log(
-                $"[SaveManager] Loaded from: {SavePath} ({_killedThisSession.Count} killed enemies restored)"
-            );
+            _appliedAugments.Clear();
+            if (data.appliedAugments != null)
+                _appliedAugments.AddRange(data.appliedAugments);
+
+            _cachedData = data;
+            Debug.Log($"[SaveManager] Loaded — {_killedThisSession.Count} killed enemies, {_appliedAugments.Count} augments, {data.enemyPositions?.Count ?? 0} enemy positions");
             return data;
         }
         catch (Exception e)
@@ -127,21 +146,19 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-    public static bool HasSave()
-    {
-        return File.Exists(SavePath);
-    }
+    /// <summary>Returns the last GameData loaded from disk without re-reading the file.</summary>
+    public GameData GetCachedData() => _cachedData;
+
+    public static bool HasSave() => File.Exists(SavePath);
 
     public void DeleteSave()
     {
-        if (File.Exists(SavePath))
-            File.Delete(SavePath);
-
+        if (File.Exists(SavePath)) File.Delete(SavePath);
         _killedThisSession.Clear();
-
+        _appliedAugments.Clear();
+        _cachedData = null;
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
-
         Debug.Log("[SaveManager] Save deleted.");
     }
 }

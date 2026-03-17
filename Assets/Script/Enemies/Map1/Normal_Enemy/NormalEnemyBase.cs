@@ -36,6 +36,7 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
 
     [Header("Save System")]
     [SerializeField] private string enemyID; // Tự động tạo nếu để trống
+    public string EnemyID => enemyID;
 
     protected virtual void Awake()
     {
@@ -62,10 +63,22 @@ public abstract class NormalEnemyBase : MonoBehaviour, IDamageable
 
     protected virtual void Start()
     {
-        // If this enemy was killed in a previous session, remove it immediately
-        if (SaveManager.Instance != null && SaveManager.Instance.WasEnemyKilled(enemyID))
+        if (SaveManager.Instance == null) return;
+
+        // Killed in a previous session — remove immediately
+        if (SaveManager.Instance.WasEnemyKilled(enemyID))
         {
             Destroy(gameObject);
+            return;
+        }
+
+        // Restore position from last save
+        GameData data = SaveManager.Instance.GetCachedData();
+        if (data?.enemyPositions != null)
+        {
+            EnemyPositionData saved = data.enemyPositions.Find(e => e.enemyID == enemyID);
+            if (saved != null)
+                transform.position = new Vector3(saved.posX, saved.posY, transform.position.z);
         }
     }
 

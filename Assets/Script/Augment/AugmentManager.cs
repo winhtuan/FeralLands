@@ -28,8 +28,6 @@ public class AugmentManager : MonoBehaviour
     // Track level nào đã cho chọn rồi
     private HashSet<int> offeredLevels = new HashSet<int>();
 
-    // Applied augment type indices — read by SaveManager when saving
-    [HideInInspector] public List<int> appliedAugmentTypes = new List<int>();
 
 
     void Awake()
@@ -122,8 +120,8 @@ public class AugmentManager : MonoBehaviour
         // Áp dụng buff lên nhân vật
         ApplyAugment(selected);
 
-        // Record the applied augment type for save system
-        appliedAugmentTypes.Add((int)selected.type);
+        // Record augment in SaveManager for next save
+        SaveManager.Instance?.AddAppliedAugment(selected);
 
         // Ẩn UI
         if (augmentUI != null)
@@ -215,6 +213,19 @@ public class AugmentManager : MonoBehaviour
                     Debug.Log("[Augment] Kích hoạt bắn Orb 3 tia!");
                 }
                 break;
+        }
+    }
+
+    /// <summary>
+    /// Called on save-load to prevent re-triggering augment selection
+    /// for levels the player already passed.
+    /// </summary>
+    public void SkipTriggersUpToLevel(int currentLevel)
+    {
+        foreach (int lv in augmentLevels)
+        {
+            if (lv <= currentLevel)
+                offeredLevels.Add(lv);
         }
     }
 
