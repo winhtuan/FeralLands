@@ -145,7 +145,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &7022914708534209900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84924f6c5a409da4d929977e13f6fe4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  maxHP: 50
+  maxHP: 40
   currentHP: 0
   hitColor: {r: 1, g: 1, b: 1, a: 1}
   flashDuration: 0.1
@@ -212,13 +212,14 @@ MonoBehaviour:
   burnDamagePerTick: 2
   burnDuration: 3
   inflictSlowOnHit: 1
-  slowPercent: 0.5
+  slowPercent: 0.35
   slowDuration: 4
   hitbox: {fileID: 0}
-  moveSpeed: 2
-  moveDistance: 3
+  enemyID: 
+  moveSpeed: 0
+  moveDistance: 2
   target: {fileID: 0}
-  attackRange: 7
+  attackRange: 10
   detectRange: 10
   attackCooldown: 1
   isRanged: 1
@@ -371,7 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -630,7 +631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

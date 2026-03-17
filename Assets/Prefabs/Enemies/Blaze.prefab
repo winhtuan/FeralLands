@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a413ef2c8b2a63458aa582c63b41f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHitbox
-  damage: 4
+  damage: 5
 --- !u!61 &7003989071498445457
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -634,11 +634,12 @@ MonoBehaviour:
   flashDuration: 0.1
   inflictBurnOnHit: 1
   burnDamagePerTick: 2
-  burnDuration: 3
+  burnDuration: 4
   inflictSlowOnHit: 0
   slowPercent: 0.5
   slowDuration: 2
   hitbox: {fileID: 8865807546149402105}
+  enemyID: 
   moveSpeed: 2
   moveDistance: 3
   target: {fileID: 0}
@@ -674,7 +675,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &9080602758333020721
 BoxCollider2D:
   m_ObjectHideFlags: 0

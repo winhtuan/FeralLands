@@ -763,7 +763,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.10856414, y: 0.2266919}
+  m_Offset: {x: -0.10856414, y: -0.036709934}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -773,7 +773,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.9340243, y: 1.1597073}
+  m_Size: {x: 3.9340243, y: 0.6329035}
   m_EdgeRadius: 0
 --- !u!212 &335688728
 SpriteRenderer:
@@ -1112,7 +1112,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.046864033, y: -0.8647777}
+  m_Offset: {x: -0.046864033, y: -0.97934586}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1122,7 +1122,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.083232, y: 0.61913395}
+  m_Size: {x: 4.083232, y: 0.3899976}
   m_EdgeRadius: 0
 --- !u!1 &437060744
 GameObject:
@@ -1776,43 +1776,7 @@ MonoBehaviour:
     minX: 116.9
     maxX: 116.9
     spawnY: -0.67
-  - waveName: 5
-    enemyPrefab: {fileID: 3032738182587097638, guid: c261c79661aead7429ae3b2fba0694a9, type: 3}
-    count: 1
-    minX: 151
-    maxX: 151.5
-    spawnY: 0.1
-  - waveName: 6
-    enemyPrefab: {fileID: 3032738182587097638, guid: c261c79661aead7429ae3b2fba0694a9, type: 3}
-    count: 1
-    minX: 154.6
-    maxX: 155.4
-    spawnY: 0.1
-  - waveName: 7
-    enemyPrefab: {fileID: 3032738182587097638, guid: c261c79661aead7429ae3b2fba0694a9, type: 3}
-    count: 1
-    minX: 158.5
-    maxX: 159
-    spawnY: 0.1
-  - waveName: 7
-    enemyPrefab: {fileID: 3032738182587097638, guid: c261c79661aead7429ae3b2fba0694a9, type: 3}
-    count: 1
-    minX: 158.5
-    maxX: 159
-    spawnY: 0.1
-  - waveName: 8
-    enemyPrefab: {fileID: 7894484459788092451, guid: 8d75b52f8ecb5154ea01f3068665ca90, type: 3}
-    count: 4
-    minX: 135
-    maxX: 145
-    spawnY: -4
-  - waveName: 9
-    enemyPrefab: {fileID: 7640388490484865178, guid: 57b3b308a62133743b5827a0832fa280, type: 3}
-    count: 4
-    minX: 126
-    maxX: 130
-    spawnY: -4
-  spawnOnEnable: 1
+  spawnOnEnable: 0
 --- !u!4 &988463318
 Transform:
   m_ObjectHideFlags: 0
@@ -1932,7 +1896,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.046864033, y: -0.78361726}
+  m_Offset: {x: -0.046864033, y: -0.8599955}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1942,7 +1906,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.083232, y: 0.59049463}
+  m_Size: {x: 4.083232, y: 0.43773818}
   m_EdgeRadius: 0
 --- !u!212 &1013724009
 SpriteRenderer:
@@ -2920,7 +2884,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.046864033, y: -0.7836166}
+  m_Offset: {x: -0.046864033, y: -0.8599955}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2930,7 +2894,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.083232, y: 0.59049594}
+  m_Size: {x: 4.083232, y: 0.43773818}
   m_EdgeRadius: 0
 --- !u!212 &1409722471
 SpriteRenderer:
@@ -3058,7 +3022,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.046864033, y: -0.8027116}
+  m_Offset: {x: -0.046864033, y: -0.8599955}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3068,7 +3032,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.083232, y: 0.552306}
+  m_Size: {x: 4.083232, y: 0.43773818}
   m_EdgeRadius: 0
 --- !u!212 &1429573550
 SpriteRenderer:
@@ -3482,7 +3446,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.2325536, y: 0.8505274}
+  m_Offset: {x: -0.07659531, y: 0.6750777}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3492,7 +3456,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 6.8305464, y: 0.82052445}
+  m_Size: {x: 7.448844, y: 0.46962488}
   m_EdgeRadius: 0
 --- !u!212 &1768187028
 SpriteRenderer:
