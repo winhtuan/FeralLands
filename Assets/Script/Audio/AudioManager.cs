@@ -17,6 +17,7 @@ public class AudioManager : MonoBehaviour
     [Tooltip("Kéo file 'intense_boss_battle.mp3' vào đây")]
     public AudioClip bossBattleMusic;
     public AudioClip normalMapMusic;
+    public AudioClip mapNormal2Music;
 
     // Audio Sources
     private AudioSource musicSource;
@@ -97,7 +98,11 @@ public class AudioManager : MonoBehaviour
         {
             targetClip = bossBattleMusic;
         }
-        else if (currentScene == "MapNormal2" || currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan" || currentScene == "MapBeach 1" || currentScene == "MapBeach1")
+        else if (currentScene == "MapNormal2")
+        {
+            targetClip = mapNormal2Music;
+        }
+        else if (currentScene == "MapBeachTestQuan" || currentScene == "MapBeachQuan" || currentScene == "MapBeach 1" || currentScene == "MapBeach1")
         {
             targetClip = normalMapMusic;
         }

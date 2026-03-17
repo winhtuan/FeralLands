@@ -75,7 +75,13 @@ public class ChaseManager : MonoBehaviour
             }
         }
 
-        // 3. Bắt đầu đếm ngược thời gian rượt đuổi
+        // 3. Đổi nhạc sang nhạc rượt đuổi/boss (nếu có)
+        if (AudioManager.Instance != null && AudioManager.Instance.bossBattleMusic != null)
+        {
+            AudioManager.Instance.PlayMusic(AudioManager.Instance.bossBattleMusic);
+        }
+
+        // 4. Bắt đầu đếm ngược thời gian rượt đuổi
         StartCoroutine(ChaseTimerRoutine());
     }
 
@@ -151,6 +157,12 @@ public class ChaseManager : MonoBehaviour
         if (normalEnemySpawner != null)
         {
             normalEnemySpawner.SetActive(true);
+        }
+
+        // 5. Trả lại nhạc map bình thường
+        if (AudioManager.Instance != null && AudioManager.Instance.mapNormal2Music != null)
+        {
+            AudioManager.Instance.PlayMusic(AudioManager.Instance.mapNormal2Music);
         }
     }
 
