@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: 31b48b223c230e542a65737461aa52b3
+guid: c213c907cff20b34895a519a9c008770
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1766167274643903011
-    second: be_dung_nor2_1_0
+      213: -7832661759395958167
+    second: Game over_2_0
   - first:
-      213: 6566289056654261664
-    second: be_dung_nor2_1_1
+      213: 1454786749386717050
+    second: Game over_2_1
   - first:
-      213: -886384218930693925
-    second: be_dung_nor2_1_2
+      213: -8943731079878390572
+    second: Game over_2_2
   - first:
-      213: -3323725456146572971
-    second: be_dung_nor2_1_3
+      213: 6837476471625508794
+    second: Game over_2_3
   - first:
-      213: -3327962070508779036
-    second: be_dung_nor2_1_4
+      213: 5218658858318649681
+    second: Game over_2_4
   - first:
-      213: 1030298844832843136
-    second: be_dung_nor2_1_5
+      213: 8097470028477963546
+    second: Game over_2_5
   - first:
-      213: -1459976630008062865
-    second: be_dung_nor2_1_6
+      213: -5897499126353580705
+    second: Game over_2_6
   - first:
-      213: -1604898764328457561
-    second: be_dung_nor2_1_7
+      213: -2315847969019001619
+    second: Game over_2_7
   - first:
-      213: -4535146255949417511
-    second: be_dung_nor2_1_8
-  - first:
-      213: 7318195721494601325
-    second: be_dung_nor2_1_9
+      213: 1877715186059556238
+    second: Game over_2_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -73,7 +70,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -140,13 +137,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: be_dung_nor2_1_0
+      name: Game over_2_0
       rect:
         serializedVersion: 2
-        x: 94
-        y: 794
-        width: 52
-        height: 62
+        x: 50
+        y: 247
+        width: 276
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,173 +152,151 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 322d11b57cfa28810800000000000000
-      internalID: 1766167274643903011
+      spriteID: 962fa6901abcc4390800000000000000
+      internalID: -7832661759395958167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: be_dung_nor2_1_1
+      name: Game over_2_1
       rect:
         serializedVersion: 2
-        x: 121
-        y: 778
-        width: 22
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ad796a7b15202b50800000000000000
-      internalID: 6566289056654261664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_2
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 201
-        width: 33
-        height: 618
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd8bf18cf3ee2b3f0800000000000000
-      internalID: -886384218930693925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_3
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 75
-        width: 653
-        height: 765
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 559d577be41cfd1d0800000000000000
-      internalID: -3323725456146572971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_4
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 838
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e9c9511124b0d1d0800000000000000
-      internalID: -3327962070508779036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_5
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 844
-        width: 17
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 085c1c2375b5c4e00800000000000000
-      internalID: 1030298844832843136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_6
-      rect:
-        serializedVersion: 2
-        x: 94
-        y: 762
-        width: 35
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f6c5ff38dfe1dbbe0800000000000000
-      internalID: -1459976630008062865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_7
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 312
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7aa2db3b3114ab9e0800000000000000
-      internalID: -1604898764328457561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 302
+        x: 240
+        y: 244
         width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77f32d37d0703410800000000000000
+      internalID: 1454786749386717050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game over_2_2
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 248
+        width: 159
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc4a3108fb71e380800000000000000
+      internalID: -8943731079878390572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game over_2_3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 75
+        width: 144
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7645bdf9893ee50800000000000000
+      internalID: 6837476471625508794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game over_2_4
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 248
+        width: 113
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159570ef4966c6840800000000000000
+      internalID: 5218658858318649681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game over_2_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 79
+        width: 156
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d1dc2b61eff5070800000000000000
+      internalID: 8097470028477963546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game over_2_6
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 76
+        width: 140
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5da4867acfd72ea0800000000000000
+      internalID: -5897499126353580705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game over_2_7
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 236
+        width: 10
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -331,20 +306,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d331b9228cef01c0800000000000000
-      internalID: -4535146255949417511
+      spriteID: de400d4ca847cdfd0800000000000000
+      internalID: -2315847969019001619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: be_dung_nor2_1_9
+      name: Game over_2_8
       rect:
         serializedVersion: 2
-        x: 35
-        y: 287
-        width: 10
-        height: 10
+        x: 342
+        y: 75
+        width: 111
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,8 +328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6e18783c347f8560800000000000000
-      internalID: 7318195721494601325
+      spriteID: e85bf6e530cfe0a10800000000000000
+      internalID: 1877715186059556238
       vertices: []
       indices: 
       edges: []
@@ -363,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -373,16 +348,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      be_dung_nor2_1_0: 1766167274643903011
-      be_dung_nor2_1_1: 6566289056654261664
-      be_dung_nor2_1_2: -886384218930693925
-      be_dung_nor2_1_3: -3323725456146572971
-      be_dung_nor2_1_4: -3327962070508779036
-      be_dung_nor2_1_5: 1030298844832843136
-      be_dung_nor2_1_6: -1459976630008062865
-      be_dung_nor2_1_7: -1604898764328457561
-      be_dung_nor2_1_8: -4535146255949417511
-      be_dung_nor2_1_9: 7318195721494601325
+      Game over_2_0: -7832661759395958167
+      Game over_2_1: 1454786749386717050
+      Game over_2_2: -8943731079878390572
+      Game over_2_3: 6837476471625508794
+      Game over_2_4: 5218658858318649681
+      Game over_2_5: 8097470028477963546
+      Game over_2_6: -5897499126353580705
+      Game over_2_7: -2315847969019001619
+      Game over_2_8: 1877715186059556238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
