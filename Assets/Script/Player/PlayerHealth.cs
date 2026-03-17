@@ -4,6 +4,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 {
     public int maxHealth = 100;
     public int currentHealth;
+    [HideInInspector] public int baseMaxHealth; // captured in Awake before any augment modifies maxHealth
 
     private Animator animator;
     private Rigidbody2D rb;
@@ -14,6 +15,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     private bool isDead;
     void Awake()
     {
+        baseMaxHealth = maxHealth; // lock in Inspector value before any save-load modifies it
         currentHealth = maxHealth;
 
         animator = GetComponent<Animator>();

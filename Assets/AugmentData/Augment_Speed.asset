@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Augment_Speed
   m_EditorClassIdentifier: Assembly-CSharp::AugmentData
   augmentName: "Gi\xF3 Hoang"
-  description: "T\u0103ng 1.5 t\u1ED1c \u0111\u1ED9 di chuy\u1EC3n"
+  description: "T\u0103ng 1 t\u1ED1c \u0111\u1ED9 di chuy\u1EC3n"
   icon: {fileID: 8752620183872361866, guid: b7e5df171f8ec0648b320633f4bfe942, type: 3}
   type: 2
-  value: 1.5
+  value: 1
+  skinColor: {r: 1, g: 1, b: 1, a: 1}

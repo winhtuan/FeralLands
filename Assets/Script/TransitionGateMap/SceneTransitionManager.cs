@@ -47,6 +47,13 @@ public class SceneTransitionManager : MonoBehaviour
     public void TeleportToMap(string sceneName)
     {
         Time.timeScale = 1f; // Đảm bảo không bị stuck ở timeScale=0
+
+        // Save before leaving a gameplay scene so stats survive the transition.
+        // Skip when going to MainMenu — the Save button already saved with the
+        // correct scene name; overwriting here would set currentSceneName = "MainMenu".
+        if (sceneName != "MainMenu" && PlayerSaveLoad.Instance != null)
+            PlayerSaveLoad.Instance.SaveGameForScene(sceneName);
+
         gameObject.SetActive(true);
         StartCoroutine(CinematicTransition(sceneName));
     }

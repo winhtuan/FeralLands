@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 3f;
+    [HideInInspector] public float baseMoveSpeed;
 
     Rigidbody2D rb;
     SpriteRenderer sr;
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+        baseMoveSpeed = moveSpeed;
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();

@@ -113,6 +113,12 @@ public class EnemyMovement : NormalEnemyBase
         SetSpeed(0);
         Attack(); // Trigger Animator "Attack"
 
+        if (AudioManager.Instance != null)
+        {
+            if (isRanged) AudioManager.Instance.PlayMonsterRangedAttackSFX();
+            else AudioManager.Instance.PlayMonsterNormalAttackSFX();
+        }
+
         if (isRanged)
         {
             ShootProjectile(); // Bắn đạn ngay lập tức
