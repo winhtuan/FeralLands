@@ -4,9 +4,10 @@ using UnityEngine;
 public class BossChaseController : MonoBehaviour
 {
     [Header("Movement Settings")]
-    public float moveSpeed = 3f; // Tốc độ đuổi theo player (bằng với player moveSpeed)
+    [Tooltip("Tốc độ sẽ tự động sao chép từ Player")]
     public float minDistance = 2f; // Khoảng cách tối thiểu giữa boss và player
     public float catchDistance = 0.5f; // Khoảng cách để boss bắt được player
+    private float moveSpeed; // Lưu trữ tốc độ của player
     
     private bool isRunning = false;
     private Rigidbody2D rb;
@@ -99,8 +100,11 @@ public class BossChaseController : MonoBehaviour
 
     void Update()
     {
-        if (!isRunning || player == null || rb == null) return;
+        if (!isRunning || player == null || rb == null || playerMovement == null) return;
 
+        // Tự động cập nhật tốc độ boss theo player
+        moveSpeed = playerMovement.moveSpeed;
+        
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         
         // Kiểm tra nếu player dừng lại hoặc chạy ngược (về phía boss)
@@ -231,9 +235,19 @@ public class BossChaseController : MonoBehaviour
             int projectileCount = Random.Range(minProjectiles, maxProjectiles + 1);
             Debug.Log($"[BossChaseController] Sẽ spawn {projectileCount} projectile(s)");
             
+            // Chọn ra 1 vị trí an toàn ngẫu nhiên để không spawn tia đạn (tạo khe rưỡi cho player né)
+            int safeIndex = projectileCount > 1 ? Random.Range(0, projectileCount) : -1;
+            
             // Spawn các tia tấn công
             for (int i = 0; i < projectileCount; i++)
             {
+                // Nhảy qua vị trí an toàn
+                if (i == safeIndex)
+                {
+                    Debug.Log($"[BossChaseController] Bỏ qua tia số {i + 1} để tạo khoảng trống cho player né.");
+                    continue;
+                }
+
                 Vector3 spawnPos = attackPoint.position;
                 // Nếu có nhiều tia, phân bố theo chiều dọc
                 if (projectileCount > 1)
