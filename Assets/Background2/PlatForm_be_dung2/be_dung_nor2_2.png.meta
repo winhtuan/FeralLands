@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 07ea4df87e9c1564e9ecffc4a9d0110c
+guid: e1f51ef154750c84cb97ec0508d0d635
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8476172316173127960
-    second: Game over_1_0
+      213: 6293338562683997565
+    second: be_dung_nor2_2_0
+  - first:
+      213: -5164312499713546242
+    second: be_dung_nor2_2_1
+  - first:
+      213: 8638513533746111669
+    second: be_dung_nor2_2_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Game over_1_0
+      name: be_dung_nor2_2_0
       rect:
         serializedVersion: 2
-        x: 69
-        y: 34
-        width: 889
-        height: 515
+        x: 96
+        y: 0
+        width: 878
+        height: 442
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 
-      internalID: 0
+      spriteID: d7d0c08441e665750800000000000000
+      internalID: 6293338562683997565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: be_dung_nor2_2_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 283
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7e679a42da458b0800000000000000
+      internalID: -5164312499713546242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: be_dung_nor2_2_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 238
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b467564a4a22e770800000000000000
+      internalID: 8638513533746111669
       vertices: []
       indices: 
       edges: []
@@ -147,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      be_dung_nor2_2_0: 6293338562683997565
+      be_dung_nor2_2_1: -5164312499713546242
+      be_dung_nor2_2_2: 8638513533746111669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

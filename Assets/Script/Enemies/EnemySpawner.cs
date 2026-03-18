@@ -41,9 +41,18 @@ public class EnemySpawner : MonoBehaviour
         {
             if (wave.enemyPrefab == null) continue;
 
+            // Tính toán độ rộng của mỗi "ô" để rải quái cho đều
+            float totalWidth = wave.maxX - wave.minX;
+            float slotWidth = totalWidth / Mathf.Max(1, wave.count);
+
             for (int i = 0; i < wave.count; i++)
             {
-                float randomX = Random.Range(wave.minX, wave.maxX);
+                // Chia phạm vi thành i ô, mỗi ô chứa 1 con quái
+                float slotMinX = wave.minX + (i * slotWidth);
+                float slotMaxX = slotMinX + slotWidth;
+
+                // Lấy vị trí ngẫu nhiên nhưng chỉ TRONG PHẠM VI CỦA Ô ĐÓ thôi
+                float randomX = Random.Range(slotMinX, slotMaxX);
                 Vector3 spawnPos = new Vector3(randomX, wave.spawnY, 0);
 
                 GameObject enemy = Instantiate(wave.enemyPrefab, spawnPos, Quaternion.identity);
@@ -51,7 +60,7 @@ public class EnemySpawner : MonoBehaviour
                 spawnedEnemies.Add(enemy);
             }
         }
-        Debug.Log("[Spawner] Đã tạo xong tất cả các đợt quái theo yêu cầu.");
+        Debug.Log("[Spawner] Đã tạo xong tất cả các đợt quái và rải đều khoảng cách.");
     }
 
     public void ClearEnemies()
