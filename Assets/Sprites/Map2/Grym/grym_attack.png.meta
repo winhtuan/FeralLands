@@ -1,0 +1,770 @@
+fileFormatVersion: 2
+guid: aa39b088ff1b3cf47bbdc8ea060bcab0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4592828222844589370
+    second: grym_attack_0
+  - first:
+      213: -3087931418187779913
+    second: grym_attack_1
+  - first:
+      213: -3843214107642120537
+    second: grym_attack_2
+  - first:
+      213: 5300949321946641153
+    second: grym_attack_3
+  - first:
+      213: 5061208113936649747
+    second: grym_attack_4
+  - first:
+      213: -749252216409171943
+    second: grym_attack_5
+  - first:
+      213: -8747561018395353163
+    second: grym_attack_6
+  - first:
+      213: -842704305548529376
+    second: grym_attack_7
+  - first:
+      213: -7193492831596287179
+    second: grym_attack_8
+  - first:
+      213: -4794602876437147514
+    second: grym_attack_9
+  - first:
+      213: 4007952759359576865
+    second: grym_attack_10
+  - first:
+      213: -576961941567484930
+    second: grym_attack_11
+  - first:
+      213: -7452202662183870902
+    second: grym_attack_12
+  - first:
+      213: 8382424520024353279
+    second: grym_attack_13
+  - first:
+      213: 2237917856619836897
+    second: grym_attack_14
+  - first:
+      213: 1220787795316460326
+    second: grym_attack_15
+  - first:
+      213: -245490969033625801
+    second: grym_attack_16
+  - first:
+      213: 1484210886286964572
+    second: grym_attack_17
+  - first:
+      213: 1082751770732599540
+    second: grym_attack_18
+  - first:
+      213: 5253274532527276484
+    second: grym_attack_19
+  - first:
+      213: -6348743115738294201
+    second: grym_attack_20
+  - first:
+      213: 5016993081930461927
+    second: grym_attack_21
+  - first:
+      213: 4010419580776776473
+    second: grym_attack_22
+  - first:
+      213: -4916617889990776178
+    second: grym_attack_23
+  - first:
+      213: -7896854088994251815
+    second: grym_attack_24
+  - first:
+      213: -7007074334237159135
+    second: grym_attack_25
+  - first:
+      213: 7813002345611563174
+    second: grym_attack_26
+  - first:
+      213: -4377758486666047644
+    second: grym_attack_27
+  - first:
+      213: 7803405902513894973
+    second: grym_attack_28
+  - first:
+      213: -2302255111951330527
+    second: grym_attack_29
+  - first:
+      213: -176903189649582803
+    second: grym_attack_30
+  - first:
+      213: -6766540556460704025
+    second: grym_attack_31
+  - first:
+      213: -7209316180532938124
+    second: grym_attack_32
+  - first:
+      213: 8098224592831701096
+    second: grym_attack_33
+  - first:
+      213: 2944535730479173850
+    second: grym_attack_34
+  - first:
+      213: 4372442693846914292
+    second: grym_attack_35
+  - first:
+      213: -4839642871585142080
+    second: grym_attack_36
+  - first:
+      213: -6248977483371078536
+    second: grym_attack_37
+  - first:
+      213: -7008926572189847951
+    second: grym_attack_38
+  - first:
+      213: 2204735602108487020
+    second: grym_attack_39
+  - first:
+      213: -1263433490526054948
+    second: grym_attack_40
+  - first:
+      213: -4377597821462037267
+    second: grym_attack_41
+  - first:
+      213: 5886932935370534139
+    second: grym_attack_42
+  - first:
+      213: 3573965323583736136
+    second: grym_attack_43
+  - first:
+      213: -5552384756503690935
+    second: grym_attack_44
+  - first:
+      213: -210773957144933919
+    second: grym_attack_45
+  - first:
+      213: -132481555926920953
+    second: grym_attack_46
+  - first:
+      213: 5493204445123910022
+    second: grym_attack_47
+  - first:
+      213: 5224679410885771260
+    second: grym_attack_48
+  - first:
+      213: 8667569064296212535
+    second: grym_attack_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grym_attack_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 475
+        width: 78
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6caa5fea01ff240c0800000000000000
+      internalID: -4592828222844589370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 475
+        width: 74
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b036285cb67525d0800000000000000
+      internalID: -3087931418187779913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 475
+        width: 72
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6b83e91292aaac0800000000000000
+      internalID: -3843214107642120537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 475
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1033afa9251c09940800000000000000
+      internalID: 5300949321946641153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 360
+        width: 67
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ec485d6f50d3640800000000000000
+      internalID: 5061208113936649747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 356
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918d1c1341f1a95f0800000000000000
+      internalID: -749252216409171943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 355
+        width: 68
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf9d7fa99b6a9680800000000000000
+      internalID: -8747561018395353163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_7
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 355
+        width: 68
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021761126ec1e44f0800000000000000
+      internalID: -842704305548529376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 240
+        width: 68
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b6266e1649b2c90800000000000000
+      internalID: -7193492831596287179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_9
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 242
+        width: 69
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680d5e63616267db0800000000000000
+      internalID: -4794602876437147514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_10
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 238
+        width: 98
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b9c22bccb1f9730800000000000000
+      internalID: 4007952759359576865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_11
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 238
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb43f7cb283ef7f0800000000000000
+      internalID: -576961941567484930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_13
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 124
+        width: 92
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9639060ba545470800000000000000
+      internalID: 8382424520024353279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_23
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 123
+        width: 86
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ae4c2141aa4cbb0800000000000000
+      internalID: -4916617889990776178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_26
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 124
+        width: 77
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0987ffc3c5d6c60800000000000000
+      internalID: 7813002345611563174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_27
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 123
+        width: 97
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f81d9c9d31f33c0800000000000000
+      internalID: -4377758486666047644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_36
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 10
+        width: 78
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca8a67237226dcb0800000000000000
+      internalID: -4839642871585142080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_40
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 12
+        width: 76
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5dcdf2fe1677ee0800000000000000
+      internalID: -1263433490526054948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_42
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 15
+        width: 79
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfcee4d705692b150800000000000000
+      internalID: 5886932935370534139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_attack_43
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 15
+        width: 88
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849c5cfa686499130800000000000000
+      internalID: 3573965323583736136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 714c8f9184d4bc941b9d40ec9bc2ea70
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grym_attack_0: -4592828222844589370
+      grym_attack_1: -3087931418187779913
+      grym_attack_10: 4007952759359576865
+      grym_attack_11: -576961941567484930
+      grym_attack_12: -7452202662183870902
+      grym_attack_13: 8382424520024353279
+      grym_attack_14: 2237917856619836897
+      grym_attack_15: 1220787795316460326
+      grym_attack_16: -245490969033625801
+      grym_attack_17: 1484210886286964572
+      grym_attack_18: 1082751770732599540
+      grym_attack_19: 5253274532527276484
+      grym_attack_2: -3843214107642120537
+      grym_attack_20: -6348743115738294201
+      grym_attack_21: 5016993081930461927
+      grym_attack_22: 4010419580776776473
+      grym_attack_23: -4916617889990776178
+      grym_attack_24: -7896854088994251815
+      grym_attack_25: -7007074334237159135
+      grym_attack_26: 7813002345611563174
+      grym_attack_27: -4377758486666047644
+      grym_attack_28: 7803405902513894973
+      grym_attack_29: -2302255111951330527
+      grym_attack_3: 5300949321946641153
+      grym_attack_30: -176903189649582803
+      grym_attack_31: -6766540556460704025
+      grym_attack_32: -7209316180532938124
+      grym_attack_33: 8098224592831701096
+      grym_attack_34: 2944535730479173850
+      grym_attack_35: 4372442693846914292
+      grym_attack_36: -4839642871585142080
+      grym_attack_37: -6248977483371078536
+      grym_attack_38: -7008926572189847951
+      grym_attack_39: 2204735602108487020
+      grym_attack_4: 5061208113936649747
+      grym_attack_40: -1263433490526054948
+      grym_attack_41: -4377597821462037267
+      grym_attack_42: 5886932935370534139
+      grym_attack_43: 3573965323583736136
+      grym_attack_44: -5552384756503690935
+      grym_attack_45: -210773957144933919
+      grym_attack_46: -132481555926920953
+      grym_attack_47: 5493204445123910022
+      grym_attack_48: 5224679410885771260
+      grym_attack_49: 8667569064296212535
+      grym_attack_5: -749252216409171943
+      grym_attack_6: -8747561018395353163
+      grym_attack_7: -842704305548529376
+      grym_attack_8: -7193492831596287179
+      grym_attack_9: -4794602876437147514
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

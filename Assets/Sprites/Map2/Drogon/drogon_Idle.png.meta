@@ -1,0 +1,502 @@
+fileFormatVersion: 2
+guid: 49f8ff0fb8967d2478ab974b11c52d6a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8966796221015470257
+    second: drogon_Idle_0
+  - first:
+      213: 5585801096271220421
+    second: drogon_Idle_1
+  - first:
+      213: -8798293339595073403
+    second: drogon_Idle_2
+  - first:
+      213: -4297508516131054518
+    second: drogon_Idle_3
+  - first:
+      213: 800064195111228908
+    second: drogon_Idle_4
+  - first:
+      213: -9100547256933083060
+    second: drogon_Idle_5
+  - first:
+      213: 9202783344075826595
+    second: drogon_Idle_6
+  - first:
+      213: -295046191512342144
+    second: drogon_Idle_7
+  - first:
+      213: 2639238649604066994
+    second: drogon_Idle_8
+  - first:
+      213: 4402945634781633059
+    second: drogon_Idle_9
+  - first:
+      213: -8875854661746160104
+    second: drogon_Idle_10
+  - first:
+      213: 5351968523763841811
+    second: drogon_Idle_11
+  - first:
+      213: -4997991648737873555
+    second: drogon_Idle_12
+  - first:
+      213: -8127213116933826851
+    second: drogon_Idle_13
+  - first:
+      213: 1305357358347174218
+    second: drogon_Idle_14
+  - first:
+      213: 8623233582238435269
+    second: drogon_Idle_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: drogon_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 360
+        width: 78
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b031f6a7a5707c70800000000000000
+      internalID: 8966796221015470257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 360
+        width: 78
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cecb319080c48d40800000000000000
+      internalID: 5585801096271220421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 360
+        width: 79
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58810cfa2de26e580800000000000000
+      internalID: -8798293339595073403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 360
+        width: 79
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4cdac416ce2c54c0800000000000000
+      internalID: -4297508516131054518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 245
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce51d1385266a1b00800000000000000
+      internalID: 800064195111228908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 245
+        width: 76
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4819d09c7c54b180800000000000000
+      internalID: -9100547256933083060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 245
+        width: 75
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5658861bad6bf70800000000000000
+      internalID: 9202783344075826595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 245
+        width: 74
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08133925d09c7ebf0800000000000000
+      internalID: -295046191512342144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 130
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e00a02631a2d480800000000000000
+      internalID: -8875854661746160104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 130
+        width: 84
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31bf3043403064a40800000000000000
+      internalID: 5351968523763841811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 130
+        width: 84
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d613c92731193aab0800000000000000
+      internalID: -4997991648737873555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 130
+        width: 79
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6934fdab6563f80800000000000000
+      internalID: -8127213116933826851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 15
+        width: 83
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41c931f99f8d1210800000000000000
+      internalID: 1305357358347174218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 15
+        width: 81
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c78a845141eba770800000000000000
+      internalID: 8623233582238435269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 51b550871e5e983409fdaeef226e3661
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      drogon_Idle_0: 8966796221015470257
+      drogon_Idle_1: 5585801096271220421
+      drogon_Idle_10: -8875854661746160104
+      drogon_Idle_11: 5351968523763841811
+      drogon_Idle_12: -4997991648737873555
+      drogon_Idle_13: -8127213116933826851
+      drogon_Idle_14: 1305357358347174218
+      drogon_Idle_15: 8623233582238435269
+      drogon_Idle_2: -8798293339595073403
+      drogon_Idle_3: -4297508516131054518
+      drogon_Idle_4: 800064195111228908
+      drogon_Idle_5: -9100547256933083060
+      drogon_Idle_6: 9202783344075826595
+      drogon_Idle_7: -295046191512342144
+      drogon_Idle_8: 2639238649604066994
+      drogon_Idle_9: 4402945634781633059
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

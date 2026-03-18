@@ -1,0 +1,770 @@
+fileFormatVersion: 2
+guid: e2dd717ab198fa149a8f5e9e62299e30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7308916662118788164
+    second: drogon_attack_0
+  - first:
+      213: 4820934364234450308
+    second: drogon_attack_1
+  - first:
+      213: 21411416657944291
+    second: drogon_attack_2
+  - first:
+      213: 8242648768774189654
+    second: drogon_attack_3
+  - first:
+      213: -1607442767059569917
+    second: drogon_attack_4
+  - first:
+      213: 1215029983335578910
+    second: drogon_attack_5
+  - first:
+      213: 58708297456204132
+    second: drogon_attack_6
+  - first:
+      213: -7336603838912380404
+    second: drogon_attack_7
+  - first:
+      213: -6039952655517317598
+    second: drogon_attack_8
+  - first:
+      213: -8067658637531110021
+    second: drogon_attack_9
+  - first:
+      213: 198386277079599472
+    second: drogon_attack_10
+  - first:
+      213: -7234333131692799972
+    second: drogon_attack_11
+  - first:
+      213: -3388496523191662747
+    second: drogon_attack_12
+  - first:
+      213: 2552714975916201519
+    second: drogon_attack_13
+  - first:
+      213: -2635814137688856388
+    second: drogon_attack_14
+  - first:
+      213: -5366011294123203749
+    second: drogon_attack_15
+  - first:
+      213: -537863868503308014
+    second: drogon_attack_16
+  - first:
+      213: -3556281548243765317
+    second: drogon_attack_17
+  - first:
+      213: -6468349543922137026
+    second: drogon_attack_18
+  - first:
+      213: -4967118153732344639
+    second: drogon_attack_19
+  - first:
+      213: 946595125130129877
+    second: drogon_attack_20
+  - first:
+      213: -1303032076741277787
+    second: drogon_attack_21
+  - first:
+      213: -6926824702478144805
+    second: drogon_attack_22
+  - first:
+      213: -4986971505141452186
+    second: drogon_attack_23
+  - first:
+      213: -3704166124532524646
+    second: drogon_attack_24
+  - first:
+      213: 1623288109354095538
+    second: drogon_attack_25
+  - first:
+      213: -2670804517029341418
+    second: drogon_attack_26
+  - first:
+      213: -8508379642444770418
+    second: drogon_attack_27
+  - first:
+      213: 4038618620363519698
+    second: drogon_attack_28
+  - first:
+      213: -2519378052160435984
+    second: drogon_attack_29
+  - first:
+      213: 1731334030440601081
+    second: drogon_attack_30
+  - first:
+      213: -5293046236989760288
+    second: drogon_attack_31
+  - first:
+      213: -4720013117125915405
+    second: drogon_attack_32
+  - first:
+      213: -8357285719640301579
+    second: drogon_attack_33
+  - first:
+      213: 4231624742048659282
+    second: drogon_attack_34
+  - first:
+      213: -3290041597343314694
+    second: drogon_attack_35
+  - first:
+      213: 64664908733537610
+    second: drogon_attack_36
+  - first:
+      213: 4591830870903866701
+    second: drogon_attack_37
+  - first:
+      213: -4813522424695726860
+    second: drogon_attack_38
+  - first:
+      213: -5662511435822685327
+    second: drogon_attack_39
+  - first:
+      213: 7841262664043029372
+    second: drogon_attack_40
+  - first:
+      213: -5793888651914414606
+    second: drogon_attack_41
+  - first:
+      213: 5277445532754010208
+    second: drogon_attack_42
+  - first:
+      213: 5043193492058655386
+    second: drogon_attack_43
+  - first:
+      213: -3763195297691600487
+    second: drogon_attack_44
+  - first:
+      213: -763650130216996092
+    second: drogon_attack_45
+  - first:
+      213: -938738606462794719
+    second: drogon_attack_46
+  - first:
+      213: -5142063327696838826
+    second: drogon_attack_47
+  - first:
+      213: -5766448375422320228
+    second: drogon_attack_48
+  - first:
+      213: -4232918126721987595
+    second: drogon_attack_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: drogon_attack_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 475
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c268adafc7e6560800000000000000
+      internalID: 7308916662118788164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 475
+        width: 74
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4850ba9034667e240800000000000000
+      internalID: 4820934364234450308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 475
+        width: 72
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eed80ce1911c4000800000000000000
+      internalID: 21411416657944291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 475
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652b81f3265c36270800000000000000
+      internalID: 8242648768774189654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 360
+        width: 67
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303b4a8e15731b9e0800000000000000
+      internalID: -1607442767059569917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 356
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d7a241557acd010800000000000000
+      internalID: 1215029983335578910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 355
+        width: 68
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469be3fa2e290d000800000000000000
+      internalID: 58708297456204132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_7
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 355
+        width: 68
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c024cd3fda52f2a90800000000000000
+      internalID: -7336603838912380404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 240
+        width: 68
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22686b39f07cd2ca0800000000000000
+      internalID: -6039952655517317598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_9
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 242
+        width: 69
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75a8d4a63be90090800000000000000
+      internalID: -8067658637531110021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_10
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 238
+        width: 98
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07944a5944fc0c200800000000000000
+      internalID: 198386277079599472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_11
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 238
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c188c9a885c7a9b90800000000000000
+      internalID: -7234333131692799972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_13
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 124
+        width: 91
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f261e48eeb01d6320800000000000000
+      internalID: 2552714975916201519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_23
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 122
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6627c0396d7bacab0800000000000000
+      internalID: -4986971505141452186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_26
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 124
+        width: 76
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61715f931756fead0800000000000000
+      internalID: -2670804517029341418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_27
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 123
+        width: 89
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e831ae56bc92ce980800000000000000
+      internalID: -8508379642444770418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_36
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 10
+        width: 92
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4dde72546cb5e000800000000000000
+      internalID: 64664908733537610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_40
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 12
+        width: 76
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7361d029d2c1dc60800000000000000
+      internalID: 7841262664043029372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_42
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 15
+        width: 79
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060664d30c04d3940800000000000000
+      internalID: 5277445532754010208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_attack_43
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 15
+        width: 88
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ac7b3d2c50df540800000000000000
+      internalID: 5043193492058655386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9f1f65329f06a024997541073bc9e4f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      drogon_attack_0: 7308916662118788164
+      drogon_attack_1: 4820934364234450308
+      drogon_attack_10: 198386277079599472
+      drogon_attack_11: -7234333131692799972
+      drogon_attack_12: -3388496523191662747
+      drogon_attack_13: 2552714975916201519
+      drogon_attack_14: -2635814137688856388
+      drogon_attack_15: -5366011294123203749
+      drogon_attack_16: -537863868503308014
+      drogon_attack_17: -3556281548243765317
+      drogon_attack_18: -6468349543922137026
+      drogon_attack_19: -4967118153732344639
+      drogon_attack_2: 21411416657944291
+      drogon_attack_20: 946595125130129877
+      drogon_attack_21: -1303032076741277787
+      drogon_attack_22: -6926824702478144805
+      drogon_attack_23: -4986971505141452186
+      drogon_attack_24: -3704166124532524646
+      drogon_attack_25: 1623288109354095538
+      drogon_attack_26: -2670804517029341418
+      drogon_attack_27: -8508379642444770418
+      drogon_attack_28: 4038618620363519698
+      drogon_attack_29: -2519378052160435984
+      drogon_attack_3: 8242648768774189654
+      drogon_attack_30: 1731334030440601081
+      drogon_attack_31: -5293046236989760288
+      drogon_attack_32: -4720013117125915405
+      drogon_attack_33: -8357285719640301579
+      drogon_attack_34: 4231624742048659282
+      drogon_attack_35: -3290041597343314694
+      drogon_attack_36: 64664908733537610
+      drogon_attack_37: 4591830870903866701
+      drogon_attack_38: -4813522424695726860
+      drogon_attack_39: -5662511435822685327
+      drogon_attack_4: -1607442767059569917
+      drogon_attack_40: 7841262664043029372
+      drogon_attack_41: -5793888651914414606
+      drogon_attack_42: 5277445532754010208
+      drogon_attack_43: 5043193492058655386
+      drogon_attack_44: -3763195297691600487
+      drogon_attack_45: -763650130216996092
+      drogon_attack_46: -938738606462794719
+      drogon_attack_47: -5142063327696838826
+      drogon_attack_48: -5766448375422320228
+      drogon_attack_49: -4232918126721987595
+      drogon_attack_5: 1215029983335578910
+      drogon_attack_6: 58708297456204132
+      drogon_attack_7: -7336603838912380404
+      drogon_attack_8: -6039952655517317598
+      drogon_attack_9: -8067658637531110021
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
