@@ -511,6 +511,8 @@ GameObject:
   - component: {fileID: 81735654236478685}
   - component: {fileID: 3612948968920950010}
   - component: {fileID: 9080602758333020721}
+  - component: {fileID: -6451977606175484481}
+  - component: {fileID: -9015566630884837282}
   m_Layer: 10
   m_Name: Blaze
   m_TagString: Enemy
@@ -722,3 +724,29 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.40206423, y: 0.3037013}
   m_EdgeRadius: 0
+--- !u!114 &-6451977606175484481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7894484459788092451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44142419377a54a888bc02a1d67e01f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.VisualScripting.Core::Unity.VisualScripting.AnimatorMessageListener
+--- !u!114 &-9015566630884837282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7894484459788092451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8757b949b5c07444a68a951eca7b6fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDropExp
+  expOrbPrefab: {fileID: 4919128569315554769, guid: 7d779de32b01dc440832f61630ec5863, type: 3}
+  dropChance: 100
