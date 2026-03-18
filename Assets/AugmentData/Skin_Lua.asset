@@ -17,4 +17,4 @@ MonoBehaviour:
   icon: {fileID: 0}
   type: 3
   value: 0
-  skinColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  skinColor: {r: 1, g: 0, b: 0, a: 1}
