@@ -13,7 +13,8 @@ public class BossHealth : EnemyBase
     private Animator animator;
     private Rigidbody2D rb;
     private Collider2D col;
-    private VaathBoss bossController;
+    private IBossController bossController;
+    private bool isDead = false;
 
     // Event cho UI health bar
     public event Action<int, int> OnHealthChanged; // (currentHP, maxHP)
@@ -27,7 +28,7 @@ public class BossHealth : EnemyBase
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
-        bossController = GetComponent<VaathBoss>();
+        bossController = GetComponent<IBossController>();
     }
 
     void Start()
@@ -68,6 +69,11 @@ public class BossHealth : EnemyBase
 
     protected override void Die()
     {
+        if (isDead) return; // Đã chết rồi thì không chạy lại nữa
+        isDead = true;
+        
+        if (currentHP > 0) return; 
+        
         Debug.Log("Boss Defeated!");
 
         // Kích hoạt event cho các Manager (như EnemyClearManager) biết
@@ -82,13 +88,24 @@ public class BossHealth : EnemyBase
 
         // Trigger death animation
         if (animator != null)
+        {
+            Debug.Log($"[BossHealth] 💀 Đang gọi Animation 'Death' trên {gameObject.name}");
+            animator.SetBool("isRunning", false);
             animator.SetTrigger("Death");
+        }
+        else
+        {
+            Debug.LogError($"[BossHealth] ❌ KHÔNG tìm thấy Animator trên {gameObject.name} để chạy chiêu chết!");
+        }
 
-        // Tắt AI controller
+        // Tắt AI controller ngay lập tức
         if (bossController != null)
-            bossController.enabled = false;
+        {
+            bossController.isBattleStarted = false;
+            (bossController as MonoBehaviour).enabled = false; 
+        }
 
-        // Stop movement
+        // Stop movement hoàn toàn
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
@@ -96,12 +113,12 @@ public class BossHealth : EnemyBase
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
         }
 
-        // Tắt collider
+        // Tắt va chạm (Collider)
         if (col != null)
             col.enabled = false;
 
-        // Note: Không invoke OnDeath event trực tiếp vì event thuộc base class
-        // GameObject sẽ được destroy trong OnDeathAnimationEnd()
+        // DÙNG DỰ PHÒNG: Tự destroy sau 5 giây nếu không có Animation Event gọi hàm OnDeathAnimationEnd
+        Destroy(gameObject, 5.0f);
     }
 
     // Animation Event - gọi từ frame cuối của Death animation

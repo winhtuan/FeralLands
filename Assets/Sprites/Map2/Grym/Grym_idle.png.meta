@@ -1,0 +1,502 @@
+fileFormatVersion: 2
+guid: e9d1464bc7459ac46ad7beeb0af413be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5791187010702921584
+    second: Grym_idle_0
+  - first:
+      213: 8393391421593172478
+    second: Grym_idle_1
+  - first:
+      213: -4614578875212061621
+    second: Grym_idle_2
+  - first:
+      213: -7815522063776186105
+    second: Grym_idle_3
+  - first:
+      213: 891362569640264283
+    second: Grym_idle_4
+  - first:
+      213: -6026399412816679422
+    second: Grym_idle_5
+  - first:
+      213: 2430457497101102603
+    second: Grym_idle_6
+  - first:
+      213: 8218259788416069676
+    second: Grym_idle_7
+  - first:
+      213: -8098561995201663524
+    second: Grym_idle_8
+  - first:
+      213: 3881821973640203302
+    second: Grym_idle_9
+  - first:
+      213: -2795714918508404815
+    second: Grym_idle_10
+  - first:
+      213: -7616540762983042703
+    second: Grym_idle_11
+  - first:
+      213: 5828771485480913027
+    second: Grym_idle_12
+  - first:
+      213: 3599484082126043323
+    second: Grym_idle_13
+  - first:
+      213: -627760158597499237
+    second: Grym_idle_14
+  - first:
+      213: -9059959298041740185
+    second: Grym_idle_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grym_idle_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 368
+        width: 80
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07fcdc837ed6e5050800000000000000
+      internalID: 5791187010702921584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 367
+        width: 74
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef93fd027015b7470800000000000000
+      internalID: 8393391421593172478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 367
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44a6fa46f8b5ffb0800000000000000
+      internalID: -4614578875212061621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_3
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 365
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70184666710b98390800000000000000
+      internalID: -7815522063776186105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 253
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52cc71d881ce5c00800000000000000
+      internalID: 891362569640264283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 252
+        width: 75
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e607cc9aded5ca0800000000000000
+      internalID: -6026399412816679422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_6
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 253
+        width: 77
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e656c6738bab120800000000000000
+      internalID: 2430457497101102603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_7
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 252
+        width: 75
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20ba604cbf1d0270800000000000000
+      internalID: 8218259788416069676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_10
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 136
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bfdb0d0810a339d0800000000000000
+      internalID: -2795714918508404815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 137
+        width: 86
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171fc1db78c9c4690800000000000000
+      internalID: -7616540762983042703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_12
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 137
+        width: 85
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388040da8c4f3e050800000000000000
+      internalID: 5828771485480913027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_13
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 138
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8bbc9a3bfe3f130800000000000000
+      internalID: 3599484082126043323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 24
+        width: 84
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9637a6367fb947f0800000000000000
+      internalID: -627760158597499237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grym_idle_15
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 24
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76489b8250f844280800000000000000
+      internalID: -9059959298041740185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 15262ee941215fe4ebace99f700872ee
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Grym_idle_0: 5791187010702921584
+      Grym_idle_1: 8393391421593172478
+      Grym_idle_10: -2795714918508404815
+      Grym_idle_11: -7616540762983042703
+      Grym_idle_12: 5828771485480913027
+      Grym_idle_13: 3599484082126043323
+      Grym_idle_14: -627760158597499237
+      Grym_idle_15: -9059959298041740185
+      Grym_idle_2: -4614578875212061621
+      Grym_idle_3: -7815522063776186105
+      Grym_idle_4: 891362569640264283
+      Grym_idle_5: -6026399412816679422
+      Grym_idle_6: 2430457497101102603
+      Grym_idle_7: 8218259788416069676
+      Grym_idle_8: -8098561995201663524
+      Grym_idle_9: 3881821973640203302
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

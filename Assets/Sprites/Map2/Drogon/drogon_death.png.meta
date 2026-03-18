@@ -1,0 +1,714 @@
+fileFormatVersion: 2
+guid: 79c0f66c9aad97741a9150b58681c3a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2023940289594580781
+    second: drogon_death_0
+  - first:
+      213: -8471295047272572953
+    second: drogon_death_1
+  - first:
+      213: -8508447130187041290
+    second: drogon_death_2
+  - first:
+      213: 8315810895118378307
+    second: drogon_death_3
+  - first:
+      213: 2310525645249397655
+    second: drogon_death_4
+  - first:
+      213: 1418119313126140659
+    second: drogon_death_5
+  - first:
+      213: -8253306209363925460
+    second: drogon_death_6
+  - first:
+      213: -8365194189009759781
+    second: drogon_death_7
+  - first:
+      213: -5658711872045333807
+    second: drogon_death_8
+  - first:
+      213: -6577723729160172869
+    second: drogon_death_9
+  - first:
+      213: 8176832846345636420
+    second: drogon_death_10
+  - first:
+      213: 535437390324164256
+    second: drogon_death_11
+  - first:
+      213: -3714615248750285415
+    second: drogon_death_12
+  - first:
+      213: -6116928154485682522
+    second: drogon_death_13
+  - first:
+      213: -8817980810475282597
+    second: drogon_death_14
+  - first:
+      213: -6591090059421814562
+    second: drogon_death_15
+  - first:
+      213: 21970768481567958
+    second: drogon_death_16
+  - first:
+      213: 6494086978004294208
+    second: drogon_death_17
+  - first:
+      213: -3862563927151402116
+    second: drogon_death_18
+  - first:
+      213: -5347059805494618892
+    second: drogon_death_19
+  - first:
+      213: 8219694072147373057
+    second: drogon_death_20
+  - first:
+      213: 6973590961648972134
+    second: drogon_death_21
+  - first:
+      213: -8085479905065792851
+    second: drogon_death_22
+  - first:
+      213: -8430929726251932823
+    second: drogon_death_23
+  - first:
+      213: -7868524933978348320
+    second: drogon_death_24
+  - first:
+      213: 787337687099179493
+    second: drogon_death_25
+  - first:
+      213: -4924185338793912839
+    second: drogon_death_26
+  - first:
+      213: -1274551061445120753
+    second: drogon_death_27
+  - first:
+      213: 6605079054183481230
+    second: drogon_death_28
+  - first:
+      213: -179278325784997341
+    second: drogon_death_29
+  - first:
+      213: -1597571802809806702
+    second: drogon_death_30
+  - first:
+      213: -2284810818495745338
+    second: drogon_death_31
+  - first:
+      213: 210841218301694656
+    second: drogon_death_32
+  - first:
+      213: -5792248476517286529
+    second: drogon_death_33
+  - first:
+      213: 1290911954270193849
+    second: drogon_death_34
+  - first:
+      213: 8445958684051494012
+    second: drogon_death_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: drogon_death_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 475
+        width: 78
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2fd2e758fa761c10800000000000000
+      internalID: 2023940289594580781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 475
+        width: 74
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7dacf890aef6a80800000000000000
+      internalID: -8471295047272572953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_2
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 475
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5720f2a6cebe980800000000000000
+      internalID: -8508447130187041290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_3
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 475
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345aad633f1b76370800000000000000
+      internalID: 8315810895118378307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 360
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793458925d2a01020800000000000000
+      internalID: 2310525645249397655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_5
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 360
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa2104700c2ea310800000000000000
+      internalID: 1418119313126140659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_6
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 360
+        width: 67
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2666500bbd567d80800000000000000
+      internalID: -8253306209363925460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_7
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 360
+        width: 63
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd159eea43cd8eb80800000000000000
+      internalID: -8365194189009759781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 245
+        width: 70
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2c37498873871b0800000000000000
+      internalID: -5658711872045333807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_9
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 245
+        width: 70
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba00cc5e1b37b4a0800000000000000
+      internalID: -6577723729160172869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 245
+        width: 67
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a8d2aa622f97170800000000000000
+      internalID: 8176832846345636420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 245
+        width: 63
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6ebb938714e6700800000000000000
+      internalID: 535437390324164256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 120
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d6df4bc19037cc0800000000000000
+      internalID: -3714615248750285415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_13
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 130
+        width: 78
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae8b4b904e4c1ba0800000000000000
+      internalID: -6116928154485682522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_17
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 130
+        width: 77
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a9f6803b1af1a50800000000000000
+      internalID: 6494086978004294208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_28
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 130
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8fbaf19764f9ab50800000000000000
+      internalID: 6605079054183481230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_32
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 14
+        width: 77
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c212e098fe0de200800000000000000
+      internalID: 210841218301694656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_33
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 12
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7db36203bccd9fa0800000000000000
+      internalID: -5792248476517286529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_34
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 14
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b88496359d3ae110800000000000000
+      internalID: 1290911954270193849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drogon_death_35
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 12
+        width: 73
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74d38eaca2163570800000000000000
+      internalID: 8445958684051494012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6afb310b57b87a644917f14b4d0c23b5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      drogon_death_0: 2023940289594580781
+      drogon_death_1: -8471295047272572953
+      drogon_death_10: 8176832846345636420
+      drogon_death_11: 535437390324164256
+      drogon_death_12: -3714615248750285415
+      drogon_death_13: -6116928154485682522
+      drogon_death_14: -8817980810475282597
+      drogon_death_15: -6591090059421814562
+      drogon_death_16: 21970768481567958
+      drogon_death_17: 6494086978004294208
+      drogon_death_18: -3862563927151402116
+      drogon_death_19: -5347059805494618892
+      drogon_death_2: -8508447130187041290
+      drogon_death_20: 8219694072147373057
+      drogon_death_21: 6973590961648972134
+      drogon_death_22: -8085479905065792851
+      drogon_death_23: -8430929726251932823
+      drogon_death_24: -7868524933978348320
+      drogon_death_25: 787337687099179493
+      drogon_death_26: -4924185338793912839
+      drogon_death_27: -1274551061445120753
+      drogon_death_28: 6605079054183481230
+      drogon_death_29: -179278325784997341
+      drogon_death_3: 8315810895118378307
+      drogon_death_30: -1597571802809806702
+      drogon_death_31: -2284810818495745338
+      drogon_death_32: 210841218301694656
+      drogon_death_33: -5792248476517286529
+      drogon_death_34: 1290911954270193849
+      drogon_death_35: 8445958684051494012
+      drogon_death_4: 2310525645249397655
+      drogon_death_5: 1418119313126140659
+      drogon_death_6: -8253306209363925460
+      drogon_death_7: -8365194189009759781
+      drogon_death_8: -5658711872045333807
+      drogon_death_9: -6577723729160172869
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

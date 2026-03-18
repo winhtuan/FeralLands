@@ -17,38 +17,22 @@ public class BossLanding : MonoBehaviour
 
     private void OnEnable()
     {
-        // Tự động tìm Dreamshaper nếu chưa kéo vào Inspector
-        if (player == null)
-            player = FindFirstObjectByType<Dreamshaper>();
+        // ... (giữ nguyên đoạn tìm Player)
+        if (player == null) player = FindFirstObjectByType<Dreamshaper>();
+        if (playerRb == null && player != null) playerRb = player.GetComponent<Rigidbody2D>();
 
-        if (playerRb == null && player != null)
-            playerRb = player.GetComponent<Rigidbody2D>();
-
-        // Khoá ngay khi boss kích hoạt (phòng trường hợp BossWakeUp bị null)
-        if (player != null)
-        {
-            player.SetAllModulesEnabled(false);
-            Debug.Log("[BossLanding] OnEnable: Đã khóa Player modules.");
-        }
-        else
-        {
-            Debug.LogWarning("[BossLanding] CHƯA tìm được Dreamshaper! Kéo vào field 'Player' trong Inspector.");
-        }
-
-        // Dừng vận tốc nhân vật
+        if (player != null) player.SetAllModulesEnabled(false);
         if (playerRb != null) playerRb.linearVelocity = Vector2.zero;
 
-        // Đảm bảo boss không đánh khi đang intro
-        VaathBoss bossScript = GetComponent<VaathBoss>();
-        if (bossScript == null) bossScript = GetComponentInChildren<VaathBoss>();
-        if (bossScript != null) bossScript.isBattleStarted = false;
+        // Đảm bảo boss không đánh khi đang intro (Tìm qua Interface)
+        IBossController boss = GetComponent<IBossController>() ?? GetComponentInChildren<IBossController>();
+        if (boss != null) boss.isBattleStarted = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground") && !daTiepDat)
         {
-            Debug.Log("[BossLanding] Boss chạm đất → Bắt đầu cutscene!");
             daTiepDat = true;
             StartCoroutine(QuyTrinhBossRaMat());
         }
@@ -56,67 +40,43 @@ public class BossLanding : MonoBehaviour
 
     IEnumerator QuyTrinhBossRaMat()
     {
-        // 1. Chạy Timeline Camera
+        // ... (giữ nguyên đoạn Timeline và Banner)
         if (bossTimeline != null)
         {
-            Debug.Log($"[BossLanding] Chạy Timeline, duration = {bossTimeline.duration:F2}s");
             bossTimeline.Play();
             yield return new WaitForSeconds((float)bossTimeline.duration);
-            Debug.Log("[BossLanding] Timeline xong!");
-        }
-        else
-        {
-            Debug.LogWarning("[BossLanding] bossTimeline là null, bỏ qua!");
         }
 
-        // 2. Chạy Banner sau khi Timeline xong
-        if (bossCanvasObject != null)
-            bossCanvasObject.SetActive(true);
+        if (bossCanvasObject != null) bossCanvasObject.SetActive(true);
 
         if (bossCanvasAnimator != null)
         {
             bossCanvasAnimator.enabled = true;
             bossCanvasAnimator.Play("BossBannerAnim", 0, 0);
-            Debug.Log("[BossLanding] Banner đang chạy (3s)...");
             yield return new WaitForSeconds(3f);
-            Debug.Log("[BossLanding] Banner xong!");
         }
 
-        // 3. MỞ KHÓA – BẮT ĐẦU ĐÁNH NHAU
+        // MỞ KHÓA PLAYER
         if (player == null) player = FindFirstObjectByType<Dreamshaper>();
-        if (player != null)
-        {
-            player.SetAllModulesEnabled(true);
-            Debug.Log("[BossLanding] ✅ Đã mở khóa toàn bộ Player modules → FIGHT!");
-        }
-        else
-        {
-            Debug.LogError("[BossLanding] ❌ player vẫn null → KHÔNG mở khóa được! Kéo Dreamshaper vào Inspector.");
-        }
+        if (player != null) player.SetAllModulesEnabled(true);
 
-        // KÍCH HOẠT BOSS
+        // KÍCH HOẠT BOSS QUA INTERFACE
         if (bossObject != null)
         {
-            VaathBoss bossScript = bossObject.GetComponent<VaathBoss>();
-            if (bossScript == null) bossScript = bossObject.GetComponentInChildren<VaathBoss>();
-
-            if (bossScript != null)
+            IBossController boss = bossObject.GetComponent<IBossController>() ?? bossObject.GetComponentInChildren<IBossController>();
+            if (boss != null)
             {
-                bossScript.isBattleStarted = true;
-                bossScript.enabled = true; // Chắc chắn script được bật
-                Debug.Log($"[BossLanding] ✅ Đã kích hoạt Boss logic trên: {bossScript.gameObject.name}");
+                boss.isBattleStarted = true;
+                boss.enabled = true;
+                Debug.Log($"[BossLanding] ✅ Đã kích hoạt Boss: {bossObject.name}");
             }
             else
             {
-                Debug.LogError("[BossLanding] ❌ KHÔNG tìm thấy VaathBoss component trên 'bossObject'!");
+                Debug.LogError("[BossLanding] ❌ KHÔNG tìm thấy thành phần IBossController trên bossObject!");
             }
         }
-        else
-        {
-            Debug.LogError("[BossLanding] ❌ 'bossObject' chưa được kéo vào Inspector!");
-        }
-
-        // Reset velocity sau cutscene
+        
         if (playerRb != null) playerRb.linearVelocity = Vector2.zero;
+        yield break;
     }
 }
