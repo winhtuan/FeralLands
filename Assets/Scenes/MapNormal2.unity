@@ -8717,7 +8717,7 @@ GameObject:
   - component: {fileID: 1960915645}
   - component: {fileID: 1960915644}
   - component: {fileID: 1960915643}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: be_dung_nor2_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8758,7 +8758,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.044207335, y: 0.2656172}
+  m_Offset: {x: -0.11862135, y: -0.0924921}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8768,7 +8768,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.732326, y: 1.0980157}
+  m_Size: {x: 4.881154, y: 1.4561229}
   m_EdgeRadius: 0
 --- !u!212 &1960915644
 SpriteRenderer:
@@ -8838,7 +8838,7 @@ Transform:
   m_GameObject: {fileID: 1960915642}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 147.91, y: -3.13, z: 0}
+  m_LocalPosition: {x: 147.91, y: -3.18, z: 0}
   m_LocalScale: {x: 0.2331448, y: 0.29066616, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9698,8 +9698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f9d75fcf317cc469acfd8a797f5148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 500
-  currentHealth: 500
+  maxHealth: 200
+  currentHealth: 200
   baseMaxHealth: 0
 --- !u!50 &2053868956
 Rigidbody2D:
