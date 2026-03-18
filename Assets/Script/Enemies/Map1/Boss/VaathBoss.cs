@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class VaathBoss : MonoBehaviour
+public class VaathBoss : MonoBehaviour, IBossController
 {
     enum State { Idle, Chase, Attack, RangedAttack }
     State currentState;
@@ -49,7 +49,7 @@ public class VaathBoss : MonoBehaviour
     private bool facingRight = false;
     private bool isCasting = false;
     private bool isAttacking = false;
-    public bool isBattleStarted = false;
+    public bool isBattleStarted { get; set; } = false;
 
     // Lưu vị trí gốc của camera để rung xong còn quay lại
     private Vector3 originalCamPos;

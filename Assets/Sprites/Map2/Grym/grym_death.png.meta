@@ -1,0 +1,714 @@
+fileFormatVersion: 2
+guid: f4c009b9015ccb549ab22e3f83fdf233
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2703495627000124891
+    second: grym_death_0
+  - first:
+      213: 8695301286007897224
+    second: grym_death_1
+  - first:
+      213: -1829794917225124182
+    second: grym_death_2
+  - first:
+      213: 6105433625669712488
+    second: grym_death_3
+  - first:
+      213: 4424073673985690784
+    second: grym_death_4
+  - first:
+      213: -5983925431242739366
+    second: grym_death_5
+  - first:
+      213: 1500254810543993367
+    second: grym_death_6
+  - first:
+      213: -6393668795732008075
+    second: grym_death_7
+  - first:
+      213: 8240706957990065735
+    second: grym_death_8
+  - first:
+      213: 7360433221078991660
+    second: grym_death_9
+  - first:
+      213: -6444115141074988287
+    second: grym_death_10
+  - first:
+      213: 2531181135762260561
+    second: grym_death_11
+  - first:
+      213: 2345429501543999010
+    second: grym_death_12
+  - first:
+      213: -7457828304012672897
+    second: grym_death_13
+  - first:
+      213: 2761474505586104314
+    second: grym_death_14
+  - first:
+      213: -3372979052597717214
+    second: grym_death_15
+  - first:
+      213: 7896368059920391054
+    second: grym_death_16
+  - first:
+      213: 1190141195669214391
+    second: grym_death_17
+  - first:
+      213: -7746890040658252006
+    second: grym_death_18
+  - first:
+      213: 8581270012924485733
+    second: grym_death_19
+  - first:
+      213: 1363861080908581392
+    second: grym_death_20
+  - first:
+      213: 2156301391008898724
+    second: grym_death_21
+  - first:
+      213: -4369912609119969060
+    second: grym_death_22
+  - first:
+      213: 4895811362098395736
+    second: grym_death_23
+  - first:
+      213: 188933172443742751
+    second: grym_death_24
+  - first:
+      213: 6547955675098782695
+    second: grym_death_25
+  - first:
+      213: -5054057706568538002
+    second: grym_death_26
+  - first:
+      213: -3779061123492930659
+    second: grym_death_27
+  - first:
+      213: 8001717413195947488
+    second: grym_death_28
+  - first:
+      213: -2981204051274012330
+    second: grym_death_29
+  - first:
+      213: 6862656802711184448
+    second: grym_death_30
+  - first:
+      213: -824924374277394643
+    second: grym_death_31
+  - first:
+      213: -1830482816921818168
+    second: grym_death_32
+  - first:
+      213: 5696095955886524957
+    second: grym_death_33
+  - first:
+      213: -4051550250465679787
+    second: grym_death_34
+  - first:
+      213: -4460942210569121387
+    second: grym_death_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grym_death_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 475
+        width: 78
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd51a23f2feb48520800000000000000
+      internalID: 2703495627000124891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 475
+        width: 74
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c7f7f237aeba870800000000000000
+      internalID: 8695301286007897224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_2
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 475
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae2bfaa7334b96e0800000000000000
+      internalID: -1829794917225124182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_3
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 475
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ab4c9d88bdab450800000000000000
+      internalID: 6105433625669712488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 360
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac03161197756d30800000000000000
+      internalID: 4424073673985690784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_5
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 360
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51b9544683d4fca0800000000000000
+      internalID: -5983925431242739366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_6
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 360
+        width: 67
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712bb0f2dc9f1d410800000000000000
+      internalID: 1500254810543993367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_7
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 360
+        width: 63
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573e4eafa102547a0800000000000000
+      internalID: -6393668795732008075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 245
+        width: 70
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7467611315fdc5270800000000000000
+      internalID: 8240706957990065735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_9
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 245
+        width: 70
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23c56f6403852660800000000000000
+      internalID: 7360433221078991660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 245
+        width: 67
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103528ceb67e196a0800000000000000
+      internalID: -6444115141074988287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 245
+        width: 63
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152874b05df802320800000000000000
+      internalID: 2531181135762260561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 115
+        width: 84
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226604d74b3ac8020800000000000000
+      internalID: 2345429501543999010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_13
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 130
+        width: 76
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f708877bba8708890800000000000000
+      internalID: -7457828304012672897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_17
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 130
+        width: 76
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b41c60ac1b348010800000000000000
+      internalID: 1190141195669214391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_28
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 130
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed1a96a79fcb0f60800000000000000
+      internalID: 8001717413195947488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_32
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 14
+        width: 77
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb2be98391d896e0800000000000000
+      internalID: -1830482816921818168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_33
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 12
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ac729b7199c0f40800000000000000
+      internalID: 5696095955886524957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_34
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 14
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5562953638006c7c0800000000000000
+      internalID: -4051550250465679787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grym_death_35
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 12
+        width: 73
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5915b7fc1bc8712c0800000000000000
+      internalID: -4460942210569121387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fc1bc0e3ac4bb2142b0ad8a677a4d040
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grym_death_0: 2703495627000124891
+      grym_death_1: 8695301286007897224
+      grym_death_10: -6444115141074988287
+      grym_death_11: 2531181135762260561
+      grym_death_12: 2345429501543999010
+      grym_death_13: -7457828304012672897
+      grym_death_14: 2761474505586104314
+      grym_death_15: -3372979052597717214
+      grym_death_16: 7896368059920391054
+      grym_death_17: 1190141195669214391
+      grym_death_18: -7746890040658252006
+      grym_death_19: 8581270012924485733
+      grym_death_2: -1829794917225124182
+      grym_death_20: 1363861080908581392
+      grym_death_21: 2156301391008898724
+      grym_death_22: -4369912609119969060
+      grym_death_23: 4895811362098395736
+      grym_death_24: 188933172443742751
+      grym_death_25: 6547955675098782695
+      grym_death_26: -5054057706568538002
+      grym_death_27: -3779061123492930659
+      grym_death_28: 8001717413195947488
+      grym_death_29: -2981204051274012330
+      grym_death_3: 6105433625669712488
+      grym_death_30: 6862656802711184448
+      grym_death_31: -824924374277394643
+      grym_death_32: -1830482816921818168
+      grym_death_33: 5696095955886524957
+      grym_death_34: -4051550250465679787
+      grym_death_35: -4460942210569121387
+      grym_death_4: 4424073673985690784
+      grym_death_5: -5983925431242739366
+      grym_death_6: 1500254810543993367
+      grym_death_7: -6393668795732008075
+      grym_death_8: 8240706957990065735
+      grym_death_9: 7360433221078991660
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

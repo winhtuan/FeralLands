@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MapNormal2.unity
     guid: 6f5ec39d54b2aeb4a90466ce17c95d22
+  - enabled: 1
+    path: Assets/Scenes/BossMap2.unity
+    guid: 3f095329e0ec3b542b8a4d69c69be955
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
