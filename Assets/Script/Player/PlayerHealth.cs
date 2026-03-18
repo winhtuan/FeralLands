@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+using System.Collections;
+using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
     public int maxHealth = 100;
     public int currentHealth;
+    [HideInInspector] public int baseMaxHealth; // captured in Awake before any augment modifies maxHealth
 
     private Animator animator;
     private Rigidbody2D rb;
@@ -14,6 +16,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     private bool isDead;
     void Awake()
     {
+        baseMaxHealth = maxHealth; // lock in Inspector value before any save-load modifies it
         currentHealth = maxHealth;
 
         animator = GetComponent<Animator>();
@@ -76,6 +79,25 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
         // Không cho rơi trong lúc animation chết
         rb.gravityScale = 0;
+
+        // Bắt đầu Nhịp 2: Khoảng lặng điện ảnh
+        StartCoroutine(GameOverSequence());
+    }
+
+    private IEnumerator GameOverSequence()
+    {
+        // Chờ 1.5 giây khoảng lặng
+        yield return new WaitForSeconds(1.5f);
+
+        // Gọi UI Game Over hiện ra và đóng băng thời gian
+        if (GameOverManager.Instance != null)
+        {
+            GameOverManager.Instance.ShowGameOver();
+        }
+        else
+        {
+            Debug.LogWarning("Không tìm thấy GameOverManager trong Scene!");
+        }
     }
 
     // GỌI TỪ ANIMATION EVENT (frame cuối Die)

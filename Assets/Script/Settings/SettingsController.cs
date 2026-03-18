@@ -163,7 +163,7 @@ public class SettingsController : MonoBehaviour
         if (fullscreenToggle != null)
             SetFullscreen(fullscreenToggle.isOn);
 
-        PlayerSaveLoad.Instance?.SaveGame();
+        if (PlayerSaveLoad.Instance != null) PlayerSaveLoad.Instance.SaveGame();
 
         Debug.Log("[SettingsController] Settings and game saved. Returning to Main Menu.");
 

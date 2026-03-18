@@ -1,5 +1,6 @@
-using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 /// <summary>
 /// Gắn script này vào một Empty GameObject trong scene.
@@ -12,16 +13,23 @@ public class EnemyClearManager : MonoBehaviour
     public GameObject portalObject;
 
     [Header("Thông tin (chỉ để xem, không cần điền)")]
-    [SerializeField] private int totalEnemies = 0;
-    [SerializeField] private int enemiesRemaining = 0;
+    [SerializeField]
+    private int totalEnemies = 0;
 
-    private void Start()
+    [SerializeField]
+    private int enemiesRemaining = 0;
+
+    private IEnumerator Start()
     {
         // Ẩn cổng ngay khi bắt đầu
         if (portalObject != null)
             portalObject.SetActive(false);
         else
             Debug.LogWarning("[EnemyClearManager] Chưa gán Portal Object trong Inspector!");
+
+        // Wait one frame so NormalEnemyBase.Start() can Destroy() pre-killed enemies
+        // (Unity defers Destroy to end-of-frame, so yielding here ensures they're gone).
+        yield return null;
 
         // Tìm tất cả EnemyBase bao gồm cả những đối tượng đang ẩn (vd: Boss khi chưa kích hoạt)
         List<EnemyBase> enemyBases = new List<EnemyBase>(
@@ -30,7 +38,10 @@ public class EnemyClearManager : MonoBehaviour
 
         // Tìm tất cả NormalEnemyBase bao gồm cả ẩn
         List<NormalEnemyBase> normalEnemyBases = new List<NormalEnemyBase>(
-            FindObjectsByType<NormalEnemyBase>(FindObjectsInactive.Include, FindObjectsSortMode.None)
+            FindObjectsByType<NormalEnemyBase>(
+                FindObjectsInactive.Include,
+                FindObjectsSortMode.None
+            )
         );
 
         // Tìm tất cả BossHealth cụ thể (phòng trường hợp Boss không kế thừa đúng hoặc cần đếm riêng)
@@ -40,27 +51,34 @@ public class EnemyClearManager : MonoBehaviour
 
         // Lọc trùng lặp vì BossHealth kế thừa từ EnemyBase
         HashSet<MonoBehaviour> uniqueEnemies = new HashSet<MonoBehaviour>();
-        foreach (var e in enemyBases) uniqueEnemies.Add(e);
-        foreach (var e in normalEnemyBases) uniqueEnemies.Add(e);
-        foreach (var b in bossHealths) uniqueEnemies.Add(b);
+        foreach (var e in enemyBases)
+            uniqueEnemies.Add(e);
+        foreach (var e in normalEnemyBases)
+            uniqueEnemies.Add(e);
+        foreach (var b in bossHealths)
+            uniqueEnemies.Add(b);
 
         totalEnemies = uniqueEnemies.Count;
         enemiesRemaining = totalEnemies;
 
         if (totalEnemies == 0)
         {
-            Debug.LogWarning("[EnemyClearManager] Không tìm thấy quái hoặc Boss nào trong scene! Portal sẽ mở ngay.");
+            Debug.Log("[EnemyClearManager] Không còn quái nào trong scene — Portal mở ngay.");
             ShowPortal();
-            return;
+            yield break;
         }
 
-        Debug.Log($"[EnemyClearManager] Tổng số mục tiêu (bao gồm Boss): {totalEnemies}. Portal bị ẩn cho đến khi tiêu diệt hết.");
+        Debug.Log(
+            $"[EnemyClearManager] Còn lại {totalEnemies} mục tiêu sau khi loại bỏ quái đã chết từ save."
+        );
 
         // Đăng ký sự kiện OnDeath cho từng đối tượng
         foreach (var target in uniqueEnemies)
         {
-            if (target is EnemyBase eb) eb.OnDeath += OnEnemyDied;
-            else if (target is NormalEnemyBase neb) neb.OnDeath += OnEnemyDied;
+            if (target is EnemyBase eb)
+                eb.OnDeath += OnEnemyDied;
+            else if (target is NormalEnemyBase neb)
+                neb.OnDeath += OnEnemyDied;
         }
     }
 
@@ -84,6 +102,16 @@ public class EnemyClearManager : MonoBehaviour
         }
 
         // Auto-save progress when the area is cleared
-        PlayerSaveLoad.Instance?.SaveGame();
+        try
+        {
+            if (PlayerSaveLoad.Instance != null)
+            {
+                PlayerSaveLoad.Instance.SaveGame();
+            }
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"[EnemyClearManager] Lỗi khi tự động lưu game: {e.Message}");
+        }
     }
 }

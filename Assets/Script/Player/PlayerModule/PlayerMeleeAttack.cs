@@ -8,6 +8,7 @@ public class PlayerMeleeAttack : MonoBehaviour
     [Header("Melee Settings")]
     public float attackCooldown = 0.4f;
     public int meleeDamage = 15;
+    [HideInInspector] public int baseMeleeDamage;
     public float hitboxLifeTime = 0.15f;
 
     [Header("Hitbox Offset")]
@@ -23,6 +24,7 @@ public class PlayerMeleeAttack : MonoBehaviour
 
     void Awake()
     {
+        baseMeleeDamage = meleeDamage;
         animator = GetComponent<Animator>();
         movement = GetComponent<PlayerMovement>();
         action = GetComponent<PlayerActionState>();

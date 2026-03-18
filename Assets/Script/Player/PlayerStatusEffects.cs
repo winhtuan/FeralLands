@@ -26,12 +26,18 @@ public class PlayerStatusEffects : MonoBehaviour
     private IEnumerator BurnRoutine(int dmg, float dur)
     {
         float elapsed = 0;
-        if (sr != null) sr.color = new Color(1f, 0.4f, 0f); // Màu cháy
-
         while (elapsed < dur)
         {
+            // Nháy màu ĐỎ khi bị đốt
+            if (sr != null) sr.color = Color.red;
+            
+            // Gây sát thương mỗi nhịp
             if (playerHealth != null) playerHealth.TakeDamage(dmg);
-            yield return new WaitForSeconds(0.5f);
+            
+            yield return new WaitForSeconds(0.15f); // Thời gian nháy màu
+            if (sr != null) sr.color = originalColor;
+            
+            yield return new WaitForSeconds(0.35f); // Thời gian chờ trước nhịp tiếp theo (tổng ~0.5s)
             elapsed += 0.5f;
         }
         if (sr != null) sr.color = originalColor;
@@ -44,10 +50,20 @@ public class PlayerStatusEffects : MonoBehaviour
 
     private IEnumerator SlowRoutine(float percent, float dur)
     {
+        float elapsed = 0;
         if (playerMovement != null) playerMovement.moveSpeed = originalSpeed * (1f - percent);
-        if (sr != null) sr.color = new Color(0.5f, 0.5f, 1f); // Màu lạnh
 
-        yield return new WaitForSeconds(dur);
+        while (elapsed < dur)
+        {
+            // Nháy màu XANH khi bị chậm (Sử dụng Cyan - xanh lơ/xanh dương nhạt)
+            if (sr != null) sr.color = Color.cyan;
+            
+            yield return new WaitForSeconds(0.15f);
+            if (sr != null) sr.color = originalColor;
+            
+            yield return new WaitForSeconds(0.35f);
+            elapsed += 0.5f;
+        }
 
         if (playerMovement != null) playerMovement.moveSpeed = originalSpeed;
         if (sr != null) sr.color = originalColor;

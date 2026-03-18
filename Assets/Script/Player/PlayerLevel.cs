@@ -8,8 +8,8 @@ public class PlayerLevel : MonoBehaviour
     public int currentExp = 0;
 
     [Header("Exp Required For Next Levels")]
-    // public int[] expToNextLevel = { 10, 25, 50, 100, 200, 400, 800, 1600, 3200, 6400 };
-public int[] expToNextLevel = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2};
+    public int[] expToNextLevel = { 10, 25, 50, 100, 200, 400, 800, 1600, 3200, 6400 };
+// public int[] expToNextLevel = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2};
     // Events để UI có thể lắng nghe và cập nhật
     public event Action<int, int> OnExpChanged;
     public event Action<int> OnLevelUp;

@@ -14,24 +14,6 @@ TextureImporter:
   - first:
       213: -3323725456146572971
     second: be_dung_nor2_1_3
-  - first:
-      213: -3327962070508779036
-    second: be_dung_nor2_1_4
-  - first:
-      213: 1030298844832843136
-    second: be_dung_nor2_1_5
-  - first:
-      213: -1459976630008062865
-    second: be_dung_nor2_1_6
-  - first:
-      213: -1604898764328457561
-    second: be_dung_nor2_1_7
-  - first:
-      213: -4535146255949417511
-    second: be_dung_nor2_1_8
-  - first:
-      213: 7318195721494601325
-    second: be_dung_nor2_1_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -73,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -143,10 +125,10 @@ TextureImporter:
       name: be_dung_nor2_1_0
       rect:
         serializedVersion: 2
-        x: 94
-        y: 794
-        width: 52
-        height: 62
+        x: 49
+        y: 312
+        width: 6
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,10 +147,10 @@ TextureImporter:
       name: be_dung_nor2_1_1
       rect:
         serializedVersion: 2
-        x: 121
-        y: 778
-        width: 22
-        height: 18
+        x: 133
+        y: 75
+        width: 539
+        height: 781
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +169,10 @@ TextureImporter:
       name: be_dung_nor2_1_2
       rect:
         serializedVersion: 2
-        x: 133
-        y: 201
-        width: 33
-        height: 618
+        x: 64
+        y: 302
+        width: 9
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +191,10 @@ TextureImporter:
       name: be_dung_nor2_1_3
       rect:
         serializedVersion: 2
-        x: 162
-        y: 75
-        width: 653
-        height: 765
+        x: 35
+        y: 287
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,143 +209,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_4
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 838
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e9c9511124b0d1d0800000000000000
-      internalID: -3327962070508779036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_5
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 844
-        width: 17
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 085c1c2375b5c4e00800000000000000
-      internalID: 1030298844832843136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_6
-      rect:
-        serializedVersion: 2
-        x: 94
-        y: 762
-        width: 35
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f6c5ff38dfe1dbbe0800000000000000
-      internalID: -1459976630008062865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_7
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 312
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7aa2db3b3114ab9e0800000000000000
-      internalID: -1604898764328457561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 302
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d331b9228cef01c0800000000000000
-      internalID: -4535146255949417511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: be_dung_nor2_1_9
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 287
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d6e18783c347f8560800000000000000
-      internalID: 7318195721494601325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -377,12 +227,6 @@ TextureImporter:
       be_dung_nor2_1_1: 6566289056654261664
       be_dung_nor2_1_2: -886384218930693925
       be_dung_nor2_1_3: -3323725456146572971
-      be_dung_nor2_1_4: -3327962070508779036
-      be_dung_nor2_1_5: 1030298844832843136
-      be_dung_nor2_1_6: -1459976630008062865
-      be_dung_nor2_1_7: -1604898764328457561
-      be_dung_nor2_1_8: -4535146255949417511
-      be_dung_nor2_1_9: 7318195721494601325
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

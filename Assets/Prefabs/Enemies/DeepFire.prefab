@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1971934619913274041}
   - component: {fileID: 7022914708534209900}
   - component: {fileID: 2082814993808068636}
+  - component: {fileID: 1188966537773642725}
   m_Layer: 10
   m_Name: DeepFire
   m_TagString: Enemy
@@ -145,7 +146,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &7022914708534209900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -204,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84924f6c5a409da4d929977e13f6fe4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  maxHP: 50
+  maxHP: 40
   currentHP: 0
   hitColor: {r: 1, g: 1, b: 1, a: 1}
   flashDuration: 0.1
@@ -212,18 +213,33 @@ MonoBehaviour:
   burnDamagePerTick: 2
   burnDuration: 3
   inflictSlowOnHit: 1
-  slowPercent: 0.5
+  slowPercent: 0.35
   slowDuration: 4
   hitbox: {fileID: 0}
-  moveSpeed: 2
-  moveDistance: 3
+  enemyID: 
+  moveSpeed: 0
+  moveDistance: 2
   target: {fileID: 0}
-  attackRange: 7
+  attackRange: 10
   detectRange: 10
   attackCooldown: 1
   isRanged: 1
   projectilePrefab: {fileID: 6256521393040397302, guid: 5c1f326fc9a601e40aa94948c55dbe73, type: 3}
   projectileSpawnPoint: {fileID: 7373483302130874969}
+--- !u!114 &1188966537773642725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3032738182587097638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8757b949b5c07444a68a951eca7b6fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDropExp
+  expOrbPrefab: {fileID: 4919128569315554769, guid: 7d779de32b01dc440832f61630ec5863, type: 3}
+  dropChance: 100
 --- !u!1 &3918981766192905206
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -630,7 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

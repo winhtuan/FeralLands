@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// AugmentManager — Quản lý logic chọn Lõi ở nhiều mốc cấp (2, 5, 8, 10).
@@ -32,12 +33,50 @@ public class AugmentManager : MonoBehaviour
 
     void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (Instance != this)
+        {
+            // New scene has a fresh AugmentManager with updated Inspector references.
+            // Transfer those references to the persistent instance, then self-destruct.
+            Instance.AbsorbFromNewScene(this);
+            Destroy(gameObject);
+        }
+    }
+
+    /// <summary>Called when a new scene's AugmentManager is absorbed into the persistent one.</summary>
+    private void AbsorbFromNewScene(AugmentManager source)
+    {
+        augmentPoolLv2  = source.augmentPoolLv2;
+        augmentPoolLv5  = source.augmentPoolLv5;
+        augmentPoolLv8  = source.augmentPoolLv8;
+        augmentPoolLv10 = source.augmentPoolLv10;
+        augmentUI       = source.augmentUI;
+
+        // Re-wire PlayerLevel from the new scene
+        if (playerLevel != null)
+            playerLevel.OnLevelUp -= HandleLevelUp;
+
+        playerLevel = source.playerLevel;
+        if (playerLevel == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null) playerLevel = player.GetComponent<PlayerLevel>();
+        }
+        if (playerLevel != null)
+            playerLevel.OnLevelUp += HandleLevelUp;
+
+        if (augmentUI != null)
+            augmentUI.Hide();
     }
 
     void Start()
     {
-        // Tự tìm PlayerLevel nếu chưa gán
+        // Only runs for the FIRST scene (persistent instance).
+        // Subsequent scenes call AbsorbFromNewScene instead.
         if (playerLevel == null)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -46,11 +85,8 @@ public class AugmentManager : MonoBehaviour
         }
 
         if (playerLevel != null)
-        {
             playerLevel.OnLevelUp += HandleLevelUp;
-        }
 
-        // Ẩn UI ban đầu
         if (augmentUI != null)
             augmentUI.Hide();
     }
@@ -132,7 +168,7 @@ public class AugmentManager : MonoBehaviour
         Time.timeScale = 1f;
 
         // Auto-save after upgrade is applied
-        PlayerSaveLoad.Instance?.SaveGame();
+        if (PlayerSaveLoad.Instance != null) PlayerSaveLoad.Instance.SaveGame();
     }
 
     void ApplyAugment(AugmentData augment)
@@ -231,7 +267,9 @@ public class AugmentManager : MonoBehaviour
 
     void OnDestroy()
     {
-        if (playerLevel != null)
+        // Only the persistent instance (Instance == this) should unsubscribe on quit.
+        // Absorbed copies are destroyed before Start() runs so playerLevel is null anyway.
+        if (Instance == this && playerLevel != null)
             playerLevel.OnLevelUp -= HandleLevelUp;
     }
 }

@@ -4,9 +4,10 @@ using UnityEngine;
 public class BossChaseController : MonoBehaviour
 {
     [Header("Movement Settings")]
-    public float moveSpeed = 3f; // Tốc độ đuổi theo player (bằng với player moveSpeed)
+    [Tooltip("Tốc độ sẽ tự động sao chép từ Player")]
     public float minDistance = 2f; // Khoảng cách tối thiểu giữa boss và player
     public float catchDistance = 0.5f; // Khoảng cách để boss bắt được player
+    private float moveSpeed; // Lưu trữ tốc độ của player
     
     private bool isRunning = false;
     private Rigidbody2D rb;
@@ -28,6 +29,12 @@ public class BossChaseController : MonoBehaviour
     
     private ChaseManager chaseManager;
 
+    [Header("Audio Settings")]
+    public AudioClip roarSFX;
+    public AudioClip laserSFX;
+    public AudioClip runSFX;
+    private AudioSource runAudioSource;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -48,6 +55,16 @@ public class BossChaseController : MonoBehaviour
         
         // Tìm ChaseManager
         chaseManager = FindObjectOfType<ChaseManager>();
+
+        // Thiết lập AudioSource cho tiếng chạy
+        runAudioSource = gameObject.AddComponent<AudioSource>();
+        runAudioSource.clip = runSFX;
+        runAudioSource.loop = true;
+        runAudioSource.playOnAwake = false;
+        if (AudioManager.Instance != null && AudioManager.Instance.sfxGroup != null)
+        {
+            runAudioSource.outputAudioMixerGroup = AudioManager.Instance.sfxGroup;
+        }
     }
 
     void OnEnable()
@@ -55,6 +72,21 @@ public class BossChaseController : MonoBehaviour
         Debug.Log("[BossChaseController] OnEnable được gọi");
         isRunning = true;
         if (anim != null) anim.SetBool("IsRunning", true);
+
+        // 🔊 Phát tiếng gầm khi Boss xuất hiện/bắt đầu đuổi
+        if (AudioManager.Instance != null && roarSFX != null)
+        {
+            AudioManager.Instance.PlaySFX(roarSFX);
+            Debug.Log("[BossChaseController] Đã phát tiếng gầm (Roar)");
+        }
+
+        // 🔊 Bắt đầu tiếng chạy
+        if (runAudioSource != null && runSFX != null)
+        {
+            runAudioSource.clip = runSFX;
+            runAudioSource.Play();
+            Debug.Log("[BossChaseController] Đã phát tiếng chạy (Run loop)");
+        }
         
         // Đảm bảo collider là trigger để detect player
         if (bossCollider != null)
@@ -99,8 +131,11 @@ public class BossChaseController : MonoBehaviour
 
     void Update()
     {
-        if (!isRunning || player == null || rb == null) return;
+        if (!isRunning || player == null || rb == null || playerMovement == null) return;
 
+        // Tự động cập nhật tốc độ boss theo player
+        moveSpeed = playerMovement.moveSpeed;
+        
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         
         // Kiểm tra nếu player dừng lại hoặc chạy ngược (về phía boss)
@@ -187,6 +222,12 @@ public class BossChaseController : MonoBehaviour
         
         if (rb != null)
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+
+        // 🔊 Dừng tiếng chạy
+        if (runAudioSource != null && runAudioSource.isPlaying)
+        {
+            runAudioSource.Stop();
+        }
     }
 
     // Vòng lặp bắn chiêu bắt player nhảy
@@ -227,13 +268,30 @@ public class BossChaseController : MonoBehaviour
                 Debug.Log("[BossChaseController] Đã trigger animation SkillAttack");
             }
             
+            // 🔊 Phát tiếng laser khi bắn
+            if (AudioManager.Instance != null && laserSFX != null)
+            {
+                AudioManager.Instance.PlaySFX(laserSFX);
+                Debug.Log("[BossChaseController] Đã phát tiếng laser");
+            }
+            
             // Random số lượng tia từ min đến max
             int projectileCount = Random.Range(minProjectiles, maxProjectiles + 1);
             Debug.Log($"[BossChaseController] Sẽ spawn {projectileCount} projectile(s)");
             
+            // Chọn ra 1 vị trí an toàn ngẫu nhiên để không spawn tia đạn (tạo khe rưỡi cho player né)
+            int safeIndex = projectileCount > 1 ? Random.Range(0, projectileCount) : -1;
+            
             // Spawn các tia tấn công
             for (int i = 0; i < projectileCount; i++)
             {
+                // Nhảy qua vị trí an toàn
+                if (i == safeIndex)
+                {
+                    Debug.Log($"[BossChaseController] Bỏ qua tia số {i + 1} để tạo khoảng trống cho player né.");
+                    continue;
+                }
+
                 Vector3 spawnPos = attackPoint.position;
                 // Nếu có nhiều tia, phân bố theo chiều dọc
                 if (projectileCount > 1)

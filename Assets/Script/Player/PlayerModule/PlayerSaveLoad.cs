@@ -16,47 +16,68 @@ public class PlayerSaveLoad : MonoBehaviour
         health = GetComponent<PlayerHealth>();
         level  = GetComponent<PlayerLevel>();
 
-        // Load in Awake so the killed-enemy cache is populated before
-        // any NormalEnemyBase.Start() calls WasEnemyKilled().
+        // Must run in Awake so SaveManager._killedThisSession is populated
+        // before any NormalEnemyBase.Start() calls WasEnemyKilled().
         if (SaveManager.Instance == null) return;
-        _loadedData = SaveManager.Instance.LoadGame();
+        _loadedData = SaveManager.Instance.GetCachedData() ?? SaveManager.Instance.LoadGame();
         if (_loadedData == null) return;
 
-        // 1. Restore augment stat boosts FIRST so maxHealth is correct before clamping currentHealth.
+        // Apply augment STAT bonuses (maxHealth, damage, speed, skin…) here.
+        // currentHealth/level restoration is deferred to Start() so that
+        // PlayerHealth.Awake() (which resets currentHealth = maxHealth) cannot
+        // overwrite it, regardless of Script Execution Order.
         ApplyAugmentStats(_loadedData.appliedAugments);
-
-        // 2. Restore position (only if re-entering the same scene that was saved).
-        if (_loadedData.currentSceneName == SceneManager.GetActiveScene().name)
-            transform.position = new Vector3(_loadedData.playerPosX, _loadedData.playerPosY, transform.position.z);
-
-        // 3. Restore health (clamp against augmented maxHealth).
-        if (health != null)
-            health.currentHealth = Mathf.Clamp((int)_loadedData.playerHealth, 1, health.maxHealth);
-
-        // 4. Restore level & exp.
-        if (level != null)
-        {
-            level.currentLevel = Mathf.Max(1, _loadedData.level);
-            level.currentExp   = _loadedData.score;
-        }
-
-        // 5. Restore audio settings.
-        if (AudioManager.Instance != null)
-        {
-            AudioManager.Instance.SetMusicVolume(_loadedData.musicVolume);
-            AudioManager.Instance.SetSFXVolume(_loadedData.sfxVolume);
-        }
     }
 
     void Start()
     {
         if (_loadedData == null) return;
 
-        // AugmentManager.Awake() is guaranteed done by the time Start() runs.
-        // Mark all augment-trigger levels already seen so they don't fire again.
-        AugmentManager.Instance?.SkipTriggersUpToLevel(_loadedData.level);
+        // All Awake()s have run — PlayerHealth.Awake() has already set
+        // currentHealth = maxHealth (base). Now we safely override it.
 
-        _loadedData = null; // release reference
+        // 1. Restore health clamped to (now-augmented) maxHealth.
+        if (health != null)
+            health.currentHealth = Mathf.Clamp((int)_loadedData.playerHealth, 1, health.maxHealth);
+
+        // 2. Restore level & exp.
+        if (level != null)
+        {
+            level.currentLevel = Mathf.Max(1, _loadedData.level);
+            level.currentExp   = _loadedData.score;
+        }
+
+        // 3. Restore position (same scene only, skip (0,0) sentinel from SaveGameForScene).
+        if (_loadedData.currentSceneName == SceneManager.GetActiveScene().name
+            && (_loadedData.playerPosX != 0f || _loadedData.playerPosY != 0f))
+        {
+            transform.position = new Vector3(_loadedData.playerPosX, _loadedData.playerPosY, transform.position.z);
+            Debug.Log($"[Load] Position restored: ({_loadedData.playerPosX}, {_loadedData.playerPosY})");
+        }
+        else
+        {
+            Debug.Log($"[Load] Scene '{SceneManager.GetActiveScene().name}' — using spawn point.");
+        }
+
+        // 4. Restore audio settings.
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.SetMusicVolume(_loadedData.musicVolume);
+            AudioManager.Instance.SetSFXVolume(_loadedData.sfxVolume);
+        }
+
+        // 5. Mark already-seen augment levels so they don't trigger again.
+        if (AugmentManager.Instance != null)
+            AugmentManager.Instance.SkipTriggersUpToLevel(_loadedData.level);
+
+        Debug.Log($"[Load] Restored — Level {_loadedData.level}, HP {health?.currentHealth}/{health?.maxHealth}, Augments {_loadedData.appliedAugments?.Count ?? 0}");
+
+        _loadedData = null;
+    }
+
+    void OnDestroy()
+    {
+        if (Instance == this) Instance = null;
     }
 
     // ── Augment restoration ────────────────────────────────────────────────────
@@ -71,16 +92,18 @@ public class PlayerSaveLoad : MonoBehaviour
         PlayerCastOrb     castOrb  = GetComponent<PlayerCastOrb>();
         SpriteRenderer    sr       = GetComponent<SpriteRenderer>();
 
+        // Reset to Inspector base values before adding bonuses.
+        // This prevents double-add if ApplyAugmentStats is ever called twice.
+        if (health   != null) health.maxHealth      = health.baseMaxHealth;
+        if (melee    != null) melee.meleeDamage      = melee.baseMeleeDamage;
+        if (movement != null) movement.moveSpeed     = movement.baseMoveSpeed;
+
         foreach (var e in entries)
         {
             switch (e.statType)
             {
                 case "Health":
-                    if (health != null)
-                    {
-                        health.maxHealth     += (int)e.value;
-                        // currentHealth will be set afterwards from saved value
-                    }
+                    if (health != null) health.maxHealth += (int)e.value;
                     break;
 
                 case "Damage":
@@ -112,11 +135,9 @@ public class PlayerSaveLoad : MonoBehaviour
 
     // ── Save ───────────────────────────────────────────────────────────────────
 
-    public void SaveGame()
+    private GameData CollectGameData()
     {
-        if (SaveManager.Instance == null) return;
-
-        GameData data = new GameData
+        var data = new GameData
         {
             currentSceneName = SceneManager.GetActiveScene().name,
             playerPosX       = transform.position.x,
@@ -124,11 +145,11 @@ public class PlayerSaveLoad : MonoBehaviour
             playerHealth     = health != null ? health.currentHealth : 0,
             level            = level  != null ? level.currentLevel   : 1,
             score            = level  != null ? level.currentExp     : 0,
-            musicVolume      = PlayerPrefs.GetFloat("Setting_Music",       0.75f),
-            sfxVolume        = PlayerPrefs.GetFloat("Setting_SFX",         0.75f),
-            isFullscreen     = PlayerPrefs.GetInt  ("Setting_Fullscreen",  1) == 1,
+            musicVolume      = PlayerPrefs.GetFloat("Setting_Music",      0.75f),
+            sfxVolume        = PlayerPrefs.GetFloat("Setting_SFX",        0.75f),
+            isFullscreen     = PlayerPrefs.GetInt  ("Setting_Fullscreen", 1) == 1,
         };
-        // Collect alive enemy positions
+
         data.enemyPositions = new List<EnemyPositionData>();
         foreach (var enemy in FindObjectsByType<NormalEnemyBase>(FindObjectsSortMode.None))
         {
@@ -139,9 +160,29 @@ public class PlayerSaveLoad : MonoBehaviour
                 posY    = enemy.transform.position.y,
             });
         }
+        return data;
+    }
 
-        // appliedAugments and killedEnemyIDs are merged inside SaveManager.SaveGame()
+    /// <summary>Save current state. Scene name = current scene.</summary>
+    public void SaveGame()
+    {
+        if (SaveManager.Instance == null) return;
+        SaveManager.Instance.SaveGame(CollectGameData());
+    }
+
+    /// <summary>Save before a scene transition.
+    /// Stores destination as currentSceneName so position is NOT
+    /// restored in the new scene (different name won't match).</summary>
+    public void SaveGameForScene(string destinationScene)
+    {
+        if (SaveManager.Instance == null) return;
+        GameData data = CollectGameData();
+        data.currentSceneName = destinationScene;
+        data.playerPosX      = 0f; // sentinel — use spawn point in new scene
+        data.playerPosY      = 0f;
+        data.enemyPositions  = new List<EnemyPositionData>(); // old scene positions are irrelevant
         SaveManager.Instance.SaveGame(data);
+        Debug.Log($"[Save] Transitioning to '{destinationScene}' — stats saved, positions cleared.");
     }
 
     public void OnSaveButtonClicked() => SaveGame();
