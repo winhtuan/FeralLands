@@ -43,13 +43,15 @@ public class PlayerCastOrb : MonoBehaviour
 
         if (Keyboard.current.jKey.wasPressedThisFrame && fireTimer <= 0)
         {
-            if (!mana.UseEnergy(15f)) return;
+            if (!mana.UseEnergy(15f))
+                return;
 
             action.SetBusy(true);
             fireTimer = fireCooldown;
             animator.SetTrigger("CastOrb");
 
-            if (AudioManager.Instance != null) AudioManager.Instance.PlayPlasmaOrbSFX();
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.PlayPlasmaOrbSFX();
 
             SpawnOrb();
             Invoke(nameof(EndCast), 0.3f);
@@ -60,19 +62,21 @@ public class PlayerCastOrb : MonoBehaviour
 
     public void SpawnOrb()
     {
-        if (Time.time - lastSpawnTime < 0.1f) return;
+        if (Time.time - lastSpawnTime < 0.1f)
+            return;
         lastSpawnTime = Time.time;
 
-        if (!lightOrbPrefab) return;
+        if (!lightOrbPrefab)
+            return;
 
         float dir = movement.Facing;
 
         // CHẾ ĐỘ 3 TIA (Triple Orb)
         if (isTripleOrbActive)
         {
-            FireSingleOrb(new Vector2(dir, 0));      // Thẳng
-            FireSingleOrb(new Vector2(dir, 0.4f));   // Xiên lên
-            FireSingleOrb(new Vector2(dir, -0.4f));  // Xiên xuống
+            FireSingleOrb(new Vector2(dir, 0)); // Thẳng
+            FireSingleOrb(new Vector2(dir, 0.4f)); // Xiên lên
+            FireSingleOrb(new Vector2(dir, -0.4f)); // Xiên xuống
         }
         else
         {
@@ -83,8 +87,8 @@ public class PlayerCastOrb : MonoBehaviour
 
     void FireSingleOrb(Vector2 launchDir)
     {
-        Vector2 spawnPos = (Vector2)transform.position +
-                           new Vector2(fireOffset.x * movement.Facing, fireOffset.y);
+        Vector2 spawnPos =
+            (Vector2)transform.position + new Vector2(fireOffset.x * movement.Facing, fireOffset.y);
 
         GameObject orbObj = Instantiate(lightOrbPrefab, spawnPos, Quaternion.identity);
 
@@ -106,7 +110,8 @@ public class PlayerCastOrb : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             FireSingleOrb(new Vector2(dir, 0));
-            if (count > 1) yield return new WaitForSeconds(0.08f);
+            if (count > 1)
+                yield return new WaitForSeconds(0.08f);
         }
     }
 

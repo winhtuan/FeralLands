@@ -17,7 +17,9 @@ public class ChaseManager : MonoBehaviour
     public GameObject normalEnemySpawner; // Spawner quái thường sau khi boss đi
 
     [Header("Boss Spawn Settings")]
-    [Tooltip("Nếu BẬT: Boss sẽ xuất hiện ở vị trí ban đầu trong scene. Nếu TẮT: Boss sẽ được tính toán tự động từ camera.")]
+    [Tooltip(
+        "Nếu BẬT: Boss sẽ xuất hiện ở vị trí ban đầu trong scene. Nếu TẮT: Boss sẽ được tính toán tự động từ camera."
+    )]
     public bool useInitialPosition = true; // Sử dụng vị trí ban đầu trong scene
     public float bossSpawnOffsetX = -8f; // Khoảng cách từ camera để spawn boss (bên trái) - chỉ dùng khi useInitialPosition = false
 
@@ -30,7 +32,7 @@ public class ChaseManager : MonoBehaviour
         mainCamera = Camera.main;
         if (mainCamera == null)
             mainCamera = FindObjectOfType<Camera>();
-        
+
         // Lưu vị trí ban đầu của boss khi Awake
         if (bossObj != null)
         {
@@ -41,18 +43,19 @@ public class ChaseManager : MonoBehaviour
     // Hàm này sẽ được gọi bởi ChaseTrigger
     public void StartChase()
     {
-        if (isChasing) return;
+        if (isChasing)
+            return;
         isChasing = true;
 
         // 1. Rung màn hình
-        if (cameraShake != null) 
+        if (cameraShake != null)
             cameraShake.Shake(0.5f, 2f); // Rung 0.5 giây với độ mạnh 2
 
         // 2. Kích hoạt Boss và đặt vị trí
         if (bossObj != null)
         {
             bossObj.SetActive(true);
-            
+
             // Chọn cách đặt vị trí boss
             if (useInitialPosition)
             {
@@ -64,10 +67,12 @@ public class ChaseManager : MonoBehaviour
                 // Tính toán tự động từ camera (cách cũ)
                 if (mainCamera != null && player != null)
                 {
-                    Vector3 cameraLeftEdge = mainCamera.ViewportToWorldPoint(new Vector3(0, 0.5f, mainCamera.nearClipPlane));
+                    Vector3 cameraLeftEdge = mainCamera.ViewportToWorldPoint(
+                        new Vector3(0, 0.5f, mainCamera.nearClipPlane)
+                    );
                     Vector3 bossSpawnPos = new Vector3(
-                        cameraLeftEdge.x + bossSpawnOffsetX, 
-                        player.position.y, 
+                        cameraLeftEdge.x + bossSpawnOffsetX,
+                        player.position.y,
                         bossObj.transform.position.z
                     );
                     bossObj.transform.position = bossSpawnPos;
@@ -119,7 +124,7 @@ public class ChaseManager : MonoBehaviour
         if (endCutscene != null)
         {
             endCutscene.Play();
-            
+
             // Đợi cutscene kết thúc rồi mới ẩn boss
             StartCoroutine(WaitForCutsceneEnd());
         }
@@ -140,7 +145,7 @@ public class ChaseManager : MonoBehaviour
                 yield return null;
             }
         }
-        
+
         // Sau khi cutscene kết thúc
         HideBossAndContinue();
     }
